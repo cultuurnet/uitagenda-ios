@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B3116" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="UiTFavorite" representedClassName="UiTFavorite" syncable="YES">
+        <attribute name="eventID" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UiTSearchQuery" representedClassName="UiTSearchQuery" syncable="YES">
+        <attribute name="free" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="kids" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="nocoursesandworkshops" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="radius" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchTerm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="what" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="when" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="where" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UiTFavorite" positionX="160" positionY="192" width="128" height="58"/>
+        <element name="UiTSearchQuery" positionX="-216" positionY="161" width="128" height="178"/>
+    </elements>
+</model>

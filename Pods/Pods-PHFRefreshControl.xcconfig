@@ -1,0 +1,1 @@
+PODS_PHFREFRESHCONTROL_OTHER_LDFLAGS = -framework QuartzCore

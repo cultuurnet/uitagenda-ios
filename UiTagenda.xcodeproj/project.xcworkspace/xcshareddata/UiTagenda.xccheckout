@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FA984FEC-62EC-42A0-A05E-D3B62AD1F57B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UiTagenda</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>92891E8B-F3A1-46C9-87FB-F235D05CA48C</key>
+		<string>https://bitbucket.org/cultuurnet/uitagenda-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UiTagenda/UiTagenda.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>92891E8B-F3A1-46C9-87FB-F235D05CA48C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/cultuurnet/uitagenda-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>92891E8B-F3A1-46C9-87FB-F235D05CA48C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>92891E8B-F3A1-46C9-87FB-F235D05CA48C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>uitagenda-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
