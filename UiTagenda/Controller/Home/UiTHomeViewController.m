@@ -98,8 +98,8 @@ static BOOL haveAlreadyReceivedCoordinates;
     [self.eventTableView.pullToRefreshView setTitle:NSLocalizedString(@"LOADING", @"") forState:SVPullToRefreshStateLoading];
     
 //    self.problemView = [[UiTProblemView alloc] initWithFrame:CGRectMake(CENTER_IN_PARENT_X(self.eventTableView, 250), CENTER_IN_PARENT_Y(self.eventTableView, 250), 250, 250)];
-    self.problemView = [[UiTProblemView alloc] initWithFrame:CGRectMake(CENTER_IN_PARENT_X(self.eventTableView, WIDTH(self.eventTableView)), CENTER_IN_PARENT_Y(self.eventTableView, 250), WIDTH(self.eventTableView), 250)];
-    self.problemView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    self.problemView = [[UiTProblemView alloc] initWithFrame:CGRectMake(CENTER_IN_PARENT_X(self.view, WIDTH(self.view)), CENTER_IN_PARENT_Y(self.view, 250), WIDTH(self.view), 250)];
+//    self.problemView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     self.problemView.hidden = YES;
     [self.eventTableView addSubview:self.problemView];
 }
@@ -287,8 +287,9 @@ static BOOL haveAlreadyReceivedCoordinates;
         //            [self.distanceLabel setText:@""];
         //        }
         
-        cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
-        [cell.distanceLabel sizeToFit];
+        cell.cityLabel.text = [NSString stringWithFormat:@"%@ (%@)", event.city, [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
+//        cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
+//        [cell.distanceLabel sizeToFit];
         [cell.favoriteButton addTarget:self action:@selector(favoriteEventAction:) forControlEvents:UIControlEventTouchUpInside];
         cell.favoriteButton.tag = indexPath.row;
     }
