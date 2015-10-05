@@ -458,8 +458,7 @@ static BOOL haveAlreadyReceivedCoordinates;
                 [context save:nil];
             }
         }
-    }
-    else {
+    } else {
         button.selected = YES;
 //        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
 //                                                                                            action:@"Favorite"

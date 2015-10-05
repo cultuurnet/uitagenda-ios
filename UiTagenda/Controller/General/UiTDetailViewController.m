@@ -348,17 +348,8 @@
 }
 
 - (void)setupNextAndPrevious {
-//    _previousButton = [[UIButton alloc] initWithFrame:CGRectMake(0, HEIGHT(self.view) - 103, 41, 40)];
-    _previousButton.backgroundColor = REDCOLOR;
     [_previousButton addTarget:self action:@selector(showPreviousEvent) forControlEvents:UIControlEventTouchUpInside];
-    [_previousButton setImage:[UIImage imageNamed:@"backicon"] forState:UIControlStateNormal];
-//    _nextButton = [[UIButton alloc] initWithFrame:CGRectMake(RIGHT(self.shareButton) - 1, HEIGHT(self.view) - 103, 41, 40)];
-    _nextButton.backgroundColor = REDCOLOR;
     [_nextButton addTarget:self action:@selector(showNextEvent) forControlEvents:UIControlEventTouchUpInside];
-    [_nextButton setImage:[UIImage imageNamed:@"forwardicon"] forState:UIControlStateNormal];
-    
-    [self.view addSubview:_previousButton];
-    [self.view addSubview:_nextButton];
     
     if (_eventIndex == 0) {
         _previousButton.enabled = FALSE;
@@ -371,8 +362,6 @@
     } else {
         _nextButton.enabled = TRUE;
     }
-    
-    //self.yOffset += (HEIGHT(_previousButton));
 }
 
 - (void)showPreviousEvent {
@@ -384,9 +373,6 @@
 }
 
 - (void)setupFavoriteButton {
-    self.favoriteButton = [[UiTGlobalFunctions sharedInstance] createFavoriteOrShareButton:@"FAVORITE"];
-    [self.favoriteButton setTitleColor:TITLECOLOR forState:UIControlStateNormal];
-    self.favoriteButton.backgroundColor = [UIColor whiteColor];
     [self.favoriteButton addTarget:self action:@selector(favoriteEvent:) forControlEvents:UIControlEventTouchUpInside];
     [self.favoriteButton setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 8.0f, 0.0f, 0.0f)];
     [self.favoriteButton setTitleEdgeInsets:UIEdgeInsetsMake(2.0f, 8.0f, 0.0f, 0.0f)];
@@ -397,19 +383,12 @@
         UiTFavorite *fav = [UiTFavorite favoriteWithEventId:_event.cdbid usingManagedObjectContext:context];
         [self.favoriteButton setSelected:(fav == nil ? NO : YES)];
     }
-    
-    [self.view addSubview:self.favoriteButton];
 }
 
 - (void)setupShareButton {
-    [self.shareButton setTitleColor:TITLECOLOR forState:UIControlStateNormal];
-    self.shareButton.backgroundColor = [UIColor whiteColor];
     [self.shareButton addTarget:self action:@selector(shareEvent:) forControlEvents:UIControlEventTouchUpInside];
-//    [self.shareButton setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 8.0f, 0.0f, 0.0f)];
-//    [self.shareButton setTitleEdgeInsets:UIEdgeInsetsMake(2.0f, 8.0f, 0.0f, 0.0f)];
-    [self.shareButton setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 17.0f, 0.0f, 0.0f)];
-    [self.shareButton setTitleEdgeInsets:UIEdgeInsetsMake(2.0f, 17.0f, 0.0f, 0.0f)];
-    [self.view addSubview:self.shareButton];
+    [self.shareButton setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 8.0f, 0.0f, 0.0f)];
+    [self.shareButton setTitleEdgeInsets:UIEdgeInsetsMake(2.0f, 8.0f, 0.0f, 0.0f)];
 }
 
 - (void)favoriteEvent:(id)sender {
@@ -431,8 +410,7 @@
                 [context save:nil];
             }
         }
-    }
-    else {
+    } else {
         button.selected = YES;
 //        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
 //                                                                                            action:@"Favorite"
@@ -446,14 +424,13 @@
     }
 }
 
--(void)shareEvent:(id)sender {
+- (void)shareEvent:(id)sender {
     NSArray *activityItems;
     
     if (_event.imageURL) {
         UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:_event.imageURL]];
         activityItems = [NSArray arrayWithObjects:_event.title, [NSString stringWithFormat:@"http://www.uitinvlaanderen.be/agenda/e/app_redirect/%@?utm_campaign=UiTagenda&utm_medium=ios&utm_source=app&utm_content=share", _event.cdbid], @"(Via #UiTagenda)", image, nil];
-    }
-    else {
+    } else {
         activityItems = [NSArray arrayWithObjects:_event.title, [NSString stringWithFormat:@"http://www.uitinvlaanderen.be/agenda/e/app_redirect/%@?utm_campaign=UiTagenda&utm_medium=ios&utm_source=app&utm_content=share", _event.cdbid], @"(Via #UiTagenda)", nil];
     }
     
@@ -469,7 +446,8 @@
 //                                                                                                     value:nil] build]];
             }
         }
-        if([activityType isEqualToString:UIActivityTypePostToFacebook]){
+        
+        if ([activityType isEqualToString:UIActivityTypePostToFacebook]){
             if (completed) {
 //                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
 //                                                                                                    action:@"ShareFacebook"
@@ -477,6 +455,7 @@
 //                                                                                                     value:nil] build]];
             }
         }
+        
         if([activityType isEqualToString:UIActivityTypePostToTwitter]){
             if (completed) {
 //                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
@@ -490,7 +469,7 @@
     [self presentViewController:activityController animated:YES completion:nil];
 }
 
--(void)showRoute {
+- (void)showRoute {
     Class mapItemClass = [MKMapItem class];
     if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)]) {
         CLGeocoder *geocoder = [[CLGeocoder alloc] init];
@@ -513,16 +492,14 @@
                      }];
     }
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
 
--(BOOL) webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
-    if ( inType == UIWebViewNavigationTypeLinkClicked ) {
+#pragma mark - UIWebViewDelegate
+
+- (BOOL)webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
+    if (inType == UIWebViewNavigationTypeLinkClicked ) {
         [[UIApplication sharedApplication] openURL:[inRequest URL]];
         return NO;
     }
-    
     return YES;
 }
 

@@ -768,8 +768,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                 <state key="normal" title="Favoriet" image="favoriteNormal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <state key="selected" image="favoriteSelected"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmA-So-Brr">
                                 <rect key="frame" x="389" y="1501" width="339" height="40"/>
@@ -779,8 +780,8 @@
                                     <constraint firstAttribute="height" constant="40" id="Squ-RQ-j0Q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
-                                <state key="normal" title="Deel" image="share">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Deel" image="shareNormal">
+                                    <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                         </subviews>
@@ -882,7 +883,7 @@
         <image name="kids_cell" width="82" height="98"/>
         <image name="locationicon" width="35" height="35"/>
         <image name="no-thumbnail" width="150" height="150"/>
-        <image name="share" width="20" height="20"/>
+        <image name="shareNormal" width="40" height="40"/>
         <image name="tagicon" width="35" height="35"/>
     </resources>
 </document>
