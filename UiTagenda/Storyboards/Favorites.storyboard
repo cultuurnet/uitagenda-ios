@@ -9,6 +9,7 @@
         <mutableArray key="PTN57F.ttf">
             <string>PTSans-Narrow</string>
             <string>PTSans-Narrow</string>
+            <string>PTSans-Narrow</string>
         </mutableArray>
         <mutableArray key="PTN77F.ttf">
             <string>PTSans-NarrowBold</string>
@@ -63,8 +64,8 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gent (375m)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vni-tT-4Ot">
-                                                    <rect key="frame" x="88" y="74" width="447" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vni-tT-4Ot">
+                                                    <rect key="frame" x="88" y="74" width="25.5" height="18"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
@@ -86,6 +87,13 @@
                                                         <action selector="favoriteThisEventAction:" destination="1eN-eU-2C9" eventType="touchUpInside" id="jJa-fa-Y5C"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(375m)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bF4-kV-ZPw">
+                                                    <rect key="frame" x="116.5" y="74" width="37.5" height="18"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,13 +101,14 @@
                                                 <constraint firstItem="teN-eo-73e" firstAttribute="top" secondItem="jRb-mH-zSp" secondAttribute="bottom" constant="4" id="0sL-k3-nMG"/>
                                                 <constraint firstAttribute="trailing" secondItem="rgc-cC-r6V" secondAttribute="trailing" constant="8" id="2ed-2Y-IxY"/>
                                                 <constraint firstItem="cSg-0e-WsP" firstAttribute="top" secondItem="teN-eo-73e" secondAttribute="bottom" constant="4" id="4Gz-rC-a7E"/>
+                                                <constraint firstItem="bF4-kV-ZPw" firstAttribute="leading" secondItem="vni-tT-4Ot" secondAttribute="trailing" constant="3" id="6pV-eK-5SL"/>
                                                 <constraint firstItem="KGA-03-GOP" firstAttribute="width" secondItem="rAX-sn-5h5" secondAttribute="width" id="8Wu-ED-hOk"/>
                                                 <constraint firstItem="jRb-mH-zSp" firstAttribute="top" secondItem="g20-WX-WJQ" secondAttribute="top" constant="8" id="Abs-Jh-yev"/>
-                                                <constraint firstItem="rgc-cC-r6V" firstAttribute="leading" secondItem="vni-tT-4Ot" secondAttribute="trailing" constant="6" id="Eya-Ta-4lU"/>
                                                 <constraint firstAttribute="bottom" secondItem="rAX-sn-5h5" secondAttribute="bottom" constant="1" id="G9h-hL-yXC"/>
                                                 <constraint firstItem="jRb-mH-zSp" firstAttribute="leading" secondItem="vni-tT-4Ot" secondAttribute="leading" id="IxT-RM-gYM"/>
                                                 <constraint firstAttribute="trailing" secondItem="jRb-mH-zSp" secondAttribute="trailing" constant="8" id="JlI-4C-kCz"/>
                                                 <constraint firstItem="jRb-mH-zSp" firstAttribute="leading" secondItem="teN-eo-73e" secondAttribute="leading" id="RTu-b4-8Z6"/>
+                                                <constraint firstItem="bF4-kV-ZPw" firstAttribute="bottom" secondItem="vni-tT-4Ot" secondAttribute="bottom" id="V2W-Qs-gBT"/>
                                                 <constraint firstItem="rAX-sn-5h5" firstAttribute="leading" secondItem="g20-WX-WJQ" secondAttribute="leading" constant="1" id="XVf-Pv-wpI"/>
                                                 <constraint firstItem="KGA-03-GOP" firstAttribute="leading" secondItem="rAX-sn-5h5" secondAttribute="leading" constant="-1" id="ZCm-F2-fwx"/>
                                                 <constraint firstItem="jRb-mH-zSp" firstAttribute="trailing" secondItem="teN-eo-73e" secondAttribute="trailing" id="akL-Dd-5h8"/>

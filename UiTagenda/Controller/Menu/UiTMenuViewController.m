@@ -70,13 +70,6 @@
             [self.slideMenuController closeMenuBehindContentViewController:navigationViewController animated:YES bounce:NO completion:nil];
         }
     }
-    
-//    Class ViewControllerClass = NSClassFromString([[self.menu objectAtIndex:indexPath.row] objectForKey:kMenuViewController]);
-//    UIViewController *viewController = [[ViewControllerClass alloc] initWithNibName:nil bundle:nil];
-//    
-//    UiTNavViewController *navigationViewController = [[UiTNavViewController alloc] initWithNibName:nil bundle:nil];
-//    [navigationViewController setViewControllers:[[NSArray alloc] initWithObjects:viewController, nil]];
-//    [self.slideMenuController closeMenuBehindContentViewController:navigationViewController animated:YES bounce:NO completion:nil];
 }
 
 #pragma mark - TableView DataSource methods

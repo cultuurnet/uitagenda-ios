@@ -436,7 +436,6 @@ static BOOL haveAlreadyReceivedCoordinates;
             CLLocationDistance meters = [restoLocation distanceFromLocation:_location];
             
             cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
-            [cell.distanceLabel sizeToFit];
         }
         
         [cell.favoriteButton addTarget:self action:@selector(favoriteEvent:) forControlEvents:UIControlEventTouchUpInside];

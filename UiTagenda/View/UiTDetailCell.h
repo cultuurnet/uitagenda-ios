@@ -18,7 +18,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *favoriteButton;
 @property (strong, nonatomic) UIButton *shareButton;
 
-@property (strong, nonatomic) UILabel *distanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cityLabel;
 
 -(void)setEvent:(UiTEvent *)event;

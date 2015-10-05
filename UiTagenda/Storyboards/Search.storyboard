@@ -21,6 +21,7 @@
             <string>PTSans-Narrow</string>
             <string>PTSans-Narrow</string>
             <string>PTSans-Narrow</string>
+            <string>PTSans-Narrow</string>
         </mutableArray>
         <mutableArray key="PTN77F.ttf">
             <string>PTSans-NarrowBold</string>
@@ -374,8 +375,8 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gent (375m)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVL-Yd-Ihn">
-                                                    <rect key="frame" x="88" y="74" width="447" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVL-Yd-Ihn">
+                                                    <rect key="frame" x="88" y="74" width="25.5" height="18"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
@@ -392,6 +393,13 @@
                                                     <rect key="frame" x="1" y="1" width="80" height="95"/>
                                                     <animations/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(375m)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhg-wR-T46">
+                                                    <rect key="frame" x="116.5" y="74" width="37.5" height="18"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -401,8 +409,9 @@
                                                 <constraint firstItem="nmC-K8-IFQ" firstAttribute="leading" secondItem="1qa-lC-xqd" secondAttribute="leading" id="5VG-Bh-6TK"/>
                                                 <constraint firstAttribute="bottom" secondItem="1qa-lC-xqd" secondAttribute="bottom" constant="1" id="760-hG-14O"/>
                                                 <constraint firstAttribute="trailing" secondItem="jBr-na-76o" secondAttribute="trailing" constant="8" id="9Rr-Ov-uWk"/>
-                                                <constraint firstItem="rAJ-fq-x2T" firstAttribute="leading" secondItem="xVL-Yd-Ihn" secondAttribute="trailing" constant="8" id="EG7-Uq-8P9"/>
+                                                <constraint firstItem="fhg-wR-T46" firstAttribute="bottom" secondItem="xVL-Yd-Ihn" secondAttribute="bottom" id="CZF-Ix-5Yo"/>
                                                 <constraint firstAttribute="trailing" secondItem="rAJ-fq-x2T" secondAttribute="trailing" constant="6" id="ERm-74-BRd"/>
+                                                <constraint firstItem="fhg-wR-T46" firstAttribute="leading" secondItem="xVL-Yd-Ihn" secondAttribute="trailing" constant="3" id="HHl-gY-Wk3"/>
                                                 <constraint firstItem="4UN-XD-bzB" firstAttribute="top" secondItem="jBr-na-76o" secondAttribute="bottom" constant="4" id="MsR-g0-ZMy"/>
                                                 <constraint firstItem="1qa-lC-xqd" firstAttribute="leading" secondItem="IjZ-Ut-Yi3" secondAttribute="leading" constant="1" id="NiU-DP-JQk"/>
                                                 <constraint firstItem="nmC-K8-IFQ" firstAttribute="top" secondItem="1qa-lC-xqd" secondAttribute="top" id="SzF-65-Skb"/>

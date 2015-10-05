@@ -10,6 +10,7 @@
         <mutableArray key="PTN57F.ttf">
             <string>PTSans-Narrow</string>
             <string>PTSans-Narrow</string>
+            <string>PTSans-Narrow</string>
         </mutableArray>
         <mutableArray key="PTN77F.ttf">
             <string>PTSans-NarrowBold</string>
@@ -73,8 +74,8 @@
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gent (375m)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpS-1b-EJD">
-                                                            <rect key="frame" x="88" y="68.5" width="447" height="16.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpS-1b-EJD">
+                                                            <rect key="frame" x="88" y="68" width="23.5" height="16.5"/>
                                                             <animations/>
                                                             <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="14"/>
                                                             <color key="highlightedColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
@@ -96,6 +97,13 @@
                                                                 <action selector="favoriteEventAction:" destination="N86-xM-q3M" eventType="touchUpInside" id="mrG-SV-UBO"/>
                                                             </connections>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(375m)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJo-UC-bHP">
+                                                            <rect key="frame" x="114.5" y="68.5" width="35" height="16.5"/>
+                                                            <animations/>
+                                                            <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="14"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="highlightedColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </label>
                                                     </subviews>
                                                     <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,15 +115,16 @@
                                                         <constraint firstItem="enj-ad-3pu" firstAttribute="top" secondItem="hj1-d9-QLW" secondAttribute="top" constant="8" id="E0H-Qf-Jwg"/>
                                                         <constraint firstItem="CpS-1b-EJD" firstAttribute="top" secondItem="0LI-Do-eOO" secondAttribute="bottom" constant="4" id="GLL-bh-RIn"/>
                                                         <constraint firstItem="Oh4-QT-dae" firstAttribute="height" secondItem="YCe-Y9-jHo" secondAttribute="height" id="I7U-2I-LgP"/>
-                                                        <constraint firstItem="q42-km-eFO" firstAttribute="leading" secondItem="CpS-1b-EJD" secondAttribute="trailing" constant="14" id="Lhu-ZI-9T8"/>
                                                         <constraint firstItem="enj-ad-3pu" firstAttribute="leading" secondItem="YCe-Y9-jHo" secondAttribute="trailing" constant="7" id="NrJ-yM-jXz"/>
                                                         <constraint firstAttribute="trailing" secondItem="enj-ad-3pu" secondAttribute="trailing" constant="8" id="PtD-qH-qzO"/>
+                                                        <constraint firstItem="XJo-UC-bHP" firstAttribute="leading" secondItem="CpS-1b-EJD" secondAttribute="trailing" constant="3" id="U7H-34-1Ne"/>
                                                         <constraint firstItem="0LI-Do-eOO" firstAttribute="top" secondItem="6Jo-P1-pXt" secondAttribute="bottom" constant="4" id="VKk-60-mGF"/>
                                                         <constraint firstItem="6Jo-P1-pXt" firstAttribute="top" secondItem="enj-ad-3pu" secondAttribute="bottom" constant="4" id="W7c-EY-1OZ"/>
                                                         <constraint firstItem="YCe-Y9-jHo" firstAttribute="top" secondItem="hj1-d9-QLW" secondAttribute="top" constant="1" id="Wtm-Ub-x6E"/>
                                                         <constraint firstItem="enj-ad-3pu" firstAttribute="leading" secondItem="CpS-1b-EJD" secondAttribute="leading" id="Ykb-I1-1Hb"/>
                                                         <constraint firstItem="YCe-Y9-jHo" firstAttribute="leading" secondItem="hj1-d9-QLW" secondAttribute="leading" constant="1" id="cFp-uc-iUd"/>
                                                         <constraint firstAttribute="bottom" secondItem="YCe-Y9-jHo" secondAttribute="bottom" constant="1" id="dZt-Ny-rOE"/>
+                                                        <constraint firstItem="XJo-UC-bHP" firstAttribute="bottom" secondItem="CpS-1b-EJD" secondAttribute="bottom" id="f9U-WB-4hA"/>
                                                         <constraint firstItem="Oh4-QT-dae" firstAttribute="top" secondItem="YCe-Y9-jHo" secondAttribute="top" constant="-1" id="kNJ-Qq-pQQ"/>
                                                         <constraint firstAttribute="bottom" secondItem="q42-km-eFO" secondAttribute="bottom" constant="5" id="swJ-x3-3dN"/>
                                                         <constraint firstItem="0LI-Do-eOO" firstAttribute="leading" secondItem="enj-ad-3pu" secondAttribute="leading" id="tX8-Ad-4jB"/>
@@ -136,6 +145,7 @@
                                         <connections>
                                             <outlet property="cityLabel" destination="CpS-1b-EJD" id="sHp-aR-pvO"/>
                                             <outlet property="containerView" destination="hj1-d9-QLW" id="QAn-YD-M9B"/>
+                                            <outlet property="distanceLabel" destination="XJo-UC-bHP" id="7Ey-Mq-A6d"/>
                                             <outlet property="eventTypeLabel" destination="6Jo-P1-pXt" id="Wjf-Zi-722"/>
                                             <outlet property="favoriteButton" destination="q42-km-eFO" id="HIo-8w-rPV"/>
                                             <outlet property="imageViewEvent" destination="YCe-Y9-jHo" id="8PF-lD-aYI"/>
