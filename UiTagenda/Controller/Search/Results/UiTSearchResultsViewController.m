@@ -79,7 +79,8 @@ static BOOL haveAlreadyReceivedCoordinates;
     self.totalEvents = 0;
     self.resultsArray = [[NSMutableArray alloc] init];
     self.title = NSLocalizedString(@"SEARCHRESULTS", @"");
-    self.navigationItem.rightBarButtonItem = [self showRightBarButton:@"favorite"];
+    self.navigationItem.rightBarButtonItem = nil;
+    self.navigationItem.rightBarButtonItems = @[ [self showBarButtonWithType:UIBarButtonItemTypeFavorite] ];
     self.navigationItem.leftBarButtonItem = nil;
 
     if (_currentLocation) {
@@ -99,27 +100,6 @@ static BOOL haveAlreadyReceivedCoordinates;
     self.hud.detailsLabelFont = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:16];
     [self.hud show:YES];
     [self.navigationController.view addSubview:self.hud];
-}
-
-- (UIBarButtonItem *)showRightBarButton:(NSString *)imageName {
-    UIImage *barBtnImage = [UIImage imageNamed:imageName];
-    UIImage *barBtnImageActive = [UIImage imageNamed:[NSString stringWithFormat:@"%@Highlighted", imageName]];
-    UIButton *barButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    [barButton setBackgroundImage:barBtnImage forState:UIControlStateNormal];
-    [barButton setBackgroundImage:barBtnImageActive forState:UIControlStateHighlighted];
-    
-    [barButton setFrame:CGRectMake(0, 0, barBtnImage.size.width, barBtnImage.size.height)];
-    
-    UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, barBtnImage.size.width, barBtnImage.size.height)];
-    
-    [barButton addTarget:self action:@selector(showFavoritesModalAction) forControlEvents:UIControlEventTouchUpInside];
-    
-    [containerView addSubview:barButton];
-    
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:containerView];
-    
-    return item;
 }
 
 - (void)setupTableView {
