@@ -336,7 +336,7 @@
     return phoneNumber;
 }
 
-- (void) webViewDidFinishLoad:(UIWebView *)webView{
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
     CGRect frame = _webView.frame;
     CGSize fittingSize = [_webView sizeThatFits:CGSizeZero];
     frame.size = fittingSize;
@@ -362,22 +362,20 @@
     
     if (_eventIndex == 0) {
         _previousButton.enabled = FALSE;
-    }
-    else {
+    } else {
         _previousButton.enabled = TRUE;
     }
     
     if (_eventIndex == [_eventsArray count] - 1) {
         _nextButton.enabled  = FALSE;
-    }
-    else {
+    } else {
         _nextButton.enabled = TRUE;
     }
     
     //self.yOffset += (HEIGHT(_previousButton));
 }
 
--(void)showPreviousEvent {
+- (void)showPreviousEvent {
     [self.detailContainer switchViewController:[_eventsArray objectAtIndex:_eventIndex - 1] andResultsArr:_eventsArray];
 }
 
@@ -387,7 +385,6 @@
 
 - (void)setupFavoriteButton {
     self.favoriteButton = [[UiTGlobalFunctions sharedInstance] createFavoriteOrShareButton:@"FAVORITE"];
-//    [self.favoriteButton setFrame:CGRectMake(40, HEIGHT(self.view) - 103, 320/2 - 40, 40)];
     [self.favoriteButton setTitleColor:TITLECOLOR forState:UIControlStateNormal];
     self.favoriteButton.backgroundColor = [UIColor whiteColor];
     [self.favoriteButton addTarget:self action:@selector(favoriteEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -405,17 +402,14 @@
 }
 
 - (void)setupShareButton {
-//    self.shareButton = [[UiTGlobalFunctions sharedInstance] createFavoriteOrShareButton:@"SHARE"];
-//    [self.shareButton setFrame:CGRectMake(RIGHT(self.favoriteButton), HEIGHT(self.view) - 103, 320/2 - 40, 40)];
     [self.shareButton setTitleColor:TITLECOLOR forState:UIControlStateNormal];
     self.shareButton.backgroundColor = [UIColor whiteColor];
     [self.shareButton addTarget:self action:@selector(shareEvent:) forControlEvents:UIControlEventTouchUpInside];
-    [self.shareButton setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 8.0f, 0.0f, 0.0f)];
-    [self.shareButton setTitleEdgeInsets:UIEdgeInsetsMake(2.0f, 8.0f, 0.0f, 0.0f)];
-//    [self.shareButton setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 17.0f, 0.0f, 0.0f)];
-//    [self.shareButton setTitleEdgeInsets:UIEdgeInsetsMake(2.0f, 17.0f, 0.0f, 0.0f)];
+//    [self.shareButton setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 8.0f, 0.0f, 0.0f)];
+//    [self.shareButton setTitleEdgeInsets:UIEdgeInsetsMake(2.0f, 8.0f, 0.0f, 0.0f)];
+    [self.shareButton setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 17.0f, 0.0f, 0.0f)];
+    [self.shareButton setTitleEdgeInsets:UIEdgeInsetsMake(2.0f, 17.0f, 0.0f, 0.0f)];
     [self.view addSubview:self.shareButton];
-    
 }
 
 - (void)favoriteEvent:(id)sender {
