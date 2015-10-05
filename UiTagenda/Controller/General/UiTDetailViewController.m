@@ -69,16 +69,17 @@
 
 @implementation UiTDetailViewController
 
-- (id)initWithEvent:(UiTEvent *)event andEventsArray:(NSArray *)eventsArray {
-    self = [super init];
-    if (self) {
-        _event = event;
-        _eventsArray = eventsArray;
-    }
-    return self;
-}
+//- (id)initWithEvent:(UiTEvent *)event andEventsArray:(NSArray *)eventsArray {
+//    self = [super init];
+//    if (self) {
+//        _event = event;
+//        _eventsArray = eventsArray;
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad {
+    NSLog(@"%@", self.event);
     _eventIndex = [self.eventsArray indexOfObject:_event];
     
     [self setupScrollView];
@@ -364,14 +365,6 @@
     }
 }
 
-- (void)showPreviousEvent {
-    [self.detailContainer switchViewController:[_eventsArray objectAtIndex:_eventIndex - 1] andResultsArr:_eventsArray];
-}
-
-- (void)showNextEvent {
-    [self.detailContainer switchViewController:[_eventsArray objectAtIndex:_eventIndex + 1] andResultsArr:_eventsArray];
-}
-
 - (void)setupFavoriteButton {
     [self.favoriteButton addTarget:self action:@selector(favoriteEvent:) forControlEvents:UIControlEventTouchUpInside];
     [self.favoriteButton setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 8.0f, 0.0f, 0.0f)];
@@ -389,6 +382,40 @@
     [self.shareButton addTarget:self action:@selector(shareEvent:) forControlEvents:UIControlEventTouchUpInside];
     [self.shareButton setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 8.0f, 0.0f, 0.0f)];
     [self.shareButton setTitleEdgeInsets:UIEdgeInsetsMake(2.0f, 8.0f, 0.0f, 0.0f)];
+}
+
+- (void)showRoute {
+    Class mapItemClass = [MKMapItem class];
+    if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)]) {
+        CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+        [geocoder geocodeAddressString:_event.address
+                     completionHandler:^(NSArray *placemarks, NSError *error) {
+                         
+                         CLPlacemark *geocodedPlacemark = [placemarks objectAtIndex:0];
+                         MKPlacemark *placemark = [[MKPlacemark alloc]
+                                                   initWithCoordinate:geocodedPlacemark.location.coordinate
+                                                   addressDictionary:geocodedPlacemark.addressDictionary];
+                         
+                         MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+                         [mapItem setName:_event.title];
+                         
+                         NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+                         
+                         MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
+                         
+                         [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem] launchOptions:launchOptions];
+                     }];
+    }
+}
+
+#pragma mark - IBActions
+
+- (void)showPreviousEvent {
+    [self.detailContainer switchViewController:[_eventsArray objectAtIndex:_eventIndex - 1] andResultsArr:_eventsArray];
+}
+
+- (void)showNextEvent {
+    [self.detailContainer switchViewController:[_eventsArray objectAtIndex:_eventIndex + 1] andResultsArr:_eventsArray];
 }
 
 - (void)favoriteEvent:(id)sender {
@@ -467,30 +494,6 @@
     }];
     
     [self presentViewController:activityController animated:YES completion:nil];
-}
-
-- (void)showRoute {
-    Class mapItemClass = [MKMapItem class];
-    if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)]) {
-        CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-        [geocoder geocodeAddressString:_event.address
-                     completionHandler:^(NSArray *placemarks, NSError *error) {
-                         
-                         CLPlacemark *geocodedPlacemark = [placemarks objectAtIndex:0];
-                         MKPlacemark *placemark = [[MKPlacemark alloc]
-                                                   initWithCoordinate:geocodedPlacemark.location.coordinate
-                                                   addressDictionary:geocodedPlacemark.addressDictionary];
-                         
-                         MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
-                         [mapItem setName:_event.title];
-                         
-                         NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
-                         
-                         MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
-                         
-                         [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem] launchOptions:launchOptions];
-                     }];
-    }
 }
 
 #pragma mark - UIWebViewDelegate

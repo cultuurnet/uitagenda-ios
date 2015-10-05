@@ -234,21 +234,14 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    [self.eventTableView deselectRowAtIndexPath:indexPath animated:YES];
-//    
-//    UIViewController *detailViewController = [[UiTDetailViewController alloc] initWithEvent:(UiTEvent *)[self.resultsArray objectAtIndex:indexPath.row] andEventsArray:self.resultsArray];
-//    UiTDetailContainerViewController *detailContainer = [[UiTDetailContainerViewController alloc] initWithRootViewController:detailViewController];
-//
-//    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"BACK", @"") style:UIBarButtonItemStylePlain target:nil action:nil];
-//    [self.navigationController pushViewController:detailContainer animated:YES];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSIndexPath *path = [self.eventTableView indexPathForSelectedRow];
-//    UIViewController *detailViewController = [[UiTDetailViewController alloc] initWithEvent:(UiTEvent *)self.resultsArray[path.row]
-//                                                                             andEventsArray:self.resultsArray];
-    UiTDetailViewController *vc = (UiTDetailViewController *)segue.destinationViewController;
-    vc.event = self.resultsArray[path.row];
+    [self.eventTableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
+    UiTDetailViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"homeDetailVC"];
+    UiTDetailContainerViewController *contVc = [[UiTDetailContainerViewController alloc] initWithRootViewController:vc];
+    vc.event = self.resultsArray[indexPath.row];
+    vc.eventsArray = self.resultsArray;
+    [self.navigationController pushViewController:contVc animated:YES];
 }
 
 #pragma mark - TableView DataSource methods
@@ -281,12 +274,6 @@ static BOOL haveAlreadyReceivedCoordinates;
         
         CLLocationDistance meters = [restoLocation distanceFromLocation:_location];
         
-        
-        //        if ([[NSNumber numberWithInt:(int) meters] intValue] > 100000 || [[NSNumber numberWithInt:(int) meters] intValue] == -1) {
-        //            self.titleLabel.frame = CGRectMake(15, 0, 210, 45);
-        //            [self.distanceLabel setText:@""];
-        //        }
-        
         cell.cityLabel.text = [NSString stringWithFormat:@"%@", event.city];
         cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
         [cell.distanceLabel sizeToFit];
@@ -303,8 +290,7 @@ static BOOL haveAlreadyReceivedCoordinates;
     if (distanceInMeters && [distanceInMeters intValue] < 100000 && [distanceInMeters intValue] > 0) {
         if ([distanceInMeters intValue] < 1000) {
             distance = [NSString stringWithFormat:@"%dm", [distanceInMeters intValue]];
-        }
-        else {
+        }  else {
             distance = [NSString stringWithFormat:@"%.2fkm", floor(([distanceInMeters floatValue] / 1000) * 100)/100];
         }
     }

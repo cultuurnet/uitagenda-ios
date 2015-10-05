@@ -174,7 +174,6 @@
                                             <outlet property="imageViewLabelKids" destination="Oh4-QT-dae" id="KLk-rh-OuD"/>
                                             <outlet property="locationLabel" destination="0LI-Do-eOO" id="L8C-vf-Cob"/>
                                             <outlet property="titleLabel" destination="enj-ad-3pu" id="OHU-rG-Ynj"/>
-                                            <segue destination="EGO-zA-nNx" kind="show" id="eb3-Cd-1Ca"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -222,7 +221,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1540"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pmi-cC-O9W">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pmi-cC-O9W">
                                 <rect key="frame" x="0.0" y="64" width="768" height="1412"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9VU-TL-KU9" customClass="OAStackView">

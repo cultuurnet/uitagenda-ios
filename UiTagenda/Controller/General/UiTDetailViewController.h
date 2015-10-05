@@ -16,7 +16,7 @@
 
 @interface UiTDetailViewController : UiTDetailContainerViewController <UIScrollViewDelegate, UIWebViewDelegate, TTTAttributedLabelDelegate, UIWebViewDelegate>
 
-- (id)initWithEvent:(UiTEvent *)event andEventsArray:(NSArray *)eventsArray;
+//- (id)initWithEvent:(UiTEvent *)event andEventsArray:(NSArray *)eventsArray;
 @property (strong, nonatomic) UiTEvent *event;
 @property (strong, nonatomic) NSArray *eventsArray;
 @end
