@@ -457,11 +457,20 @@
                     <connections>
                         <outlet property="closeButton" destination="fpy-BT-a0F" id="Oe3-2d-6Tc"/>
                         <outlet property="saveButton" destination="68Z-PC-eIQ" id="rJx-Lu-f8o"/>
+                        <segue destination="3wb-kX-b1D" kind="show" identifier="showDetail" id="Zoa-wv-dAr"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DvN-be-1U6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1943" y="431"/>
+            <point key="canvasLocation" x="2007" y="452"/>
+        </scene>
+        <!--homeDetailVC-->
+        <scene sceneID="MwQ-HM-v9h">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="homeDetailVC" id="3wb-kX-b1D" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MB3-g5-n4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2425.5" y="332"/>
         </scene>
         <!--UiT Nav View Controller-->
         <scene sceneID="ARc-xr-Zog">
