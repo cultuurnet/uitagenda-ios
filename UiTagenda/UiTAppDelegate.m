@@ -32,19 +32,7 @@
     [self.window makeKeyAndVisible];
     
     [self setupGoogleAnalytics];
-    
-//    UiTHomeViewController *homeViewController = [[UiTHomeViewController alloc] init];
-//    UiTMenuViewController *menuViewController = [[UiTMenuViewController alloc] init];
-//    
-//    UiTNavViewController *navigationViewController = [[UiTNavViewController alloc] init];
-//    navigationViewController.viewControllers = @[ homeViewController ];
-//     
-//    UIViewController *viewController = [[NVSlideMenuController alloc] initWithMenuViewController:menuViewController
-//                                                                        andContentViewController:navigationViewController];
-//    
-//    UiTContainerViewController *containerViewController = [[UiTContainerViewController alloc] initWithRootViewController:viewController];
-//    
-    
+
     UiTContainerViewController *containerVC = [[UiTContainerViewController alloc] init];
     containerVC = [[UiTContainerViewController alloc] initWithRootViewController:[containerVC getContentViewControllers]];
     
@@ -54,7 +42,6 @@
     
     return YES;
 }
-
 
 - (void)fixLagFreeTextField {
     // Fix super slow lag/delay on initial keyboard animation of UITextField
