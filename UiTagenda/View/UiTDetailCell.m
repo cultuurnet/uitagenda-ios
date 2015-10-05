@@ -19,7 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *eventTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
-@property (weak, nonatomic) IBOutlet UILabel *cityLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewEvent;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewLabelKids;
@@ -198,7 +197,7 @@
     
     if (_event.place != (id)[NSNull null]) {
         [self.cityLabel setText:_event.city];
-        [self.cityLabel sizeToFit];
+//        [self.cityLabel sizeToFit];
         
         self.distanceLabel.frame = CGRectMake(RIGHT(self.cityLabel) + padding, Y(self.cityLabel), 30, 20);
     }
