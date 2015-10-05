@@ -270,7 +270,7 @@
                             <outlet property="delegate" destination="0X3-LU-mEo" id="Ukp-9n-dtZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="cNO-Tj-iIX"/>
+                    <navigationItem key="navigationItem" title="Zoeken" id="cNO-Tj-iIX"/>
                     <connections>
                         <outlet property="footerView" destination="hso-0u-QZe" id="KO1-2M-9Tx"/>
                         <outlet property="searchButton" destination="yzt-Pn-TTO" id="0aL-Eu-l7p"/>
@@ -337,7 +337,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="113" id="j58-np-lWX" customClass="UiTDetailCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="113" id="j58-np-lWX" customClass="UiTDetailCell">
                                 <rect key="frame" x="0.0" y="142" width="600" height="113"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j58-np-lWX" id="4n9-qJ-pcg">
