@@ -287,9 +287,9 @@ static BOOL haveAlreadyReceivedCoordinates;
         //            [self.distanceLabel setText:@""];
         //        }
         
-        cell.cityLabel.text = [NSString stringWithFormat:@"%@ (%@)", event.city, [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
-//        cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
-//        [cell.distanceLabel sizeToFit];
+        cell.cityLabel.text = [NSString stringWithFormat:@"%@", event.city];
+        cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
+        [cell.distanceLabel sizeToFit];
         [cell.favoriteButton addTarget:self action:@selector(favoriteEventAction:) forControlEvents:UIControlEventTouchUpInside];
         cell.favoriteButton.tag = indexPath.row;
     }
