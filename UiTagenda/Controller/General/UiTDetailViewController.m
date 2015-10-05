@@ -34,7 +34,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 @property (weak, nonatomic) IBOutlet UIButton *previousButton;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
-@property (nonatomic) NSInteger yOffset, eventIndex;
+@property (nonatomic) NSInteger eventIndex;
 @property (strong, nonatomic) UIWebView *webView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *eventImageView;
@@ -68,15 +68,6 @@
 @end
 
 @implementation UiTDetailViewController
-
-//- (id)initWithEvent:(UiTEvent *)event andEventsArray:(NSArray *)eventsArray {
-//    self = [super init];
-//    if (self) {
-//        _event = event;
-//        _eventsArray = eventsArray;
-//    }
-//    return self;
-//}
 
 - (void)viewDidLoad {
     NSLog(@"%@", self.event);
@@ -121,7 +112,6 @@
         NSArray *splitURL = [[NSString stringWithFormat:@"%@", _event.imageURL] componentsSeparatedByString:@"?"];
         NSURL *imageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@?width=%i&height=%i&crop=auto", splitURL[0], (int)(WIDTH(self.view) - 20) * 2, 500]];
         [self.eventImageView setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"no-thumbnail"]];
-        self.eventImageView.contentMode = UIViewContentModeScaleAspectFill;
         self.eventImageView.clipsToBounds = YES;
         
         if (_event.ageFrom != nil) {
@@ -139,37 +129,21 @@
     // TITLE
     if (![_event.title isEqualToString:@""]){
         self.eventTitleLabel.text = _event.title;
-        self.eventTitleLabel.backgroundColor = [UIColor whiteColor];
-        self.eventTitleLabel.font = [[UiTGlobalFunctions sharedInstance] customBoldFontWithSize:20];
-        self.eventTitleLabel.textColor = TITLECOLOR;
-        self.eventTitleLabel.numberOfLines = 0;
         [self.eventTitleLabel sizeToFit];
-        self.yOffset += HEIGHT(self.eventTitleLabel) + paddingTitle;
     } else {
         self.eventTitleLabel.hidden = YES;
     }
     
     if ([_event.categories count] > 0) {
         self.categoryImageView.image = [UIImage imageNamed:@"tagicon"];
-        
         self.categoryLabel.text = [_event.categories componentsJoinedByString:@", "];
-        self.categoryLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:14];
-        self.categoryLabel.textColor = LOCATIONCOLOR;
-        self.categoryLabel.numberOfLines = 0;
         [self.categoryLabel sizeToFit];
-    
-        self.yOffset = BOTTOM(self.categoryLabel) + paddingTitle;
     } else {
         self.categoryImageView.hidden = YES;
     }
     
     if (![_event.calendarSummary isEqualToString:@""]) {
-        self.calendarImageView.image = [UIImage imageNamed:@"calendaricon"];
-        
         self.calendarLabel.text = _event.calendarSummary;
-        self.calendarLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:16];
-        self.calendarLabel.textColor = [UIColor blackColor];
-        self.calendarLabel.numberOfLines = 0;
         [self.calendarLabel sizeToFit];
     } else {
         self.calendarImageView.hidden = YES;
@@ -177,15 +151,9 @@
     }
     
     if (![_event.address isEqualToString:@""]) {
-        self.placeImageView.image = [UIImage imageNamed:@"locationicon"];
-        
         [self.placeLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showRoute)]];
         self.placeLabel.text = _event.address;
-        self.placeLabel.numberOfLines = 0;
-        self.placeLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:13];
-        self.placeLabel.textColor = REDCOLOR;
         [self.placeLabel sizeToFit];
-        self.yOffset += (HEIGHT(self.placeLabel));
     } else {
         self.placeImageView.hidden = YES;
         self.placeLabel.hidden = YES;
@@ -193,9 +161,6 @@
     
     if (![_event.place isEqualToString:@""]) {
         self.shortDescriptionPlaceLabel.text = _event.place;
-        self.shortDescriptionPlaceLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:16];
-        self.shortDescriptionPlaceLabel.numberOfLines = 0;
-        self.shortDescriptionPlaceLabel.textColor = TITLECOLOR;
         [self.shortDescriptionPlaceLabel sizeToFit];
     } else {
         self.shortDescriptionPlaceLabel.hidden = YES;
@@ -203,9 +168,6 @@
     
     if (_event.shortDescription != (id)[NSNull null] && ![_event.shortDescription isEqualToString:@"NB"]){
         self.shortDescriptionLabel.text = _event.shortDescription;
-        self.shortDescriptionLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:16];
-        self.shortDescriptionLabel.textColor = TITLECOLOR;
-        self.shortDescriptionLabel.numberOfLines = 0;
         [self.shortDescriptionLabel sizeToFit];
     } else {
         self.shortDescriptionLabel.hidden = YES;
@@ -253,8 +215,7 @@
                 
                 if ([contactItem isEqualToString:@"phone"]) {
                     contactLabel = [[UiTLinkLabel alloc] initWithFrame:CGRectMake(insetLeft, yOffsetReservationContact, WIDTH(self.reservationView) - widthPadding, 400) andText:[self createPhoneNumber:contactItemInfo]];
-                }
-                else {
+                } else {
                     contactLabel = [[UiTLinkLabel alloc] initWithFrame:CGRectMake(insetLeft, yOffsetReservationContact, WIDTH(self.reservationView) - widthPadding, 400) andText:contactItemInfo];
                 }
                 
@@ -344,8 +305,6 @@
     _webView.frame = frame;
     
     _longDescriptionView.frame = CGRectMake(10, TOP(_longDescriptionView), 300, BOTTOM(_webView));
-    self.yOffset = BOTTOM(_longDescriptionView);
-    self.scrollView.contentSize = CGSizeMake(WIDTH(self.view), self.yOffset + 10 + HEIGHT(_previousButton));
 }
 
 - (void)setupNextAndPrevious {
