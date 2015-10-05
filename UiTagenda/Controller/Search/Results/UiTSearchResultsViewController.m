@@ -396,13 +396,13 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    UiTDetailViewController *detailViewController = [[UiTDetailViewController alloc] initWithEvent:(UiTEvent *)[self.resultsArray objectAtIndex:indexPath.row] andEventsArray:self.resultsArray];
-    UiTDetailContainerViewController *detailContainer = [[UiTDetailContainerViewController alloc] initWithRootViewController:detailViewController];
-    
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"BACK", @"") style:UIBarButtonItemStylePlain target:nil action:nil];
-    [self.navigationController pushViewController:detailContainer animated:YES];
+    [self performSegueWithIdentifier:@"showDetail" sender:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    UiTDetailViewController *vc = (UiTDetailViewController *)segue.destinationViewController;
+    vc.event = self.resultsArray[path.row];
 }
 
 #pragma mark - TableView DataSource methods

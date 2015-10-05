@@ -22,11 +22,13 @@
 #import "UiTDetailCell+UiTFavorite.h"
 
 @interface UiTFavoritesViewController () <UITableViewDelegate>
+
 @property (strong, nonatomic) NSMutableArray *resultsArray, *eventIDs;
 @property (strong, nonatomic) UIImageView *noFavoritesImageView;
 @property (strong, nonatomic) UiTProblemView *problemView;
 @property (strong, nonatomic) MBProgressHUD *hud;
 @property (strong, nonatomic) ArrayDataSource *dataSource;
+
 @end
 
 @implementation UiTFavoritesViewController
@@ -215,18 +217,7 @@
 
 #pragma mark - TableView Delegate methods
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 112;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-//    UiTDetailViewController *detailViewController = [[UiTDetailViewController alloc] initWithEvent:(UiTEvent *)[self.resultsArray objectAtIndex:indexPath.row] andEventsArray:self.resultsArray];
-//    UiTDetailContainerViewController *detailContainer = [[UiTDetailContainerViewController alloc] initWithRootViewController:detailViewController];
-//    
-//    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"BACK", @"") style:UIBarButtonItemStylePlain target:nil action:nil];
-//    [self.navigationController pushViewController:detailContainer animated:YES];
     [self performSegueWithIdentifier:@"showDetailSegue" sender:self];
 }
 
@@ -236,8 +227,6 @@
         UiTDetailViewController *vc = (UiTDetailViewController *)segue.destinationViewController;
         vc.event = (UiTEvent *)self.resultsArray[path.row];
         vc.eventsArray = self.resultsArray;
-        
-        self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"BACK", @"") style:UIBarButtonItemStylePlain target:nil action:nil];
     }
 }
 
