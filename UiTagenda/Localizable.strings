@@ -1,0 +1,142 @@
+/* 
+  Localizable.strings
+  UiTagenda
+
+  Created by Jarno Verreyt on 4/12/13.
+  Copyright (c) 2013 Cultuurnet. All rights reserved.
+*/
+
+// SEARCH CRITERIA
+
+"SEARCH WHERE" = "Zoeken op waar";
+"SEARCH RADIUS" = "Zoeken op straal";
+"SEARCH WHEN" = "Zoeken op wanneer";
+"SEARCH WHAT" = "Zoeken op wat";
+
+"ALL" = "Alles";
+"CONFIRM" = "Bevestig";
+
+// UiTDetailView
+
+"RESERVATION" = "Reservatie";
+"CONTACT" = "Contact";
+"LINKS" = "Links";
+"KEYWORDS" = "Keywords";
+"CATEGORIES" = "Categorieën";
+"PRICE" = "Prijs";
+"PERFORMERS" = "Wie";
+"FREE" = "Gratis";
+"EXTRA INFO" = "Extra info";
+"ORGANISER" = "Organisator";
+"LONG DESCRIPTION" = "Uitgebreide omschrijving";
+
+// UiTSearchResults Save Query
+
+"SAVE SEARCHQUERY?" = "Zoekopdracht bewaren?";
+"NAME SEARCHQUERY:" = "Naam zoekopdracht:";
+"SAME TITLE SEARCHQUERY" = "U hebt deze zoekopdracht al eens bewaard!";
+"SEARCHQUERY SAVED" = "Zoekopdracht bewaard!";
+"OTHER NAME SEARCHQUERY:" = "Er bestaat al een zoekopdracht met deze titel. Gelieve een andere titel op te geven aub";
+
+"SAVE" = "Bewaren";
+
+// MENU
+
+"HOME" = "Hier en nu";
+"SEARCH" = "Zoeken";
+"FAVORITES" = "Favorieten";
+"SEARCHQUERIES" = "Mijn zoekopdrachten";
+"ABOUT" = "Over";
+
+// HOME
+
+"TURN ON LOCATION" = "Schakel het internet of 'Locatievoorzieningen' in om UiTagenda uw locatie te laten bepalen.";
+
+// UiTDetailCell
+
+"FAVORITE" = "Favoriet";
+"SHARE" = "Deel";
+
+// SEARCH
+
+"EDIT" = "Wijzig";
+"READY" = "Gereed";
+"SEARCHTERM" = "Zoekterm";
+"NO PLACE" = "Gelieve ook een plaats aan te duiden als u wilt zoeken op straal.";
+
+"ONLY FOR CHILDREN" = "Enkel voor kinderen";
+"ONLY FREE" = "Enkel gratis";
+"NO COURSES AND WORKSHOPS" = "Geen cursussen en workshops";
+"NEARBY" = "IN DE BUURT";
+"EXTRA CRITERIA" = "EXTRA ZOEKCRITERIA";
+"SELECT" = "Selecteren";
+"SEARCH" = "Zoeken";
+"CANCEL" = "Annuleren";
+"YES" = "Ja";
+"DELETE SEARCH QUERY" = "Zoekopdracht verwijderen";
+"NO RESULTS FILTER" = "Geen resultaten.";
+
+"WHERE" = "Waar";
+"ALL PLACES" = "Alle plaatsen";
+
+"RADIUS" = "Straal";
+"WHEN" = "Wanneer";
+"WHAT" = "Wat";
+
+"TODAY" = "Vandaag";
+"TOMORROW" = "Morgen";
+"THISWEEKEND" = "Dit weekend";
+"NEXTWEEKEND" = "Volgend weekend";
+"NEXT7DAYS" = "Volgende 7 dagen";
+"NEXT14DAYS" = "Volgende 14 dagen";
+"NEXT30DAYS" = "Volgende 30 dagen";
+"NEXT3MONTHS" = "Volgende 3 maand";
+"NEXT6MONTHS" = "Volgende 6 maand";
+"NEXT12MONTHS" = "Volgende 12 maand";
+"PERMANENT" = "Permanent";
+
+"TODAY" = "Vandaag";
+"TOMORROW" = "Morgen";
+"THISWEEKEND" = "Dit weekend";
+"NEXTWEEKEND" = "Volgend weekend";
+"NEXT7DAYS" = "Volgende 7 dagen";
+"NEXT14DAYS" = "Volgende 14 dagen";
+"NEXT30DAYS" = "Volgende 30 dagen";
+"NEXT3MONTHS" = "Volgende 3 maand";
+"NEXT6MONTHS" = "Volgende 6 maand";
+"NEXT12MONTHS" = "Volgende 12 maand";
+"PERMANENT" = "Permanent";
+
+// SEARCHRESULTS
+
+"SEARCHRESULTS" = "Zoekresultaten";
+
+// GLOBAL
+
+"DETAIL" = "Details";
+"SEARCHNEARBY" = "Zoeken (Hier en nu)";
+"BACK" = "Terug";
+"SETTINGS" = "Instellingen";
+"ERROR" = "Fout";
+
+"OKE" = "Oke";
+
+// PULL TO REFRESH
+
+"PULL TO REFRESH" = "Vernieuwen";
+"RELEASE TO REFRESH" = "Lossen om te vernieuwen";
+"LOADING" = "Laden";
+
+// PROBLEMS
+
+"SOMETHING WENT WRONG, INTERNET CONNECTION" = "Er ging iets mis. Heeft u een internetverbinding?";
+"SOMETHING WENT WRONG" = "Onze excuses, er heeft zich een probleem voor gedaan. Heeft u een internetverbinding?";
+"NO LOCATION" = "Locatie bepalen is mislukt. Staan locatievoorzieningen aan?";
+"NO RESULTS" = "Er konden geen resultaten gevonden worden.";
+"NO FAVORITES" = "U hebt nog geen favorieten.";
+"NO SEARCH QUERIES" = "U hebt nog geen zoekopdrachten bewaard.";
+
+
+"LOADING MESSAGE" = "Even geduld aub";
+"LOADING EVENTS" = "Resultaten worden geladen";
+"LOADING FAVORITES" = "Favorieten laden";

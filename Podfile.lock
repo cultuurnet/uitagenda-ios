@@ -1,0 +1,61 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BDBOAuth1Manager (1.5.0):
+    - AFNetworking/NSURLConnection (~> 2.5.0)
+    - AFNetworking/NSURLSession (~> 2.5.0)
+  - GoogleAnalytics-iOS-SDK (3.12):
+    - GoogleAnalytics-iOS-SDK/Core (= 3.12)
+  - GoogleAnalytics-iOS-SDK/Core (3.12)
+  - MBProgressHUD (0.8)
+  - NVSlideMenuController (1.5.6)
+  - OAStackView (0.1.0)
+  - SSKeychain (1.2.1)
+  - SVPullToRefresh (0.4.1)
+  - TBMacros (0.2)
+  - TTTAttributedLabel (1.8.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.0)
+  - BDBOAuth1Manager (~> 1.5.0)
+  - GoogleAnalytics-iOS-SDK (~> 3.12)
+  - MBProgressHUD
+  - NVSlideMenuController
+  - OAStackView (~> 0.1.0)
+  - SSKeychain
+  - SVPullToRefresh (~> 0.4.1)
+  - TBMacros (~> 0.2)
+  - TTTAttributedLabel
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  BDBOAuth1Manager: 2e28773b58f880fb36b5cd3efcf0b1fefbc78a99
+  GoogleAnalytics-iOS-SDK: 13241762fa4aea845eb75bef6c0da3427a26e7b3
+  MBProgressHUD: 8688c331cb64702283be37ab8d7d329cdd25f251
+  NVSlideMenuController: 8ebef1404dfa94247428a7e257c2862ef6f7f3eb
+  OAStackView: 76e64242351e2746374b9161a03021cbc19341ff
+  SSKeychain: 4c3206728530be0d33854fc608f75af90e637d71
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  TBMacros: cdbe91b7fff6f2e2daa14a495448c218b75aaea7
+  TTTAttributedLabel: 8e1144745e8c02875247d622454b116d62c8e12a
+
+COCOAPODS: 0.38.2

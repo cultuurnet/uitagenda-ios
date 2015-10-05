@@ -1,0 +1,7308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<string>000000</string>
+		<key>title</key>
+		<string>Alle locaties</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>0000</string>
+		<key>title</key>
+		<string>Huidige locatie</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1565</string>
+		<key>title</key>
+		<string>1000 Brussel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1566</string>
+		<key>title</key>
+		<string>1020 Laken (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1567</string>
+		<key>title</key>
+		<string>1030 Schaarbeek (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1568</string>
+		<key>title</key>
+		<string>1040 Etterbeek (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1569</string>
+		<key>title</key>
+		<string>1050 Elsene (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1570</string>
+		<key>title</key>
+		<string>1060 Sint-Gillis (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1571</string>
+		<key>title</key>
+		<string>1070 Anderlecht (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1572</string>
+		<key>title</key>
+		<string>1080 Sint-Jans-Molenbeek (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1573</string>
+		<key>title</key>
+		<string>1081 Koekelberg (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1574</string>
+		<key>title</key>
+		<string>1082 Sint-Agatha-Berchem (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1575</string>
+		<key>title</key>
+		<string>1083 Ganshoren (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1576</string>
+		<key>title</key>
+		<string>1090 Jette (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1577</string>
+		<key>title</key>
+		<string>1120 Neder-Over-Heembeek (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1578</string>
+		<key>title</key>
+		<string>1130 Haren (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1579</string>
+		<key>title</key>
+		<string>1140 Evere (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1580</string>
+		<key>title</key>
+		<string>1150 Sint-Pieters-Woluwe (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1581</string>
+		<key>title</key>
+		<string>1160 Oudergem (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1582</string>
+		<key>title</key>
+		<string>1170 Watermaal-Bosvoorde (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1583</string>
+		<key>title</key>
+		<string>1180 Ukkel (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1584</string>
+		<key>title</key>
+		<string>1190 Vorst (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1585</string>
+		<key>title</key>
+		<string>1200 Sint-Lambrechts-Woluwe (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1586</string>
+		<key>title</key>
+		<string>1210 Sint-Joost-Ten-Node (Brussel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.371</string>
+		<key>title</key>
+		<string>1500 Halle</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.372</string>
+		<key>title</key>
+		<string>1501 Buizingen (Halle)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.373</string>
+		<key>title</key>
+		<string>1502 Lembeek (Halle)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.375</string>
+		<key>title</key>
+		<string>1540 Herfelingen (Herne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.374</string>
+		<key>title</key>
+		<string>1540 Herne</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.376</string>
+		<key>title</key>
+		<string>1541 Sint-Pieters-Kapelle (Herne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.377</string>
+		<key>title</key>
+		<string>1547 Bever</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.378</string>
+		<key>title</key>
+		<string>1547 Biévène</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.379</string>
+		<key>title</key>
+		<string>1560 Hoeilaart</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.380</string>
+		<key>title</key>
+		<string>1570 Galmaarden</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.381</string>
+		<key>title</key>
+		<string>1570 Tollembeek (Galmaarden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.382</string>
+		<key>title</key>
+		<string>1570 Vollezele (Galmaarden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.384</string>
+		<key>title</key>
+		<string>1600 Oudenaken (Sint-Pieters-Leeuw)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.385</string>
+		<key>title</key>
+		<string>1600 Sint-Laureins-Berchem (Sint-Pieters-Leeuw)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.383</string>
+		<key>title</key>
+		<string>1600 Sint-Pieters-Leeuw</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.386</string>
+		<key>title</key>
+		<string>1601 Ruisbroek (Sint-Pieters-Leeuw)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.387</string>
+		<key>title</key>
+		<string>1602 Vlezenbeek (Sint-Pieters-Leeuw)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.388</string>
+		<key>title</key>
+		<string>1620 Drogenbos</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.389</string>
+		<key>title</key>
+		<string>1630 Linkebeek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.390</string>
+		<key>title</key>
+		<string>1640 Sint-Genesius-Rode</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.391</string>
+		<key>title</key>
+		<string>1650 Beersel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.392</string>
+		<key>title</key>
+		<string>1651 Lot (Beersel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.393</string>
+		<key>title</key>
+		<string>1652 Alsemberg (Beersel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.394</string>
+		<key>title</key>
+		<string>1653 Dworp (Beersel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.395</string>
+		<key>title</key>
+		<string>1654 Huizingen (Beersel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.397</string>
+		<key>title</key>
+		<string>1670 Bogaarden (Pepingen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.398</string>
+		<key>title</key>
+		<string>1670 Heikruis (Pepingen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.396</string>
+		<key>title</key>
+		<string>1670 Pepingen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.399</string>
+		<key>title</key>
+		<string>1671 Elingen (Pepingen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.400</string>
+		<key>title</key>
+		<string>1673 Beert (Pepingen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.401</string>
+		<key>title</key>
+		<string>1674 Bellingen (Pepingen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.402</string>
+		<key>title</key>
+		<string>1700 Dilbeek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.403</string>
+		<key>title</key>
+		<string>1700 Sint-Martens-Bodegem (Dilbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.404</string>
+		<key>title</key>
+		<string>1700 Sint-Ulriks-Kapelle (Dilbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.405</string>
+		<key>title</key>
+		<string>1701 Itterbeek (Dilbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.406</string>
+		<key>title</key>
+		<string>1702 Groot-Bijgaarden (Dilbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.407</string>
+		<key>title</key>
+		<string>1703 Schepdaal (Dilbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.408</string>
+		<key>title</key>
+		<string>1730 Asse</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.409</string>
+		<key>title</key>
+		<string>1730 Bekkerzeel (Asse)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.410</string>
+		<key>title</key>
+		<string>1730 Kobbegem (Asse)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.411</string>
+		<key>title</key>
+		<string>1730 Mollem (Asse)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.412</string>
+		<key>title</key>
+		<string>1731 Relegem (Asse)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.413</string>
+		<key>title</key>
+		<string>1731 Zellik (Asse)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.414</string>
+		<key>title</key>
+		<string>1740 Ternat</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.415</string>
+		<key>title</key>
+		<string>1741 Wambeek (Ternat)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.416</string>
+		<key>title</key>
+		<string>1742 Sint-Katherina-Lombeek (Ternat)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.418</string>
+		<key>title</key>
+		<string>1745 Mazenzele (Opwijk)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.417</string>
+		<key>title</key>
+		<string>1745 Opwijk</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.420</string>
+		<key>title</key>
+		<string>1750 Gaasbeek (Lennik)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.419</string>
+		<key>title</key>
+		<string>1750 Lennik</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.421</string>
+		<key>title</key>
+		<string>1750 Sint-Kwintens-Lennik (Lennik)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.422</string>
+		<key>title</key>
+		<string>1750 Sint-Martens-Lennik (Lennik)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.423</string>
+		<key>title</key>
+		<string>1755 Gooik</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.424</string>
+		<key>title</key>
+		<string>1755 Kester (Gooik)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.425</string>
+		<key>title</key>
+		<string>1755 Leerbeek (Gooik)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.426</string>
+		<key>title</key>
+		<string>1755 Oetingen (Gooik)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.428</string>
+		<key>title</key>
+		<string>1760 Onze-Lieve-Vrouw-Lombeek (Roosdaal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.429</string>
+		<key>title</key>
+		<string>1760 Pamel (Roosdaal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.427</string>
+		<key>title</key>
+		<string>1760 Roosdaal</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.430</string>
+		<key>title</key>
+		<string>1760 Strijtem (Roosdaal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.431</string>
+		<key>title</key>
+		<string>1761 Borchtlombeek (Roosdaal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.432</string>
+		<key>title</key>
+		<string>1770 Liedekerke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.433</string>
+		<key>title</key>
+		<string>1780 Wemmel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.435</string>
+		<key>title</key>
+		<string>1785 Brussegem (Merchtem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.436</string>
+		<key>title</key>
+		<string>1785 Hamme (Merchtem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.434</string>
+		<key>title</key>
+		<string>1785 Merchtem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.437</string>
+		<key>title</key>
+		<string>1790 Affligem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.438</string>
+		<key>title</key>
+		<string>1790 Essene (Affligem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.439</string>
+		<key>title</key>
+		<string>1790 Hekelgem (Affligem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.440</string>
+		<key>title</key>
+		<string>1790 Teralfene (Affligem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.442</string>
+		<key>title</key>
+		<string>1800 Peutie (Vilvoorde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.441</string>
+		<key>title</key>
+		<string>1800 Vilvoorde</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.444</string>
+		<key>title</key>
+		<string>1820 Melsbroek (Steenokkerzeel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.445</string>
+		<key>title</key>
+		<string>1820 Perk (Steenokkerzeel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.443</string>
+		<key>title</key>
+		<string>1820 Steenokkerzeel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.446</string>
+		<key>title</key>
+		<string>1830 Machelen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.447</string>
+		<key>title</key>
+		<string>1831 Diegem (Machelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.448</string>
+		<key>title</key>
+		<string>1840 Londerzeel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.449</string>
+		<key>title</key>
+		<string>1840 Malderen (Londerzeel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.450</string>
+		<key>title</key>
+		<string>1840 Steenhuffel (Londerzeel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.451</string>
+		<key>title</key>
+		<string>1850 Grimbergen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.452</string>
+		<key>title</key>
+		<string>1851 Humbeek (Grimbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.453</string>
+		<key>title</key>
+		<string>1852 Beigem (Grimbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.454</string>
+		<key>title</key>
+		<string>1853 Strombeek-Bever (Grimbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.455</string>
+		<key>title</key>
+		<string>1860 Meise</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.456</string>
+		<key>title</key>
+		<string>1861 Wolvertem (Meise)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.457</string>
+		<key>title</key>
+		<string>1880 Kapelle-Op-Den-Bos</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.458</string>
+		<key>title</key>
+		<string>1880 Nieuwenrode (Kapelle-Op-Den-Bos)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.459</string>
+		<key>title</key>
+		<string>1880 Ramsdonk (Kapelle-Op-Den-Bos)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.461</string>
+		<key>title</key>
+		<string>1910 Berg (Kampenhout)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.462</string>
+		<key>title</key>
+		<string>1910 Buken (Kampenhout)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.460</string>
+		<key>title</key>
+		<string>1910 Kampenhout</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.463</string>
+		<key>title</key>
+		<string>1910 Nederokkerzeel (Kampenhout)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.465</string>
+		<key>title</key>
+		<string>1930 Nossegem (Zaventem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.464</string>
+		<key>title</key>
+		<string>1930 Zaventem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.466</string>
+		<key>title</key>
+		<string>1932 Sint-Stevens-Woluwe (Zaventem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.467</string>
+		<key>title</key>
+		<string>1933 Sterrebeek (Zaventem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.468</string>
+		<key>title</key>
+		<string>1950 Kraainem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.469</string>
+		<key>title</key>
+		<string>1970 Wezembeek-Oppem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.471</string>
+		<key>title</key>
+		<string>1980 Eppegem (Zemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.470</string>
+		<key>title</key>
+		<string>1980 Zemst</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.472</string>
+		<key>title</key>
+		<string>1981 Hofstade (Zemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.473</string>
+		<key>title</key>
+		<string>1982 Elewijt (Zemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.474</string>
+		<key>title</key>
+		<string>1982 Weerde (Zemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.475</string>
+		<key>title</key>
+		<string>2000 Antwerpen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.476</string>
+		<key>title</key>
+		<string>2018 Antwerpen 18 (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.477</string>
+		<key>title</key>
+		<string>2020 Antwerpen 2 (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.478</string>
+		<key>title</key>
+		<string>2030 Antwerpen 3 (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.479</string>
+		<key>title</key>
+		<string>2040 Antwerpen 4 (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.480</string>
+		<key>title</key>
+		<string>2040 Berendrecht (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.481</string>
+		<key>title</key>
+		<string>2040 Lillo (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.482</string>
+		<key>title</key>
+		<string>2040 Zandvliet (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.483</string>
+		<key>title</key>
+		<string>2050 Antwerpen 5 (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.484</string>
+		<key>title</key>
+		<string>2060 Antwerpen 6 (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.493</string>
+		<key>title</key>
+		<string>2070 Burcht (Zwijndrecht)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.492</string>
+		<key>title</key>
+		<string>2070 Zwijndrecht</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.485</string>
+		<key>title</key>
+		<string>2100 Deurne (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.494</string>
+		<key>title</key>
+		<string>2110 Wijnegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.486</string>
+		<key>title</key>
+		<string>2140 Borgerhout (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.495</string>
+		<key>title</key>
+		<string>2150 Borsbeek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.496</string>
+		<key>title</key>
+		<string>2160 Wommelgem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.487</string>
+		<key>title</key>
+		<string>2170 Merksem (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.488</string>
+		<key>title</key>
+		<string>2180 Ekeren (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.497</string>
+		<key>title</key>
+		<string>2200 Herentals</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.498</string>
+		<key>title</key>
+		<string>2200 Morkhoven (Herentals)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.499</string>
+		<key>title</key>
+		<string>2200 Noorderwijk (Herentals)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.501</string>
+		<key>title</key>
+		<string>2220 Hallaar (Heist-Op-Den-Berg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.500</string>
+		<key>title</key>
+		<string>2220 Heist-Op-Den-Berg</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.502</string>
+		<key>title</key>
+		<string>2221 Booischot (Heist-Op-Den-Berg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.503</string>
+		<key>title</key>
+		<string>2222 Itegem (Heist-Op-Den-Berg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.504</string>
+		<key>title</key>
+		<string>2222 Wiekevorst (Heist-Op-Den-Berg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.505</string>
+		<key>title</key>
+		<string>2223 Schriek (Heist-Op-Den-Berg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.506</string>
+		<key>title</key>
+		<string>2230 Herselt</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.507</string>
+		<key>title</key>
+		<string>2230 Ramsel (Herselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.509</string>
+		<key>title</key>
+		<string>2235 Houtvenne (Hulshout)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.508</string>
+		<key>title</key>
+		<string>2235 Hulshout</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.510</string>
+		<key>title</key>
+		<string>2235 Westmeerbeek (Hulshout)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.512</string>
+		<key>title</key>
+		<string>2240 Massenhoven (Zandhoven)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.513</string>
+		<key>title</key>
+		<string>2240 Viersel (Zandhoven)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.511</string>
+		<key>title</key>
+		<string>2240 Zandhoven</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.514</string>
+		<key>title</key>
+		<string>2242 Pulderbos (Zandhoven)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.515</string>
+		<key>title</key>
+		<string>2243 Pulle (Zandhoven)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg. 516</string>
+		<key>title</key>
+		<string>2250 Olen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.518</string>
+		<key>title</key>
+		<string>2260 Heultje (Westerlo)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.519</string>
+		<key>title</key>
+		<string>2260 Oevel (Westerlo)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.520</string>
+		<key>title</key>
+		<string>2260 Oosterwijk (Westerlo)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.521</string>
+		<key>title</key>
+		<string>2260 Tongerlo (Westerlo)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.522</string>
+		<key>title</key>
+		<string>2260 Voortkapel (Westerlo)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.517</string>
+		<key>title</key>
+		<string>2260 Westerlo</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.523</string>
+		<key>title</key>
+		<string>2260 Zoerle-Parwijs (Westerlo)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.524</string>
+		<key>title</key>
+		<string>2270 Herenthout</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.526</string>
+		<key>title</key>
+		<string>2275 Gierle (Lille)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.525</string>
+		<key>title</key>
+		<string>2275 Lille</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.527</string>
+		<key>title</key>
+		<string>2275 Poederlee (Lille)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.528</string>
+		<key>title</key>
+		<string>2275 Wechelderzande (Lille)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.529</string>
+		<key>title</key>
+		<string>2280 Grobbendonk</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.530</string>
+		<key>title</key>
+		<string>2288 Bouwel (Grobbendonk)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.531</string>
+		<key>title</key>
+		<string>2290 Vorselaar</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.532</string>
+		<key>title</key>
+		<string>2300 Turnhout</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.533</string>
+		<key>title</key>
+		<string>2310 Rijkevorsel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.534</string>
+		<key>title</key>
+		<string>2320 Hoogstraten</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.535</string>
+		<key>title</key>
+		<string>2321 Meer (Hoogstraten)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.536</string>
+		<key>title</key>
+		<string>2322 Minderhout (Hoogstraten)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.537</string>
+		<key>title</key>
+		<string>2323 Wortel (Hoogstraten)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.538</string>
+		<key>title</key>
+		<string>2328 Meerle (Hoogstraten)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.539</string>
+		<key>title</key>
+		<string>2330 Merksplas</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.540</string>
+		<key>title</key>
+		<string>2340 Beerse</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.541</string>
+		<key>title</key>
+		<string>2340 Vlimmeren (Beerse)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.542</string>
+		<key>title</key>
+		<string>2350 Vosselaar</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.543</string>
+		<key>title</key>
+		<string>2360 Oud-Turnhout</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.544</string>
+		<key>title</key>
+		<string>2370 Arendonk</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.545</string>
+		<key>title</key>
+		<string>2380 Ravels</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.546</string>
+		<key>title</key>
+		<string>2381 Weelde (Ravels)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.547</string>
+		<key>title</key>
+		<string>2382 Poppel (Ravels)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.548</string>
+		<key>title</key>
+		<string>2387 Baarle-Hertog</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.549</string>
+		<key>title</key>
+		<string>2390 Malle</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.550</string>
+		<key>title</key>
+		<string>2390 Oostmalle (Malle)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.551</string>
+		<key>title</key>
+		<string>2390 Westmalle (Malle)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.552</string>
+		<key>title</key>
+		<string>2400 Mol</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.554</string>
+		<key>title</key>
+		<string>2430 Eindhout (Laakdal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.553</string>
+		<key>title</key>
+		<string>2430 Laakdal</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.555</string>
+		<key>title</key>
+		<string>2430 Vorst (Laakdal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.556</string>
+		<key>title</key>
+		<string>2431 Varendonk (Laakdal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.557</string>
+		<key>title</key>
+		<string>2431 Veerle (Laakdal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.558</string>
+		<key>title</key>
+		<string>2440 Geel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.559</string>
+		<key>title</key>
+		<string>2450 Meerhout</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.560</string>
+		<key>title</key>
+		<string>2460 Kasterlee</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.561</string>
+		<key>title</key>
+		<string>2460 Lichtaart (Kasterlee)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.562</string>
+		<key>title</key>
+		<string>2460 Tielen (Kasterlee)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.563</string>
+		<key>title</key>
+		<string>2470 Retie</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.564</string>
+		<key>title</key>
+		<string>2480 Dessel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.565</string>
+		<key>title</key>
+		<string>2490 Balen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.566</string>
+		<key>title</key>
+		<string>2491 Olmen (Balen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.568</string>
+		<key>title</key>
+		<string>2500 Koningshooikt (Lier)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.567</string>
+		<key>title</key>
+		<string>2500 Lier</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.570</string>
+		<key>title</key>
+		<string>2520 Broechem (Ranst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.571</string>
+		<key>title</key>
+		<string>2520 Emblem (Ranst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.572</string>
+		<key>title</key>
+		<string>2520 Oelegem (Ranst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.569</string>
+		<key>title</key>
+		<string>2520 Ranst</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.573</string>
+		<key>title</key>
+		<string>2530 Boechout</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.574</string>
+		<key>title</key>
+		<string>2531 Vremde (Boechout)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.575</string>
+		<key>title</key>
+		<string>2540 Hove</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.576</string>
+		<key>title</key>
+		<string>2547 Lint</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.577</string>
+		<key>title</key>
+		<string>2550 Kontich</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.578</string>
+		<key>title</key>
+		<string>2550 Waarloos (Kontich)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.580</string>
+		<key>title</key>
+		<string>2560 Bevel (Nijlen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.581</string>
+		<key>title</key>
+		<string>2560 Kessel (Nijlen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.579</string>
+		<key>title</key>
+		<string>2560 Nijlen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.582</string>
+		<key>title</key>
+		<string>2570 Duffel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.584</string>
+		<key>title</key>
+		<string>2580 Beerzel (Putte)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.583</string>
+		<key>title</key>
+		<string>2580 Putte</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.585</string>
+		<key>title</key>
+		<string>2590 Berlaar</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.586</string>
+		<key>title</key>
+		<string>2590 Gestel (Berlaar)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.489</string>
+		<key>title</key>
+		<string>2600 Berchem (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.490</string>
+		<key>title</key>
+		<string>2610 Wilrijk (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.587</string>
+		<key>title</key>
+		<string>2620 Hemiksem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.588</string>
+		<key>title</key>
+		<string>2627 Schelle</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.589</string>
+		<key>title</key>
+		<string>2630 Aartselaar</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.590</string>
+		<key>title</key>
+		<string>2640 Mortsel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.591</string>
+		<key>title</key>
+		<string>2650 Edegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.491</string>
+		<key>title</key>
+		<string>2660 Hoboken (Antwerpen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.592</string>
+		<key>title</key>
+		<string>2800 Mechelen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.593</string>
+		<key>title</key>
+		<string>2800 Walem (Mechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.594</string>
+		<key>title</key>
+		<string>2801 Heffen (Mechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.595</string>
+		<key>title</key>
+		<string>2811 Hombeek (Mechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.596</string>
+		<key>title</key>
+		<string>2811 Leest (Mechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.597</string>
+		<key>title</key>
+		<string>2812 Muizen (Mechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.598</string>
+		<key>title</key>
+		<string>2820 Bonheiden</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.599</string>
+		<key>title</key>
+		<string>2820 Rijmenam (Bonheiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.601</string>
+		<key>title</key>
+		<string>2830 Blaasveld (Willebroek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.602</string>
+		<key>title</key>
+		<string>2830 Heindonk (Willebroek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.603</string>
+		<key>title</key>
+		<string>2830 Tisselt (Willebroek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.600</string>
+		<key>title</key>
+		<string>2830 Willebroek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.605</string>
+		<key>title</key>
+		<string>2840 Reet (Rumst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.604</string>
+		<key>title</key>
+		<string>2840 Rumst</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.606</string>
+		<key>title</key>
+		<string>2840 Terhagen (Rumst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.607</string>
+		<key>title</key>
+		<string>2845 Niel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.608</string>
+		<key>title</key>
+		<string>2850 Boom</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.609</string>
+		<key>title</key>
+		<string>2860 Sint-Katelijne-Waver</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.610</string>
+		<key>title</key>
+		<string>2861 Onze-Lieve-Vrouw-Waver (Sint-Katelijne-Waver)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.612</string>
+		<key>title</key>
+		<string>2870 Breendonk (Puurs)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.613</string>
+		<key>title</key>
+		<string>2870 Liezele (Puurs)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.611</string>
+		<key>title</key>
+		<string>2870 Puurs</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.614</string>
+		<key>title</key>
+		<string>2870 Ruisbroek (Puurs)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.615</string>
+		<key>title</key>
+		<string>2880 Bornem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.616</string>
+		<key>title</key>
+		<string>2880 Hingene (Bornem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.617</string>
+		<key>title</key>
+		<string>2880 Mariekerke (Bornem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.618</string>
+		<key>title</key>
+		<string>2880 Weert (Bornem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.620</string>
+		<key>title</key>
+		<string>2890 Lippelo (Sint-Amands)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.621</string>
+		<key>title</key>
+		<string>2890 Oppuurs (Sint-Amands)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.619</string>
+		<key>title</key>
+		<string>2890 Sint-Amands</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.622</string>
+		<key>title</key>
+		<string>2900 Schoten</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.623</string>
+		<key>title</key>
+		<string>2910 Essen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.624</string>
+		<key>title</key>
+		<string>2920 Kalmthout</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.625</string>
+		<key>title</key>
+		<string>2930 Brasschaat</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.627</string>
+		<key>title</key>
+		<string>2940 Hoevenen (Stabroek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.626</string>
+		<key>title</key>
+		<string>2940 Stabroek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.628</string>
+		<key>title</key>
+		<string>2950 Kapellen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.629</string>
+		<key>title</key>
+		<string>2960 Brecht</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.630</string>
+		<key>title</key>
+		<string>2960 Sint-Job-In-&apos;t-Goor (Brecht)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.631</string>
+		<key>title</key>
+		<string>2960 Sint-Lenaerts (Brecht)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.633</string>
+		<key>title</key>
+		<string>2970 &apos;s Gravenwezel (Schilde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.632</string>
+		<key>title</key>
+		<string>2970 Schilde</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.635</string>
+		<key>title</key>
+		<string>2980 Halle (Zoersel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.634</string>
+		<key>title</key>
+		<string>2980 Zoersel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.637</string>
+		<key>title</key>
+		<string>2990 Loenhout (Wuustwezel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.636</string>
+		<key>title</key>
+		<string>2990 Wuustwezel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.638</string>
+		<key>title</key>
+		<string>3000 Leuven</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.639</string>
+		<key>title</key>
+		<string>3001 Heverlee (Leuven)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.640</string>
+		<key>title</key>
+		<string>3010 Kessel-Lo (Leuven)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.641</string>
+		<key>title</key>
+		<string>3012 Wilsele (Leuven)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.642</string>
+		<key>title</key>
+		<string>3018 Wijgmaal (Leuven)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.643</string>
+		<key>title</key>
+		<string>3020 Herent</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.644</string>
+		<key>title</key>
+		<string>3020 Veltem-Beisem (Herent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.645</string>
+		<key>title</key>
+		<string>3020 Winksele (Herent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.646</string>
+		<key>title</key>
+		<string>3040 Huldenberg</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.647</string>
+		<key>title</key>
+		<string>3040 Loonbeek (Huldenberg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.648</string>
+		<key>title</key>
+		<string>3040 Neerijse (Huldenberg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.649</string>
+		<key>title</key>
+		<string>3040 Ottenburg (Huldenberg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.650</string>
+		<key>title</key>
+		<string>3040 Sint-Agatha-Rode (Huldenberg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.651</string>
+		<key>title</key>
+		<string>3050 Oud-Heverlee</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.652</string>
+		<key>title</key>
+		<string>3051 Sint-Joris-Weert (Oud-Heverlee)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.653</string>
+		<key>title</key>
+		<string>3052 Blanden (Oud-Heverlee)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.654</string>
+		<key>title</key>
+		<string>3053 Haasrode (Oud-Heverlee)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.655</string>
+		<key>title</key>
+		<string>3054 Vaalbeek (Oud-Heverlee)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.656</string>
+		<key>title</key>
+		<string>3060 Bertem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.657</string>
+		<key>title</key>
+		<string>3060 Korbeek-Dijle (Bertem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.658</string>
+		<key>title</key>
+		<string>3061 Leefdaal (Bertem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.659</string>
+		<key>title</key>
+		<string>3070 Kortenberg</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.660</string>
+		<key>title</key>
+		<string>3071 Erps-Kwerps (Kortenberg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.661</string>
+		<key>title</key>
+		<string>3078 Everberg (Kortenberg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.662</string>
+		<key>title</key>
+		<string>3078 Meerbeek (Kortenberg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.664</string>
+		<key>title</key>
+		<string>3080 Duisburg (Tervuren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.663</string>
+		<key>title</key>
+		<string>3080 Tervuren</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.665</string>
+		<key>title</key>
+		<string>3080 Vossem (Tervuren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.666</string>
+		<key>title</key>
+		<string>3090 Overijse</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.667</string>
+		<key>title</key>
+		<string>3110 Rotselaar</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.668</string>
+		<key>title</key>
+		<string>3111 Wezemaal (Rotselaar)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.669</string>
+		<key>title</key>
+		<string>3118 Werchter (Rotselaar)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.670</string>
+		<key>title</key>
+		<string>3120 Tremelo</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.671</string>
+		<key>title</key>
+		<string>3128 Baal (Tremelo)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.672</string>
+		<key>title</key>
+		<string>3130 Begijnendijk</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.673</string>
+		<key>title</key>
+		<string>3130 Betekom (Begijnendijk)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.674</string>
+		<key>title</key>
+		<string>3140 Keerbergen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.675</string>
+		<key>title</key>
+		<string>3150 Haacht</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.676</string>
+		<key>title</key>
+		<string>3150 Tildonk (Haacht)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.677</string>
+		<key>title</key>
+		<string>3150 Wespelaar (Haacht)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.678</string>
+		<key>title</key>
+		<string>3190 Boortmeerbeek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.679</string>
+		<key>title</key>
+		<string>3191 Hever (Boortmeerbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.680</string>
+		<key>title</key>
+		<string>3200 Aarschot</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.681</string>
+		<key>title</key>
+		<string>3200 Gelrode (Aarschot)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.682</string>
+		<key>title</key>
+		<string>3201 Langdorp (Aarschot)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.683</string>
+		<key>title</key>
+		<string>3202 Rillaar (Aarschot)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.685</string>
+		<key>title</key>
+		<string>3210 Linden (Lubbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.684</string>
+		<key>title</key>
+		<string>3210 Lubbeek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.686</string>
+		<key>title</key>
+		<string>3211 Binkom (Lubbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.687</string>
+		<key>title</key>
+		<string>3212 Pellenberg (Lubbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.688</string>
+		<key>title</key>
+		<string>3220 Holsbeek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.689</string>
+		<key>title</key>
+		<string>3220 Kortrijk-Dutsel (Holsbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.690</string>
+		<key>title</key>
+		<string>3220 Sint-Pieters-Rode (Holsbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.691</string>
+		<key>title</key>
+		<string>3221 Nieuwrode (Holsbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.693</string>
+		<key>title</key>
+		<string>3270 Scherpenheuvel (Scherpenheuvel-Zichem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.692</string>
+		<key>title</key>
+		<string>3270 Scherpenheuvel-Zichem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.694</string>
+		<key>title</key>
+		<string>3271 Averbode (Scherpenheuvel-Zichem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.695</string>
+		<key>title</key>
+		<string>3271 Zichem (Scherpenheuvel-Zichem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.696</string>
+		<key>title</key>
+		<string>3272 Messelbroek (Scherpenheuvel-Zichem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.697</string>
+		<key>title</key>
+		<string>3272 Testelt (Scherpenheuvel-Zichem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.699</string>
+		<key>title</key>
+		<string>3290 Deurne (Diest)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.698</string>
+		<key>title</key>
+		<string>3290 Diest</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.700</string>
+		<key>title</key>
+		<string>3290 Schaffen (Diest)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.701</string>
+		<key>title</key>
+		<string>3290 Webbekom (Diest)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.702</string>
+		<key>title</key>
+		<string>3293 Kaggevinne (Diest)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.703</string>
+		<key>title</key>
+		<string>3294 Molenstede (Diest)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.705</string>
+		<key>title</key>
+		<string>3300 Bost (Tienen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.706</string>
+		<key>title</key>
+		<string>3300 Goetsenhoven (Tienen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.707</string>
+		<key>title</key>
+		<string>3300 Hakendover (Tienen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.708</string>
+		<key>title</key>
+		<string>3300 Kumtich (Tienen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.709</string>
+		<key>title</key>
+		<string>3300 Oorbeek (Tienen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.710</string>
+		<key>title</key>
+		<string>3300 Oplinter (Tienen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.711</string>
+		<key>title</key>
+		<string>3300 St-Margriete-Houtem (Tienen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.704</string>
+		<key>title</key>
+		<string>3300 Tienen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.712</string>
+		<key>title</key>
+		<string>3300 Vissenaken (Tienen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.713</string>
+		<key>title</key>
+		<string>3320 Hoegaarden</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.714</string>
+		<key>title</key>
+		<string>3320 Meldert (Hoegaarden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.715</string>
+		<key>title</key>
+		<string>3321 Outgaarden (Hoegaarden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.717</string>
+		<key>title</key>
+		<string>3350 Drieslinter (Linter)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.716</string>
+		<key>title</key>
+		<string>3350 Linter</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.718</string>
+		<key>title</key>
+		<string>3350 Melkwezer (Linter)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.719</string>
+		<key>title</key>
+		<string>3350 Neerhespen (Linter)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.720</string>
+		<key>title</key>
+		<string>3350 Neerlinter (Linter)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.721</string>
+		<key>title</key>
+		<string>3350 Orsmaal-Gussenhoven (Linter)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.722</string>
+		<key>title</key>
+		<string>3350 Overhespen (Linter)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.723</string>
+		<key>title</key>
+		<string>3350 Wommersom (Linter)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.724</string>
+		<key>title</key>
+		<string>3360 Bierbeek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.725</string>
+		<key>title</key>
+		<string>3360 Korbeek-Lo (Bierbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.726</string>
+		<key>title</key>
+		<string>3360 Lovenjoel (Bierbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.727</string>
+		<key>title</key>
+		<string>3360 Opvelp (Bierbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.728</string>
+		<key>title</key>
+		<string>3370 Boutersem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.729</string>
+		<key>title</key>
+		<string>3370 Kerkom (Boutersem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.730</string>
+		<key>title</key>
+		<string>3370 Neervelp (Boutersem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.731</string>
+		<key>title</key>
+		<string>3370 Roosbeek (Boutersem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.732</string>
+		<key>title</key>
+		<string>3370 Vertrijk (Boutersem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.733</string>
+		<key>title</key>
+		<string>3370 Willebringen (Boutersem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.735</string>
+		<key>title</key>
+		<string>3380 Bunsbeek (Glabbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.734</string>
+		<key>title</key>
+		<string>3380 Glabbeek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.736</string>
+		<key>title</key>
+		<string>3381 Kapellen (Glabbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.737</string>
+		<key>title</key>
+		<string>3384 Attenrode (Glabbeek)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.739</string>
+		<key>title</key>
+		<string>3390 Houwaart (Tielt-Winge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.740</string>
+		<key>title</key>
+		<string>3390 Sint-Joris-Winge (Tielt-Winge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.741</string>
+		<key>title</key>
+		<string>3390 Tielt (Tielt-Winge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.738</string>
+		<key>title</key>
+		<string>3390 Tielt-Winge</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.742</string>
+		<key>title</key>
+		<string>3391 Meensel-Kiezegem (Tielt-Winge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.744</string>
+		<key>title</key>
+		<string>3400 Eliksem (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.745</string>
+		<key>title</key>
+		<string>3400 Ezemaal (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.746</string>
+		<key>title</key>
+		<string>3400 Laar (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.743</string>
+		<key>title</key>
+		<string>3400 Landen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.747</string>
+		<key>title</key>
+		<string>3400 Neerwinden (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.748</string>
+		<key>title</key>
+		<string>3400 Overwinden (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.749</string>
+		<key>title</key>
+		<string>3400 Rumsdorp (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.750</string>
+		<key>title</key>
+		<string>3400 Wange (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.751</string>
+		<key>title</key>
+		<string>3401 Waasmont (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.752</string>
+		<key>title</key>
+		<string>3401 Walsbets (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.753</string>
+		<key>title</key>
+		<string>3401 Walshoutem (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.754</string>
+		<key>title</key>
+		<string>3401 Wezeren (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.755</string>
+		<key>title</key>
+		<string>3404 Attenhoven (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.756</string>
+		<key>title</key>
+		<string>3404 Neerlanden (Landen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.758</string>
+		<key>title</key>
+		<string>3440 Budingen (Zoutleeuw)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.759</string>
+		<key>title</key>
+		<string>3440 Dormaal (Zoutleeuw)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.760</string>
+		<key>title</key>
+		<string>3440 Halle-Booienhoven (Zoutleeuw)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.761</string>
+		<key>title</key>
+		<string>3440 Helen-Bos (Zoutleeuw)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.757</string>
+		<key>title</key>
+		<string>3440 Zoutleeuw</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.762</string>
+		<key>title</key>
+		<string>3450 Geetbets</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.763</string>
+		<key>title</key>
+		<string>3450 Grazen (Geetbets)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.764</string>
+		<key>title</key>
+		<string>3454 Rummen (Geetbets)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.766</string>
+		<key>title</key>
+		<string>3460 Assent (Bekkevoort)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.765</string>
+		<key>title</key>
+		<string>3460 Bekkevoort</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.767</string>
+		<key>title</key>
+		<string>3461 Molenbeek-Wersbeek (Bekkevoort)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.768</string>
+		<key>title</key>
+		<string>3470 Kortenaken</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.769</string>
+		<key>title</key>
+		<string>3470 Ransberg (Kortenaken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.770</string>
+		<key>title</key>
+		<string>3470 St-Margriete (Kortenaken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.771</string>
+		<key>title</key>
+		<string>3471 Hoeleden (Kortenaken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.772</string>
+		<key>title</key>
+		<string>3472 Kersbeek-Miskom (Kortenaken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.773</string>
+		<key>title</key>
+		<string>3473 Waanrode (Kortenaken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.774</string>
+		<key>title</key>
+		<string>3500 Hasselt</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.775</string>
+		<key>title</key>
+		<string>3500 Sint-Lambrechts-Herk (Hasselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.776</string>
+		<key>title</key>
+		<string>3501 Wimmertingen (Hasselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.777</string>
+		<key>title</key>
+		<string>3510 Kermt (Hasselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.778</string>
+		<key>title</key>
+		<string>3510 Spalbeek (Hasselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.779</string>
+		<key>title</key>
+		<string>3511 Kuringen (Hasselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.780</string>
+		<key>title</key>
+		<string>3511 Stokrooie (Hasselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.781</string>
+		<key>title</key>
+		<string>3512 Stevoort (Hasselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.782</string>
+		<key>title</key>
+		<string>3520 Zonhoven</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.784</string>
+		<key>title</key>
+		<string>3530 Helchteren (Houthalen-Helchteren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.785</string>
+		<key>title</key>
+		<string>3530 Houthalen (Houthalen-Helchteren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.783</string>
+		<key>title</key>
+		<string>3530 Houthalen-Helchteren</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.787</string>
+		<key>title</key>
+		<string>3540 Berbroek (Herk-De-Stad)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.788</string>
+		<key>title</key>
+		<string>3540 Donk (Herk-De-Stad)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.786</string>
+		<key>title</key>
+		<string>3540 Herk-De-Stad</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.789</string>
+		<key>title</key>
+		<string>3540 Schulen (Herk-De-Stad)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.790</string>
+		<key>title</key>
+		<string>3545 Halen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.791</string>
+		<key>title</key>
+		<string>3545 Loksbergen (Halen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.792</string>
+		<key>title</key>
+		<string>3545 Zelem (Halen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.794</string>
+		<key>title</key>
+		<string>3550 Heusden (Heusden-Zolder)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.793</string>
+		<key>title</key>
+		<string>3550 Heusden-Zolder</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.795</string>
+		<key>title</key>
+		<string>3550 Zolder (Heusden-Zolder)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.797</string>
+		<key>title</key>
+		<string>3560 Linkhout (Lummen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.796</string>
+		<key>title</key>
+		<string>3560 Lummen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.798</string>
+		<key>title</key>
+		<string>3560 Meldert (Lummen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.799</string>
+		<key>title</key>
+		<string>3570 Alken</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.800</string>
+		<key>title</key>
+		<string>3580 Beringen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.801</string>
+		<key>title</key>
+		<string>3581 Beverlo (Beringen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.802</string>
+		<key>title</key>
+		<string>3582 Koersel (Beringen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.803</string>
+		<key>title</key>
+		<string>3583 Paal (Beringen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.804</string>
+		<key>title</key>
+		<string>3590 Diepenbeek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.805</string>
+		<key>title</key>
+		<string>3600 Genk</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.807</string>
+		<key>title</key>
+		<string>3620 Gellik (Lanaken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.806</string>
+		<key>title</key>
+		<string>3620 Lanaken</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.808</string>
+		<key>title</key>
+		<string>3620 Neerharen (Lanaken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.809</string>
+		<key>title</key>
+		<string>3620 Veldwezelt (Lanaken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.810</string>
+		<key>title</key>
+		<string>3621 Rekem (Lanaken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.812</string>
+		<key>title</key>
+		<string>3630 Eisden (Maasmechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.813</string>
+		<key>title</key>
+		<string>3630 Leut (Maasmechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.811</string>
+		<key>title</key>
+		<string>3630 Maasmechelen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.814</string>
+		<key>title</key>
+		<string>3630 Mechelen-Aan-De-Maas (Maasmechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.815</string>
+		<key>title</key>
+		<string>3630 Meeswijk (Maasmechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.816</string>
+		<key>title</key>
+		<string>3630 Opgrimbie (Maasmechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.817</string>
+		<key>title</key>
+		<string>3630 Vucht (Maasmechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.818</string>
+		<key>title</key>
+		<string>3631 Boorsem (Maasmechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.819</string>
+		<key>title</key>
+		<string>3631 Uikhoven (Maasmechelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.821</string>
+		<key>title</key>
+		<string>3640 Kessenich (Kinrooi)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.820</string>
+		<key>title</key>
+		<string>3640 Kinrooi</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.822</string>
+		<key>title</key>
+		<string>3640 Molenbeersel (Kinrooi)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.823</string>
+		<key>title</key>
+		<string>3640 Ophoven (Kinrooi)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.825</string>
+		<key>title</key>
+		<string>3650 Dilsen (Dilsen-Stokkem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.824</string>
+		<key>title</key>
+		<string>3650 Dilsen-Stokkem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.826</string>
+		<key>title</key>
+		<string>3650 Elen (Dilsen-Stokkem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.827</string>
+		<key>title</key>
+		<string>3650 Lanklaar (Dilsen-Stokkem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.828</string>
+		<key>title</key>
+		<string>3650 Rotem (Dilsen-Stokkem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.830</string>
+		<key>title</key>
+		<string>3660 Opglabbeek</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.831</string>
+		<key>title</key>
+		<string>3665 As</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.832</string>
+		<key>title</key>
+		<string>3668 Niel-Bij-As (As)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.834</string>
+		<key>title</key>
+		<string>3670 Ellikom (Meeuwen-Gruitrode)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.835</string>
+		<key>title</key>
+		<string>3670 Gruitrode (Meeuwen-Gruitrode)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.836</string>
+		<key>title</key>
+		<string>3670 Meeuwen (Meeuwen-Gruitrode)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.833</string>
+		<key>title</key>
+		<string>3670 Meeuwen-Gruitrode</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.837</string>
+		<key>title</key>
+		<string>3670 Neerglabbeek (Meeuwen-Gruitrode)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.838</string>
+		<key>title</key>
+		<string>3670 Wijshagen (Meeuwen-Gruitrode)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.839</string>
+		<key>title</key>
+		<string>3680 Maaseik</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.840</string>
+		<key>title</key>
+		<string>3680 Neeroeteren (Maaseik)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.841</string>
+		<key>title</key>
+		<string>3680 Opoeteren (Maaseik)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.842</string>
+		<key>title</key>
+		<string>3690 Zutendaal</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.858</string>
+		<key>title</key>
+		<string>3700 &apos;s Herenelderen (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.844</string>
+		<key>title</key>
+		<string>3700 Berg (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.845</string>
+		<key>title</key>
+		<string>3700 Diets-Heur (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.846</string>
+		<key>title</key>
+		<string>3700 Haren (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.847</string>
+		<key>title</key>
+		<string>3700 Henis (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.848</string>
+		<key>title</key>
+		<string>3700 Kolmont (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.849</string>
+		<key>title</key>
+		<string>3700 Koninksem (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.850</string>
+		<key>title</key>
+		<string>3700 Lauw (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.851</string>
+		<key>title</key>
+		<string>3700 Mal (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.852</string>
+		<key>title</key>
+		<string>3700 Neerrepen (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.853</string>
+		<key>title</key>
+		<string>3700 Nerem (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.854</string>
+		<key>title</key>
+		<string>3700 Overrepen (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.855</string>
+		<key>title</key>
+		<string>3700 Piringen (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.856</string>
+		<key>title</key>
+		<string>3700 Riksingen (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.857</string>
+		<key>title</key>
+		<string>3700 Rutten (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.859</string>
+		<key>title</key>
+		<string>3700 Sluizen (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.843</string>
+		<key>title</key>
+		<string>3700 Tongeren</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.860</string>
+		<key>title</key>
+		<string>3700 Vreren (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.861</string>
+		<key>title</key>
+		<string>3700 Widooie (Tongeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.862</string>
+		<key>title</key>
+		<string>3717 Herstappe</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.863</string>
+		<key>title</key>
+		<string>3720 Kortessem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.864</string>
+		<key>title</key>
+		<string>3721 Vliermaalroot (Kortessem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.865</string>
+		<key>title</key>
+		<string>3722 Wintershoven (Kortessem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.866</string>
+		<key>title</key>
+		<string>3723 Guigoven (Kortessem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.867</string>
+		<key>title</key>
+		<string>3724 Vliermaal (Kortessem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.868</string>
+		<key>title</key>
+		<string>3730 Hoeselt</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.869</string>
+		<key>title</key>
+		<string>3730 Romershoven (Hoeselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.870</string>
+		<key>title</key>
+		<string>3730 Sint-Huibrechts-Hern (Hoeselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.871</string>
+		<key>title</key>
+		<string>3730 Werm (Hoeselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.872</string>
+		<key>title</key>
+		<string>3732 Schalkhoven (Hoeselt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.874</string>
+		<key>title</key>
+		<string>3740 Beverst (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.873</string>
+		<key>title</key>
+		<string>3740 Bilzen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.875</string>
+		<key>title</key>
+		<string>3740 Eigenbilzen (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.876</string>
+		<key>title</key>
+		<string>3740 Grote-Spouwen (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.877</string>
+		<key>title</key>
+		<string>3740 Hees (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.878</string>
+		<key>title</key>
+		<string>3740 Kleine-Spouwen (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.879</string>
+		<key>title</key>
+		<string>3740 Mopertingen (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.880</string>
+		<key>title</key>
+		<string>3740 Munsterbilzen (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.881</string>
+		<key>title</key>
+		<string>3740 Rijkhoven (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.882</string>
+		<key>title</key>
+		<string>3740 Rosmeer (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.883</string>
+		<key>title</key>
+		<string>3740 Spouwen (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.884</string>
+		<key>title</key>
+		<string>3740 Waltwilder (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.885</string>
+		<key>title</key>
+		<string>3742 Martenslinde (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.886</string>
+		<key>title</key>
+		<string>3746 Hoelbeek (Bilzen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.888</string>
+		<key>title</key>
+		<string>3770 Genoelselderen (Riemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.889</string>
+		<key>title</key>
+		<string>3770 Herderen (Riemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.890</string>
+		<key>title</key>
+		<string>3770 Kanne (Riemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.891</string>
+		<key>title</key>
+		<string>3770 Membruggen (Riemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.892</string>
+		<key>title</key>
+		<string>3770 Millen (Riemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.887</string>
+		<key>title</key>
+		<string>3770 Riemst</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.893</string>
+		<key>title</key>
+		<string>3770 Val-Meer (Riemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.894</string>
+		<key>title</key>
+		<string>3770 Vlijtingen (Riemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.895</string>
+		<key>title</key>
+		<string>3770 Vroenhoven (Riemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.896</string>
+		<key>title</key>
+		<string>3770 Zichen-Zussen-Bolder (Riemst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.898</string>
+		<key>title</key>
+		<string>3790 Fouron-Saint-Martin (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.899</string>
+		<key>title</key>
+		<string>3790 Fourons (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.900</string>
+		<key>title</key>
+		<string>3790 Moelingen (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.901</string>
+		<key>title</key>
+		<string>3790 Mouland (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.902</string>
+		<key>title</key>
+		<string>3790 Sint-Martens-Voeren (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.897</string>
+		<key>title</key>
+		<string>3790 Voeren</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.903</string>
+		<key>title</key>
+		<string>3791 Remersdaal (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.904</string>
+		<key>title</key>
+		<string>3792 Fouron-Saint-Pierre (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.905</string>
+		<key>title</key>
+		<string>3792 Sint-Pieters-Voeren (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.906</string>
+		<key>title</key>
+		<string>3793 Teuven (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.908</string>
+		<key>title</key>
+		<string>3798 &apos;s Gravenvoeren (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.907</string>
+		<key>title</key>
+		<string>3798 Fouron-Le-Comte (Voeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.910</string>
+		<key>title</key>
+		<string>3800 Aalst (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.911</string>
+		<key>title</key>
+		<string>3800 Brustem (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.912</string>
+		<key>title</key>
+		<string>3800 Engelmanshoven (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.913</string>
+		<key>title</key>
+		<string>3800 Gelinden (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.914</string>
+		<key>title</key>
+		<string>3800 Groot-Gelmen (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.915</string>
+		<key>title</key>
+		<string>3800 Halmaal (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.916</string>
+		<key>title</key>
+		<string>3800 Kerkom-Bij-Sint-Truiden (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.917</string>
+		<key>title</key>
+		<string>3800 Ordingen (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.909</string>
+		<key>title</key>
+		<string>3800 Sint-Truiden</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.918</string>
+		<key>title</key>
+		<string>3800 Zepperen (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.919</string>
+		<key>title</key>
+		<string>3803 Duras (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.920</string>
+		<key>title</key>
+		<string>3803 Gorsem (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.921</string>
+		<key>title</key>
+		<string>3803 Runkelen (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.922</string>
+		<key>title</key>
+		<string>3803 Wilderen (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.923</string>
+		<key>title</key>
+		<string>3806 Velm (Sint-Truiden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.925</string>
+		<key>title</key>
+		<string>3830 Berlingen (Wellen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.924</string>
+		<key>title</key>
+		<string>3830 Wellen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.926</string>
+		<key>title</key>
+		<string>3831 Herten (Wellen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.927</string>
+		<key>title</key>
+		<string>3832 Ulbeek (Wellen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.929</string>
+		<key>title</key>
+		<string>3840 Bommershoven (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.928</string>
+		<key>title</key>
+		<string>3840 Borgloon</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.930</string>
+		<key>title</key>
+		<string>3840 Broekom (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.931</string>
+		<key>title</key>
+		<string>3840 Gors-Opleeuw (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.932</string>
+		<key>title</key>
+		<string>3840 Gotem (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.933</string>
+		<key>title</key>
+		<string>3840 Groot-Loon (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.934</string>
+		<key>title</key>
+		<string>3840 Haren (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.935</string>
+		<key>title</key>
+		<string>3840 Hendrieken (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.936</string>
+		<key>title</key>
+		<string>3840 Hoepertingen (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.937</string>
+		<key>title</key>
+		<string>3840 Jesseren (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.938</string>
+		<key>title</key>
+		<string>3840 Kerniel (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.939</string>
+		<key>title</key>
+		<string>3840 Kolmont (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.940</string>
+		<key>title</key>
+		<string>3840 Kuttekoven (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.941</string>
+		<key>title</key>
+		<string>3840 Rijkel (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.942</string>
+		<key>title</key>
+		<string>3840 Voort (Borgloon)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.944</string>
+		<key>title</key>
+		<string>3850 Binderveld (Nieuwerkerken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.945</string>
+		<key>title</key>
+		<string>3850 Kozen (Nieuwerkerken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.943</string>
+		<key>title</key>
+		<string>3850 Nieuwerkerken</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.946</string>
+		<key>title</key>
+		<string>3850 Wijer (Nieuwerkerken)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.948</string>
+		<key>title</key>
+		<string>3870 Batsheers (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.949</string>
+		<key>title</key>
+		<string>3870 Bovelingen (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.950</string>
+		<key>title</key>
+		<string>3870 Gutschoven (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.947</string>
+		<key>title</key>
+		<string>3870 Heers</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.951</string>
+		<key>title</key>
+		<string>3870 Heks (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.952</string>
+		<key>title</key>
+		<string>3870 Horpmaal (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.953</string>
+		<key>title</key>
+		<string>3870 Klein-Gelmen (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.954</string>
+		<key>title</key>
+		<string>3870 Mechelen-Bovelingen (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.955</string>
+		<key>title</key>
+		<string>3870 Mettekoven (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.956</string>
+		<key>title</key>
+		<string>3870 Opheers (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.957</string>
+		<key>title</key>
+		<string>3870 Rukkelingen-Loon (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.958</string>
+		<key>title</key>
+		<string>3870 Vechmaal (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.959</string>
+		<key>title</key>
+		<string>3870 Veulen (Heers)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.961</string>
+		<key>title</key>
+		<string>3890 Boekhout (Gingelom)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.960</string>
+		<key>title</key>
+		<string>3890 Gingelom</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.962</string>
+		<key>title</key>
+		<string>3890 Jeuk (Gingelom)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.963</string>
+		<key>title</key>
+		<string>3890 Kortijs (Gingelom)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.964</string>
+		<key>title</key>
+		<string>3890 Montenaken (Gingelom)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.965</string>
+		<key>title</key>
+		<string>3890 Niel-Bij-Sint-Truiden (Gingelom)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.966</string>
+		<key>title</key>
+		<string>3890 Vorsen (Gingelom)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.967</string>
+		<key>title</key>
+		<string>3891 Borlo (Gingelom)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.968</string>
+		<key>title</key>
+		<string>3891 Buvingen (Gingelom)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.969</string>
+		<key>title</key>
+		<string>3891 Mielen-Boven-Aalst (Gingelom)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.970</string>
+		<key>title</key>
+		<string>3891 Muizen (Gingelom)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.971</string>
+		<key>title</key>
+		<string>3900 Overpelt</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.972</string>
+		<key>title</key>
+		<string>3910 Neerpelt</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.973</string>
+		<key>title</key>
+		<string>3910 Sint-Huibrechts-Lille (Neerpelt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.974</string>
+		<key>title</key>
+		<string>3920 Lommel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.976</string>
+		<key>title</key>
+		<string>3930 Achel (Hamont-Achel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.977</string>
+		<key>title</key>
+		<string>3930 Hamont (Hamont-Achel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.975</string>
+		<key>title</key>
+		<string>3930 Hamont-Achel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.979</string>
+		<key>title</key>
+		<string>3940 Hechtel (Hechtel-Eksel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.978</string>
+		<key>title</key>
+		<string>3940 Hechtel-Eksel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.980</string>
+		<key>title</key>
+		<string>3941 Eksel (Hechtel-Eksel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.981</string>
+		<key>title</key>
+		<string>3945 Ham</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.982</string>
+		<key>title</key>
+		<string>3945 Kwaadmechelen (Ham)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.983</string>
+		<key>title</key>
+		<string>3945 Oostham (Ham)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.984</string>
+		<key>title</key>
+		<string>3950 Bocholt</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.985</string>
+		<key>title</key>
+		<string>3950 Kaulille (Bocholt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.986</string>
+		<key>title</key>
+		<string>3950 Reppel (Bocholt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.988</string>
+		<key>title</key>
+		<string>3960 Beek (Bree)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.987</string>
+		<key>title</key>
+		<string>3960 Bree</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.989</string>
+		<key>title</key>
+		<string>3960 Gerdingen (Bree)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.990</string>
+		<key>title</key>
+		<string>3960 Opitter (Bree)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.991</string>
+		<key>title</key>
+		<string>3960 Tongerlo (Bree)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.992</string>
+		<key>title</key>
+		<string>3970 Leopoldsburg</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.993</string>
+		<key>title</key>
+		<string>3971 Heppen (Leopoldsburg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.994</string>
+		<key>title</key>
+		<string>3980 Tessenderlo</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.996</string>
+		<key>title</key>
+		<string>3990 Grote-Brogel (Peer)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.997</string>
+		<key>title</key>
+		<string>3990 Kleine-Brogel (Peer)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.995</string>
+		<key>title</key>
+		<string>3990 Peer</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.998</string>
+		<key>title</key>
+		<string>3990 Wijchmaal (Peer)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.999</string>
+		<key>title</key>
+		<string>8000 Brugge</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1000</string>
+		<key>title</key>
+		<string>8000 Koolkerke (Brugge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1010</string>
+		<key>title</key>
+		<string>8020 Hertsberge (Oostkamp)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1009</string>
+		<key>title</key>
+		<string>8020 Oostkamp</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1011</string>
+		<key>title</key>
+		<string>8020 Ruddervoorde (Oostkamp)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1012</string>
+		<key>title</key>
+		<string>8020 Waardamme (Oostkamp)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1001</string>
+		<key>title</key>
+		<string>8200 Brugge 2 (Brugge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1002</string>
+		<key>title</key>
+		<string>8200 Sint-Andries (Brugge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1003</string>
+		<key>title</key>
+		<string>8200 Sint-Michiels (Brugge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1014</string>
+		<key>title</key>
+		<string>8210 Loppem (Zedelgem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1015</string>
+		<key>title</key>
+		<string>8210 Veldegem (Zedelgem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1013</string>
+		<key>title</key>
+		<string>8210 Zedelgem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1016</string>
+		<key>title</key>
+		<string>8211 Aartrijke (Zedelgem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1018</string>
+		<key>title</key>
+		<string>8300 Knokke (Knokke-Heist)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1017</string>
+		<key>title</key>
+		<string>8300 Knokke-Heist</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1019</string>
+		<key>title</key>
+		<string>8300 Westkapelle (Knokke-Heist)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1020</string>
+		<key>title</key>
+		<string>8301 Heist-Aan-Zee (Knokke-Heist)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1021</string>
+		<key>title</key>
+		<string>8301 Ramskapelle (Knokke-Heist)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1004</string>
+		<key>title</key>
+		<string>8310 Assebroek (Brugge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1005</string>
+		<key>title</key>
+		<string>8310 Sint-Kruis (Brugge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1022</string>
+		<key>title</key>
+		<string>8340 Damme</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1023</string>
+		<key>title</key>
+		<string>8340 Hoeke (Damme)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1024</string>
+		<key>title</key>
+		<string>8340 Lapscheure (Damme)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1025</string>
+		<key>title</key>
+		<string>8340 Moerkerke (Damme)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1026</string>
+		<key>title</key>
+		<string>8340 Oostkerke (Damme)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1027</string>
+		<key>title</key>
+		<string>8340 Sijsele (Damme)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1028</string>
+		<key>title</key>
+		<string>8370 Blankenberge</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1029</string>
+		<key>title</key>
+		<string>8370 Uitkerke (Blankenberge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1031</string>
+		<key>title</key>
+		<string>8377 Houtave (Zuienkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1032</string>
+		<key>title</key>
+		<string>8377 Meetkerke (Zuienkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1033</string>
+		<key>title</key>
+		<string>8377 Nieuwmunster (Zuienkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1030</string>
+		<key>title</key>
+		<string>8377 Zuienkerke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1006</string>
+		<key>title</key>
+		<string>8380 Dudzele (Brugge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1007</string>
+		<key>title</key>
+		<string>8380 Lissewege (Brugge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1008</string>
+		<key>title</key>
+		<string>8380 Zeebrugge (Brugge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1034</string>
+		<key>title</key>
+		<string>8400 Oostende</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1035</string>
+		<key>title</key>
+		<string>8400 Stene (Oostende)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1036</string>
+		<key>title</key>
+		<string>8400 Zandvoorde (Oostende)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1037</string>
+		<key>title</key>
+		<string>8420 De Haan</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1038</string>
+		<key>title</key>
+		<string>8420 Klemskerke (De Haan)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1039</string>
+		<key>title</key>
+		<string>8420 Wenduine (De Haan)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1040</string>
+		<key>title</key>
+		<string>8421 Vlissegem (De Haan)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1041</string>
+		<key>title</key>
+		<string>8430 Middelkerke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1042</string>
+		<key>title</key>
+		<string>8431 Wilskerke (Middelkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1043</string>
+		<key>title</key>
+		<string>8432 Leffinge (Middelkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1044</string>
+		<key>title</key>
+		<string>8433 Mannekensvere (Middelkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1045</string>
+		<key>title</key>
+		<string>8433 Schore (Middelkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1046</string>
+		<key>title</key>
+		<string>8433 Slijpe (Middelkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1047</string>
+		<key>title</key>
+		<string>8433 Spermalie (Middelkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1048</string>
+		<key>title</key>
+		<string>8433 St-Pieters-Kapelle (Middelkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1049</string>
+		<key>title</key>
+		<string>8434 Lombardsijde (Middelkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1050</string>
+		<key>title</key>
+		<string>8434 Westende (Middelkerke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1051</string>
+		<key>title</key>
+		<string>8450 Bredene</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1053</string>
+		<key>title</key>
+		<string>8460 Ettelgem (Oudenburg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1052</string>
+		<key>title</key>
+		<string>8460 Oudenburg</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1054</string>
+		<key>title</key>
+		<string>8460 Roksem (Oudenburg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1055</string>
+		<key>title</key>
+		<string>8460 Westkerke (Oudenburg)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1056</string>
+		<key>title</key>
+		<string>8470 Gistel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1057</string>
+		<key>title</key>
+		<string>8470 Moere (Gistel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1058</string>
+		<key>title</key>
+		<string>8470 Snaaskerke (Gistel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1059</string>
+		<key>title</key>
+		<string>8470 Zevekote (Gistel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1061</string>
+		<key>title</key>
+		<string>8480 Bekegem (Ichtegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1062</string>
+		<key>title</key>
+		<string>8480 Eernegem (Ichtegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1060</string>
+		<key>title</key>
+		<string>8480 Ichtegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1063</string>
+		<key>title</key>
+		<string>8490 Jabbeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1064</string>
+		<key>title</key>
+		<string>8490 Snellegem (Jabbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1065</string>
+		<key>title</key>
+		<string>8490 Stalhille (Jabbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1066</string>
+		<key>title</key>
+		<string>8490 Varsenare (Jabbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1067</string>
+		<key>title</key>
+		<string>8490 Zerkegem (Jabbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1068</string>
+		<key>title</key>
+		<string>8500 Kortrijk</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1069</string>
+		<key>title</key>
+		<string>8501 Bissegem (Kortrijk)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1070</string>
+		<key>title</key>
+		<string>8501 Heule (Kortrijk)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1071</string>
+		<key>title</key>
+		<string>8510 Bellegem (Kortrijk)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1072</string>
+		<key>title</key>
+		<string>8510 Kooigem (Kortrijk)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1073</string>
+		<key>title</key>
+		<string>8510 Marke (Kortrijk)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1074</string>
+		<key>title</key>
+		<string>8510 Rollegem (Kortrijk)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1075</string>
+		<key>title</key>
+		<string>8511 Aalbeke (Kortrijk)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1076</string>
+		<key>title</key>
+		<string>8520 Kuurne</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1077</string>
+		<key>title</key>
+		<string>8530 Harelbeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1078</string>
+		<key>title</key>
+		<string>8531 Bavikhove (Harelbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1079</string>
+		<key>title</key>
+		<string>8531 Hulste (Harelbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1080</string>
+		<key>title</key>
+		<string>8540 Deerlijk</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1081</string>
+		<key>title</key>
+		<string>8550 Zwevegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1082</string>
+		<key>title</key>
+		<string>8551 Heestert (Zwevegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1083</string>
+		<key>title</key>
+		<string>8552 Moen (Zwevegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1084</string>
+		<key>title</key>
+		<string>8553 Otegem (Zwevegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1085</string>
+		<key>title</key>
+		<string>8554 Sint-Denijs (Zwevegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1087</string>
+		<key>title</key>
+		<string>8560 Gullegem (Wevelgem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1088</string>
+		<key>title</key>
+		<string>8560 Moorsele (Wevelgem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1086</string>
+		<key>title</key>
+		<string>8560 Wevelgem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1089</string>
+		<key>title</key>
+		<string>8570 Anzegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1090</string>
+		<key>title</key>
+		<string>8570 Gijzelbrechtegem (Anzegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1091</string>
+		<key>title</key>
+		<string>8570 Ingooigem (Anzegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1092</string>
+		<key>title</key>
+		<string>8570 Vichte (Anzegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1093</string>
+		<key>title</key>
+		<string>8572 Kaster (Anzegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1094</string>
+		<key>title</key>
+		<string>8573 Tiegem (Anzegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1095</string>
+		<key>title</key>
+		<string>8580 Avelgem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1096</string>
+		<key>title</key>
+		<string>8581 Kerkhove (Avelgem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1097</string>
+		<key>title</key>
+		<string>8581 Waarmaarde (Avelgem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1098</string>
+		<key>title</key>
+		<string>8582 Outrijve (Avelgem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1099</string>
+		<key>title</key>
+		<string>8583 Bossuit (Avelgem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1101</string>
+		<key>title</key>
+		<string>8587 Espierres (Spiere-Helkijn)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1102</string>
+		<key>title</key>
+		<string>8587 Espierres-Helchin (Spiere-Helkijn)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1103</string>
+		<key>title</key>
+		<string>8587 Helchin (Spiere-Helkijn)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1104</string>
+		<key>title</key>
+		<string>8587 Helkijn (Spiere-Helkijn)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1105</string>
+		<key>title</key>
+		<string>8587 Spiere (Spiere-Helkijn)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1100</string>
+		<key>title</key>
+		<string>8587 Spiere-Helkijn</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1107</string>
+		<key>title</key>
+		<string>8600 Beerst (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1106</string>
+		<key>title</key>
+		<string>8600 Diksmuide</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1108</string>
+		<key>title</key>
+		<string>8600 Driekapellen (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1109</string>
+		<key>title</key>
+		<string>8600 Esen (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1110</string>
+		<key>title</key>
+		<string>8600 Kaaskerke (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1111</string>
+		<key>title</key>
+		<string>8600 Keiem (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1112</string>
+		<key>title</key>
+		<string>8600 Lampernisse (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1113</string>
+		<key>title</key>
+		<string>8600 Leke (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1114</string>
+		<key>title</key>
+		<string>8600 Nieuwkapelle (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1115</string>
+		<key>title</key>
+		<string>8600 Oostkerke (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1116</string>
+		<key>title</key>
+		<string>8600 Oudekapelle (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1117</string>
+		<key>title</key>
+		<string>8600 Pervijze (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1118</string>
+		<key>title</key>
+		<string>8600 Sint-Jacobs-Kapelle (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1119</string>
+		<key>title</key>
+		<string>8600 Stuivekenskerke (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1120</string>
+		<key>title</key>
+		<string>8600 Vladslo (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1121</string>
+		<key>title</key>
+		<string>8600 Woumen (Diksmuide)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1123</string>
+		<key>title</key>
+		<string>8610 Handzame (Kortemark)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1122</string>
+		<key>title</key>
+		<string>8610 Kortemark</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1124</string>
+		<key>title</key>
+		<string>8610 Werken (Kortemark)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1125</string>
+		<key>title</key>
+		<string>8610 Zarren (Kortemark)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1126</string>
+		<key>title</key>
+		<string>8620 Nieuwpoort</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1127</string>
+		<key>title</key>
+		<string>8620 Ramskapelle (Nieuwpoort)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1128</string>
+		<key>title</key>
+		<string>8620 Sint-Joris (Nieuwpoort)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1130</string>
+		<key>title</key>
+		<string>8630 Avekapelle (Veurne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1131</string>
+		<key>title</key>
+		<string>8630 Booitshoeke (Veurne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1132</string>
+		<key>title</key>
+		<string>8630 Bulskamp (Veurne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1133</string>
+		<key>title</key>
+		<string>8630 De Moeren (Veurne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1134</string>
+		<key>title</key>
+		<string>8630 Eggewaartskapelle (Veurne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1135</string>
+		<key>title</key>
+		<string>8630 Houtem (Veurne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1136</string>
+		<key>title</key>
+		<string>8630 Steenkerke (Veurne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1129</string>
+		<key>title</key>
+		<string>8630 Veurne</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1137</string>
+		<key>title</key>
+		<string>8630 Vinkem (Veurne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1138</string>
+		<key>title</key>
+		<string>8630 Wulveringem (Veurne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1139</string>
+		<key>title</key>
+		<string>8630 Zoutenaaie (Veurne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1141</string>
+		<key>title</key>
+		<string>8640 Oostvleteren (Vleteren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1140</string>
+		<key>title</key>
+		<string>8640 Vleteren</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1142</string>
+		<key>title</key>
+		<string>8640 Westvleteren (Vleteren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1143</string>
+		<key>title</key>
+		<string>8640 Woesten (Vleteren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1145</string>
+		<key>title</key>
+		<string>8647 Lo (Lo-Reninge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1144</string>
+		<key>title</key>
+		<string>8647 Lo-Reninge</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1146</string>
+		<key>title</key>
+		<string>8647 Noordschote (Lo-Reninge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1147</string>
+		<key>title</key>
+		<string>8647 Pollinkhove (Lo-Reninge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1148</string>
+		<key>title</key>
+		<string>8647 Reninge (Lo-Reninge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1149</string>
+		<key>title</key>
+		<string>8650 Houthulst</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1150</string>
+		<key>title</key>
+		<string>8650 Klerken (Houthulst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1151</string>
+		<key>title</key>
+		<string>8650 Merkem (Houthulst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1153</string>
+		<key>title</key>
+		<string>8660 Adinkerke (De Panne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1152</string>
+		<key>title</key>
+		<string>8660 De Panne</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1154</string>
+		<key>title</key>
+		<string>8670 Koksijde</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1155</string>
+		<key>title</key>
+		<string>8670 Oostduinkerke (Koksijde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1156</string>
+		<key>title</key>
+		<string>8670 Wulpen (Koksijde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1158</string>
+		<key>title</key>
+		<string>8680 Bovekerke (Koekelare)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1157</string>
+		<key>title</key>
+		<string>8680 Koekelare</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1159</string>
+		<key>title</key>
+		<string>8680 Zande (Koekelare)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1160</string>
+		<key>title</key>
+		<string>8690 Alveringem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1161</string>
+		<key>title</key>
+		<string>8690 Hoogstade (Alveringem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1162</string>
+		<key>title</key>
+		<string>8690 Oeren (Alveringem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1163</string>
+		<key>title</key>
+		<string>8690 Sint-Rijkers (Alveringem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1164</string>
+		<key>title</key>
+		<string>8691 Beveren-Aan-Den-Ijzer (Alveringem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1165</string>
+		<key>title</key>
+		<string>8691 Gijverinkhove (Alveringem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1166</string>
+		<key>title</key>
+		<string>8691 Izenberge (Alveringem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1167</string>
+		<key>title</key>
+		<string>8691 Leisele (Alveringem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1168</string>
+		<key>title</key>
+		<string>8691 Stavele (Alveringem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1170</string>
+		<key>title</key>
+		<string>8700 Aarsele (Tielt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1171</string>
+		<key>title</key>
+		<string>8700 Kanegem (Tielt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1172</string>
+		<key>title</key>
+		<string>8700 Schuiferskapelle (Tielt)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1169</string>
+		<key>title</key>
+		<string>8700 Tielt</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1174</string>
+		<key>title</key>
+		<string>8710 Ooigem (Wielsbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1175</string>
+		<key>title</key>
+		<string>8710 Sint-Baafs-Vijve (Wielsbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1173</string>
+		<key>title</key>
+		<string>8710 Wielsbeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1176</string>
+		<key>title</key>
+		<string>8720 Dentergem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1177</string>
+		<key>title</key>
+		<string>8720 Markegem (Dentergem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1178</string>
+		<key>title</key>
+		<string>8720 Oeselgem (Dentergem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1179</string>
+		<key>title</key>
+		<string>8720 Wakken (Dentergem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1180</string>
+		<key>title</key>
+		<string>8730 Beernem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1181</string>
+		<key>title</key>
+		<string>8730 Oedelem (Beernem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1182</string>
+		<key>title</key>
+		<string>8730 Sint-Joris (Beernem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1184</string>
+		<key>title</key>
+		<string>8740 Egem (Pittem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1183</string>
+		<key>title</key>
+		<string>8740 Pittem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1185</string>
+		<key>title</key>
+		<string>8750 Wingene</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1186</string>
+		<key>title</key>
+		<string>8750 Zwevezele (Wingene)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1187</string>
+		<key>title</key>
+		<string>8755 Ruiselede</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1188</string>
+		<key>title</key>
+		<string>8760 Meulebeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1189</string>
+		<key>title</key>
+		<string>8770 Ingelmunster</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1190</string>
+		<key>title</key>
+		<string>8780 Oostrozebeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1191</string>
+		<key>title</key>
+		<string>8790 Waregem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1192</string>
+		<key>title</key>
+		<string>8791 Beveren-Leie (Waregem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1193</string>
+		<key>title</key>
+		<string>8792 Desselgem (Waregem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1194</string>
+		<key>title</key>
+		<string>8793 Sint-Eloois-Vijve (Waregem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1196</string>
+		<key>title</key>
+		<string>8800 Beveren (Roeselare)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1197</string>
+		<key>title</key>
+		<string>8800 Oekene (Roeselare)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1195</string>
+		<key>title</key>
+		<string>8800 Roeselare</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1198</string>
+		<key>title</key>
+		<string>8800 Rumbeke (Roeselare)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1199</string>
+		<key>title</key>
+		<string>8810 Lichtervelde</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1200</string>
+		<key>title</key>
+		<string>8820 Torhout</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1202</string>
+		<key>title</key>
+		<string>8830 Gits (Hooglede)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1201</string>
+		<key>title</key>
+		<string>8830 Hooglede</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1204</string>
+		<key>title</key>
+		<string>8840 Oostnieuwkerke (Staden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1203</string>
+		<key>title</key>
+		<string>8840 Staden</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1205</string>
+		<key>title</key>
+		<string>8840 Westrozebeke (Staden)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1206</string>
+		<key>title</key>
+		<string>8850 Ardooie</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1207</string>
+		<key>title</key>
+		<string>8851 Koolskamp (Ardooie)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1208</string>
+		<key>title</key>
+		<string>8860 Lendelede</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1210</string>
+		<key>title</key>
+		<string>8870 Emelgem (Izegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1209</string>
+		<key>title</key>
+		<string>8870 Izegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1211</string>
+		<key>title</key>
+		<string>8870 Kachtem (Izegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1212</string>
+		<key>title</key>
+		<string>8880 Ledegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1213</string>
+		<key>title</key>
+		<string>8880 Rollegem-Kapelle (Ledegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1214</string>
+		<key>title</key>
+		<string>8880 Sint-Eloois-Winkel (Ledegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1216</string>
+		<key>title</key>
+		<string>8890 Dadizele (Moorslede)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1215</string>
+		<key>title</key>
+		<string>8890 Moorslede</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1218</string>
+		<key>title</key>
+		<string>8900 Brielen (Ieper)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1219</string>
+		<key>title</key>
+		<string>8900 Dikkebus (Ieper)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1217</string>
+		<key>title</key>
+		<string>8900 Ieper</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1220</string>
+		<key>title</key>
+		<string>8900 Sint-Jan (Ieper)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1221</string>
+		<key>title</key>
+		<string>8902 Hollebeke (Ieper)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1222</string>
+		<key>title</key>
+		<string>8902 Voormezele (Ieper)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1223</string>
+		<key>title</key>
+		<string>8902 Zillebeke (Ieper)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1224</string>
+		<key>title</key>
+		<string>8904 Boezinge (Ieper)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1225</string>
+		<key>title</key>
+		<string>8904 Zuidschote (Ieper)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1226</string>
+		<key>title</key>
+		<string>8906 Elverdinge (Ieper)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1227</string>
+		<key>title</key>
+		<string>8908 Vlamertinge (Ieper)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1229</string>
+		<key>title</key>
+		<string>8920 Bikschote (Langemark-Poelkapelle)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1230</string>
+		<key>title</key>
+		<string>8920 Langemark (Langemark-Poelkapelle)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1228</string>
+		<key>title</key>
+		<string>8920 Langemark-Poelkapelle</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1231</string>
+		<key>title</key>
+		<string>8920 Poelkapelle (Langemark-Poelkapelle)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1233</string>
+		<key>title</key>
+		<string>8930 Lauwe (Menen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1232</string>
+		<key>title</key>
+		<string>8930 Menen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1234</string>
+		<key>title</key>
+		<string>8930 Rekkem (Menen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1236</string>
+		<key>title</key>
+		<string>8940 Geluwe (Wervik)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1235</string>
+		<key>title</key>
+		<string>8940 Wervik</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1237</string>
+		<key>title</key>
+		<string>8950 Heuvelland</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1238</string>
+		<key>title</key>
+		<string>8950 Nieuwkerke (Heuvelland)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1239</string>
+		<key>title</key>
+		<string>8951 Dranouter (Heuvelland)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1240</string>
+		<key>title</key>
+		<string>8952 Wulvergem (Heuvelland)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1241</string>
+		<key>title</key>
+		<string>8953 Wijtschate (Heuvelland)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1242</string>
+		<key>title</key>
+		<string>8954 Westouter (Heuvelland)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1243</string>
+		<key>title</key>
+		<string>8956 Kemmel (Heuvelland)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1245</string>
+		<key>title</key>
+		<string>8957 Mesen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1246</string>
+		<key>title</key>
+		<string>8957 Messines</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1244</string>
+		<key>title</key>
+		<string>8958 Loker (Heuvelland)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1247</string>
+		<key>title</key>
+		<string>8970 Poperinge</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1248</string>
+		<key>title</key>
+		<string>8970 Reningelst (Poperinge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1249</string>
+		<key>title</key>
+		<string>8972 Krombeke (Poperinge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1250</string>
+		<key>title</key>
+		<string>8972 Proven (Poperinge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1251</string>
+		<key>title</key>
+		<string>8972 Roesbrugge-Haringe (Poperinge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1252</string>
+		<key>title</key>
+		<string>8978 Watou (Poperinge)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1254</string>
+		<key>title</key>
+		<string>8980 Beselare (Zonnebeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1255</string>
+		<key>title</key>
+		<string>8980 Geluveld (Zonnebeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1256</string>
+		<key>title</key>
+		<string>8980 Passendale (Zonnebeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1257</string>
+		<key>title</key>
+		<string>8980 Zandvoorde (Zonnebeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1253</string>
+		<key>title</key>
+		<string>8980 Zonnebeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1258</string>
+		<key>title</key>
+		<string>9000 Gent</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1259</string>
+		<key>title</key>
+		<string>9030 Mariakerke (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1260</string>
+		<key>title</key>
+		<string>9031 Drongen (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1261</string>
+		<key>title</key>
+		<string>9032 Wondelgem (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1262</string>
+		<key>title</key>
+		<string>9040 Sint-Amandsberg (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1263</string>
+		<key>title</key>
+		<string>9041 Oostakker (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1264</string>
+		<key>title</key>
+		<string>9042 Desteldonk (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1265</string>
+		<key>title</key>
+		<string>9042 Mendonk (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1266</string>
+		<key>title</key>
+		<string>9042 Sint-Kruis-Winkel (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1267</string>
+		<key>title</key>
+		<string>9050 Gentbrugge (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1268</string>
+		<key>title</key>
+		<string>9050 Ledeberg (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1269</string>
+		<key>title</key>
+		<string>9051 Afsnee (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1270</string>
+		<key>title</key>
+		<string>9051 Sint-Denijs-Westrem (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1271</string>
+		<key>title</key>
+		<string>9052 Zwijnaarde (Gent)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1272</string>
+		<key>title</key>
+		<string>9060 Zelzate</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1273</string>
+		<key>title</key>
+		<string>9070 Destelbergen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1274</string>
+		<key>title</key>
+		<string>9070 Heusden (Destelbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1276</string>
+		<key>title</key>
+		<string>9080 Beervelde (Lochristi)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1275</string>
+		<key>title</key>
+		<string>9080 Lochristi</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1277</string>
+		<key>title</key>
+		<string>9080 Zaffelare (Lochristi)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1278</string>
+		<key>title</key>
+		<string>9080 Zeveneken (Lochristi)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1280</string>
+		<key>title</key>
+		<string>9090 Gontrode (Melle)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1279</string>
+		<key>title</key>
+		<string>9090 Melle</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1282</string>
+		<key>title</key>
+		<string>9100 Nieuwkerken-Waas (Sint-Niklaas)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1281</string>
+		<key>title</key>
+		<string>9100 Sint-Niklaas</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1283</string>
+		<key>title</key>
+		<string>9111 Belsele (Sint-Niklaas)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1284</string>
+		<key>title</key>
+		<string>9112 Sinaai-Waas (Sint-Niklaas)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1285</string>
+		<key>title</key>
+		<string>9120 Beveren-Waas</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1286</string>
+		<key>title</key>
+		<string>9120 Haasdonk (Beveren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1287</string>
+		<key>title</key>
+		<string>9120 Kallo (Beveren-Waas)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1288</string>
+		<key>title</key>
+		<string>9120 Melsele (Beveren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1289</string>
+		<key>title</key>
+		<string>9120 Vrasene (Beveren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1290</string>
+		<key>title</key>
+		<string>9130 Doel (Beveren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1291</string>
+		<key>title</key>
+		<string>9130 Kallo (Kieldrecht - Beveren-Waas)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1292</string>
+		<key>title</key>
+		<string>9130 Kieldrecht (Beveren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1293</string>
+		<key>title</key>
+		<string>9130 Verrebroek (Beveren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1295</string>
+		<key>title</key>
+		<string>9140 Elversele (Temse)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1296</string>
+		<key>title</key>
+		<string>9140 Steendorp (Temse)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1294</string>
+		<key>title</key>
+		<string>9140 Temse</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1297</string>
+		<key>title</key>
+		<string>9140 Tielrode (Temse)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1299</string>
+		<key>title</key>
+		<string>9150 Bazel (Kruibeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1298</string>
+		<key>title</key>
+		<string>9150 Kruibeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1300</string>
+		<key>title</key>
+		<string>9150 Rupelmonde (Kruibeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1302</string>
+		<key>title</key>
+		<string>9160 Daknam (Lokeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1303</string>
+		<key>title</key>
+		<string>9160 Eksaarde (Lokeren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1301</string>
+		<key>title</key>
+		<string>9160 Lokeren</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1305</string>
+		<key>title</key>
+		<string>9170 De Klinge (Sint-Gillis-Waas)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1306</string>
+		<key>title</key>
+		<string>9170 Meerdonk (Sint-Gillis-Waas)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1304</string>
+		<key>title</key>
+		<string>9170 Sint-Gillis-Waas</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1307</string>
+		<key>title</key>
+		<string>9170 Sint-Pauwels (Sint-Gillis-Waas)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1308</string>
+		<key>title</key>
+		<string>9180 Moerbeke-Waas</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1309</string>
+		<key>title</key>
+		<string>9185 Wachtebeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1311</string>
+		<key>title</key>
+		<string>9190 Kemzeke (Stekene)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1310</string>
+		<key>title</key>
+		<string>9190 Stekene</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1313</string>
+		<key>title</key>
+		<string>9200 Appels (Dendermonde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1314</string>
+		<key>title</key>
+		<string>9200 Baasrode (Dendermonde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1312</string>
+		<key>title</key>
+		<string>9200 Dendermonde</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1315</string>
+		<key>title</key>
+		<string>9200 Grembergen (Dendermonde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1316</string>
+		<key>title</key>
+		<string>9200 Mespelare (Dendermonde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1317</string>
+		<key>title</key>
+		<string>9200 Oudegem (Dendermonde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1318</string>
+		<key>title</key>
+		<string>9200 Schoonaarde (Dendermonde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1319</string>
+		<key>title</key>
+		<string>9200 St-Gillis-Bij-Dendermonde (Dendermonde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1320</string>
+		<key>title</key>
+		<string>9220 Hamme</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1321</string>
+		<key>title</key>
+		<string>9220 Moerzeke (Hamme)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1323</string>
+		<key>title</key>
+		<string>9230 Massemen (Wetteren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1324</string>
+		<key>title</key>
+		<string>9230 Westrem (Wetteren)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1322</string>
+		<key>title</key>
+		<string>9230 Wetteren</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1325</string>
+		<key>title</key>
+		<string>9240 Zele</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1326</string>
+		<key>title</key>
+		<string>9250 Waasmunster</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1327</string>
+		<key>title</key>
+		<string>9255 Buggenhout</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1328</string>
+		<key>title</key>
+		<string>9255 Opdorp (Buggenhout)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1330</string>
+		<key>title</key>
+		<string>9260 Schellebelle (Wichelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1331</string>
+		<key>title</key>
+		<string>9260 Serskamp (Wichelen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1329</string>
+		<key>title</key>
+		<string>9260 Wichelen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1333</string>
+		<key>title</key>
+		<string>9270 Kalken (Laarne)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1332</string>
+		<key>title</key>
+		<string>9270 Laarne</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1335</string>
+		<key>title</key>
+		<string>9280 Denderbelle (Lebbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1334</string>
+		<key>title</key>
+		<string>9280 Lebbeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1336</string>
+		<key>title</key>
+		<string>9280 Wieze (Lebbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1337</string>
+		<key>title</key>
+		<string>9290 Berlare</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1338</string>
+		<key>title</key>
+		<string>9290 Overmere (Berlare)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1339</string>
+		<key>title</key>
+		<string>9290 Uitbergen (Berlare)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1340</string>
+		<key>title</key>
+		<string>9300 Aalst</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1341</string>
+		<key>title</key>
+		<string>9308 Gijzegem (Aalst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1342</string>
+		<key>title</key>
+		<string>9308 Hofstade (Aalst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1343</string>
+		<key>title</key>
+		<string>9310 Baardegem (Aalst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1344</string>
+		<key>title</key>
+		<string>9310 Herdersem (Aalst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1345</string>
+		<key>title</key>
+		<string>9310 Meldert (Aalst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1346</string>
+		<key>title</key>
+		<string>9310 Moorsel (Aalst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1347</string>
+		<key>title</key>
+		<string>9320 Erembodegem (Aalst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1348</string>
+		<key>title</key>
+		<string>9320 Nieuwerkerken (Aalst)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1350</string>
+		<key>title</key>
+		<string>9340 Impe (Lede)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1349</string>
+		<key>title</key>
+		<string>9340 Lede</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1351</string>
+		<key>title</key>
+		<string>9340 Oordegem (Lede)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1352</string>
+		<key>title</key>
+		<string>9340 Smetlede (Lede)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1353</string>
+		<key>title</key>
+		<string>9340 Wanzele (Lede)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1355</string>
+		<key>title</key>
+		<string>9400 Appelterre-Eichem (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1356</string>
+		<key>title</key>
+		<string>9400 Denderwindeke (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1357</string>
+		<key>title</key>
+		<string>9400 Lieferinge (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1358</string>
+		<key>title</key>
+		<string>9400 Nederhasselt (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1354</string>
+		<key>title</key>
+		<string>9400 Ninove</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1359</string>
+		<key>title</key>
+		<string>9400 Okegem (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1360</string>
+		<key>title</key>
+		<string>9400 Voorde (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1361</string>
+		<key>title</key>
+		<string>9401 Pollare (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1362</string>
+		<key>title</key>
+		<string>9402 Meerbeke (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1363</string>
+		<key>title</key>
+		<string>9403 Neigem (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1364</string>
+		<key>title</key>
+		<string>9404 Aspelare (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1365</string>
+		<key>title</key>
+		<string>9406 Outer (Ninove)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1367</string>
+		<key>title</key>
+		<string>9420 Aaigem (Erpe-Mere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1368</string>
+		<key>title</key>
+		<string>9420 Bambrugge (Erpe-Mere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1369</string>
+		<key>title</key>
+		<string>9420 Burst (Erpe-Mere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1370</string>
+		<key>title</key>
+		<string>9420 Erondegem (Erpe-Mere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1371</string>
+		<key>title</key>
+		<string>9420 Erpe (Erpe-Mere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1366</string>
+		<key>title</key>
+		<string>9420 Erpe-Mere</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1372</string>
+		<key>title</key>
+		<string>9420 Mere (Erpe-Mere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1373</string>
+		<key>title</key>
+		<string>9420 Ottergem (Erpe-Mere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1374</string>
+		<key>title</key>
+		<string>9420 Vlekkem (Erpe-Mere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1376</string>
+		<key>title</key>
+		<string>9450 Denderhoutem (Haaltert)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1375</string>
+		<key>title</key>
+		<string>9450 Haaltert</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1377</string>
+		<key>title</key>
+		<string>9450 Heldergem (Haaltert)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1378</string>
+		<key>title</key>
+		<string>9451 Kerksken (Haaltert)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1379</string>
+		<key>title</key>
+		<string>9470 Denderleeuw</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1380</string>
+		<key>title</key>
+		<string>9472 Iddergem (Denderleeuw)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1381</string>
+		<key>title</key>
+		<string>9473 Welle (Denderleeuw)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1382</string>
+		<key>title</key>
+		<string>9500 Geraardsbergen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1383</string>
+		<key>title</key>
+		<string>9500 Goeferdinge (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1384</string>
+		<key>title</key>
+		<string>9500 Moerbeke (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1385</string>
+		<key>title</key>
+		<string>9500 Nederboelare (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1386</string>
+		<key>title</key>
+		<string>9500 Onkerzele (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1387</string>
+		<key>title</key>
+		<string>9500 Ophasselt (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1388</string>
+		<key>title</key>
+		<string>9500 Overboelare (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1389</string>
+		<key>title</key>
+		<string>9500 Viane (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1390</string>
+		<key>title</key>
+		<string>9500 Zarlardinge (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1391</string>
+		<key>title</key>
+		<string>9506 Grimminge (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1392</string>
+		<key>title</key>
+		<string>9506 Idegem (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1393</string>
+		<key>title</key>
+		<string>9506 Nieuwenhove (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1394</string>
+		<key>title</key>
+		<string>9506 Schendelbeke (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1395</string>
+		<key>title</key>
+		<string>9506 Smeerebbe-Vloerzegem (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1396</string>
+		<key>title</key>
+		<string>9506 Waarbeke (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1397</string>
+		<key>title</key>
+		<string>9506 Zandbergen (Geraardsbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1399</string>
+		<key>title</key>
+		<string>9520 Bavegem (Sint-Lievens-Houtem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1398</string>
+		<key>title</key>
+		<string>9520 Sint-Lievens-Houtem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1400</string>
+		<key>title</key>
+		<string>9520 Vlierzele (Sint-Lievens-Houtem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1401</string>
+		<key>title</key>
+		<string>9520 Zonnegem (Sint-Lievens-Houtem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1402</string>
+		<key>title</key>
+		<string>9521 Letterhoutem (Sint-Lievens-Houtem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1403</string>
+		<key>title</key>
+		<string>9550 Herzele</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1404</string>
+		<key>title</key>
+		<string>9550 Hillegem (Herzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1405</string>
+		<key>title</key>
+		<string>9550 Sint-Antelinks (Herzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1406</string>
+		<key>title</key>
+		<string>9550 Sint-Lievens-Esse (Herzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1407</string>
+		<key>title</key>
+		<string>9550 Steenhuize-Wijnhuize (Herzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1408</string>
+		<key>title</key>
+		<string>9550 Woubrechtegem (Herzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1409</string>
+		<key>title</key>
+		<string>9551 Ressegem (Herzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1410</string>
+		<key>title</key>
+		<string>9552 Borsbeke (Herzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1412</string>
+		<key>title</key>
+		<string>9570 Deftinge (Lierde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1411</string>
+		<key>title</key>
+		<string>9570 Lierde</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1413</string>
+		<key>title</key>
+		<string>9570 Sint-Maria-Lierde (Lierde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1414</string>
+		<key>title</key>
+		<string>9571 Hemelveerdegem (Lierde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1415</string>
+		<key>title</key>
+		<string>9572 Sint-Martens-Lierde (Lierde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1416</string>
+		<key>title</key>
+		<string>9600 Renaix</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1417</string>
+		<key>title</key>
+		<string>9600 Ronse</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1419</string>
+		<key>title</key>
+		<string>9620 Elene (Zottegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1420</string>
+		<key>title</key>
+		<string>9620 Erwetegem (Zottegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1421</string>
+		<key>title</key>
+		<string>9620 Godveerdegem (Zottegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1422</string>
+		<key>title</key>
+		<string>9620 Grotenberge (Zottegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1423</string>
+		<key>title</key>
+		<string>9620 Leeuwergem (Zottegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1424</string>
+		<key>title</key>
+		<string>9620 Oombergen (Zottegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1425</string>
+		<key>title</key>
+		<string>9620 Sint-Goriks-Oudenhove (Zottegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1426</string>
+		<key>title</key>
+		<string>9620 St-Maria-Oudenhove (Zottegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1427</string>
+		<key>title</key>
+		<string>9620 Strijpen (Zottegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1428</string>
+		<key>title</key>
+		<string>9620 Velzeke-Ruddershove (Zottegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1418</string>
+		<key>title</key>
+		<string>9620 Zottegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1430</string>
+		<key>title</key>
+		<string>9630 Beerlegem (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1431</string>
+		<key>title</key>
+		<string>9630 Dikkele (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1432</string>
+		<key>title</key>
+		<string>9630 Hundelgem (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1433</string>
+		<key>title</key>
+		<string>9630 Meilegem (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1434</string>
+		<key>title</key>
+		<string>9630 Munkzwalm (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1435</string>
+		<key>title</key>
+		<string>9630 Paulatem (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1436</string>
+		<key>title</key>
+		<string>9630 Roborst (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1437</string>
+		<key>title</key>
+		<string>9630 Rozebeke (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1438</string>
+		<key>title</key>
+		<string>9630 Sint-Blasius-Boekel (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1439</string>
+		<key>title</key>
+		<string>9630 Sint-Denijs-Boekel (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1440</string>
+		<key>title</key>
+		<string>9630 Sint-Maria-Latem (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1429</string>
+		<key>title</key>
+		<string>9630 Zwalm</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1441</string>
+		<key>title</key>
+		<string>9636 Nederzwalm-Hermelgem (Zwalm)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1442</string>
+		<key>title</key>
+		<string>9660 Brakel</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1443</string>
+		<key>title</key>
+		<string>9660 Elst (Brakel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1444</string>
+		<key>title</key>
+		<string>9660 Everbeek (Brakel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1445</string>
+		<key>title</key>
+		<string>9660 Michelbeke (Brakel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1446</string>
+		<key>title</key>
+		<string>9660 Nederbrakel (Brakel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1447</string>
+		<key>title</key>
+		<string>9660 Opbrakel (Brakel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1448</string>
+		<key>title</key>
+		<string>9660 St-Maria-Oudenhove (Brakel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1449</string>
+		<key>title</key>
+		<string>9660 Zegelsem (Brakel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1450</string>
+		<key>title</key>
+		<string>9661 Parike (Brakel)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1451</string>
+		<key>title</key>
+		<string>9667 Horebeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1452</string>
+		<key>title</key>
+		<string>9667 Sint-Kornelis-Horebeke (Horebeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1453</string>
+		<key>title</key>
+		<string>9667 Sint-Maria-Horebeke (Horebeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1455</string>
+		<key>title</key>
+		<string>9680 Etikhove (Maarkedal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1456</string>
+		<key>title</key>
+		<string>9680 Maarke-Kerkem (Maarkedal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1454</string>
+		<key>title</key>
+		<string>9680 Maarkedal</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1457</string>
+		<key>title</key>
+		<string>9681 Nukerke (Maarkedal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1458</string>
+		<key>title</key>
+		<string>9688 Schorisse (Maarkedal)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1460</string>
+		<key>title</key>
+		<string>9690 Berchem (Kluisbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1459</string>
+		<key>title</key>
+		<string>9690 Kluisbergen</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1461</string>
+		<key>title</key>
+		<string>9690 Kwaremont (Kluisbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1462</string>
+		<key>title</key>
+		<string>9690 Ruien (Kluisbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1463</string>
+		<key>title</key>
+		<string>9690 Zulzeke (Kluisbergen)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1465</string>
+		<key>title</key>
+		<string>9700 Bevere (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1466</string>
+		<key>title</key>
+		<string>9700 Edelare (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1467</string>
+		<key>title</key>
+		<string>9700 Eine (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1468</string>
+		<key>title</key>
+		<string>9700 Ename (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1469</string>
+		<key>title</key>
+		<string>9700 Heurne (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1470</string>
+		<key>title</key>
+		<string>9700 Leupegem (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1471</string>
+		<key>title</key>
+		<string>9700 Mater (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1472</string>
+		<key>title</key>
+		<string>9700 Melden (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1473</string>
+		<key>title</key>
+		<string>9700 Mullem (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1474</string>
+		<key>title</key>
+		<string>9700 Nederename (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1475</string>
+		<key>title</key>
+		<string>9700 Ooike (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1464</string>
+		<key>title</key>
+		<string>9700 Oudenaarde</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1476</string>
+		<key>title</key>
+		<string>9700 Volkegem (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1477</string>
+		<key>title</key>
+		<string>9700 Welden (Oudenaarde)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1479</string>
+		<key>title</key>
+		<string>9750 Huise (Zingem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1480</string>
+		<key>title</key>
+		<string>9750 Ouwegem (Zingem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1478</string>
+		<key>title</key>
+		<string>9750 Zingem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1481</string>
+		<key>title</key>
+		<string>9770 Kruishoutem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1482</string>
+		<key>title</key>
+		<string>9771 Nokere (Kruishoutem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1483</string>
+		<key>title</key>
+		<string>9772 Wannegem-Lede (Kruishoutem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1485</string>
+		<key>title</key>
+		<string>9790 Elsegem (Wortegem-Petegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1486</string>
+		<key>title</key>
+		<string>9790 Moregem (Wortegem-Petegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1487</string>
+		<key>title</key>
+		<string>9790 Ooike (Wortegem-Petegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1488</string>
+		<key>title</key>
+		<string>9790 Petegem-Aan-De-Schelde (Wortegem-Petegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1489</string>
+		<key>title</key>
+		<string>9790 Wortegem (Wortegem-Petegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1484</string>
+		<key>title</key>
+		<string>9790 Wortegem-Petegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1491</string>
+		<key>title</key>
+		<string>9800 Astene (Deinze)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1492</string>
+		<key>title</key>
+		<string>9800 Bachte-Maria-Leerne (Deinze)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1490</string>
+		<key>title</key>
+		<string>9800 Deinze</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1493</string>
+		<key>title</key>
+		<string>9800 Gottem (Deinze)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1494</string>
+		<key>title</key>
+		<string>9800 Grammene (Deinze)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1495</string>
+		<key>title</key>
+		<string>9800 Meigem (Deinze)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1496</string>
+		<key>title</key>
+		<string>9800 Petegem-Aan-De-Leie (Deinze)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1497</string>
+		<key>title</key>
+		<string>9800 Sint-Martens-Leerne (Deinze)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1498</string>
+		<key>title</key>
+		<string>9800 Vinkt (Deinze)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1499</string>
+		<key>title</key>
+		<string>9800 Wontergem (Deinze)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1500</string>
+		<key>title</key>
+		<string>9800 Zeveren (Deinze)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1502</string>
+		<key>title</key>
+		<string>9810 Eke (Nazareth)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1501</string>
+		<key>title</key>
+		<string>9810 Nazareth</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1504</string>
+		<key>title</key>
+		<string>9820 Bottelare (Merelbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1505</string>
+		<key>title</key>
+		<string>9820 Lemberge (Merelbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1506</string>
+		<key>title</key>
+		<string>9820 Melsen (Merelbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1503</string>
+		<key>title</key>
+		<string>9820 Merelbeke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1507</string>
+		<key>title</key>
+		<string>9820 Munte (Merelbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1508</string>
+		<key>title</key>
+		<string>9820 Schelderode (Merelbeke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1509</string>
+		<key>title</key>
+		<string>9830 Sint-Martens-Latem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1510</string>
+		<key>title</key>
+		<string>9831 Deurle (Sint-Martens-Latem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1511</string>
+		<key>title</key>
+		<string>9840 De Pinte</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1512</string>
+		<key>title</key>
+		<string>9840 Zevergem (De Pinte)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1514</string>
+		<key>title</key>
+		<string>9850 Hansbeke (Nevele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1515</string>
+		<key>title</key>
+		<string>9850 Landegem (Nevele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1516</string>
+		<key>title</key>
+		<string>9850 Merendree (Nevele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1513</string>
+		<key>title</key>
+		<string>9850 Nevele</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1517</string>
+		<key>title</key>
+		<string>9850 Poesele (Nevele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1518</string>
+		<key>title</key>
+		<string>9850 Vosselare (Nevele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1520</string>
+		<key>title</key>
+		<string>9860 Balegem (Oosterzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1521</string>
+		<key>title</key>
+		<string>9860 Gijzenzele (Oosterzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1522</string>
+		<key>title</key>
+		<string>9860 Landskouter (Oosterzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1523</string>
+		<key>title</key>
+		<string>9860 Moortsele (Oosterzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1519</string>
+		<key>title</key>
+		<string>9860 Oosterzele</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1524</string>
+		<key>title</key>
+		<string>9860 Scheldewindeke (Oosterzele)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1526</string>
+		<key>title</key>
+		<string>9870 Machelen (Zulte)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1527</string>
+		<key>title</key>
+		<string>9870 Olsene (Zulte)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1525</string>
+		<key>title</key>
+		<string>9870 Zulte</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1528</string>
+		<key>title</key>
+		<string>9880 Aalter</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1529</string>
+		<key>title</key>
+		<string>9880 Lotenhulle (Aalter)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1530</string>
+		<key>title</key>
+		<string>9880 Poeke (Aalter)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1531</string>
+		<key>title</key>
+		<string>9881 Bellem (Aalter)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1533</string>
+		<key>title</key>
+		<string>9890 Asper (Gavere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1534</string>
+		<key>title</key>
+		<string>9890 Baaigem (Gavere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1535</string>
+		<key>title</key>
+		<string>9890 Dikkelvenne (Gavere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1532</string>
+		<key>title</key>
+		<string>9890 Gavere</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1536</string>
+		<key>title</key>
+		<string>9890 Semmerzake (Gavere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1537</string>
+		<key>title</key>
+		<string>9890 Vurste (Gavere)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1538</string>
+		<key>title</key>
+		<string>9900 Eeklo</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1539</string>
+		<key>title</key>
+		<string>9910 Knesselare</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1540</string>
+		<key>title</key>
+		<string>9910 Ursel (Knesselare)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1541</string>
+		<key>title</key>
+		<string>9920 Lovendegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1542</string>
+		<key>title</key>
+		<string>9921 Vinderhoute (Lovendegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1543</string>
+		<key>title</key>
+		<string>9930 Zomergem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1544</string>
+		<key>title</key>
+		<string>9931 Oostwinkel (Zomergem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1545</string>
+		<key>title</key>
+		<string>9932 Ronsele (Zomergem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1547</string>
+		<key>title</key>
+		<string>9940 Ertvelde (Evergem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1546</string>
+		<key>title</key>
+		<string>9940 Evergem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1548</string>
+		<key>title</key>
+		<string>9940 Kluizen (Evergem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1549</string>
+		<key>title</key>
+		<string>9940 Sleidinge (Evergem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1550</string>
+		<key>title</key>
+		<string>9950 Waarschoot</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1551</string>
+		<key>title</key>
+		<string>9960 Assenede</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1552</string>
+		<key>title</key>
+		<string>9961 Boekhoute (Assenede)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1553</string>
+		<key>title</key>
+		<string>9968 Bassevelde (Assenede)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1554</string>
+		<key>title</key>
+		<string>9968 Oosteeklo (Assenede)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1555</string>
+		<key>title</key>
+		<string>9970 Kaprijke</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1556</string>
+		<key>title</key>
+		<string>9971 Lembeke (Kaprijke)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1557</string>
+		<key>title</key>
+		<string>9980 Sint-Laureins</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1558</string>
+		<key>title</key>
+		<string>9981 Sint-Margriete (Sint-Laureins)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1559</string>
+		<key>title</key>
+		<string>9982 Sint-Jan-In-Eremo (Sint-Laureins)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1560</string>
+		<key>title</key>
+		<string>9988 Waterland-Oudeman (Sint-Laureins)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1561</string>
+		<key>title</key>
+		<string>9988 Watervliet (Sint-Laureins)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1562</string>
+		<key>title</key>
+		<string>9990 Maldegem</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1563</string>
+		<key>title</key>
+		<string>9991 Adegem (Maldegem)</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>reg.1564</string>
+		<key>title</key>
+		<string>9992 Middelburg (Maldegem)</string>
+	</dict>
+</array>
+</plist>

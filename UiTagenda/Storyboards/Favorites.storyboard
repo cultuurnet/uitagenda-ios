@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1eN-eU-2C9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="PTN57F.ttf">
+            <string>PTSans-Narrow</string>
+            <string>PTSans-Narrow</string>
+        </mutableArray>
+        <mutableArray key="PTN77F.ttf">
+            <string>PTSans-NarrowBold</string>
+            <string>PTSans-NarrowBold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--UiT Favorites View Controller-->
+        <scene sceneID="Gm6-9v-4fX">
+            <objects>
+                <tableViewController id="1eN-eU-2C9" customClass="UiTFavoritesViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PX6-Ae-CD8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIdentifier" rowHeight="113" id="m5r-3Y-DBz" customClass="UiTDetailCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="113"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m5r-3Y-DBz" id="0sr-i8-AzF">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="112.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g20-WX-WJQ" userLabel="container">
+                                            <rect key="frame" x="8" y="8" width="584" height="96"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kunstenaar van de maand: Sam Ballet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRb-mH-zSp">
+                                                    <rect key="frame" x="88" y="8" width="488" height="18"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="15"/>
+                                                    <color key="textColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="rAX-sn-5h5">
+                                                    <rect key="frame" x="1" y="1" width="80" height="94"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="RFD-jB-hty"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentoonstelling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teN-eo-73e">
+                                                    <rect key="frame" x="88" y="30" width="488" height="18"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="15"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zebrastraat Kunstenplatform" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-0e-WsP">
+                                                    <rect key="frame" x="88" y="52" width="448" height="18"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gent (375m)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vni-tT-4Ot">
+                                                    <rect key="frame" x="88" y="74" width="447" height="18"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="15"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kids_cell" translatesAutoresizingMaskIntoConstraints="NO" id="KGA-03-GOP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="94"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgc-cC-r6V">
+                                                    <rect key="frame" x="541" y="56" width="35" height="35"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="hbz-yf-vej"/>
+                                                        <constraint firstAttribute="height" constant="35" id="qDd-qV-ROQ"/>
+                                                    </constraints>
+                                                    <state key="normal" image="favoriteNormal"/>
+                                                    <state key="selected" image="favoriteSelected"/>
+                                                    <connections>
+                                                        <action selector="favoriteThisEventAction:" destination="1eN-eU-2C9" eventType="touchUpInside" id="jJa-fa-Y5C"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="teN-eo-73e" firstAttribute="top" secondItem="jRb-mH-zSp" secondAttribute="bottom" constant="4" id="0sL-k3-nMG"/>
+                                                <constraint firstAttribute="trailing" secondItem="rgc-cC-r6V" secondAttribute="trailing" constant="8" id="2ed-2Y-IxY"/>
+                                                <constraint firstItem="cSg-0e-WsP" firstAttribute="top" secondItem="teN-eo-73e" secondAttribute="bottom" constant="4" id="4Gz-rC-a7E"/>
+                                                <constraint firstItem="KGA-03-GOP" firstAttribute="width" secondItem="rAX-sn-5h5" secondAttribute="width" id="8Wu-ED-hOk"/>
+                                                <constraint firstItem="jRb-mH-zSp" firstAttribute="top" secondItem="g20-WX-WJQ" secondAttribute="top" constant="8" id="Abs-Jh-yev"/>
+                                                <constraint firstItem="rgc-cC-r6V" firstAttribute="leading" secondItem="vni-tT-4Ot" secondAttribute="trailing" constant="6" id="Eya-Ta-4lU"/>
+                                                <constraint firstAttribute="bottom" secondItem="rAX-sn-5h5" secondAttribute="bottom" constant="1" id="G9h-hL-yXC"/>
+                                                <constraint firstItem="jRb-mH-zSp" firstAttribute="leading" secondItem="vni-tT-4Ot" secondAttribute="leading" id="IxT-RM-gYM"/>
+                                                <constraint firstAttribute="trailing" secondItem="jRb-mH-zSp" secondAttribute="trailing" constant="8" id="JlI-4C-kCz"/>
+                                                <constraint firstItem="jRb-mH-zSp" firstAttribute="leading" secondItem="teN-eo-73e" secondAttribute="leading" id="RTu-b4-8Z6"/>
+                                                <constraint firstItem="rAX-sn-5h5" firstAttribute="leading" secondItem="g20-WX-WJQ" secondAttribute="leading" constant="1" id="XVf-Pv-wpI"/>
+                                                <constraint firstItem="KGA-03-GOP" firstAttribute="leading" secondItem="rAX-sn-5h5" secondAttribute="leading" constant="-1" id="ZCm-F2-fwx"/>
+                                                <constraint firstItem="jRb-mH-zSp" firstAttribute="trailing" secondItem="teN-eo-73e" secondAttribute="trailing" id="akL-Dd-5h8"/>
+                                                <constraint firstItem="KGA-03-GOP" firstAttribute="height" secondItem="rAX-sn-5h5" secondAttribute="height" id="gPG-V8-sJ1"/>
+                                                <constraint firstAttribute="bottom" secondItem="rgc-cC-r6V" secondAttribute="bottom" constant="5" id="hnw-Yt-4H5"/>
+                                                <constraint firstItem="cSg-0e-WsP" firstAttribute="trailing" secondItem="jRb-mH-zSp" secondAttribute="trailing" constant="-40" id="jf9-7F-nCS"/>
+                                                <constraint firstItem="KGA-03-GOP" firstAttribute="top" secondItem="rAX-sn-5h5" secondAttribute="top" constant="-1" id="rmG-KM-6C5"/>
+                                                <constraint firstItem="vni-tT-4Ot" firstAttribute="top" secondItem="cSg-0e-WsP" secondAttribute="bottom" constant="4" id="wFP-Ke-PYl"/>
+                                                <constraint firstItem="rAX-sn-5h5" firstAttribute="top" secondItem="g20-WX-WJQ" secondAttribute="top" constant="1" id="wRa-0H-Dpj"/>
+                                                <constraint firstItem="cSg-0e-WsP" firstAttribute="leading" secondItem="jRb-mH-zSp" secondAttribute="leading" id="xoQ-Ku-4CN"/>
+                                                <constraint firstItem="jRb-mH-zSp" firstAttribute="leading" secondItem="rAX-sn-5h5" secondAttribute="trailing" constant="7" id="z65-CG-gIa"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="g20-WX-WJQ" secondAttribute="leading" id="3LE-NQ-2Mm"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="g20-WX-WJQ" secondAttribute="bottom" id="K6I-dJ-oD4"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="g20-WX-WJQ" secondAttribute="trailing" id="THd-XE-5kD"/>
+                                        <constraint firstItem="g20-WX-WJQ" firstAttribute="top" secondItem="0sr-i8-AzF" secondAttribute="topMargin" id="dBf-Uq-4Ne"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="cityLabel" destination="vni-tT-4Ot" id="TPl-qW-Cha"/>
+                                    <outlet property="containerView" destination="g20-WX-WJQ" id="fRN-sX-4XP"/>
+                                    <outlet property="eventTypeLabel" destination="teN-eo-73e" id="RoU-UE-CNS"/>
+                                    <outlet property="favoriteButton" destination="rgc-cC-r6V" id="q0y-aH-qH9"/>
+                                    <outlet property="imageViewEvent" destination="rAX-sn-5h5" id="Kbf-es-7qa"/>
+                                    <outlet property="imageViewLabelKids" destination="KGA-03-GOP" id="t9J-Eu-KoQ"/>
+                                    <outlet property="locationLabel" destination="cSg-0e-WsP" id="Ixh-Iq-bqy"/>
+                                    <outlet property="titleLabel" destination="jRb-mH-zSp" id="yvS-pp-Ga3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1eN-eU-2C9" id="T5E-AT-Cej"/>
+                            <outlet property="delegate" destination="1eN-eU-2C9" id="yzB-tJ-UO6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Gf3-iR-s62"/>
+                    <connections>
+                        <segue destination="lbL-pY-mhI" kind="show" identifier="showDetailSegue" id="vLv-Wd-d3X"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7LJ-bk-4MO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1439" y="454"/>
+        </scene>
+        <!--homeDetailVC-->
+        <scene sceneID="4GP-gp-PZn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="homeDetailVC" id="lbL-pY-mhI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fo-mW-2CH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1934" y="454"/>
+        </scene>
+        <!--UiT Nav View Controller-->
+        <scene sceneID="ER5-sB-vlH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hmR-z8-Mtv" customClass="UiTNavViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M2N-dc-247">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1eN-eU-2C9" kind="relationship" relationship="rootViewController" id="fUq-d4-soS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PiT-ad-WhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="454"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="favoriteNormal" width="35" height="35"/>
+        <image name="favoriteSelected" width="35" height="35"/>
+        <image name="kids_cell" width="82" height="98"/>
+        <image name="no-thumbnail" width="150" height="150"/>
+    </resources>
+</document>
