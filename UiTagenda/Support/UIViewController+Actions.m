@@ -9,28 +9,40 @@
 #import "UIViewController+Actions.h"
 #import "UiTNavViewController.h"
 #import "UiTFavoritesViewController.h"
+#import "UiTSearchFilterViewController.h"
+#import "UiTBaseViewController.h"
+
+#import "NVSlideMenuController/NVSlideMenuController.h"
 
 @implementation UIViewController (Actions)
 
 - (void)showFavoritesModalAction {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Favorites" bundle:nil];
     UiTFavoritesViewController *vc = [storyboard instantiateInitialViewController];
-//    vc = [[UiTFavoritesViewController alloc] initWithModal:YES];
     vc.modal = YES;
     UiTNavViewController *nav = [[UiTNavViewController alloc] initWithRootViewController:vc];
     
     if (TARGETED_DEVICE_IS_IPAD) {
-//        NSMutableArray *viewControllerArray = [[NSMutableArray alloc] initWithArray:[[self.splitViewController.viewControllers objectAtIndex:1] viewControllers]];
-//        self.splitViewController.delegate = (UiTBaseViewController *)contentViewController;
-//        [viewControllerArray removeAllObjects];
-//        [viewControllerArray addObject:vc];
-//        [[self.splitViewController.viewControllers objectAtIndex:1] setViewControllers:viewControllerArray animated:NO];
         [self.splitViewController presentViewController:nav animated:YES completion:nil];
     } else {
-//        UiTNavViewController *navigationViewController = [[UiTNavViewController alloc] init];
-//        navigationViewController.viewControllers = @[ contentViewController ];
-//        [self.slideMenuController closeMenuBehindContentViewController:navigationViewController animated:YES bounce:NO completion:nil];
         [self presentViewController:nav animated:YES completion:nil];
+    }
+}
+
+- (void)showSearchModalAction {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Search" bundle:[NSBundle mainBundle]];
+    UIViewController *contentViewController = [storyboard instantiateInitialViewController];
+    
+    if (TARGETED_DEVICE_IS_IPAD) {
+        NSMutableArray *viewControllerArray = [[NSMutableArray alloc] initWithArray:[[self.splitViewController.viewControllers objectAtIndex:1] viewControllers]];
+        self.splitViewController.delegate = (UiTBaseViewController *)contentViewController;
+        [viewControllerArray removeAllObjects];
+        [viewControllerArray addObject:contentViewController];
+        [[self.splitViewController.viewControllers objectAtIndex:1] setViewControllers:viewControllerArray animated:NO];
+    } else {
+        UiTNavViewController *navigationViewController = [[UiTNavViewController alloc] init];
+        navigationViewController.viewControllers = @[ contentViewController ];
+        [self.slideMenuController closeMenuBehindContentViewController:navigationViewController animated:YES bounce:NO completion:nil];
     }
 }
 

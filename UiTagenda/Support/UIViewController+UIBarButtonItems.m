@@ -35,7 +35,7 @@
             break;
         case UIBarButtonItemTypeSearch:
             [barButton setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
-            [barButton addTarget:self action:@selector(openSearchModal) forControlEvents:UIControlEventTouchUpInside];
+            [barButton addTarget:self action:@selector(showSearchModalAction) forControlEvents:UIControlEventTouchUpInside];
             break;
         default:
             break;
@@ -55,20 +55,6 @@
 - (void)closeModalView {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"closeFavorites" object:nil];
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)openSearchModal {
-    UiTNavViewController *navController = [[UiTNavViewController alloc] initWithNibName:nil bundle:nil];
-    
-    UiTSearchFilterViewController *searchFilterViewController = [[UiTSearchFilterViewController alloc] initWithNibName:nil bundle:nil];
-    [navController setViewControllers:[[NSArray alloc] initWithObjects:
-                                       searchFilterViewController,
-                                       nil]];
-    [self.slideMenuController closeMenuBehindContentViewController:navController animated:YES completion:nil];
-    
-    //    UiTSearchFilterViewController *searchFilterViewController = [[UiTSearchFilterViewController alloc] initWithNibName:nil bundle:nil];
-    //    UiTNavViewController *navViewController = [[UiTNavViewController alloc] initWithRootViewController:searchFilterViewController];
-    //    [self presentViewController:navViewController animated:YES completion:nil];
 }
 
 @end

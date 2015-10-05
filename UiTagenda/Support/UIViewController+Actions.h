@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (Actions)
-
 - (void)showFavoritesModalAction;
-
+- (void)showSearchModalAction;
 @end
