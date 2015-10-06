@@ -9,17 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @protocol UitSearchWhereDelegate <NSObject>
-
--(void)setWhereValue:(NSMutableArray *)values;
-
+- (void)setWhereValue:(NSMutableArray *)values;
 @end
-
 @interface UiTSearchWhereViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate>
-
-//-(id)initWithValue:(NSMutableDictionary *)values;
-
--(id)initWithValue:(NSMutableArray *)selectedValues;
-
+- (id)initWithValue:(NSMutableArray *)selectedValues;
 @property (weak, nonatomic) id<UitSearchWhereDelegate> delegate;
-
+@property (strong, nonatomic) NSMutableDictionary *values;
+@property (strong, nonatomic) NSMutableArray *selectedValues;
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UiTSearchWhatViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate>
-
--(id)initWithExtensiveSearch:(BOOL)extensiveSearch andValue:(NSMutableDictionary *)values;
-
+- (id)initWithExtensiveSearch:(BOOL)extensiveSearch andValue:(NSMutableDictionary *)values;
+@property (strong, nonatomic) NSMutableDictionary *searchSelectedCriteria;
+@property (nonatomic) BOOL extensiveSearch;
 @end

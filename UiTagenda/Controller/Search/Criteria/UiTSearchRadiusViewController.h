@@ -13,10 +13,10 @@
 - (void) setRadiusValue:(NSString *)value;
 @end
 
-@interface UiTSearchRadiusViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface UiTSearchRadiusViewController : UIViewController
 
 -(id)initWithValue:(NSString *)value;
 
 @property (nonatomic, weak) id<UiTSearchRadiusDelegate> delegate;
-
+@property (strong, nonatomic) NSString *value;
 @end

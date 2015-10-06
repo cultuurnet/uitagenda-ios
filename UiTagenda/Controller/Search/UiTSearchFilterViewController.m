@@ -158,7 +158,23 @@ enum SearchCriteria {
                  withWhat:_what
         withExtraCriteria:_searchCriteriaDict
            withSavedQuery:NO];
-         }
+    } else if ([segue.identifier isEqualToString:@"radiusSegue"]) {
+        UiTSearchRadiusViewController *vc = (UiTSearchRadiusViewController *)segue.destinationViewController;
+        vc.value = _radius;
+        vc.delegate = self;
+    } else if ([segue.identifier isEqualToString:@"whenSegue"]) {
+        UiTSearchWhenViewController *vc = (UiTSearchWhenViewController *)segue.destinationViewController;
+        vc.value = _when;
+        vc.delegate = self;
+    } else if ([segue.identifier isEqualToString:@"whereSegue"]) {
+        UiTSearchWhereViewController *vc = (UiTSearchWhereViewController *)segue.destinationViewController;
+        vc.selectedValues = _where;
+        vc.delegate = self;
+    } else if ([segue.identifier isEqualToString:@"whatSegue"]) {
+        UiTSearchWhatViewController *vc = (UiTSearchWhatViewController *)segue.destinationViewController;
+        vc.extensiveSearch = YES;
+        vc.searchSelectedCriteria = _what;
+    }
 }
 
 - (void)trackAllSearchActions {
@@ -211,33 +227,12 @@ enum SearchCriteria {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.section == kSearchCriteria) {
-        if (indexPath.row == kSearchWhere) {
-            UiTSearchWhereViewController *whereViewController = [[UiTSearchWhereViewController alloc] initWithValue:_where];
-            whereViewController.delegate = self;
-            [self pushViewController:whereViewController];
-        } else if (indexPath.row == kSearchRadius) {
-            UiTSearchRadiusViewController *radiusViewController = [[UiTSearchRadiusViewController alloc] initWithValue:_radius];
-            radiusViewController.delegate = self;
-            [self pushViewController:radiusViewController];
-        } else if (indexPath.row == kSearchWhen) {
-            UiTSearchWhenViewController *whenViewController = [[UiTSearchWhenViewController alloc] initWithValue:_when];
-            whenViewController.delegate = self;
-            [self pushViewController:whenViewController];
-        } else if (indexPath.row == kSearchWhat) {
-            UiTSearchWhatViewController *whatViewController = [[UiTSearchWhatViewController alloc] initWithExtensiveSearch:YES andValue:_what];
-            [self pushViewController:whatViewController];
-        } else {
-            
-        }
-    } else if (indexPath.section == kSearchExtraCriteria) {
+    if (indexPath.section == kSearchExtraCriteria) {
         if ([_searchCriteriaDict objectForKey:[NSString stringWithFormat:@"%li", (long)indexPath.row]]) {
             [_searchCriteriaDict removeObjectForKey:[NSString stringWithFormat:@"%li", (long)indexPath.row]];
         } else {
             [_searchCriteriaDict setObject:[_searchCriteria objectAtIndex:indexPath.row] forKey:[NSString stringWithFormat:@"%li", (long)indexPath.row]];
         }
-    } else {
-        
     }
     [self.tableView reloadData];
 }
@@ -311,7 +306,7 @@ enum SearchCriteria {
     _where = value;
     
     if ([_where count] == 0) {
-        [_where addObject:@{@"id": @"000000", @"title": @"Alle locaties" }];
+        [_where addObject:@{ @"id": @"000000", @"title": @"Alle locaties" }];
     }
     
     [self.tableView reloadData];

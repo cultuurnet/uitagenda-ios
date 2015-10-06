@@ -9,15 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @protocol UiTSearchWhenDelegate <NSObject>
-
--(void)setWhenValue:(NSString *)value;
-
+- (void)setWhenValue:(NSString *)value;
 @end
 
-@interface UiTSearchWhenViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-
--(id)initWithValue:(NSString *)value;
-
+@interface UiTSearchWhenViewController : UIViewController
+- (id)initWithValue:(NSString *)value;
+@property (strong, nonatomic) NSString *value;
 @property (nonatomic, weak) id<UiTSearchWhenDelegate> delegate;
-
 @end
