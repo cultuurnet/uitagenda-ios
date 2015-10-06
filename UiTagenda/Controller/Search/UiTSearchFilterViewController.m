@@ -16,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIView *footerView;
 @property (strong, nonatomic) NSArray *searchCriteria;
 @property (strong, nonatomic) NSMutableDictionary *searchCriteriaDict;
-//@property (strong, nonatomic) NSMutableDictionary *where;
 @property (strong, nonatomic) NSMutableArray *where;
 @property (strong, nonatomic) NSString *radius;
 @property (strong, nonatomic) NSString *when;
@@ -49,8 +48,6 @@ enum SearchCriteria {
     self.radius = @"10";
     self.when = @"TODAY";
     self.what = [[NSMutableDictionary alloc] init];
-    
-    //    [_where setObject:@{@"id": @"0000", @"title": @"Huidige locatie" } forKey:@"0"];
     
     [_where addObject:@{@"id": @"0000", @"title": @"Huidige locatie" }];
     
@@ -127,22 +124,8 @@ enum SearchCriteria {
         if ([[[_where firstObject] valueForKey:@"id"] isEqualToString:@"000000"]) {
             [self.whereDic removeAllObjects];
         }
-
-//        UiTSearchResultsViewController *searchResultsVC = [[UiTSearchResultsViewController alloc]
-//                                                           initWithSearchTerm:self.searchTermTextField.text
-//                                                           withCurrentLocation:self.currentLocation
-//                                                           withRadius:_radius
-//                                                           withWhen:[_when isEqualToString:@""] ? @"" : [_when lowercaseString]
-//                                                           withWhere:self.whereDic
-//                                                           withWhat:_what
-//                                                           withExtraCriteria:_searchCriteriaDict
-//                                                           withSavedQuery:NO];
         
         [self trackAllSearchActions];
-        
-//        self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"BACK", @"") style:UIBarButtonItemStylePlain target:nil action:nil];
-//        [self.navigationController pushViewController:searchResultsVC animated:YES];
-        
         [self performSegueWithIdentifier:@"showResultSegue" sender:self];
     }
 }
@@ -245,18 +228,10 @@ enum SearchCriteria {
 #pragma mark - TableView DataSource Methods
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    static NSString *CellIdentifier = @"CellIdentifier";
-//    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
-//    }
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
     
     if (indexPath.section == kSearchCriteria) {
-//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        
         if (indexPath.row == kSearchInput) {
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             cell.accessoryType = UITableViewCellAccessoryNone;

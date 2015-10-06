@@ -22,13 +22,11 @@
 #import "UiTDetailCell+UiTFavorite.h"
 
 @interface UiTFavoritesViewController () <UITableViewDelegate>
-
 @property (strong, nonatomic) NSMutableArray *resultsArray, *eventIDs;
 @property (strong, nonatomic) UIImageView *noFavoritesImageView;
 @property (strong, nonatomic) UiTProblemView *problemView;
 @property (strong, nonatomic) MBProgressHUD *hud;
 @property (strong, nonatomic) ArrayDataSource *dataSource;
-
 @end
 
 @implementation UiTFavoritesViewController

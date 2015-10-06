@@ -15,18 +15,13 @@
 #define padding 10
 
 @interface UiTDetailCell()
-
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *eventTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
-
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewEvent;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewLabelKids;
-
 @property (strong, nonatomic) UIView *extrasView;
-
 @property (strong, nonatomic) NSString *imageURL;
-
 @end
 
 @implementation UiTDetailCell

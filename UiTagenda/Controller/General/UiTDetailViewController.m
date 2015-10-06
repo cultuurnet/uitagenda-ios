@@ -74,7 +74,6 @@
 @implementation UiTDetailViewController
 
 - (void)viewDidLoad {
-    NSLog(@"%@", self.event);
     _eventIndex = [self.eventsArray indexOfObject:_event];
     
     [self setupScrollView];
