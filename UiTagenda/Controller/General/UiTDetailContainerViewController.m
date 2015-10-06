@@ -47,7 +47,6 @@
     UiTDetailViewController *viewController = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateViewControllerWithIdentifier:@"homeDetailVC"];
     viewController.event = event;
     viewController.eventsArray = eventsArray;
-//    UiTDetailViewController *viewController = [[UiTDetailViewController alloc] initWithEvent:event andEventsArray:eventsArray];
     
     [viewController willMoveToParentViewController:self];
     [self addChildViewController:viewController];
