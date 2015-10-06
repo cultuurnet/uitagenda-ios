@@ -124,6 +124,8 @@
             } else {
                 self.imageViewKids.hidden = YES;
             }
+        } else {
+            self.imageViewKids.hidden = YES;
         }
     } else {
         self.headerView.hidden = YES;
