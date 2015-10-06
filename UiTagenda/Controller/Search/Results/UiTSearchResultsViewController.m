@@ -376,13 +376,12 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"showDetail" sender:nil];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-    UiTDetailViewController *vc = (UiTDetailViewController *)segue.destinationViewController;
-    vc.event = self.resultsArray[path.row];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
+    UiTDetailViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"homeDetailVC"];
+    UiTDetailContainerViewController *contVc = [[UiTDetailContainerViewController alloc] initWithRootViewController:vc];
+    vc.event = self.resultsArray[indexPath.row];
+    vc.eventsArray = self.resultsArray;
+    [self.navigationController pushViewController:contVc animated:YES];
 }
 
 #pragma mark - TableView DataSource methods

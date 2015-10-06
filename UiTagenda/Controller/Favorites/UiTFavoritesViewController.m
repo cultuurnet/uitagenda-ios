@@ -216,16 +216,12 @@
 #pragma mark - TableView Delegate methods
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"showDetailSegue" sender:self];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"showDetailSegue"]) {
-        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-        UiTDetailViewController *vc = (UiTDetailViewController *)segue.destinationViewController;
-        vc.event = (UiTEvent *)self.resultsArray[path.row];
-        vc.eventsArray = self.resultsArray;
-    }
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
+    UiTDetailViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"homeDetailVC"];
+    UiTDetailContainerViewController *contVc = [[UiTDetailContainerViewController alloc] initWithRootViewController:vc];
+    vc.event = self.resultsArray[indexPath.row];
+    vc.eventsArray = self.resultsArray;
+    [self.navigationController pushViewController:contVc animated:YES];
 }
 
 @end
