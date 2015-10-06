@@ -23,7 +23,6 @@
             <string>PTSans-Narrow</string>
             <string>PTSans-Narrow</string>
             <string>PTSans-Narrow</string>
-            <string>PTSans-Narrow</string>
         </mutableArray>
         <mutableArray key="PTN77F.ttf">
             <string>PTSans-NarrowBold</string>
@@ -237,23 +236,23 @@
                                                             <constraint firstAttribute="width" secondItem="hMi-Bk-oXO" secondAttribute="height" multiplier="187:150" id="ATh-F4-6P8"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Kunstenaar van de maand: Filip Gheysen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP5-Ea-F8E">
-                                                        <rect key="frame" x="8" y="616" width="736" height="26"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Kunstenaar van de maand: Filip Gheysen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP5-Ea-F8E">
+                                                        <rect key="frame" x="8" y="616" width="736" height="25"/>
                                                         <animations/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="20"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tentoonstelling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOy-11-uSu">
-                                                        <rect key="frame" x="34" y="650" width="710" height="15.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentoonstelling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOy-11-uSu">
+                                                        <rect key="frame" x="34" y="649" width="710" height="16.5"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="14"/>
                                                         <color key="textColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tagicon" translatesAutoresizingMaskIntoConstraints="NO" id="ujD-Jw-HMC">
-                                                        <rect key="frame" x="8" y="646" width="20" height="20"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tagicon" translatesAutoresizingMaskIntoConstraints="NO" id="ujD-Jw-HMC">
+                                                        <rect key="frame" x="8" y="650" width="18" height="18"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="Pf7-MK-d9a"/>
@@ -285,8 +284,8 @@
                                                     <constraint firstAttribute="trailing" secondItem="hMi-Bk-oXO" secondAttribute="trailing" constant="2" id="sCh-iD-AY3"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5h-QH-GLw" userLabel="date container">
-                                                <rect key="frame" x="8" y="688" width="752" height="71"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5h-QH-GLw" userLabel="date container">
+                                                <rect key="frame" x="8" y="688" width="752" height="67"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="van 28/09/15 tot 01/11/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLU-xx-YeH">
                                                         <rect key="frame" x="36" y="8" width="708" height="19"/>
@@ -303,8 +302,8 @@
                                                             <constraint firstAttribute="width" constant="20" id="Hom-Lu-JaB"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="locationicon" translatesAutoresizingMaskIntoConstraints="NO" id="irY-JR-Lmu">
-                                                        <rect key="frame" x="8" y="40" width="20" height="20"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationicon" translatesAutoresizingMaskIntoConstraints="NO" id="irY-JR-Lmu">
+                                                        <rect key="frame" x="8" y="36" width="20" height="20"/>
                                                         <animations/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zebrastraat 32, 9000 Gent" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVE-hL-X9f">
@@ -339,19 +338,19 @@
                                                     </mask>
                                                 </variation>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-Rs-cdM" userLabel="short description Container">
-                                                <rect key="frame" x="8" y="759" width="752" height="85"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-Rs-cdM" userLabel="short description Container">
+                                                <rect key="frame" x="8" y="755" width="752" height="81"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-hM-VzG">
-                                                        <rect key="frame" x="8" y="36" width="736" height="41"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-hM-VzG">
+                                                        <rect key="frame" x="8" y="35" width="736" height="38"/>
                                                         <animations/>
                                                         <string key="text">Oorlogen, hongersnoden en desastruze economische politiek, gevoed door Westerse wapens en belangen, brengen dezer dagen opnieuw grote vluchtelingenstromen op gang.</string>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Zebrastraat Kunstenplatform, Gent" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhK-VA-oYN">
-                                                        <rect key="frame" x="8" y="8" width="736" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zebrastraat Kunstenplatform, Gent" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhK-VA-oYN">
+                                                        <rect key="frame" x="8" y="8" width="736" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -370,8 +369,8 @@
                                                     <constraint firstItem="Byd-hM-VzG" firstAttribute="top" secondItem="hhK-VA-oYN" secondAttribute="bottom" constant="8" id="viW-Il-7rM"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D79-HO-vSB" userLabel="organiser Container">
-                                                <rect key="frame" x="8" y="844" width="752" height="60.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D79-HO-vSB" userLabel="organiser Container">
+                                                <rect key="frame" x="8" y="836" width="752" height="58.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organisator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssx-Ow-rpq" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="4" width="736" height="20"/>
@@ -380,8 +379,8 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WGC Botermarkt vzw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKp-df-ACT" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="31" width="736" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WGC Botermarkt vzw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKp-df-ACT" customClass="UiTInfoLabel">
+                                                        <rect key="frame" x="8" y="32" width="736" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -411,8 +410,8 @@
                                                     <constraint firstItem="OEG-Dm-dJb" firstAttribute="leading" secondItem="D79-HO-vSB" secondAttribute="leading" id="vB1-X9-hpb"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBg-ts-pEH" userLabel="contact Container">
-                                                <rect key="frame" x="8" y="904" width="752" height="60.5"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBg-ts-pEH" userLabel="contact Container">
+                                                <rect key="frame" x="8" y="894" width="752" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRa-La-CHi" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="4" width="736" height="20"/>
@@ -452,8 +451,8 @@
                                                     <constraint firstAttribute="trailing" secondItem="0nP-R7-kZV" secondAttribute="trailing" constant="8" id="yAk-S1-bL4"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aP6-eu-NrA" userLabel="reservatie Container">
-                                                <rect key="frame" x="8" y="966" width="752" height="61"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aP6-eu-NrA" userLabel="reservatie Container">
+                                                <rect key="frame" x="8" y="953" width="752" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reservatie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYR-aD-8X2" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="4" width="736" height="20"/>
@@ -493,8 +492,8 @@
                                                     <constraint firstAttribute="trailing" secondItem="Ma6-I1-V5c" secondAttribute="trailing" id="yVU-wU-kXH"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wVO-7X-ZAQ" userLabel="links Container">
-                                                <rect key="frame" x="8" y="1027" width="752" height="61"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVO-7X-ZAQ" userLabel="links Container">
+                                                <rect key="frame" x="8" y="1012" width="752" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cql-2a-9ON" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="4" width="736" height="20"/>
@@ -534,8 +533,8 @@
                                                     <constraint firstItem="Cql-2a-9ON" firstAttribute="leading" secondItem="wVO-7X-ZAQ" secondAttribute="leading" constant="8" id="nhS-BU-CYo"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyQ-2t-C3u" userLabel="prijs Container">
-                                                <rect key="frame" x="8" y="1088" width="752" height="117"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyQ-2t-C3u" userLabel="prijs Container">
+                                                <rect key="frame" x="8" y="1071" width="752" height="113"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prijs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y68-GR-jGQ" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="4" width="736" height="20"/>
@@ -544,8 +543,8 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gratis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7or-Gt-gMV" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="31" width="736" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gratis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7or-Gt-gMV" customClass="UiTInfoLabel">
+                                                        <rect key="frame" x="8" y="32" width="736" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -566,8 +565,8 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Extra Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="478-ND-PYm" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="87.5" width="736" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="478-ND-PYm" customClass="UiTInfoLabel">
+                                                        <rect key="frame" x="8" y="86" width="736" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -595,8 +594,8 @@
                                                     <constraint firstAttribute="trailing" secondItem="Y68-GR-jGQ" secondAttribute="trailing" constant="8" id="tnY-co-WkI"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bha-s8-pEO" userLabel="performers Container">
-                                                <rect key="frame" x="8" y="1205" width="752" height="61"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bha-s8-pEO" userLabel="performers Container">
+                                                <rect key="frame" x="8" y="1184" width="752" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Performers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3L-I9-FqV" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="4" width="736" height="20"/>
@@ -636,22 +635,14 @@
                                                     <constraint firstAttribute="bottom" secondItem="D6l-0y-WER" secondAttribute="bottom" constant="8" id="X0C-E8-P7t"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QlO-ay-r7l" userLabel="long description Container">
-                                                <rect key="frame" x="8" y="1266" width="752" height="81"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QlO-ay-r7l" userLabel="long description Container">
+                                                <rect key="frame" x="8" y="1243" width="752" height="124"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uitgebreide omschrijving" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-hZ-yJF" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="4" width="736" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeS-iH-4P3" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="31" width="736" height="41"/>
-                                                        <animations/>
-                                                        <string key="text">Oorlogen, hongersnoden en desastruze economische politiek, gevoed door Westerse wapens en belangen, brengen dezer dagen opnieuw grote vluchtelingenstromen op gang.</string>
-                                                        <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
-                                                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wxg-NW-kKc" userLabel="lineview">
@@ -662,19 +653,30 @@
                                                             <constraint firstAttribute="height" constant="1" id="eGp-JW-YxM"/>
                                                         </constraints>
                                                     </view>
+                                                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhN-33-6Kg">
+                                                        <rect key="frame" x="0.0" y="32" width="752" height="84"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="84" id="5NZ-XL-NRI"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="EGO-zA-nNx" id="911-fO-r6P"/>
+                                                        </connections>
+                                                    </webView>
                                                 </subviews>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="Wxg-NW-kKc" secondAttribute="trailing" id="4PE-X0-9o8"/>
-                                                    <constraint firstItem="BeS-iH-4P3" firstAttribute="leading" secondItem="QlO-ay-r7l" secondAttribute="leading" constant="8" id="9ZW-c8-ABm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uhN-33-6Kg" secondAttribute="trailing" id="CX1-vh-efT"/>
+                                                    <constraint firstItem="uhN-33-6Kg" firstAttribute="top" secondItem="Fh3-hZ-yJF" secondAttribute="bottom" constant="8" id="Kdf-i2-vHj"/>
                                                     <constraint firstItem="Wxg-NW-kKc" firstAttribute="leading" secondItem="QlO-ay-r7l" secondAttribute="leading" id="Mr4-aM-NTn"/>
-                                                    <constraint firstItem="BeS-iH-4P3" firstAttribute="top" secondItem="Fh3-hZ-yJF" secondAttribute="bottom" constant="8" id="N6L-eC-I6K"/>
-                                                    <constraint firstAttribute="bottom" secondItem="BeS-iH-4P3" secondAttribute="bottom" constant="8" id="UFQ-zV-Bpv"/>
+                                                    <constraint firstItem="uhN-33-6Kg" firstAttribute="leading" secondItem="QlO-ay-r7l" secondAttribute="leading" id="XIF-BF-Ue6"/>
                                                     <constraint firstAttribute="trailing" secondItem="Fh3-hZ-yJF" secondAttribute="trailing" constant="8" id="XZV-B2-no7"/>
                                                     <constraint firstItem="Wxg-NW-kKc" firstAttribute="top" secondItem="QlO-ay-r7l" secondAttribute="top" id="aBN-w8-qOq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="uhN-33-6Kg" secondAttribute="bottom" constant="8" id="gyr-lk-cIh"/>
                                                     <constraint firstItem="Fh3-hZ-yJF" firstAttribute="leading" secondItem="QlO-ay-r7l" secondAttribute="leading" constant="8" id="swd-yS-Mxz"/>
-                                                    <constraint firstAttribute="trailing" secondItem="BeS-iH-4P3" secondAttribute="trailing" constant="8" id="w7E-JX-Xxf"/>
                                                     <constraint firstItem="Fh3-hZ-yJF" firstAttribute="top" secondItem="QlO-ay-r7l" secondAttribute="top" constant="4" id="w9H-g1-5ig"/>
                                                 </constraints>
                                             </view>
@@ -684,13 +686,13 @@
                                         <constraints>
                                             <constraint firstItem="U5h-QH-GLw" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="0C6-aC-NRI"/>
                                             <constraint firstItem="U5h-QH-GLw" firstAttribute="top" secondItem="YVV-pN-MX2" secondAttribute="bottom" id="2A9-Zw-u7e"/>
+                                            <constraint firstItem="QlO-ay-r7l" firstAttribute="top" secondItem="bha-s8-pEO" secondAttribute="bottom" id="2ic-ix-Z3r"/>
                                             <constraint firstItem="KBg-ts-pEH" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="ASq-jj-MYu"/>
                                             <constraint firstItem="KBg-ts-pEH" firstAttribute="top" secondItem="D79-HO-vSB" secondAttribute="bottom" id="AU6-iD-3Qv"/>
                                             <constraint firstItem="wVO-7X-ZAQ" firstAttribute="top" secondItem="aP6-eu-NrA" secondAttribute="bottom" id="DBu-yS-oQX"/>
                                             <constraint firstItem="wVO-7X-ZAQ" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="Frk-KW-SFx"/>
                                             <constraint firstAttribute="trailing" secondItem="aP6-eu-NrA" secondAttribute="trailing" constant="8" id="GWV-If-TF4"/>
                                             <constraint firstItem="2fC-Rs-cdM" firstAttribute="top" secondItem="U5h-QH-GLw" secondAttribute="bottom" id="Gnm-hN-Sxv"/>
-                                            <constraint firstItem="QlO-ay-r7l" firstAttribute="top" secondItem="bha-s8-pEO" secondAttribute="bottom" id="H2j-ne-7Kl"/>
                                             <constraint firstAttribute="trailing" secondItem="D79-HO-vSB" secondAttribute="trailing" constant="8" id="IKe-2f-R3W"/>
                                             <constraint firstItem="bha-s8-pEO" firstAttribute="top" secondItem="xyQ-2t-C3u" secondAttribute="bottom" id="KxQ-Fl-NB4"/>
                                             <constraint firstItem="aP6-eu-NrA" firstAttribute="top" secondItem="KBg-ts-pEH" secondAttribute="bottom" id="NrV-mi-vbL"/>
@@ -850,6 +852,8 @@
                         <outlet property="shortDescriptionLabel" destination="Byd-hM-VzG" id="TCc-h1-J1H"/>
                         <outlet property="shortDescriptionPlaceLabel" destination="hhK-VA-oYN" id="tO5-Qh-yuA"/>
                         <outlet property="shortDescriptionView" destination="2fC-Rs-cdM" id="3Vs-cJ-q8R"/>
+                        <outlet property="webView" destination="uhN-33-6Kg" id="zvJ-sV-Xjs"/>
+                        <outlet property="webviewHeightConstraint" destination="5NZ-XL-NRI" id="FGT-sH-dIA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxM-6y-tzm" userLabel="First Responder" sceneMemberID="firstResponder"/>

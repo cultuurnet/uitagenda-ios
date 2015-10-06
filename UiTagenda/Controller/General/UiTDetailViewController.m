@@ -35,7 +35,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *previousButton;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
 @property (nonatomic) NSInteger eventIndex;
-@property (strong, nonatomic) UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *eventImageView;
 @property (weak, nonatomic) IBOutlet UILabel *eventTitleLabel;
@@ -68,6 +68,7 @@
 @property (weak, nonatomic) IBOutlet UIView *priceView;
 @property (weak, nonatomic) IBOutlet UIView *performersView;
 @property (weak, nonatomic) IBOutlet UIView *longDescriptionView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *webviewHeightConstraint;
 @end
 
 @implementation UiTDetailViewController
@@ -262,13 +263,8 @@
     }
     
     if (![_event.longDescription isEqualToString:@""]) {
-        UiTTitleLabel *longDescriptionTitle = [[UiTTitleLabel alloc] initWithFrame:CGRectMake(insetLeft, 20, WIDTH(self.view) - widthPadding, 400) andTitle:NSLocalizedString(@"LONG DESCRIPTION", @"")];
-        
-        _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, BOTTOM(longDescriptionTitle) + 5, 290, 20)];
-        _webView.delegate = self;
-        
         NSString *stringWithFont = [NSString stringWithFormat:@"<style type='text/css'>* { font-family: \"PT Sans Narrow\"; } </style>%@", _event.longDescription];
-        [_webView loadHTMLString:stringWithFont baseURL:nil];
+        [self.webView loadHTMLString:stringWithFont baseURL:nil];
     } else {
         self.longDescriptionView.hidden = YES;
     }
@@ -279,15 +275,6 @@
     phoneNumber = [phoneNumber stringByReplacingOccurrencesOfString:@":" withString:@""];
     phoneNumber = [phoneNumber stringByReplacingOccurrencesOfString:@"." withString:@""];
     return phoneNumber;
-}
-
-- (void)webViewDidFinishLoad:(UIWebView *)webView{
-    CGRect frame = _webView.frame;
-    CGSize fittingSize = [_webView sizeThatFits:CGSizeZero];
-    frame.size = fittingSize;
-    _webView.frame = frame;
-    
-    _longDescriptionView.frame = CGRectMake(10, TOP(_longDescriptionView), 300, BOTTOM(_webView));
 }
 
 - (void)setupNextAndPrevious {
@@ -439,6 +426,12 @@
 }
 
 #pragma mark - UIWebViewDelegate
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    CGSize fittingSize = [webView sizeThatFits:CGSizeZero];
+    self.webviewHeightConstraint.constant = fittingSize.height;
+    [self.longDescriptionView layoutSubviews];
+}
 
 - (BOOL)webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inType {
     if (inType == UIWebViewNavigationTypeLinkClicked ) {
