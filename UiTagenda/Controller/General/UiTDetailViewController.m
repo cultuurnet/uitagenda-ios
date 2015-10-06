@@ -53,8 +53,11 @@
 @property (weak, nonatomic) IBOutlet UiTInfoLabel *priceInfoLabel;
 @property (weak, nonatomic) IBOutlet UiTTitleLabel *priceTitleDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UiTInfoLabel *priceInfoDescriptionLabel;
-@property (weak, nonatomic) IBOutlet UiTInfoLabel *reservationInfoLabel;
+@property (weak, nonatomic) IBOutlet UiTLinkLabel *reservationInfoLabel;
 @property (weak, nonatomic) IBOutlet UiTTitleLabel *linksTitleLabel;
+@property (weak, nonatomic) IBOutlet UiTLinkLabel *linksLabel;
+@property (weak, nonatomic) IBOutlet UiTLinkLabel *contactLabel;
+@property (weak, nonatomic) IBOutlet UiTInfoLabel *performerLabel;
 
 @property (weak, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet UIView *shortDescriptionView;
@@ -183,46 +186,36 @@
     }
     
     if ([_event.contactInfo count] > 0) {
-        CGFloat yOffsetContact = 0;
+        NSString *contactString = @"";
         for (NSString *contactItem in _event.contactInfo) {
             for (NSString *contactItemInfo in [_event.contactInfo valueForKey:contactItem]) {
-                UiTLinkLabel *contactLabel;
-                if ([contactItem isEqualToString:@"phone"]) {
-                    contactLabel = [[UiTLinkLabel alloc] initWithFrame:CGRectMake(insetLeft, yOffsetContact, WIDTH(self.contactView) - widthPadding, 400) andText:[self createPhoneNumber:contactItemInfo]];
-                } else {
-                    contactLabel = [[UiTLinkLabel alloc] initWithFrame:CGRectMake(insetLeft, yOffsetContact, WIDTH(self.contactView) - widthPadding, 400) andText:contactItemInfo];
-                }
                 
-                [self.contactView addSubview:contactLabel];
+                if ([contactItem isEqualToString:@"phone"]) {
+                    contactString = [contactString stringByAppendingString:[NSString stringWithFormat:@"%@\n", [self createPhoneNumber:contactItemInfo]]];
+                } else {
+                    contactString = [contactString stringByAppendingString:[NSString stringWithFormat:@"%@\n", contactItemInfo]];
+                }
             }
         }
+        self.contactLabel.text = contactString;
     } else {
         self.contactView.hidden = YES;
     }
     
     if ([_event.contactReservationInfo count] > 0) {
         self.reservationView.backgroundColor = [UIColor whiteColor];
-        
-        UiTTitleLabel *reservationTitle   = [[UiTTitleLabel alloc] initWithFrame:CGRectMake(insetLeft, 20, WIDTH(self.reservationView) - widthPadding, 400)
-                                                                        andTitle:NSLocalizedString(@"RESERVATION", @"")];
-        [self.reservationView addSubview:reservationTitle];
-        
-        int yOffsetReservationContact = BOTTOM(reservationTitle) + paddingTitle;
+        NSString *reservationString = @"";
         
         for (NSString *contactItem in _event.contactReservationInfo) {
             for (NSString *contactItemInfo in [_event.contactReservationInfo valueForKey:contactItem]) {
-                UiTLinkLabel *contactLabel;
-                
                 if ([contactItem isEqualToString:@"phone"]) {
-                    contactLabel = [[UiTLinkLabel alloc] initWithFrame:CGRectMake(insetLeft, yOffsetReservationContact, WIDTH(self.reservationView) - widthPadding, 400) andText:[self createPhoneNumber:contactItemInfo]];
+                    reservationString = [reservationString stringByAppendingString:[NSString stringWithFormat:@"%@\n", [self createPhoneNumber:contactItemInfo]]];
                 } else {
-                    contactLabel = [[UiTLinkLabel alloc] initWithFrame:CGRectMake(insetLeft, yOffsetReservationContact, WIDTH(self.reservationView) - widthPadding, 400) andText:contactItemInfo];
+                    reservationString = [reservationString stringByAppendingString:[NSString stringWithFormat:@"%@\n", contactItemInfo]];
                 }
-                
-                [self.reservationView addSubview:contactLabel];
-                yOffsetReservationContact += (HEIGHT(contactLabel) + 10);
             }
         }
+        self.reservationInfoLabel.text = reservationString;
     } else {
         self.reservationView.hidden = YES;
     }
@@ -243,37 +236,27 @@
     }
     
     if ([_event.mediaInfo count] > 0) {
-
-        int yOffsetMedia = BOTTOM(self.linksTitleLabel) + paddingTitle;
-        
+        NSString *mediaString = @"";
         for (NSString *mediaInfo in _event.mediaInfo) {
-            UiTLinkLabel *mediaLabel = [[UiTLinkLabel alloc] initWithFrame:CGRectMake(insetLeft, yOffsetMedia, WIDTH(self.linksView) - widthPadding, 400) andText:mediaInfo];
-            [self.linksView addSubview:mediaLabel];
-            yOffsetMedia += (HEIGHT(mediaLabel) + 10);
+            mediaString = [mediaString stringByAppendingString:[NSString stringWithFormat:@"%@\n", mediaInfo]];
         }
+        self.linksLabel.text = mediaString;
     } else {
         self.linksView.hidden = YES;
     }
     
     if ([_event.performers count] > 0) {
-        UiTTitleLabel *performersTitle   = [[UiTTitleLabel alloc] initWithFrame:CGRectMake(insetLeft, 20, WIDTH(self.performersView) - widthPadding, 400) andTitle:NSLocalizedString(@"PERFORMERS", @"")];
-        [self.performersView addSubview:performersTitle];
-        
-        int yOffsetPerformers = BOTTOM(performersTitle) + paddingTitle;
+        NSString *performersString = @"";
         
         for (NSArray *performer in _event.performers) {
-            
-            UiTInfoLabel *performerLabel;
             if ([performer valueForKeyPath:@"role"] != [NSNull null]) {
-                performerLabel = [[UiTInfoLabel alloc] initWithFrame:CGRectMake(insetLeft, yOffsetPerformers, WIDTH(self.performersView) - widthPadding, 400)
-                                                             andText:[NSString stringWithFormat:@"%@ \nRol: %@\n", [performer valueForKeyPath:@"label.value"], [performer valueForKeyPath:@"role"]]];
+                NSString *textString = [NSString stringWithFormat:@"%@ \nRol: %@\n", [performer valueForKeyPath:@"label.value"], [performer valueForKeyPath:@"role"]];
+                performersString = [performersString stringByAppendingString:[NSString stringWithFormat:@"%@\n", textString]];
             } else {
-                performerLabel = [[UiTInfoLabel alloc] initWithFrame:CGRectMake(insetLeft, yOffsetPerformers, WIDTH(self.performersView) - widthPadding, 400)
-                                                             andText:[performer valueForKeyPath:@"label.value"]];
+                performersString = [performersString stringByAppendingString:[NSString stringWithFormat:@"%@\n", [performer valueForKeyPath:@"label.value"]]];
             }
-            
-            [self.performersView addSubview:performerLabel];
         }
+        self.performerLabel.text = performersString;
     } else {
         self.performersView.hidden = YES;
     }

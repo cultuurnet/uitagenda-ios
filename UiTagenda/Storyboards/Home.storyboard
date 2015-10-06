@@ -421,8 +421,8 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="092323233" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nP-R7-kZV" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="31" width="736" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="092323233" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nP-R7-kZV" customClass="UiTLinkLabel">
+                                                        <rect key="frame" x="8" y="32" width="736" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -462,8 +462,8 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gratis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reh-rs-91F" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="31" width="736" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gratis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reh-rs-91F" customClass="UiTLinkLabel">
+                                                        <rect key="frame" x="8" y="32" width="736" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -503,8 +503,8 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="http://www.gent.be" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPm-Su-dY6" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="31" width="736" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.gent.be" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPm-Su-dY6" customClass="UiTLinkLabel">
+                                                        <rect key="frame" x="8" y="32" width="736" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -560,7 +560,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1R-1Q-ecb" customClass="UiTTitleLabel">
-                                                        <rect key="frame" x="8" y="59.5" width="736" height="20"/>
+                                                        <rect key="frame" x="8" y="58" width="736" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -605,8 +605,8 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="http://www.gent.be" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-0y-WER" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="31" width="736" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.gent.be" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-0y-WER" customClass="UiTInfoLabel">
+                                                        <rect key="frame" x="8" y="32" width="736" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -821,18 +821,21 @@
                         <outlet property="calendarLabel" destination="OLU-xx-YeH" id="Oeu-gI-AVt"/>
                         <outlet property="categoryImageView" destination="ujD-Jw-HMC" id="wza-Ua-30g"/>
                         <outlet property="categoryLabel" destination="SOy-11-uSu" id="jHP-bR-1j3"/>
+                        <outlet property="contactLabel" destination="0nP-R7-kZV" id="KZA-A1-dES"/>
                         <outlet property="contactView" destination="KBg-ts-pEH" id="Gbf-jn-DFn"/>
                         <outlet property="eventImageView" destination="hMi-Bk-oXO" id="pG5-jh-RdP"/>
                         <outlet property="eventTitleLabel" destination="FP5-Ea-F8E" id="lzl-U2-E1O"/>
                         <outlet property="favoriteButton" destination="yeb-wC-t6a" id="J5D-d6-Vxm"/>
                         <outlet property="headerView" destination="YVV-pN-MX2" id="mxS-52-Jqn"/>
                         <outlet property="imageViewKids" destination="l7X-YR-32M" id="ZRR-HC-a4f"/>
+                        <outlet property="linksLabel" destination="bPm-Su-dY6" id="F25-ft-xGC"/>
                         <outlet property="linksTitleLabel" destination="Cql-2a-9ON" id="jiH-nf-kJj"/>
                         <outlet property="linksView" destination="wVO-7X-ZAQ" id="rXu-aN-QLB"/>
                         <outlet property="longDescriptionView" destination="QlO-ay-r7l" id="L7Q-70-Zac"/>
                         <outlet property="nextButton" destination="yxc-wc-Kvk" id="urg-3E-SPx"/>
                         <outlet property="organiserInfoLabel" destination="bKp-df-ACT" id="Ld0-ys-TPG"/>
                         <outlet property="organiserView" destination="D79-HO-vSB" id="wDV-7V-v2l"/>
+                        <outlet property="performerLabel" destination="D6l-0y-WER" id="FDg-1m-Fsw"/>
                         <outlet property="performersView" destination="bha-s8-pEO" id="pMg-GG-T65"/>
                         <outlet property="placeImageView" destination="irY-JR-Lmu" id="McV-kh-EWg"/>
                         <outlet property="placeLabel" destination="iVE-hL-X9f" id="bQp-k1-wg0"/>

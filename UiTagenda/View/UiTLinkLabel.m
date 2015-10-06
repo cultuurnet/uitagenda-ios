@@ -31,6 +31,26 @@
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.linkAttributes = @{(id)kCTForegroundColorAttributeName: REDCOLOR,
+                                (id)kCTUnderlineStyleAttributeName : @(kCTUnderlineStyleNone)
+                                };
+        self.activeLinkAttributes = @{(id)kCTForegroundColorAttributeName: SLIDEMENUCOLOR,
+                                      (id)kCTUnderlineStyleAttributeName: @(kCTUnderlineStyleNone)
+                                      };
+        self.enabledTextCheckingTypes = NSTextCheckingAllTypes;
+        self.numberOfLines = 0;
+        self.lineBreakMode = NSLineBreakByWordWrapping;
+        self.delegate = self;
+        self.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:14];
+        self.textColor = TITLECOLOR;
+        [self sizeToFit];
+    }
+    return self;
+}
+
 //-(NSString *)createPhoneNumber:(NSString *)contactItem {
 //    NSString *phoneNumber = [contactItem stringByReplacingOccurrencesOfString:@"/" withString:@""];
 //    phoneNumber = [phoneNumber stringByReplacingOccurrencesOfString:@":" withString:@""];
