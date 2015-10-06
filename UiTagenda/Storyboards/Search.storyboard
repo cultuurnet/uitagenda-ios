@@ -667,6 +667,10 @@
                                                         <constraint firstAttribute="width" constant="35" id="SeV-G6-YB6"/>
                                                     </constraints>
                                                     <state key="normal" image="favoriteNormal"/>
+                                                    <state key="selected" image="favoriteSelected"/>
+                                                    <connections>
+                                                        <action selector="favoriteEvent:" destination="eie-GQ-kje" eventType="touchUpInside" id="zO6-eG-bKo"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <animations/>
@@ -762,6 +766,7 @@
     <resources>
         <image name="close" width="35" height="35"/>
         <image name="favoriteNormal" width="35" height="35"/>
+        <image name="favoriteSelected" width="35" height="35"/>
         <image name="kids_cell" width="82" height="98"/>
         <image name="no-thumbnail" width="150" height="150"/>
     </resources>

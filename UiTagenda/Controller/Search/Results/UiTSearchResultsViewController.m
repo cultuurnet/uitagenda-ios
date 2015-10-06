@@ -417,8 +417,6 @@ static BOOL haveAlreadyReceivedCoordinates;
             
             cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
         }
-        
-        [cell.favoriteButton addTarget:self action:@selector(favoriteEvent:) forControlEvents:UIControlEventTouchUpInside];
         cell.favoriteButton.tag = indexPath.row;
     }
     
@@ -439,7 +437,7 @@ static BOOL haveAlreadyReceivedCoordinates;
     return distance;
 }
 
-- (void)favoriteEvent:(id)sender {
+- (IBAction)favoriteEvent:(id)sender {
     UIButton *button = (UIButton *)sender;
     NSManagedObjectContext *context = [[UitagendaDataModel sharedDataModel] mainContext];
     
