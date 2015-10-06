@@ -71,6 +71,11 @@ static BOOL haveAlreadyReceivedCoordinates;
     [self.tableView reloadData];
 }
 
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    _problemView.frame = CGRectMake(CENTER_IN_PARENT_X(self.view, 250), CENTER_IN_PARENT_Y(self.view, 250), 250, 250);
+}
+
 #pragma mark - Setup
 
 - (void)setupView {

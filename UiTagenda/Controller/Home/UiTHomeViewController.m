@@ -97,9 +97,7 @@ static BOOL haveAlreadyReceivedCoordinates;
     [self.eventTableView.pullToRefreshView setTitle:NSLocalizedString(@"RELEASE TO REFRESH", @"") forState:SVPullToRefreshStateTriggered];
     [self.eventTableView.pullToRefreshView setTitle:NSLocalizedString(@"LOADING", @"") forState:SVPullToRefreshStateLoading];
     
-//    self.problemView = [[UiTProblemView alloc] initWithFrame:CGRectMake(CENTER_IN_PARENT_X(self.eventTableView, 250), CENTER_IN_PARENT_Y(self.eventTableView, 250), 250, 250)];
-    self.problemView = [[UiTProblemView alloc] initWithFrame:CGRectMake(CENTER_IN_PARENT_X(self.view, WIDTH(self.view)), CENTER_IN_PARENT_Y(self.view, 250), WIDTH(self.view), 250)];
-//    self.problemView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    self.problemView = [[UiTProblemView alloc] initWithFrame:CGRectMake(CENTER_IN_PARENT_X(self.view, 250), CENTER_IN_PARENT_Y(self.view, 250), 250, 250)];
     self.problemView.hidden = YES;
     [self.eventTableView addSubview:self.problemView];
 }
@@ -222,6 +220,11 @@ static BOOL haveAlreadyReceivedCoordinates;
     
     self.eventTableView.showsInfiniteScrolling = NO;
     [self.eventTableView.pullToRefreshView stopAnimating];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    _problemView.frame = CGRectMake(CENTER_IN_PARENT_X(self.view, 250), CENTER_IN_PARENT_Y(self.view, 250), 250, 250);
 }
 
 #pragma mark - TableView Delegate methods

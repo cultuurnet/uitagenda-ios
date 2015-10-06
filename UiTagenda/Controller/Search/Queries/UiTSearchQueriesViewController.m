@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupView];
-    self.navigationItem.rightBarButtonItems = @[ [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"EDIT", @"") style:UIBarButtonItemStyleBordered target:self action:@selector(editButtonSelected:)], [self showBarButtonWithType:UIBarButtonItemTypeFavorite] ];
+    self.navigationItem.rightBarButtonItems = @[ [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"EDIT", @"") style:UIBarButtonItemStylePlain target:self action:@selector(editButtonSelected:)], [self showBarButtonWithType:UIBarButtonItemTypeFavorite] ];
     
     [self setupTableView];
     
@@ -40,6 +40,11 @@
 - (void)setupView {
     self.title = NSLocalizedString(@"SEARCHQUERIES", @"");
     self.view.backgroundColor = BACKGROUNDCOLOR;
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    _problemView.frame = CGRectMake(CENTER_IN_PARENT_X(self.view, 250), CENTER_IN_PARENT_Y(self.view, 250), 250, 250);
 }
 
 - (void)editButtonSelected:(id)sender {

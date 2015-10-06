@@ -71,12 +71,16 @@
     _resultsArray = [NSMutableArray array];
 }
 
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    _problemView.frame = CGRectMake(CENTER_IN_PARENT_X(self.view, 250), CENTER_IN_PARENT_Y(self.view, 250), 250, 250);
+}
+
 - (void)setupTableView {
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.canCancelContentTouches = YES;
     self.tableView.backgroundColor = BACKGROUNDCOLOR;
-    
-    _problemView = [[UiTProblemView alloc] initWithFrame:CGRectMake(CENTER_IN_PARENT_X(self.tableView, 250), CENTER_IN_PARENT_Y(self.tableView, 250), 250, 250)];
+    _problemView = [[UiTProblemView alloc] initWithFrame:CGRectMake(CENTER_IN_PARENT_X(self.view, 250), CENTER_IN_PARENT_Y(self.view, 250), 250, 250)];
     _problemView.hidden = YES;
     [self.tableView addSubview:_problemView];
 }
