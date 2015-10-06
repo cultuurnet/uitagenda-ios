@@ -60,6 +60,7 @@
 @property (weak, nonatomic) IBOutlet UiTInfoLabel *performerLabel;
 
 @property (weak, nonatomic) IBOutlet UIView *headerView;
+@property (weak, nonatomic) IBOutlet UIView *titleView;
 @property (weak, nonatomic) IBOutlet UIView *shortDescriptionView;
 @property (weak, nonatomic) IBOutlet UIView *organiserView;
 @property (weak, nonatomic) IBOutlet UIView *contactView;
@@ -102,7 +103,6 @@
                                                                               withWidth:WIDTH(self.view)
                                                                              withHeight:1
                                                                               withColor:UIColorFromHex(0xE7E7E7)]];
-    
     [self setupFavoriteButton];
     [self setupShareButton];
     [self setupNextAndPrevious];
@@ -126,7 +126,6 @@
         }
     } else {
         self.headerView.hidden = YES;
-        self.eventImageView.hidden = YES;
     }
     
     // TITLE
@@ -135,6 +134,7 @@
         [self.eventTitleLabel sizeToFit];
     } else {
         self.eventTitleLabel.hidden = YES;
+        self.titleView.hidden = YES;
     }
     
     if ([_event.categories count] > 0) {
