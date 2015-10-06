@@ -222,7 +222,6 @@
     }
     
     if (![_event.price isEqualToString:@""]) {
-        
         if ([_event.price isEqualToString:@"0"]) {
             self.priceInfoLabel.text = NSLocalizedString(@"FREE", @"");
         } else {
