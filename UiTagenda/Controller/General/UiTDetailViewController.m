@@ -113,7 +113,7 @@
     // IMAGE
     if (_event.imageURL != nil) {
         NSArray *splitURL = [[NSString stringWithFormat:@"%@", _event.imageURL] componentsSeparatedByString:@"?"];
-        NSURL *imageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@?width=%i&height=%i&crop=auto", splitURL[0], (int)(WIDTH(self.view) - 20) * 2, 500]];
+        NSURL *imageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@?width=%i&height=%i&crop=auto", splitURL[0], (int)(WIDTH(self.view) - 20) * 2, 600]];
         [self.eventImageView setImageWithURL:imageURL placeholderImage:[UIImage imageNamed:@"no-thumbnail"]];
         self.eventImageView.clipsToBounds = YES;
         
@@ -155,6 +155,7 @@
     
     if (![_event.address isEqualToString:@""]) {
         [self.placeLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showRoute)]];
+        self.placeLabel.userInteractionEnabled = YES;
         self.placeLabel.text = _event.address;
         [self.placeLabel sizeToFit];
     } else {

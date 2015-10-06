@@ -842,9 +842,11 @@
                     <connections>
                         <outlet property="calendarImageView" destination="QPQ-P1-hwp" id="NKs-QR-Igk"/>
                         <outlet property="calendarLabel" destination="OLU-xx-YeH" id="Oeu-gI-AVt"/>
+                        <outlet property="categoryLabel" destination="4od-JL-eBf" id="bFg-rv-jtT"/>
                         <outlet property="contactLabel" destination="0nP-R7-kZV" id="KZA-A1-dES"/>
                         <outlet property="contactView" destination="KBg-ts-pEH" id="Gbf-jn-DFn"/>
                         <outlet property="eventImageView" destination="hMi-Bk-oXO" id="pG5-jh-RdP"/>
+                        <outlet property="eventTitleLabel" destination="Nnp-cE-4Dw" id="Wmh-F8-1Xl"/>
                         <outlet property="favoriteButton" destination="yeb-wC-t6a" id="J5D-d6-Vxm"/>
                         <outlet property="headerView" destination="YVV-pN-MX2" id="mxS-52-Jqn"/>
                         <outlet property="imageViewKids" destination="l7X-YR-32M" id="ZRR-HC-a4f"/>
