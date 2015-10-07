@@ -71,7 +71,10 @@
 @property (weak, nonatomic) IBOutlet UIView *longDescriptionView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *webviewHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *addressHeightConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dateHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *calendarHeightContraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightCalendarLogoContraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightPlaceLogoConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *paddingCalendarPlaceHeight;
 @end
 
 @implementation UiTDetailViewController
@@ -153,21 +156,22 @@
     if (![_event.calendarSummary isEqualToString:@""]) {
         self.calendarLabel.text = _event.calendarSummary;
         [self.calendarLabel sizeToFit];
+        self.calendarHeightContraint.constant = HEIGHT(self.calendarLabel);
     } else {
-        self.calendarImageView.hidden = YES;
-        self.calendarLabel.hidden = YES;
-        self.dateHeightConstraint.constant = 0;
+        self.calendarHeightContraint.constant = 0;
+        self.heightCalendarLogoContraint.constant = 0;
+        self.paddingCalendarPlaceHeight.constant = 0;
     }
-    
+        
     if (![_event.address isEqualToString:@""]) {
         [self.placeLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showRoute)]];
         self.placeLabel.userInteractionEnabled = YES;
         self.placeLabel.text = _event.address;
         [self.placeLabel sizeToFit];
     } else {
-        self.placeImageView.hidden = YES;
-        self.placeLabel.hidden = YES;
+        self.paddingCalendarPlaceHeight.constant = 0;
         self.addressHeightConstraint.constant = 0;
+        self.heightPlaceLogoConstraint.constant = 0;
     }
     
     if (![_event.place isEqualToString:@""]) {

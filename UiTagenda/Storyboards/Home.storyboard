@@ -252,7 +252,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="hMi-Bk-oXO" secondAttribute="trailing" constant="2" id="sCh-iD-AY3"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEA-XJ-3kM" userLabel="title Container">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEA-XJ-3kM" userLabel="title Container">
                                                 <rect key="frame" x="8" y="596" width="732" height="69.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Kunstenaar van de maand: Filip Gheysen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnp-cE-4Dw">
@@ -264,7 +264,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tagicon" translatesAutoresizingMaskIntoConstraints="NO" id="aFd-SI-8q8">
-                                                        <rect key="frame" x="8" y="39.5" width="18" height="18"/>
+                                                        <rect key="frame" x="8" y="40" width="18" height="18"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="3pL-EH-AJs"/>
@@ -272,7 +272,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentoonstelling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4od-JL-eBf">
-                                                        <rect key="frame" x="34" y="40.5" width="690" height="16.5"/>
+                                                        <rect key="frame" x="34" y="41" width="690" height="16.5"/>
                                                         <animations/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="14"/>
@@ -295,18 +295,8 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5h-QH-GLw" userLabel="date container">
-                                                <rect key="frame" x="8" y="665.5" width="732" height="67"/>
+                                                <rect key="frame" x="8" y="666" width="732" height="67"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="van 28/09/15 tot 01/11/15" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLU-xx-YeH">
-                                                        <rect key="frame" x="36" y="8" width="688" height="19"/>
-                                                        <animations/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="1" constant="19" id="UhH-Sy-xAU"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendaricon" translatesAutoresizingMaskIntoConstraints="NO" id="QPQ-P1-hwp">
                                                         <rect key="frame" x="8" y="8" width="20" height="20"/>
                                                         <animations/>
@@ -315,8 +305,8 @@
                                                             <constraint firstAttribute="width" constant="20" id="Hom-Lu-JaB"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationicon" translatesAutoresizingMaskIntoConstraints="NO" id="irY-JR-Lmu">
-                                                        <rect key="frame" x="8" y="36.5" width="20" height="20"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="locationicon" translatesAutoresizingMaskIntoConstraints="NO" id="irY-JR-Lmu">
+                                                        <rect key="frame" x="8" y="37" width="20" height="20"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="sqx-Eh-rD2"/>
@@ -324,13 +314,23 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zebrastraat 32, 9000 Gent" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVE-hL-X9f">
-                                                        <rect key="frame" x="36" y="41" width="688" height="15.5"/>
+                                                        <rect key="frame" x="36" y="41" width="688" height="20"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="1" constant="16" id="b7Y-jx-2Gt"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="13"/>
                                                         <color key="textColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="van 28/09/15 tot 01/11/15" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLU-xx-YeH">
+                                                        <rect key="frame" x="36" y="8" width="688" height="19"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="19" id="UhH-Sy-xAU"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -341,19 +341,18 @@
                                                     <constraint firstAttribute="trailing" secondItem="OLU-xx-YeH" secondAttribute="trailing" constant="8" id="C7U-hb-WYo"/>
                                                     <constraint firstItem="irY-JR-Lmu" firstAttribute="leading" secondItem="U5h-QH-GLw" secondAttribute="leading" constant="8" id="DHM-HL-05u"/>
                                                     <constraint firstItem="OLU-xx-YeH" firstAttribute="top" secondItem="U5h-QH-GLw" secondAttribute="top" constant="8" id="IYX-n0-jod"/>
-                                                    <constraint firstItem="iVE-hL-X9f" firstAttribute="top" secondItem="U5h-QH-GLw" secondAttribute="top" priority="1" constant="8" id="UVj-7X-Ts6"/>
                                                     <constraint firstItem="QPQ-P1-hwp" firstAttribute="leading" secondItem="U5h-QH-GLw" secondAttribute="leading" constant="8" id="UjT-b2-5xK"/>
-                                                    <constraint firstAttribute="bottom" secondItem="OLU-xx-YeH" secondAttribute="bottom" priority="1" constant="8" id="ZSd-DE-8tZ"/>
                                                     <constraint firstAttribute="trailing" secondItem="iVE-hL-X9f" secondAttribute="trailing" constant="8" id="hb9-SR-S7y"/>
                                                     <constraint firstItem="OLU-xx-YeH" firstAttribute="leading" secondItem="QPQ-P1-hwp" secondAttribute="trailing" constant="8" id="hvs-Wi-SiC"/>
                                                     <constraint firstItem="iVE-hL-X9f" firstAttribute="leading" secondItem="irY-JR-Lmu" secondAttribute="trailing" constant="8" id="i8b-9U-3fR"/>
                                                     <constraint firstItem="irY-JR-Lmu" firstAttribute="bottom" secondItem="iVE-hL-X9f" secondAttribute="bottom" id="jKy-vk-orX"/>
                                                     <constraint firstItem="QPQ-P1-hwp" firstAttribute="top" secondItem="U5h-QH-GLw" secondAttribute="top" constant="8" id="nhs-16-Eh2"/>
-                                                    <constraint firstItem="iVE-hL-X9f" firstAttribute="top" secondItem="OLU-xx-YeH" secondAttribute="bottom" priority="250" constant="14" id="qGA-Ww-DLC"/>
+                                                    <constraint firstItem="iVE-hL-X9f" firstAttribute="top" secondItem="OLU-xx-YeH" secondAttribute="bottom" constant="14" id="oF9-RD-Y80"/>
+                                                    <constraint firstItem="irY-JR-Lmu" firstAttribute="top" secondItem="iVE-hL-X9f" secondAttribute="top" id="yIS-RG-z1X"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-Rs-cdM" userLabel="short description Container">
-                                                <rect key="frame" x="8" y="732.5" width="732" height="81"/>
+                                                <rect key="frame" x="8" y="733" width="732" height="81"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-hM-VzG">
                                                         <rect key="frame" x="8" y="35" width="716" height="38"/>
@@ -832,16 +831,18 @@
                     <size key="freeformSize" width="768" height="1540"/>
                     <connections>
                         <outlet property="addressHeightConstraint" destination="b7Y-jx-2Gt" id="bos-Hz-mkN"/>
+                        <outlet property="calendarHeightContraint" destination="UhH-Sy-xAU" id="s9j-Ev-l9V"/>
                         <outlet property="calendarImageView" destination="QPQ-P1-hwp" id="NKs-QR-Igk"/>
                         <outlet property="calendarLabel" destination="OLU-xx-YeH" id="Oeu-gI-AVt"/>
                         <outlet property="categoryLabel" destination="4od-JL-eBf" id="bFg-rv-jtT"/>
                         <outlet property="contactLabel" destination="0nP-R7-kZV" id="KZA-A1-dES"/>
                         <outlet property="contactView" destination="KBg-ts-pEH" id="Gbf-jn-DFn"/>
-                        <outlet property="dateHeightConstraint" destination="UhH-Sy-xAU" id="nZ7-gm-a9h"/>
                         <outlet property="eventImageView" destination="hMi-Bk-oXO" id="pG5-jh-RdP"/>
                         <outlet property="eventTitleLabel" destination="Nnp-cE-4Dw" id="Wmh-F8-1Xl"/>
                         <outlet property="favoriteButton" destination="yeb-wC-t6a" id="J5D-d6-Vxm"/>
                         <outlet property="headerView" destination="YVV-pN-MX2" id="mxS-52-Jqn"/>
+                        <outlet property="heightCalendarLogoContraint" destination="H2D-4y-xWG" id="dWv-W3-bnr"/>
+                        <outlet property="heightPlaceLogoConstraint" destination="uvS-4W-Yqd" id="gmo-aF-Lyq"/>
                         <outlet property="imageViewKids" destination="l7X-YR-32M" id="ZRR-HC-a4f"/>
                         <outlet property="linksLabel" destination="bPm-Su-dY6" id="F25-ft-xGC"/>
                         <outlet property="linksTitleLabel" destination="Cql-2a-9ON" id="jiH-nf-kJj"/>
@@ -850,6 +851,7 @@
                         <outlet property="nextButton" destination="yxc-wc-Kvk" id="urg-3E-SPx"/>
                         <outlet property="organiserInfoLabel" destination="bKp-df-ACT" id="Ld0-ys-TPG"/>
                         <outlet property="organiserView" destination="D79-HO-vSB" id="wDV-7V-v2l"/>
+                        <outlet property="paddingCalendarPlaceHeight" destination="oF9-RD-Y80" id="WQQ-ae-05x"/>
                         <outlet property="performerLabel" destination="D6l-0y-WER" id="FDg-1m-Fsw"/>
                         <outlet property="performersView" destination="bha-s8-pEO" id="pMg-GG-T65"/>
                         <outlet property="placeImageView" destination="irY-JR-Lmu" id="McV-kh-EWg"/>
