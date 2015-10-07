@@ -109,6 +109,7 @@
 #pragma mark - IBActions
 
 - (void)confirmButtonSelected {
+    [_delegate setWhatValue:_searchSelectedCriteria];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

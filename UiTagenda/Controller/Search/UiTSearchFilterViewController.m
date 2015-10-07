@@ -157,6 +157,7 @@ enum SearchCriteria {
         UiTSearchWhatViewController *vc = (UiTSearchWhatViewController *)segue.destinationViewController;
         vc.extensiveSearch = YES;
         vc.searchSelectedCriteria = _what;
+        vc.delegate = self;
     }
 }
 
@@ -255,6 +256,8 @@ enum SearchCriteria {
         } else if (indexPath.row == kSearchWhat) {
             if (_what.count > 0) {
                 cell.detailTextLabel.text = [self createLabelCell:_what];
+            } else {
+                cell.detailTextLabel.text = NSLocalizedString(@"ALL", @"");
             }
         }
     } else if (indexPath.section == kSearchExtraCriteria) {

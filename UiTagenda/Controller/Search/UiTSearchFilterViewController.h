@@ -13,6 +13,6 @@
 #import "UiTSearchWhenViewController.h"
 #import "UiTSearchWhatViewController.h"
 
-@interface UiTSearchFilterViewController : UiTBaseTableViewController <UiTSearchRadiusDelegate, UiTSearchWhenDelegate, UitSearchWhereDelegate, UITextFieldDelegate>
+@interface UiTSearchFilterViewController : UiTBaseTableViewController <UiTSearchRadiusDelegate, UiTSearchWhenDelegate, UitSearchWhereDelegate, UITextFieldDelegate, UitSearchWhatDelegate>
 
 @end
