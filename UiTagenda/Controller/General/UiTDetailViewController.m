@@ -70,6 +70,8 @@
 @property (weak, nonatomic) IBOutlet UIView *performersView;
 @property (weak, nonatomic) IBOutlet UIView *longDescriptionView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *webviewHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *addressHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *dateHeightConstraint;
 @end
 
 @implementation UiTDetailViewController
@@ -154,6 +156,7 @@
     } else {
         self.calendarImageView.hidden = YES;
         self.calendarLabel.hidden = YES;
+        self.dateHeightConstraint.constant = 0;
     }
     
     if (![_event.address isEqualToString:@""]) {
@@ -164,6 +167,7 @@
     } else {
         self.placeImageView.hidden = YES;
         self.placeLabel.hidden = YES;
+        self.addressHeightConstraint.constant = 0;
     }
     
     if (![_event.place isEqualToString:@""]) {

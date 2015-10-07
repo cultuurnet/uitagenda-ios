@@ -252,11 +252,11 @@
                                                     <constraint firstAttribute="trailing" secondItem="hMi-Bk-oXO" secondAttribute="trailing" constant="2" id="sCh-iD-AY3"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEA-XJ-3kM" userLabel="title Container">
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEA-XJ-3kM" userLabel="title Container">
                                                 <rect key="frame" x="8" y="596" width="732" height="69"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Kunstenaar van de maand: Filip Gheysen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnp-cE-4Dw">
-                                                        <rect key="frame" x="8" y="8" width="716" height="24"/>
+                                                        <rect key="frame" x="8" y="8" width="716" height="23.5"/>
                                                         <animations/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="20"/>
@@ -264,7 +264,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tagicon" translatesAutoresizingMaskIntoConstraints="NO" id="aFd-SI-8q8">
-                                                        <rect key="frame" x="8" y="40" width="18" height="18"/>
+                                                        <rect key="frame" x="8" y="39" width="18" height="18"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="3pL-EH-AJs"/>
@@ -272,7 +272,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentoonstelling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4od-JL-eBf">
-                                                        <rect key="frame" x="34" y="41" width="690" height="17"/>
+                                                        <rect key="frame" x="34" y="40" width="690" height="16.5"/>
                                                         <animations/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="14"/>
@@ -295,11 +295,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5h-QH-GLw" userLabel="date container">
-                                                <rect key="frame" x="8" y="681" width="752" height="66"/>
+                                                <rect key="frame" x="8" y="665" width="732" height="67"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="van 28/09/15 tot 01/11/15" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLU-xx-YeH">
                                                         <rect key="frame" x="36" y="8" width="688" height="19"/>
                                                         <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="1" constant="19" id="UhH-Sy-xAU"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -315,10 +318,17 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationicon" translatesAutoresizingMaskIntoConstraints="NO" id="irY-JR-Lmu">
                                                         <rect key="frame" x="8" y="36" width="20" height="20"/>
                                                         <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="sqx-Eh-rD2"/>
+                                                            <constraint firstAttribute="height" constant="20" id="uvS-4W-Yqd"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zebrastraat 32, 9000 Gent" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVE-hL-X9f">
-                                                        <rect key="frame" x="36" y="41" width="688" height="16"/>
+                                                        <rect key="frame" x="36" y="41" width="688" height="15.5"/>
                                                         <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="1" constant="16" id="b7Y-jx-2Gt"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="13"/>
                                                         <color key="textColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -327,32 +337,24 @@
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="irY-JR-Lmu" firstAttribute="leading" secondItem="QPQ-P1-hwp" secondAttribute="leading" id="2oN-jQ-DSl"/>
-                                                    <constraint firstAttribute="bottom" secondItem="iVE-hL-X9f" secondAttribute="bottom" constant="10.5" id="3xA-Xm-6Xv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="iVE-hL-X9f" secondAttribute="bottom" constant="11" id="3xA-Xm-6Xv"/>
                                                     <constraint firstAttribute="trailing" secondItem="OLU-xx-YeH" secondAttribute="trailing" constant="8" id="C7U-hb-WYo"/>
+                                                    <constraint firstItem="irY-JR-Lmu" firstAttribute="leading" secondItem="U5h-QH-GLw" secondAttribute="leading" constant="8" id="DHM-HL-05u"/>
                                                     <constraint firstItem="OLU-xx-YeH" firstAttribute="top" secondItem="U5h-QH-GLw" secondAttribute="top" constant="8" id="IYX-n0-jod"/>
-                                                    <constraint firstItem="iVE-hL-X9f" firstAttribute="leading" secondItem="irY-JR-Lmu" secondAttribute="trailing" constant="8" id="UIb-fS-FFc"/>
                                                     <constraint firstItem="QPQ-P1-hwp" firstAttribute="leading" secondItem="U5h-QH-GLw" secondAttribute="leading" constant="8" id="UjT-b2-5xK"/>
-                                                    <constraint firstAttribute="bottom" secondItem="irY-JR-Lmu" secondAttribute="bottom" constant="11" id="dMb-yb-BBM"/>
                                                     <constraint firstAttribute="trailing" secondItem="iVE-hL-X9f" secondAttribute="trailing" constant="8" id="hb9-SR-S7y"/>
                                                     <constraint firstItem="OLU-xx-YeH" firstAttribute="leading" secondItem="QPQ-P1-hwp" secondAttribute="trailing" constant="8" id="hvs-Wi-SiC"/>
-                                                    <constraint firstItem="irY-JR-Lmu" firstAttribute="width" secondItem="QPQ-P1-hwp" secondAttribute="width" id="idB-Xh-oQI"/>
-                                                    <constraint firstItem="irY-JR-Lmu" firstAttribute="height" secondItem="QPQ-P1-hwp" secondAttribute="height" id="lVO-aE-fmO"/>
+                                                    <constraint firstItem="iVE-hL-X9f" firstAttribute="leading" secondItem="irY-JR-Lmu" secondAttribute="trailing" constant="8" id="i8b-9U-3fR"/>
+                                                    <constraint firstItem="irY-JR-Lmu" firstAttribute="bottom" secondItem="iVE-hL-X9f" secondAttribute="bottom" id="jKy-vk-orX"/>
                                                     <constraint firstItem="QPQ-P1-hwp" firstAttribute="top" secondItem="U5h-QH-GLw" secondAttribute="top" constant="8" id="nhs-16-Eh2"/>
                                                     <constraint firstItem="iVE-hL-X9f" firstAttribute="top" secondItem="OLU-xx-YeH" secondAttribute="bottom" priority="250" constant="14" id="qGA-Ww-DLC"/>
-                                                    <constraint firstItem="irY-JR-Lmu" firstAttribute="top" secondItem="QPQ-P1-hwp" secondAttribute="bottom" constant="12" id="tc5-3X-xCg"/>
                                                 </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="tc5-3X-xCg"/>
-                                                    </mask>
-                                                </variation>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-Rs-cdM" userLabel="short description Container">
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-Rs-cdM" userLabel="short description Container">
                                                 <rect key="frame" x="8" y="732" width="732" height="81"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-hM-VzG">
-                                                        <rect key="frame" x="8" y="35" width="716" height="38"/>
+                                                        <rect key="frame" x="8" y="35" width="716" height="37.5"/>
                                                         <animations/>
                                                         <string key="text">Oorlogen, hongersnoden en desastruze economische politiek, gevoed door Westerse wapens en belangen, brengen dezer dagen opnieuw grote vluchtelingenstromen op gang.</string>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
@@ -379,18 +381,18 @@
                                                     <constraint firstItem="Byd-hM-VzG" firstAttribute="top" secondItem="hhK-VA-oYN" secondAttribute="bottom" constant="8" id="viW-Il-7rM"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D79-HO-vSB" userLabel="organiser Container">
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D79-HO-vSB" userLabel="organiser Container">
                                                 <rect key="frame" x="8" y="813" width="732" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organisator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssx-Ow-rpq" customClass="UiTTitleLabel">
-                                                        <rect key="frame" x="8" y="4" width="716" height="20"/>
+                                                        <rect key="frame" x="8" y="8" width="716" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WGC Botermarkt vzw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKp-df-ACT" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="32" width="716" height="19"/>
+                                                        <rect key="frame" x="8" y="36" width="716" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -408,7 +410,7 @@
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="ssx-Ow-rpq" firstAttribute="top" secondItem="D79-HO-vSB" secondAttribute="top" constant="4" id="13l-6X-r1t"/>
+                                                    <constraint firstItem="ssx-Ow-rpq" firstAttribute="top" secondItem="D79-HO-vSB" secondAttribute="top" constant="8" id="13l-6X-r1t"/>
                                                     <constraint firstAttribute="trailing" secondItem="ssx-Ow-rpq" secondAttribute="trailing" constant="8" id="1r4-IU-fMM"/>
                                                     <constraint firstItem="OEG-Dm-dJb" firstAttribute="top" secondItem="D79-HO-vSB" secondAttribute="top" id="Iwc-CO-ghh"/>
                                                     <constraint firstItem="bKp-df-ACT" firstAttribute="leading" secondItem="D79-HO-vSB" secondAttribute="leading" constant="8" id="JL8-33-xjd"/>
@@ -421,17 +423,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBg-ts-pEH" userLabel="contact Container">
-                                                <rect key="frame" x="8" y="887" width="752" height="59"/>
+                                                <rect key="frame" x="8" y="872" width="732" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRa-La-CHi" customClass="UiTTitleLabel">
-                                                        <rect key="frame" x="8" y="4" width="716" height="20"/>
+                                                        <rect key="frame" x="8" y="8" width="716" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="092323233" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nP-R7-kZV" customClass="UiTLinkLabel">
-                                                        <rect key="frame" x="8" y="32" width="716" height="19"/>
+                                                        <rect key="frame" x="8" y="36" width="716" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -449,7 +451,7 @@
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="VRa-La-CHi" firstAttribute="top" secondItem="KBg-ts-pEH" secondAttribute="top" constant="4" id="9cl-7f-Tz1"/>
+                                                    <constraint firstItem="VRa-La-CHi" firstAttribute="top" secondItem="KBg-ts-pEH" secondAttribute="top" constant="8" id="9cl-7f-Tz1"/>
                                                     <constraint firstAttribute="bottom" secondItem="0nP-R7-kZV" secondAttribute="bottom" constant="8" id="MTP-GK-wni"/>
                                                     <constraint firstItem="VRa-La-CHi" firstAttribute="leading" secondItem="KBg-ts-pEH" secondAttribute="leading" constant="8" id="Q6j-Ja-mia"/>
                                                     <constraint firstItem="0nP-R7-kZV" firstAttribute="top" secondItem="VRa-La-CHi" secondAttribute="bottom" constant="8" id="Ujl-YW-aza"/>
@@ -462,17 +464,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aP6-eu-NrA" userLabel="reservatie Container">
-                                                <rect key="frame" x="8" y="946" width="752" height="59"/>
+                                                <rect key="frame" x="8" y="931" width="732" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reservatie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYR-aD-8X2" customClass="UiTTitleLabel">
-                                                        <rect key="frame" x="8" y="4" width="716" height="20"/>
+                                                        <rect key="frame" x="8" y="8" width="716" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gratis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reh-rs-91F" customClass="UiTLinkLabel">
-                                                        <rect key="frame" x="8" y="32" width="716" height="19"/>
+                                                        <rect key="frame" x="8" y="36" width="716" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -496,24 +498,24 @@
                                                     <constraint firstAttribute="trailing" secondItem="qYR-aD-8X2" secondAttribute="trailing" constant="8" id="Ee0-eD-Ct3"/>
                                                     <constraint firstItem="reh-rs-91F" firstAttribute="leading" secondItem="aP6-eu-NrA" secondAttribute="leading" constant="8" id="Hoz-l3-e2r"/>
                                                     <constraint firstItem="qYR-aD-8X2" firstAttribute="leading" secondItem="aP6-eu-NrA" secondAttribute="leading" constant="8" id="I1U-bk-lXv"/>
-                                                    <constraint firstItem="qYR-aD-8X2" firstAttribute="top" secondItem="aP6-eu-NrA" secondAttribute="top" constant="4" id="aod-8y-T9L"/>
+                                                    <constraint firstItem="qYR-aD-8X2" firstAttribute="top" secondItem="aP6-eu-NrA" secondAttribute="top" constant="8" id="aod-8y-T9L"/>
                                                     <constraint firstItem="reh-rs-91F" firstAttribute="top" secondItem="qYR-aD-8X2" secondAttribute="bottom" constant="8" id="qLm-Jo-Y58"/>
                                                     <constraint firstItem="Ma6-I1-V5c" firstAttribute="leading" secondItem="aP6-eu-NrA" secondAttribute="leading" id="xWV-LQ-W5l"/>
                                                     <constraint firstAttribute="trailing" secondItem="Ma6-I1-V5c" secondAttribute="trailing" id="yVU-wU-kXH"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wVO-7X-ZAQ" userLabel="links Container">
-                                                <rect key="frame" x="8" y="1005" width="752" height="59"/>
+                                                <rect key="frame" x="8" y="990" width="732" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cql-2a-9ON" customClass="UiTTitleLabel">
-                                                        <rect key="frame" x="8" y="4" width="716" height="20"/>
+                                                        <rect key="frame" x="8" y="8" width="716" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.gent.be" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPm-Su-dY6" customClass="UiTLinkLabel">
-                                                        <rect key="frame" x="8" y="32" width="716" height="19"/>
+                                                        <rect key="frame" x="8" y="36" width="716" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -539,22 +541,22 @@
                                                     <constraint firstAttribute="bottom" secondItem="bPm-Su-dY6" secondAttribute="bottom" constant="8" id="WFM-ma-oia"/>
                                                     <constraint firstItem="iPf-Gq-7CJ" firstAttribute="top" secondItem="wVO-7X-ZAQ" secondAttribute="top" id="gsJ-6z-OEH"/>
                                                     <constraint firstItem="bPm-Su-dY6" firstAttribute="leading" secondItem="wVO-7X-ZAQ" secondAttribute="leading" constant="8" id="krV-d9-3gJ"/>
-                                                    <constraint firstItem="Cql-2a-9ON" firstAttribute="top" secondItem="wVO-7X-ZAQ" secondAttribute="top" constant="4" id="nRT-8U-eI4"/>
+                                                    <constraint firstItem="Cql-2a-9ON" firstAttribute="top" secondItem="wVO-7X-ZAQ" secondAttribute="top" constant="8" id="nRT-8U-eI4"/>
                                                     <constraint firstItem="Cql-2a-9ON" firstAttribute="leading" secondItem="wVO-7X-ZAQ" secondAttribute="leading" constant="8" id="nhS-BU-CYo"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyQ-2t-C3u" userLabel="prijs Container">
-                                                <rect key="frame" x="8" y="1064" width="752" height="113"/>
+                                                <rect key="frame" x="8" y="1049" width="732" height="113"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prijs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y68-GR-jGQ" customClass="UiTTitleLabel">
-                                                        <rect key="frame" x="8" y="4" width="716" height="20"/>
+                                                        <rect key="frame" x="8" y="8" width="716" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gratis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7or-Gt-gMV" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="32" width="716" height="19"/>
+                                                        <rect key="frame" x="8" y="36" width="716" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -569,14 +571,14 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1R-1Q-ecb" customClass="UiTTitleLabel">
-                                                        <rect key="frame" x="8" y="58" width="716" height="20"/>
+                                                        <rect key="frame" x="8" y="62" width="716" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="478-ND-PYm" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="86" width="716" height="19"/>
+                                                        <rect key="frame" x="8" y="90" width="716" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -594,7 +596,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="478-ND-PYm" secondAttribute="trailing" constant="8" id="Xjg-40-9e7"/>
                                                     <constraint firstItem="rgO-mt-ZMp" firstAttribute="leading" secondItem="xyQ-2t-C3u" secondAttribute="leading" id="Zju-Df-rql"/>
                                                     <constraint firstItem="Y68-GR-jGQ" firstAttribute="leading" secondItem="xyQ-2t-C3u" secondAttribute="leading" constant="8" id="bOs-KK-trg"/>
-                                                    <constraint firstItem="Y68-GR-jGQ" firstAttribute="top" secondItem="xyQ-2t-C3u" secondAttribute="top" constant="4" id="g3O-Gj-4br"/>
+                                                    <constraint firstItem="Y68-GR-jGQ" firstAttribute="top" secondItem="xyQ-2t-C3u" secondAttribute="top" constant="8" id="g3O-Gj-4br"/>
                                                     <constraint firstAttribute="trailing" secondItem="7or-Gt-gMV" secondAttribute="trailing" constant="8" id="hVq-to-Vyk"/>
                                                     <constraint firstAttribute="bottom" secondItem="478-ND-PYm" secondAttribute="bottom" constant="8" id="kVA-v7-0ff"/>
                                                     <constraint firstItem="rgO-mt-ZMp" firstAttribute="top" secondItem="xyQ-2t-C3u" secondAttribute="top" id="l6V-rl-sBy"/>
@@ -605,17 +607,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bha-s8-pEO" userLabel="performers Container">
-                                                <rect key="frame" x="8" y="1177" width="752" height="59"/>
+                                                <rect key="frame" x="8" y="1162" width="732" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Performers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3L-I9-FqV" customClass="UiTTitleLabel">
-                                                        <rect key="frame" x="8" y="4" width="716" height="20"/>
+                                                        <rect key="frame" x="8" y="8" width="716" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.gent.be" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-0y-WER" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="32" width="716" height="19"/>
+                                                        <rect key="frame" x="8" y="36" width="716" height="19"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -634,7 +636,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="D6l-0y-WER" firstAttribute="top" secondItem="l3L-I9-FqV" secondAttribute="bottom" constant="8" id="AO4-aT-aGh"/>
-                                                    <constraint firstItem="l3L-I9-FqV" firstAttribute="top" secondItem="bha-s8-pEO" secondAttribute="top" constant="4" id="JNW-lc-mQ5"/>
+                                                    <constraint firstItem="l3L-I9-FqV" firstAttribute="top" secondItem="bha-s8-pEO" secondAttribute="top" constant="8" id="JNW-lc-mQ5"/>
                                                     <constraint firstItem="l3L-I9-FqV" firstAttribute="leading" secondItem="bha-s8-pEO" secondAttribute="leading" constant="8" id="KLS-fA-wQu"/>
                                                     <constraint firstItem="D6l-0y-WER" firstAttribute="leading" secondItem="bha-s8-pEO" secondAttribute="leading" constant="8" id="L50-kq-DZp"/>
                                                     <constraint firstItem="gAJ-6z-Fh5" firstAttribute="leading" secondItem="bha-s8-pEO" secondAttribute="leading" id="NuQ-LC-7cT"/>
@@ -646,10 +648,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QlO-ay-r7l" userLabel="long description Container">
-                                                <rect key="frame" x="8" y="1236" width="752" height="124"/>
+                                                <rect key="frame" x="8" y="1221" width="732" height="124"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uitgebreide omschrijving" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-hZ-yJF" customClass="UiTTitleLabel">
-                                                        <rect key="frame" x="8" y="4" width="716" height="20"/>
+                                                        <rect key="frame" x="8" y="8" width="716" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -664,7 +666,7 @@
                                                         </constraints>
                                                     </view>
                                                     <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhN-33-6Kg">
-                                                        <rect key="frame" x="0.0" y="32" width="732" height="84"/>
+                                                        <rect key="frame" x="0.0" y="36" width="732" height="84"/>
                                                         <animations/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -687,7 +689,7 @@
                                                     <constraint firstItem="Wxg-NW-kKc" firstAttribute="top" secondItem="QlO-ay-r7l" secondAttribute="top" id="aBN-w8-qOq"/>
                                                     <constraint firstAttribute="bottom" secondItem="uhN-33-6Kg" secondAttribute="bottom" constant="8" id="gyr-lk-cIh"/>
                                                     <constraint firstItem="Fh3-hZ-yJF" firstAttribute="leading" secondItem="QlO-ay-r7l" secondAttribute="leading" constant="8" id="swd-yS-Mxz"/>
-                                                    <constraint firstItem="Fh3-hZ-yJF" firstAttribute="top" secondItem="QlO-ay-r7l" secondAttribute="top" constant="4" id="w9H-g1-5ig"/>
+                                                    <constraint firstItem="Fh3-hZ-yJF" firstAttribute="top" secondItem="QlO-ay-r7l" secondAttribute="top" constant="8" id="w9H-g1-5ig"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -840,11 +842,13 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1540"/>
                     <connections>
+                        <outlet property="addressHeightConstraint" destination="b7Y-jx-2Gt" id="bos-Hz-mkN"/>
                         <outlet property="calendarImageView" destination="QPQ-P1-hwp" id="NKs-QR-Igk"/>
                         <outlet property="calendarLabel" destination="OLU-xx-YeH" id="Oeu-gI-AVt"/>
                         <outlet property="categoryLabel" destination="4od-JL-eBf" id="bFg-rv-jtT"/>
                         <outlet property="contactLabel" destination="0nP-R7-kZV" id="KZA-A1-dES"/>
                         <outlet property="contactView" destination="KBg-ts-pEH" id="Gbf-jn-DFn"/>
+                        <outlet property="dateHeightConstraint" destination="UhH-Sy-xAU" id="nZ7-gm-a9h"/>
                         <outlet property="eventImageView" destination="hMi-Bk-oXO" id="pG5-jh-RdP"/>
                         <outlet property="eventTitleLabel" destination="Nnp-cE-4Dw" id="Wmh-F8-1Xl"/>
                         <outlet property="favoriteButton" destination="yeb-wC-t6a" id="J5D-d6-Vxm"/>
