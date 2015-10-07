@@ -75,6 +75,9 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightCalendarLogoContraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightPlaceLogoConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *paddingCalendarPlaceHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightExtraInfoPriceConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightExtraTitlePriceConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *paddingExtraPriceConstraint;
 @end
 
 @implementation UiTDetailViewController
@@ -242,9 +245,13 @@
         
         if (![_event.priceDescription isEqualToString:@""]) {
             self.priceInfoDescriptionLabel.text = [NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"EXTRA INFO", @""), _event.priceDescription];
+            [self.priceInfoDescriptionLabel sizeToFit];
+            self.heightExtraInfoPriceConstraint.constant = HEIGHT(self.priceInfoDescriptionLabel);
         } else {
-            self.priceInfoDescriptionLabel.hidden = YES;
-            self.priceTitleDescriptionLabel.hidden = YES;
+            self.priceInfoDescriptionLabel.text = @"";
+            self.heightExtraInfoPriceConstraint.constant = 0;
+            self.heightExtraTitlePriceConstraint.constant = 0;
+            self.paddingExtraPriceConstraint.constant = 0;
         }
     } else {
         self.priceView.hidden = YES;

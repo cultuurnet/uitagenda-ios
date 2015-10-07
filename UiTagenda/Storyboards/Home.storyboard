@@ -253,7 +253,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEA-XJ-3kM" userLabel="title Container">
-                                                <rect key="frame" x="8" y="596" width="732" height="69.5"/>
+                                                <rect key="frame" x="8" y="596" width="732" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Kunstenaar van de maand: Filip Gheysen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnp-cE-4Dw">
                                                         <rect key="frame" x="8" y="8" width="716" height="24"/>
@@ -272,7 +272,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentoonstelling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4od-JL-eBf">
-                                                        <rect key="frame" x="34" y="41" width="690" height="16.5"/>
+                                                        <rect key="frame" x="34" y="41" width="690" height="17"/>
                                                         <animations/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="14"/>
@@ -571,18 +571,24 @@
                                                             <constraint firstAttribute="height" constant="1" id="mUP-Dv-vqq"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1R-1Q-ecb" customClass="UiTTitleLabel">
-                                                        <rect key="frame" x="8" y="62" width="716" height="20"/>
-                                                        <animations/>
-                                                        <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="478-ND-PYm" customClass="UiTInfoLabel">
                                                         <rect key="frame" x="8" y="90" width="716" height="19"/>
                                                         <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="2SU-dZ-lY2"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1R-1Q-ecb" customClass="UiTTitleLabel">
+                                                        <rect key="frame" x="8" y="62" width="716" height="20"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="jX9-vn-YbP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -842,6 +848,8 @@
                         <outlet property="favoriteButton" destination="yeb-wC-t6a" id="J5D-d6-Vxm"/>
                         <outlet property="headerView" destination="YVV-pN-MX2" id="mxS-52-Jqn"/>
                         <outlet property="heightCalendarLogoContraint" destination="H2D-4y-xWG" id="dWv-W3-bnr"/>
+                        <outlet property="heightExtraInfoPriceConstraint" destination="2SU-dZ-lY2" id="kbg-L1-MPA"/>
+                        <outlet property="heightExtraTitlePriceConstraint" destination="jX9-vn-YbP" id="ahv-nw-Nrt"/>
                         <outlet property="heightPlaceLogoConstraint" destination="uvS-4W-Yqd" id="gmo-aF-Lyq"/>
                         <outlet property="imageViewKids" destination="l7X-YR-32M" id="ZRR-HC-a4f"/>
                         <outlet property="linksLabel" destination="bPm-Su-dY6" id="F25-ft-xGC"/>
@@ -852,6 +860,7 @@
                         <outlet property="organiserInfoLabel" destination="bKp-df-ACT" id="Ld0-ys-TPG"/>
                         <outlet property="organiserView" destination="D79-HO-vSB" id="wDV-7V-v2l"/>
                         <outlet property="paddingCalendarPlaceHeight" destination="oF9-RD-Y80" id="WQQ-ae-05x"/>
+                        <outlet property="paddingExtraPriceConstraint" destination="DPG-Qu-vSc" id="oTR-iy-Cyk"/>
                         <outlet property="performerLabel" destination="D6l-0y-WER" id="FDg-1m-Fsw"/>
                         <outlet property="performersView" destination="bha-s8-pEO" id="pMg-GG-T65"/>
                         <outlet property="placeImageView" destination="irY-JR-Lmu" id="McV-kh-EWg"/>
