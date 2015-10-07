@@ -399,31 +399,32 @@
     UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems
                                                                                      applicationActivities:nil];
     
+    activityController.popoverPresentationController.sourceView = self.shareButton.imageView;
     [activityController setCompletionHandler:^(NSString *activityType, BOOL completed) {
         if([activityType isEqualToString:UIActivityTypeMail]){
             if (completed) {
-//                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-//                                                                                                    action:@"ShareMail"
-//                                                                                                     label:NSLocalizedString(@"SHARE", @"")
-//                                                                                                     value:nil] build]];
+                //                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                //                                                                                                    action:@"ShareMail"
+                //                                                                                                     label:NSLocalizedString(@"SHARE", @"")
+                //                                                                                                     value:nil] build]];
             }
         }
         
         if ([activityType isEqualToString:UIActivityTypePostToFacebook]){
             if (completed) {
-//                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-//                                                                                                    action:@"ShareFacebook"
-//                                                                                                     label:NSLocalizedString(@"SHARE", @"")
-//                                                                                                     value:nil] build]];
+                //                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                //                                                                                                    action:@"ShareFacebook"
+                //                                                                                                     label:NSLocalizedString(@"SHARE", @"")
+                //                                                                                                     value:nil] build]];
             }
         }
         
         if([activityType isEqualToString:UIActivityTypePostToTwitter]){
             if (completed) {
-//                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-//                                                                                                    action:@"ShareTwitter"
-//                                                                                                     label:NSLocalizedString(@"SHARE", @"")
-//                                                                                                     value:nil] build]];
+                //                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                //                                                                                                    action:@"ShareTwitter"
+                //                                                                                                     label:NSLocalizedString(@"SHARE", @"")
+                //                                                                                                     value:nil] build]];
             }
         }
     }];
