@@ -56,10 +56,6 @@
     [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH WHAT", @"")];
 }
 
-- (void)confirmButtonSelected {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 - (void)setupView {
     self.title = NSLocalizedString(@"WHAT", @"");
     self.view.backgroundColor = BACKGROUNDCOLOR;
@@ -108,6 +104,12 @@
 - (NSArray *)readFromFile {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"categoriesEventTypes" ofType:@"plist"];
     return [[NSMutableArray alloc] initWithContentsOfFile:path];
+}
+
+#pragma mark - IBActions
+
+- (void)confirmButtonSelected {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - TableView Delegate Methods

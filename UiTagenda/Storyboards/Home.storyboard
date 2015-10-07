@@ -253,10 +253,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hEA-XJ-3kM" userLabel="title Container">
-                                                <rect key="frame" x="8" y="596" width="732" height="69"/>
+                                                <rect key="frame" x="8" y="596" width="732" height="69.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Kunstenaar van de maand: Filip Gheysen" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnp-cE-4Dw">
-                                                        <rect key="frame" x="8" y="8" width="716" height="23.5"/>
+                                                        <rect key="frame" x="8" y="8" width="716" height="24"/>
                                                         <animations/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="20"/>
@@ -264,7 +264,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tagicon" translatesAutoresizingMaskIntoConstraints="NO" id="aFd-SI-8q8">
-                                                        <rect key="frame" x="8" y="39" width="18" height="18"/>
+                                                        <rect key="frame" x="8" y="39.5" width="18" height="18"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="3pL-EH-AJs"/>
@@ -272,7 +272,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentoonstelling" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4od-JL-eBf">
-                                                        <rect key="frame" x="34" y="40" width="690" height="16.5"/>
+                                                        <rect key="frame" x="34" y="40.5" width="690" height="16.5"/>
                                                         <animations/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="14"/>
@@ -295,13 +295,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5h-QH-GLw" userLabel="date container">
-                                                <rect key="frame" x="8" y="665" width="732" height="67"/>
+                                                <rect key="frame" x="8" y="665.5" width="732" height="67"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="van 28/09/15 tot 01/11/15" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLU-xx-YeH">
                                                         <rect key="frame" x="36" y="8" width="688" height="19"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" priority="1" constant="19" id="UhH-Sy-xAU"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="1" constant="19" id="UhH-Sy-xAU"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -316,7 +316,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationicon" translatesAutoresizingMaskIntoConstraints="NO" id="irY-JR-Lmu">
-                                                        <rect key="frame" x="8" y="36" width="20" height="20"/>
+                                                        <rect key="frame" x="8" y="36.5" width="20" height="20"/>
                                                         <animations/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="sqx-Eh-rD2"/>
@@ -327,7 +327,7 @@
                                                         <rect key="frame" x="36" y="41" width="688" height="15.5"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" priority="1" constant="16" id="b7Y-jx-2Gt"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="1" constant="16" id="b7Y-jx-2Gt"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="13"/>
                                                         <color key="textColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -341,7 +341,9 @@
                                                     <constraint firstAttribute="trailing" secondItem="OLU-xx-YeH" secondAttribute="trailing" constant="8" id="C7U-hb-WYo"/>
                                                     <constraint firstItem="irY-JR-Lmu" firstAttribute="leading" secondItem="U5h-QH-GLw" secondAttribute="leading" constant="8" id="DHM-HL-05u"/>
                                                     <constraint firstItem="OLU-xx-YeH" firstAttribute="top" secondItem="U5h-QH-GLw" secondAttribute="top" constant="8" id="IYX-n0-jod"/>
+                                                    <constraint firstItem="iVE-hL-X9f" firstAttribute="top" secondItem="U5h-QH-GLw" secondAttribute="top" priority="1" constant="8" id="UVj-7X-Ts6"/>
                                                     <constraint firstItem="QPQ-P1-hwp" firstAttribute="leading" secondItem="U5h-QH-GLw" secondAttribute="leading" constant="8" id="UjT-b2-5xK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="OLU-xx-YeH" secondAttribute="bottom" priority="1" constant="8" id="ZSd-DE-8tZ"/>
                                                     <constraint firstAttribute="trailing" secondItem="iVE-hL-X9f" secondAttribute="trailing" constant="8" id="hb9-SR-S7y"/>
                                                     <constraint firstItem="OLU-xx-YeH" firstAttribute="leading" secondItem="QPQ-P1-hwp" secondAttribute="trailing" constant="8" id="hvs-Wi-SiC"/>
                                                     <constraint firstItem="iVE-hL-X9f" firstAttribute="leading" secondItem="irY-JR-Lmu" secondAttribute="trailing" constant="8" id="i8b-9U-3fR"/>
@@ -351,10 +353,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-Rs-cdM" userLabel="short description Container">
-                                                <rect key="frame" x="8" y="732" width="732" height="81"/>
+                                                <rect key="frame" x="8" y="732.5" width="732" height="81"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-hM-VzG">
-                                                        <rect key="frame" x="8" y="35" width="716" height="37.5"/>
+                                                        <rect key="frame" x="8" y="35" width="716" height="38"/>
                                                         <animations/>
                                                         <string key="text">Oorlogen, hongersnoden en desastruze economische politiek, gevoed door Westerse wapens en belangen, brengen dezer dagen opnieuw grote vluchtelingenstromen op gang.</string>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
@@ -590,6 +592,7 @@
                                                 <constraints>
                                                     <constraint firstItem="478-ND-PYm" firstAttribute="top" secondItem="R1R-1Q-ecb" secondAttribute="bottom" constant="8" id="DPG-Qu-vSc"/>
                                                     <constraint firstItem="7or-Gt-gMV" firstAttribute="top" secondItem="Y68-GR-jGQ" secondAttribute="bottom" constant="8" id="F16-C9-uDA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7or-Gt-gMV" secondAttribute="bottom" priority="1" constant="8" id="Nd2-GB-H4G"/>
                                                     <constraint firstAttribute="trailing" secondItem="R1R-1Q-ecb" secondAttribute="trailing" constant="8" id="Tbh-c3-Iq2"/>
                                                     <constraint firstAttribute="trailing" secondItem="rgO-mt-ZMp" secondAttribute="trailing" id="Tuf-CL-I3w"/>
                                                     <constraint firstItem="R1R-1Q-ecb" firstAttribute="leading" secondItem="Y68-GR-jGQ" secondAttribute="leading" id="Wns-IV-5bv"/>
@@ -697,7 +700,6 @@
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="U5h-QH-GLw" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="0C6-aC-NRI"/>
-                                            <constraint firstItem="U5h-QH-GLw" firstAttribute="top" secondItem="YVV-pN-MX2" secondAttribute="bottom" id="2A9-Zw-u7e"/>
                                             <constraint firstItem="QlO-ay-r7l" firstAttribute="top" secondItem="bha-s8-pEO" secondAttribute="bottom" id="2ic-ix-Z3r"/>
                                             <constraint firstItem="KBg-ts-pEH" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="ASq-jj-MYu"/>
                                             <constraint firstItem="KBg-ts-pEH" firstAttribute="top" secondItem="D79-HO-vSB" secondAttribute="bottom" id="AU6-iD-3Qv"/>
@@ -729,15 +731,8 @@
                                             <constraint firstItem="aP6-eu-NrA" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="l06-xO-lCu"/>
                                             <constraint firstItem="D79-HO-vSB" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="odM-0C-adn"/>
                                             <constraint firstAttribute="trailing" secondItem="U5h-QH-GLw" secondAttribute="trailing" constant="8" id="skC-Uf-bnU"/>
-                                            <constraint firstItem="hEA-XJ-3kM" firstAttribute="top" secondItem="YVV-pN-MX2" secondAttribute="bottom" constant="2" id="t9G-aM-9RO"/>
                                             <constraint firstItem="bha-s8-pEO" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="voI-Ab-aqF"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="t9G-aM-9RO"/>
-                                                <exclude reference="2A9-Zw-u7e"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                 </subviews>
                                 <animations/>
@@ -745,15 +740,9 @@
                                     <constraint firstAttribute="trailing" secondItem="9VU-TL-KU9" secondAttribute="trailing" constant="10" id="EmN-yJ-cn2"/>
                                     <constraint firstItem="9VU-TL-KU9" firstAttribute="top" secondItem="pmi-cC-O9W" secondAttribute="top" constant="10" id="IDQ-0r-0mt"/>
                                     <constraint firstAttribute="bottom" secondItem="9VU-TL-KU9" secondAttribute="bottom" constant="10" id="UiC-E4-1Nw"/>
-                                    <constraint firstItem="9VU-TL-KU9" firstAttribute="centerY" secondItem="pmi-cC-O9W" secondAttribute="centerY" id="ZUm-VB-Df4"/>
                                     <constraint firstItem="9VU-TL-KU9" firstAttribute="leading" secondItem="pmi-cC-O9W" secondAttribute="leading" constant="10" id="brV-FC-TTS"/>
                                     <constraint firstItem="9VU-TL-KU9" firstAttribute="centerX" secondItem="pmi-cC-O9W" secondAttribute="centerX" id="mEd-Rd-Ii7"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ZUm-VB-Df4"/>
-                                    </mask>
-                                </variation>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsG-rc-0C7">
                                 <rect key="frame" x="379" y="1500" width="10" height="40"/>

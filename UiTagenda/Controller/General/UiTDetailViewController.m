@@ -229,6 +229,7 @@
     }
     
     if (![_event.price isEqualToString:@""]) {
+        self.priceInfoLabel.hidden = NO;
         if ([_event.price isEqualToString:@"0"]) {
             self.priceInfoLabel.text = NSLocalizedString(@"FREE", @"");
         } else {
@@ -237,6 +238,9 @@
         
         if (![_event.priceDescription isEqualToString:@""]) {
             self.priceInfoDescriptionLabel.text = [NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"EXTRA INFO", @""), _event.priceDescription];
+        } else {
+            self.priceInfoDescriptionLabel.hidden = YES;
+            self.priceTitleDescriptionLabel.hidden = YES;
         }
     } else {
         self.priceView.hidden = YES;
