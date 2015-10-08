@@ -28,11 +28,6 @@
     return border;
 }
 
-- (void)trackGoogleAnalyticsWithValue:(NSString *)value {
-//    [[[GAI sharedInstance] defaultTracker] set:kGAIScreenName value:value];
-//    [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createAppView] build]];
-}
-
 - (UIButton *)createFavoriteOrShareButton:(NSString *)title {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@Normal", [title lowercaseString]]] forState:UIControlStateNormal];

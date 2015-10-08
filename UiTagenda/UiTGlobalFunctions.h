@@ -13,7 +13,6 @@
 + (id)sharedInstance;
 
 -(CALayer *)createBorderWithX:(CGFloat)x withY:(CGFloat)y withWidth:(CGFloat)width withHeight:(CGFloat)height withColor:(UIColor *)color;
--(void)trackGoogleAnalyticsWithValue:(NSString *)name;
 
 -(UIButton *)createFavoriteOrShareButton:(NSString *)title;
 

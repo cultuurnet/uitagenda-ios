@@ -24,7 +24,7 @@
     [self setupScrollView];
     [self getAboutInfo];
     
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"ABOUT", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"ABOUT", @"")];
 }
 
 - (void)setupView {

@@ -8,6 +8,7 @@
 
 #import "UiTSearchModalViewController.h"
 #import "UiTSearchWhatViewController.h"
+#import "GoogleAnalyticsTracker.h"
 
 @interface UiTSearchModalViewController ()
 
@@ -45,7 +46,7 @@ enum SearchPossibilities {
     [self setupView];
     [self setupTableView];
     
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCHNEARBY", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCHNEARBY", @"")];
 }
 
 - (void)checkSearchCriteria {

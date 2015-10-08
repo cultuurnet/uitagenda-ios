@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIViewController+UIBarButtonItems.h"
 #import "UIViewController+Actions.h"
+#import "GoogleAnalyticsTracker.h"
 
 @interface UiTBaseViewController : UIViewController <UISplitViewControllerDelegate>
 

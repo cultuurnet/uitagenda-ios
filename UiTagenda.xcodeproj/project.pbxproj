@@ -48,6 +48,7 @@
 		2B9E193D18990EA4009209BB /* UiTLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E193C18990EA4009209BB /* UiTLinkLabel.m */; };
 		2B9E194118993A60009209BB /* NSMutableArray+UiTMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E194018993A60009209BB /* NSMutableArray+UiTMap.m */; };
 		2B9E194418994055009209BB /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E194318994055009209BB /* ArrayDataSource.m */; };
+		2BC0E0421BC64739002FB555 /* GoogleAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC0E0411BC64739002FB555 /* GoogleAnalyticsTracker.m */; settings = {ASSET_TAGS = (); }; };
 		2BCE5EED187EF8B900B28753 /* UiTProblemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE5EEC187EF8B900B28753 /* UiTProblemView.m */; };
 		2BD33FBF188EB223001F5667 /* UiTDetailContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD33FBE188EB223001F5667 /* UiTDetailContainerViewController.m */; };
 		2BE59C2318716DA0007D9654 /* categoriesEventTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BE59C2118716DA0007D9654 /* categoriesEventTypes.plist */; };
@@ -158,6 +159,8 @@
 		2B9E194018993A60009209BB /* NSMutableArray+UiTMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+UiTMap.m"; sourceTree = "<group>"; };
 		2B9E194218994055009209BB /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
 		2B9E194318994055009209BB /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		2BC0E0401BC64739002FB555 /* GoogleAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAnalyticsTracker.h; sourceTree = "<group>"; };
+		2BC0E0411BC64739002FB555 /* GoogleAnalyticsTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAnalyticsTracker.m; sourceTree = "<group>"; };
 		2BCE5EEB187EF8B900B28753 /* UiTProblemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiTProblemView.h; sourceTree = "<group>"; };
 		2BCE5EEC187EF8B900B28753 /* UiTProblemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiTProblemView.m; sourceTree = "<group>"; };
 		2BD33FBD188EB223001F5667 /* UiTDetailContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiTDetailContainerViewController.h; sourceTree = "<group>"; };
@@ -301,6 +304,15 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		2BC0E03F1BC64701002FB555 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2BC0E0401BC64739002FB555 /* GoogleAnalyticsTracker.h */,
+				2BC0E0411BC64739002FB555 /* GoogleAnalyticsTracker.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		2BEBC0CA184F7992000AFFFF = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +356,7 @@
 		2BEBC0DC184F7992000AFFFF /* UiTagenda */ = {
 			isa = PBXGroup;
 			children = (
+				2BC0E03F1BC64701002FB555 /* Helpers */,
 				2B9E193E18993A26009209BB /* Support */,
 				2BEBC105184F7A3B000AFFFF /* AppDelegate */,
 				2B56480D1850BA7500396168 /* DataModel */,
@@ -669,6 +682,7 @@
 				2BD33FBF188EB223001F5667 /* UiTDetailContainerViewController.m in Sources */,
 				140044EB1BB9504E00915FF5 /* UIViewController+UIBarButtonItems.m in Sources */,
 				140044E81BB9323300915FF5 /* UiTBaseTableViewController.m in Sources */,
+				2BC0E0421BC64739002FB555 /* GoogleAnalyticsTracker.m in Sources */,
 				2BEBC10E184F7AAB000AFFFF /* UiTMenu.m in Sources */,
 				2BEBC13A184F7C0A000AFFFF /* UiTBaseViewController.m in Sources */,
 				2BCE5EED187EF8B900B28753 /* UiTProblemView.m in Sources */,
@@ -758,6 +772,7 @@
 					"\"${PODS_ROOT}/Headers/TBMacros\"",
 					"$(SDKROOT)/usr/include/libz",
 					"\"$SDKROOT/usr/include/libxml2\"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "UiTagenda/UiTagenda-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -901,6 +916,7 @@
 					"\"${PODS_ROOT}/Headers/TBMacros\"",
 					"$(SDKROOT)/usr/include/libz",
 					"\"$SDKROOT/usr/include/libxml2\"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "UiTagenda/UiTagenda-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -970,6 +986,7 @@
 					"\"${PODS_ROOT}/Headers/TBMacros\"",
 					"$(SDKROOT)/usr/include/libz",
 					"\"$SDKROOT/usr/include/libxml2\"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "UiTagenda/UiTagenda-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

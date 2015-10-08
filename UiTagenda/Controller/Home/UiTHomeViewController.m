@@ -41,7 +41,7 @@ static BOOL haveAlreadyReceivedCoordinates;
     [self setupView];
     [self setupTableView];
     
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"HOME", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"HOME", @"")];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -308,10 +308,10 @@ static BOOL haveAlreadyReceivedCoordinates;
     
     if (button.selected) {
         button.selected = NO;
-//        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-//                                                                                            action:@"Unfavorite"
-//                                                                                             label:NSLocalizedString(@"FAVORITE", @"")
-//                                                                                             value:nil] build]];
+        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                                                                                            action:@"Unfavorite"
+                                                                                             label:NSLocalizedString(@"FAVORITE", @"")
+                                                                                             value:nil] build]];
         if (context) {
             UiTFavorite *fav = [UiTFavorite favoriteWithEventId:cdbid usingManagedObjectContext:context];
             if (fav != nil) {
@@ -321,10 +321,10 @@ static BOOL haveAlreadyReceivedCoordinates;
         }
     } else {
         button.selected = YES;
-//        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-//                                                                                            action:@"Favorite"
-//                                                                                             label:NSLocalizedString(@"FAVORITE", @"")
-//                                                                                             value:nil] build]];
+        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                                                                                            action:@"Favorite"
+                                                                                             label:NSLocalizedString(@"FAVORITE", @"")
+                                                                                             value:nil] build]];
         if (context) {
             UiTFavorite *favorite = [UiTFavorite insertInManagedObjectContext:context];
             favorite.eventID = cdbid;

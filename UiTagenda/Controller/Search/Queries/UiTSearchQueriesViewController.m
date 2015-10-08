@@ -34,7 +34,7 @@
     
     [self.tableView reloadData];
     
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCHQUERIES", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCHQUERIES", @"")];
 }
 
 - (void)setupView {

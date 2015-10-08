@@ -14,6 +14,7 @@
 #import "UiTNavViewController.h"
 #import "UitagendaDataModel.h"
 #import "UiTFavorite.h"
+#import "GoogleAnalyticsTracker.h"
 
 #import "UiTTitleLabel.h"
 #import "UiTInfoLabel.h"
@@ -91,7 +92,7 @@
     self.title = NSLocalizedString(@"DETAIL", @"");
     self.view.backgroundColor = BACKGROUNDCOLOR;
     
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"DETAIL", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"DETAIL", @"")];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -165,7 +166,7 @@
         self.heightCalendarLogoContraint.constant = 0;
         self.paddingCalendarPlaceHeight.constant = 0;
     }
-        
+    
     if (![_event.address isEqualToString:@""]) {
         [self.placeLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showRoute)]];
         self.placeLabel.userInteractionEnabled = YES;
@@ -376,10 +377,10 @@
     
     if (button.selected) {
         button.selected = NO;
-//        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-//                                                                                            action:@"Unfavorite"
-//                                                                                             label:NSLocalizedString(@"FAVORITE", @"")
-//                                                                                             value:nil] build]];
+                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                                                                                                    action:@"Unfavorite"
+                                                                                                     label:NSLocalizedString(@"FAVORITE", @"")
+                                                                                                     value:nil] build]];
         if (context) {
             UiTFavorite *fav = [UiTFavorite favoriteWithEventId:cdbid usingManagedObjectContext:context];
             if (fav != nil) {
@@ -389,10 +390,10 @@
         }
     } else {
         button.selected = YES;
-//        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-//                                                                                            action:@"Favorite"
-//                                                                                             label:NSLocalizedString(@"FAVORITE", @"")
-//                                                                                             value:nil] build]];
+                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                                                                                                    action:@"Favorite"
+                                                                                                     label:NSLocalizedString(@"FAVORITE", @"")
+                                                                                                     value:nil] build]];
         if (context) {
             UiTFavorite *favorite = [UiTFavorite insertInManagedObjectContext:context];
             favorite.eventID = cdbid;
@@ -418,28 +419,28 @@
     [activityController setCompletionHandler:^(NSString *activityType, BOOL completed) {
         if([activityType isEqualToString:UIActivityTypeMail]){
             if (completed) {
-                //                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-                //                                                                                                    action:@"ShareMail"
-                //                                                                                                     label:NSLocalizedString(@"SHARE", @"")
-                //                                                                                                     value:nil] build]];
+                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                                                                                                    action:@"ShareMail"
+                                                                                                     label:NSLocalizedString(@"SHARE", @"")
+                                                                                                     value:nil] build]];
             }
         }
         
         if ([activityType isEqualToString:UIActivityTypePostToFacebook]){
             if (completed) {
-                //                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-                //                                                                                                    action:@"ShareFacebook"
-                //                                                                                                     label:NSLocalizedString(@"SHARE", @"")
-                //                                                                                                     value:nil] build]];
+                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                                                                                                    action:@"ShareFacebook"
+                                                                                                     label:NSLocalizedString(@"SHARE", @"")
+                                                                                                     value:nil] build]];
             }
         }
         
         if([activityType isEqualToString:UIActivityTypePostToTwitter]){
             if (completed) {
-                //                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-                //                                                                                                    action:@"ShareTwitter"
-                //                                                                                                     label:NSLocalizedString(@"SHARE", @"")
-                //                                                                                                     value:nil] build]];
+                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                                                                                                    action:@"ShareTwitter"
+                                                                                                     label:NSLocalizedString(@"SHARE", @"")
+                                                                                                     value:nil] build]];
             }
         }
     }];

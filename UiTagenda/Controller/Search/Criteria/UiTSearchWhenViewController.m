@@ -7,6 +7,7 @@
 //
 
 #import "UiTSearchWhenViewController.h"
+#import "GoogleAnalyticsTracker.h"
 
 @interface UiTSearchWhenViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -27,7 +28,7 @@
     [super viewDidLoad];
     [self setupView];
     [self setupTableView];
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH WHEN", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH WHEN", @"")];
 }
 
 - (void)setupView {

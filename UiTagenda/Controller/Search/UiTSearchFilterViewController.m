@@ -59,7 +59,7 @@ enum SearchCriteria {
     [self setupTableView];
     [self addTapGesture];
     
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH", @"")];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -114,10 +114,10 @@ enum SearchCriteria {
             [self.whereDic setObject:@{@"id": [[_where firstObject] valueForKey:@"id"], @"title": [[_where firstObject] valueForKey:@"title"] } forKey:@"0"];
             
             
-//            [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
-//                                                                                                action:@"Waar"
-//                                                                                                 label:[[_where firstObject] valueForKey:@"title"]
-//                                                                                                 value:nil] build]];
+            [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
+                                                                                                action:@"Waar"
+                                                                                                 label:[[_where firstObject] valueForKey:@"title"]
+                                                                                                 value:nil] build]];
 
         }
         
@@ -163,42 +163,42 @@ enum SearchCriteria {
 
 - (void)trackAllSearchActions {
     if (![_when isEqualToString:@""]) {
-//        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
-//                                                                                            action:@"Wanneer"
-//                                                                                             label:NSLocalizedString(_when, @"")
-//                                                                                             value:nil] build]];
+        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
+                                                                                            action:@"Wanneer"
+                                                                                             label:NSLocalizedString(_when, @"")
+                                                                                             value:nil] build]];
     }
     
     if (![self.searchTermTextField.text isEqualToString:@""]) {
-//        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
-//                                                                                            action:@"Zoekveld"
-//                                                                                             label:self.searchTermTextField.text
-//                                                                                             value:nil] build]];
+        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
+                                                                                            action:@"Zoekveld"
+                                                                                             label:self.searchTermTextField.text
+                                                                                             value:nil] build]];
     }
     
     
     if (![_radius isEqualToString:@""]) {
-//        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
-//                                                                                            action:@"Straal"
-//                                                                                             label:_radius
-//                                                                                             value:nil] build]];
+        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
+                                                                                            action:@"Straal"
+                                                                                             label:_radius
+                                                                                             value:nil] build]];
     }
     
     if ([_what count] > 0) {
         for (NSString *eventType in [[_what allValues] valueForKey:@"title"]) {
-//            [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
-//                                                                                                action:@"Wat"
-//                                                                                                 label:eventType
-//                                                                                                 value:nil] build]];
+            [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
+                                                                                                action:@"Wat"
+                                                                                                 label:eventType
+                                                                                                 value:nil] build]];
         }
     }
     
     if ([_searchCriteriaDict count] > 0) {
         for (NSString *extraCriteria in [_searchCriteriaDict allValues]) {
-//            [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
-//                                                                                                action:@"Extra zoekcriteria"
-//                                                                                                 label:extraCriteria
-//                                                                                                 value:nil] build]];
+            [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"Uitgebreid zoeken"
+                                                                                                action:@"Extra zoekcriteria"
+                                                                                                 label:extraCriteria
+                                                                                                 value:nil] build]];
         }
     }
 }

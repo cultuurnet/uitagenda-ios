@@ -13,6 +13,7 @@
 #import "UiTNavViewController.h"
 #import "CustomSplitViewController.h"
 #import "UiTSearchQueriesViewController.h"
+#import "GoogleAnalyticsTracker.h"
 
 #import <NVSlideMenuController/NVSlideMenuController.h>
 
@@ -53,9 +54,9 @@
 }
 
 -(void)setupGoogleAnalytics {
-//    [GAI sharedInstance].trackUncaughtExceptions = NO;
-//    [GAI sharedInstance].dispatchInterval = 10;
-//    [[GAI sharedInstance] trackerWithTrackingId:GOOGLEANALYTICS];
+    [GAI sharedInstance].trackUncaughtExceptions = NO;
+    [GAI sharedInstance].dispatchInterval = 10;
+    [[GAI sharedInstance] trackerWithTrackingId:googleTrackerID];
 }
 
 @end

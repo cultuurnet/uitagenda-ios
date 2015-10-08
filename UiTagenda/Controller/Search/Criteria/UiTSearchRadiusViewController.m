@@ -7,6 +7,7 @@
 //
 
 #import "UiTSearchRadiusViewController.h"
+#import "GoogleAnalyticsTracker.h"
 
 
 @interface UiTSearchRadiusViewController ()  <UITableViewDelegate, UITableViewDataSource>
@@ -28,7 +29,7 @@
     [super viewDidLoad];
     [self setupView];
     [self setupTableView];
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH RADIUS", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH RADIUS", @"")];
 }
 
 - (void)setupView {

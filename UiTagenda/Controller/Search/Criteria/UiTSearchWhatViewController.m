@@ -8,6 +8,7 @@
 
 #import "UiTSearchWhatViewController.h"
 #import "UiTCategoriesAPIClient.h"
+#import "GoogleAnalyticsTracker.h"
 
 @interface UiTSearchWhatViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -53,7 +54,7 @@
                                                                              target:self
                                                                              action:@selector(confirmButtonSelected)];
     
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH WHAT", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH WHAT", @"")];
 }
 
 - (void)setupView {

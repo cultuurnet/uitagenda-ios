@@ -51,7 +51,7 @@
     [self setupTableView];
     [self setupDatasource];
     
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"FAVORITES", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"FAVORITES", @"")];
 }
 
 - (void)setupView {
@@ -196,10 +196,10 @@
     if (button.selected) {
         [button removeTarget:self action:@selector(favoriteThisEventAction:) forControlEvents:UIControlEventTouchUpInside];
         button.selected = NO;
-        //        [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
-        //                                                                                            action:@"Unfavorite"
-        //                                                                                             label:NSLocalizedString(@"FAVORITE", @"")
-        //                                                                                             value:nil] build]];
+                [[[GAI sharedInstance] defaultTracker] send:[[GAIDictionaryBuilder createEventWithCategory:@"DetailCellFavorite"
+                                                                                                    action:@"Unfavorite"
+                                                                                                     label:NSLocalizedString(@"FAVORITE", @"")
+                                                                                                     value:nil] build]];
         if (context) {
             UiTFavorite *fav = [UiTFavorite favoriteWithEventId:cdbid usingManagedObjectContext:context];
             if (fav != nil) {

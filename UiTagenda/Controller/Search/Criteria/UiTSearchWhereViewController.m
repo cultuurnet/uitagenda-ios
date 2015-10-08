@@ -8,6 +8,7 @@
 
 #import "UiTSearchWhereViewController.h"
 #import "UiTCategoriesAPIClient.h"
+#import "GoogleAnalyticsTracker.h"
 
 @interface UiTSearchWhereViewController ()
 @property (strong, nonatomic) UITableView *tableView;
@@ -51,7 +52,7 @@
     [self setupTableView];
     [self setupSearchBar];
     
-    [[UiTGlobalFunctions sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH WHERE", @"")];
+    [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"SEARCH WHERE", @"")];
 }
 
 - (void)setupView {
