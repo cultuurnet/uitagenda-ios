@@ -98,11 +98,11 @@ enum SearchPossibilities {
     return item;
 }
 
--(void)closeModalView {
+- (void)closeModalView {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)setupTableView {
+- (void)setupTableView {
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH(self.view), tableViewHeight) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -124,27 +124,23 @@ enum SearchPossibilities {
     self.tableView.tableFooterView = self.footerView;
 }
 
--(void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     [self checkSearchCriteria];
     [self.tableView reloadData];
 }
 
--(void)search {
+- (void)search {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"searchModal" object:nil];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 #pragma mark - TableView Delegate Methods
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 45;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == kSearchNearby) {
         UiTSearchWhatViewController *searchWhatViewController = [[UiTSearchWhatViewController alloc] initWithExtensiveSearch:NO
@@ -157,29 +153,24 @@ enum SearchPossibilities {
                                              animated:YES];
     }
     else if (indexPath.section == kSearchCriteria) {
-        if ([_searchCriteriaDict objectForKey:[NSString stringWithFormat:@"%i", indexPath.row]]) {
-            [_searchCriteriaDict removeObjectForKey:[NSString stringWithFormat:@"%i", indexPath.row]];
+        if ([_searchCriteriaDict objectForKey:[NSString stringWithFormat:@"%li", (long)indexPath.row]]) {
+            [_searchCriteriaDict removeObjectForKey:[NSString stringWithFormat:@"%li", (long)indexPath.row]];
             
             if (indexPath.row == 0) {
                 [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"searchKids"];
-            }
-            else if (indexPath.row == 1) {
+            } else if (indexPath.row == 1) {
                 [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"searchFree"];
-            }
-            else if (indexPath.row == 2) {
+            } else if (indexPath.row == 2) {
                 [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"searchCoursesWorkshops"];
             }
-        }
-        else {
-            [_searchCriteriaDict setObject:[_searchCriteria objectAtIndex:indexPath.row] forKey:[NSString stringWithFormat:@"%i", indexPath.row]];
+        } else {
+            [_searchCriteriaDict setObject:[_searchCriteria objectAtIndex:indexPath.row] forKey:[NSString stringWithFormat:@"%li", (long)indexPath.row]];
             
             if (indexPath.row == 0) {
                 [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"searchKids"];
-            }
-            else if (indexPath.row == 1) {
+            } else if (indexPath.row == 1) {
                 [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"searchFree"];
-            }
-            else if (indexPath.row == 2) {
+            } else if (indexPath.row == 2) {
                 [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"searchCoursesWorkshops"];
             }
         }
@@ -190,7 +181,7 @@ enum SearchPossibilities {
 
 #pragma mark - TableView DataSource Methods
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
 }
 
@@ -212,7 +203,7 @@ enum SearchPossibilities {
         return 0;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"CellIdentifier";
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -227,18 +218,15 @@ enum SearchPossibilities {
             cell.detailTextLabel.text = self.categoryItems;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
-    }
-    else if(indexPath.section == kSearchCriteria) {
+    } else if(indexPath.section == kSearchCriteria) {
         cell.textLabel.text = [self.searchCriteria objectAtIndex:indexPath.row];
-        if ([self.searchCriteriaDict objectForKey:[NSString stringWithFormat:@"%i", indexPath.row]]) {
+        if ([self.searchCriteriaDict objectForKey:[NSString stringWithFormat:@"%li", (long)indexPath.row]]) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
-        }
-        else {
+        } else {
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
     }
     return cell;
-    
 }
 
 @end

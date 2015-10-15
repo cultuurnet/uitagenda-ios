@@ -109,7 +109,6 @@ enum SearchCriteria {
             self.currentLocation = NO;
         }
         
-        
         if ([_where count] == 1) {
             [self.whereDic setObject:@{@"id": [[_where firstObject] valueForKey:@"id"], @"title": [[_where firstObject] valueForKey:@"title"] } forKey:@"0"];
             

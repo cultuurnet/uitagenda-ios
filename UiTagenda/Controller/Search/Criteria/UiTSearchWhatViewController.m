@@ -132,8 +132,7 @@
     
     if ([_searchSelectedCriteria objectForKey:[NSString stringWithFormat:@"%li", (long)rowIndex]]) {
         [_searchSelectedCriteria removeObjectForKey:[NSString stringWithFormat:@"%li", (long)rowIndex]];
-    }
-    else {
+    } else {
         [_searchSelectedCriteria setObject:[_searchCriteria objectAtIndex:rowIndex]
                                     forKey:[NSString stringWithFormat:@"%li", (long)rowIndex]];
     }

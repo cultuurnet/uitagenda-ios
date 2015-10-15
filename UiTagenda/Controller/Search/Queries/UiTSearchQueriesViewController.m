@@ -179,10 +179,6 @@
         [self.searchCriteriaDict setObject:NSLocalizedString(@"NO COURSES AND WORKSHOPS", @"") forKey:@"2"];
     }
     
-    NSString *radius = self.selectedQuery.radius;
-    NSString *searchTerm = self.selectedQuery.searchTerm;
-    NSString *when = self.selectedQuery.when;
-    
     self.where = [[NSMutableDictionary alloc] init];
     NSArray *whereProperties = [self.selectedQuery.where componentsSeparatedByString:@";"];
     
