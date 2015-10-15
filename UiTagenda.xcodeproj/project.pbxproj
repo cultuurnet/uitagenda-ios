@@ -776,14 +776,15 @@
 				);
 				INFOPLIST_FILE = "UiTagenda/UiTagenda-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-l\"AFNetworking\"",
 					"-l\"BDBOAuth1Manager\"",
-					"-l\"GoogleAnalyticsServices\"",
 					"-l\"MBProgressHUD\"",
+					"-l\"GoogleAnalytics\"",
 					"-l\"NVSlideMenuController\"",
 					"-l\"SSKeychain\"",
 					"-l\"SVPullToRefresh\"",
@@ -920,14 +921,15 @@
 				);
 				INFOPLIST_FILE = "UiTagenda/UiTagenda-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-l\"AFNetworking\"",
 					"-l\"BDBOAuth1Manager\"",
-					"-l\"GoogleAnalyticsServices\"",
 					"-l\"MBProgressHUD\"",
+					"-l\"GoogleAnalytics\"",
 					"-l\"NVSlideMenuController\"",
 					"-l\"SSKeychain\"",
 					"-l\"SVPullToRefresh\"",
@@ -990,14 +992,15 @@
 				);
 				INFOPLIST_FILE = "UiTagenda/UiTagenda-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-l\"AFNetworking\"",
 					"-l\"BDBOAuth1Manager\"",
-					"-l\"GoogleAnalyticsServices\"",
 					"-l\"MBProgressHUD\"",
+					"-l\"GoogleAnalytics\"",
 					"-l\"NVSlideMenuController\"",
 					"-l\"SSKeychain\"",
 					"-l\"SVPullToRefresh\"",

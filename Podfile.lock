@@ -23,9 +23,7 @@ PODS:
   - BDBOAuth1Manager (1.5.0):
     - AFNetworking/NSURLConnection (~> 2.5.0)
     - AFNetworking/NSURLSession (~> 2.5.0)
-  - GoogleAnalytics-iOS-SDK (3.12):
-    - GoogleAnalytics-iOS-SDK/Core (= 3.12)
-  - GoogleAnalytics-iOS-SDK/Core (3.12)
+  - GoogleAnalytics (3.13.0)
   - MBProgressHUD (0.8)
   - NVSlideMenuController (1.5.6)
   - OAStackView (0.1.0)
@@ -37,7 +35,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.5.0)
   - BDBOAuth1Manager (~> 1.5.0)
-  - GoogleAnalytics-iOS-SDK (~> 3.12)
+  - GoogleAnalytics (~> 3.13)
   - MBProgressHUD
   - NVSlideMenuController
   - OAStackView (~> 0.1.0)
@@ -49,7 +47,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   BDBOAuth1Manager: 2e28773b58f880fb36b5cd3efcf0b1fefbc78a99
-  GoogleAnalytics-iOS-SDK: 13241762fa4aea845eb75bef6c0da3427a26e7b3
+  GoogleAnalytics: fcf1f1cad57ae1a9a53520018f0f680ceeeb8b49
   MBProgressHUD: 8688c331cb64702283be37ab8d7d329cdd25f251
   NVSlideMenuController: 8ebef1404dfa94247428a7e257c2862ef6f7f3eb
   OAStackView: 76e64242351e2746374b9161a03021cbc19341ff
