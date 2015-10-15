@@ -82,7 +82,7 @@
                                                                 <constraint firstAttribute="width" constant="80" id="UiV-QD-sYf"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentoonstelling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jo-P1-pXt">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tentoonstelling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jo-P1-pXt">
                                                             <rect key="frame" x="88" y="30" width="488" height="16"/>
                                                             <animations/>
                                                             <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="14"/>
@@ -323,11 +323,11 @@
                                                         <color key="textColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="van 28/09/15 tot 01/11/15" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLU-xx-YeH">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLU-xx-YeH">
                                                         <rect key="frame" x="36" y="8" width="688" height="19"/>
                                                         <animations/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="19" id="UhH-Sy-xAU"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="UhH-Sy-xAU"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

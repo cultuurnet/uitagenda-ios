@@ -54,10 +54,10 @@
         } else {
             self.navigationItem.leftBarButtonItem = nil;
         }
-        self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:[[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"EDIT", @"") style:UIBarButtonItemStyleBordered target:self action:@selector(editButtonSelected:)], [self showBarButtonWithType:UIBarButtonItemTypeFavorite], nil];
+        self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:[[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"EDIT", @"") style:UIBarButtonItemStyleDone target:self action:@selector(editButtonSelected:)], [self showBarButtonWithType:UIBarButtonItemTypeFavorite], nil];
         [self.tableView setEditing:NO animated:YES];
     } else {
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"READY", @"") style:UIBarButtonItemStyleBordered target:self action:@selector(editButtonSelected:)];
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"READY", @"") style:UIBarButtonItemStyleDone target:self action:@selector(editButtonSelected:)];
         self.navigationItem.rightBarButtonItems = @[];
         [self.tableView setEditing:YES animated:YES];
     }
