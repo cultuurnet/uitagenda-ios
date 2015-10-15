@@ -203,21 +203,6 @@
         self.currentlocation = NO;
     }
     
-//    UiTSearchResultsViewController *searchResultsVC = [[UiTSearchResultsViewController alloc]
-//                                                       initWithSearchTerm:searchTerm
-//                                                       withCurrentLocation:self.currentlocation
-//                                                       withRadius:radius
-//                                                       withWhen:when
-//                                                       withWhere:self.where
-//                                                       withWhat:self.what
-//                                                       withExtraCriteria:self.searchCriteriaDict
-//                                                       withSavedQuery:YES];
-//    
-//    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"BACK", @"")
-//                                                                             style:UIBarButtonItemStylePlain
-//                                                                            target:nil
-//                                                                            action:nil];
-//    [self.navigationController pushViewController:searchResultsVC animated:YES];
     [self performSegueWithIdentifier:@"showResultsSegue" sender:self];
 }
 
