@@ -51,13 +51,6 @@
     return self;
 }
 
-//-(NSString *)createPhoneNumber:(NSString *)contactItem {
-//    NSString *phoneNumber = [contactItem stringByReplacingOccurrencesOfString:@"/" withString:@""];
-//    phoneNumber = [phoneNumber stringByReplacingOccurrencesOfString:@":" withString:@""];
-//    phoneNumber = [phoneNumber stringByReplacingOccurrencesOfString:@"." withString:@""];
-//    return phoneNumber;
-//}
-
 #pragma mark - TTTAttributedLabel Delegated methods
 
 -(void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url {
@@ -67,14 +60,5 @@
 - (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithPhoneNumber:(NSString *)phoneNumber {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", [phoneNumber stringByReplacingOccurrencesOfString:@" " withString:@""]]]];
 }
-
-/*
- // Only override drawRect: if you perform custom drawing.
- // An empty implementation adversely affects performance during animation.
- - (void)drawRect:(CGRect)rect
- {
- // Drawing code
- }
- */
 
 @end

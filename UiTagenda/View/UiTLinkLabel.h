@@ -9,9 +9,5 @@
 #import "TTTAttributedLabel.h"
 
 @interface UiTLinkLabel : TTTAttributedLabel <TTTAttributedLabelDelegate>
-
 - (id)initWithFrame:(CGRect)frame andText:(NSString *)text;
-
--(NSString *)createPhoneNumber:(NSString *)contactItem;
-
 @end

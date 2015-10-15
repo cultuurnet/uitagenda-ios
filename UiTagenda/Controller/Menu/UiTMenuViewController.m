@@ -33,7 +33,11 @@
 }
 
 - (void)setupTableView {
-    self.tableView  = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 300, HEIGHT(self.view)) style:UITableViewStyleGrouped];
+    if (TARGETED_DEVICE_IS_IPAD) {
+        self.tableView  = [[UITableView alloc] initWithFrame:CGRectMake(0,0, 300, HEIGHT(self.view)) style:UITableViewStyleGrouped];
+    } else {
+        self.tableView  = [[UITableView alloc] initWithFrame:CGRectMake(0, 30, 300, HEIGHT(self.view)) style:UITableViewStyleGrouped];
+    }
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor clearColor];
