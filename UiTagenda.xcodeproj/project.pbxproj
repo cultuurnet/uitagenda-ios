@@ -38,7 +38,6 @@
 		2B5648331851D6EE00396168 /* UiTSearchWhenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5648321851D6EE00396168 /* UiTSearchWhenViewController.m */; };
 		2B5648361852007500396168 /* UiTSearchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5648351852007500396168 /* UiTSearchQuery.m */; };
 		2B5648391852008100396168 /* _UiTSearchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5648381852008100396168 /* _UiTSearchQuery.m */; };
-		2B72D1171BC28528001C5F58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B72D1161BC28528001C5F58 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		2B79CDA21860569300ACD5C1 /* UiTCategoriesAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B79CDA11860569300ACD5C1 /* UiTCategoriesAPIClient.m */; };
 		2B804100185873AB00477458 /* UiTEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8040FF185873AB00477458 /* UiTEvent.m */; };
 		2B8E9FB0185725C80014C8BA /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8E9F07185716C70014C8BA /* libxml2.dylib */; };
@@ -141,7 +140,6 @@
 		2B5648351852007500396168 /* UiTSearchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiTSearchQuery.m; sourceTree = "<group>"; };
 		2B5648371852008100396168 /* _UiTSearchQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UiTSearchQuery.h; sourceTree = "<group>"; };
 		2B5648381852008100396168 /* _UiTSearchQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _UiTSearchQuery.m; sourceTree = "<group>"; };
-		2B72D1161BC28528001C5F58 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B79CDA01860569300ACD5C1 /* UiTCategoriesAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiTCategoriesAPIClient.h; sourceTree = "<group>"; };
 		2B79CDA11860569300ACD5C1 /* UiTCategoriesAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiTCategoriesAPIClient.m; sourceTree = "<group>"; };
 		2B8040FE185873AB00477458 /* UiTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiTEvent.h; sourceTree = "<group>"; };
@@ -366,7 +364,6 @@
 				14B06EAD1BA9A807008377BA /* Storyboards */,
 				2BEBC0E8184F7992000AFFFF /* Images.xcassets */,
 				2BEBC0DD184F7992000AFFFF /* Supporting Files */,
-				2B72D1161BC28528001C5F58 /* LaunchScreen.storyboard */,
 			);
 			path = UiTagenda;
 			sourceTree = "<group>";
@@ -603,7 +600,6 @@
 				2BEBC13F184F7C31000AFFFF /* Localizable.strings in Resources */,
 				140044E51BB5887100915FF5 /* Search.storyboard in Resources */,
 				2B053BCE1883E50100930B1A /* PTN77F.ttf in Resources */,
-				2B72D1171BC28528001C5F58 /* LaunchScreen.storyboard in Resources */,
 				140044BB1BB3FBDD00915FF5 /* About.storyboard in Resources */,
 				14F60D011BBE60E1005436F3 /* MySearch.storyboard in Resources */,
 				2BEBC0E9184F7992000AFFFF /* Images.xcassets in Resources */,
