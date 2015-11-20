@@ -71,11 +71,7 @@
     }
     
     if (_event.ageFrom != nil) {
-        if ([event.ageFrom intValue] <= 11) {
-            self.imageViewLabelKids.hidden = NO;
-        }  else {
-            self.imageViewLabelKids.hidden = YES;
-        }
+        self.imageViewLabelKids.hidden = [event.ageFrom intValue] <= 11 ? NO : YES;
     } else {
         self.imageViewLabelKids.hidden = YES;
     }
