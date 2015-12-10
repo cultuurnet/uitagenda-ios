@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		140044BB1BB3FBDD00915FF5 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140044BA1BB3FBDD00915FF5 /* About.storyboard */; settings = {ASSET_TAGS = (); }; };
-		140044E51BB5887100915FF5 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140044E41BB5887100915FF5 /* Search.storyboard */; settings = {ASSET_TAGS = (); }; };
-		140044E81BB9323300915FF5 /* UiTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140044E71BB9323300915FF5 /* UiTBaseTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		140044EB1BB9504E00915FF5 /* UIViewController+UIBarButtonItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 140044EA1BB9504E00915FF5 /* UIViewController+UIBarButtonItems.m */; settings = {ASSET_TAGS = (); }; };
-		14695D851BBE963A00BFC3C4 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14695D841BBE963A00BFC3C4 /* Favorites.storyboard */; settings = {ASSET_TAGS = (); }; };
-		147E62BE1BBEA62C0052ABF2 /* UIViewController+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E62BD1BBEA62C0052ABF2 /* UIViewController+Actions.m */; settings = {ASSET_TAGS = (); }; };
+		140044BB1BB3FBDD00915FF5 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140044BA1BB3FBDD00915FF5 /* About.storyboard */; };
+		140044E51BB5887100915FF5 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140044E41BB5887100915FF5 /* Search.storyboard */; };
+		140044E81BB9323300915FF5 /* UiTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140044E71BB9323300915FF5 /* UiTBaseTableViewController.m */; };
+		140044EB1BB9504E00915FF5 /* UIViewController+UIBarButtonItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 140044EA1BB9504E00915FF5 /* UIViewController+UIBarButtonItems.m */; };
+		14695D851BBE963A00BFC3C4 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14695D841BBE963A00BFC3C4 /* Favorites.storyboard */; };
+		147E62BE1BBEA62C0052ABF2 /* UIViewController+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E62BD1BBEA62C0052ABF2 /* UIViewController+Actions.m */; };
 		14B06EAF1BA9A848008377BA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B06EAE1BA9A848008377BA /* Home.storyboard */; };
 		14B06EB21BA9AA57008377BA /* CustomSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B06EB11BA9AA57008377BA /* CustomSplitViewController.m */; };
-		14F60D011BBE60E1005436F3 /* MySearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F60D001BBE60E1005436F3 /* MySearch.storyboard */; settings = {ASSET_TAGS = (); }; };
+		14F60D011BBE60E1005436F3 /* MySearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F60D001BBE60E1005436F3 /* MySearch.storyboard */; };
+		22C3D7AB1C1964A800C95509 /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = 22C3D7AA1C1964A800C95509 /* fastlane */; };
 		2B053BCD1883E50100930B1A /* PTN57F.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B053BCB1883E50100930B1A /* PTN57F.ttf */; };
 		2B053BCE1883E50100930B1A /* PTN77F.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B053BCC1883E50100930B1A /* PTN77F.ttf */; };
 		2B148210185677CD00E95440 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14820F185677CD00E95440 /* Security.framework */; };
@@ -47,7 +48,7 @@
 		2B9E193D18990EA4009209BB /* UiTLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E193C18990EA4009209BB /* UiTLinkLabel.m */; };
 		2B9E194118993A60009209BB /* NSMutableArray+UiTMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E194018993A60009209BB /* NSMutableArray+UiTMap.m */; };
 		2B9E194418994055009209BB /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E194318994055009209BB /* ArrayDataSource.m */; };
-		2BC0E0421BC64739002FB555 /* GoogleAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC0E0411BC64739002FB555 /* GoogleAnalyticsTracker.m */; settings = {ASSET_TAGS = (); }; };
+		2BC0E0421BC64739002FB555 /* GoogleAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC0E0411BC64739002FB555 /* GoogleAnalyticsTracker.m */; };
 		2BCE5EED187EF8B900B28753 /* UiTProblemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE5EEC187EF8B900B28753 /* UiTProblemView.m */; };
 		2BD33FBF188EB223001F5667 /* UiTDetailContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD33FBE188EB223001F5667 /* UiTDetailContainerViewController.m */; };
 		2BE59C2318716DA0007D9654 /* categoriesEventTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BE59C2118716DA0007D9654 /* categoriesEventTypes.plist */; };
@@ -106,6 +107,7 @@
 		14F60D001BBE60E1005436F3 /* MySearch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MySearch.storyboard; sourceTree = "<group>"; };
 		1C0D75F45BB47F52A3549CFE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		21A182D4ECB3FF9D87C48DCC /* Pods.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.adhoc.xcconfig; path = "Pods/Target Support Files/Pods/Pods.adhoc.xcconfig"; sourceTree = "<group>"; };
+		22C3D7AA1C1964A800C95509 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
 		2B053BCB1883E50100930B1A /* PTN57F.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTN57F.ttf; sourceTree = "<group>"; };
 		2B053BCC1883E50100930B1A /* PTN77F.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTN77F.ttf; sourceTree = "<group>"; };
 		2B14820F185677CD00E95440 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -314,6 +316,7 @@
 		2BEBC0CA184F7992000AFFFF = {
 			isa = PBXGroup;
 			children = (
+				22C3D7AA1C1964A800C95509 /* fastlane */,
 				2BEBC0DC184F7992000AFFFF /* UiTagenda */,
 				2BEBC0D5184F7992000AFFFF /* Frameworks */,
 				2BEBC0D4184F7992000AFFFF /* Products */,
@@ -566,7 +569,7 @@
 				ORGANIZATIONNAME = Cultuurnet;
 				TargetAttributes = {
 					2BEBC0D2184F7992000AFFFF = {
-						DevelopmentTeam = M86EE69G9P;
+						DevelopmentTeam = 3M7M296YKK;
 					};
 				};
 			};
@@ -604,6 +607,7 @@
 				14F60D011BBE60E1005436F3 /* MySearch.storyboard in Resources */,
 				2BEBC0E9184F7992000AFFFF /* Images.xcassets in Resources */,
 				2B053BCD1883E50100930B1A /* PTN57F.ttf in Resources */,
+				22C3D7AB1C1964A800C95509 /* fastlane in Resources */,
 				14B06EAF1BA9A848008377BA /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -708,7 +712,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		22C74B6E18C9A3A400E9B554 /* AdHoc */ = {
+		22C3D7AC1C19667F00C95509 /* Test */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -725,7 +729,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Appreciate NV (M86EE69G9P)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Appreciate NV (M86EE69G9P)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -737,20 +741,21 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "856B2486-3D53-49A5-928F-1FFA4A2C1873";
+				PROVISIONING_PROFILE = "e90182cb-f98c-4023-9131-7c37657647b8";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = AdHoc;
+			name = Test;
 		};
-		22C74B6F18C9A3A400E9B554 /* AdHoc */ = {
+		22C3D7AD1C19667F00C95509 /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21A182D4ECB3FF9D87C48DCC /* Pods.adhoc.xcconfig */;
+			baseConfigurationReference = 1C0D75F45BB47F52A3549CFE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				BUNDLE_ID_SUFFIX = "-Test";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -807,12 +812,12 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e90182cb-f98c-4023-9131-7c37657647b8";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
-			name = AdHoc;
+			name = Test;
 		};
 		2BEBC0FD184F7992000AFFFF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -894,6 +899,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_ID_SUFFIX = "-Dev";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -965,8 +971,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				BUNDLE_ID_SUFFIX = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1023,7 +1030,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "30f9b7ba-40c5-4690-bb4c-1891d1e0ac77";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1038,7 +1045,7 @@
 			buildConfigurations = (
 				2BEBC0FD184F7992000AFFFF /* Debug */,
 				2BEBC0FE184F7992000AFFFF /* Release */,
-				22C74B6E18C9A3A400E9B554 /* AdHoc */,
+				22C3D7AC1C19667F00C95509 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1048,7 +1055,7 @@
 			buildConfigurations = (
 				2BEBC100184F7992000AFFFF /* Debug */,
 				2BEBC101184F7992000AFFFF /* Release */,
-				22C74B6F18C9A3A400E9B554 /* AdHoc */,
+				22C3D7AD1C19667F00C95509 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

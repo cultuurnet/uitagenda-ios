@@ -1,0 +1,67 @@
+before_all do
+    
+    # Setup Slack webhook
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+    
+    # Update cocoapods
+    cocoapods
+    
+    # Increment build number to git commit
+    increment_build_number(build_number: number_of_commits)
+    
+end
+
+desc "Build test scheme"
+lane :test do
+    
+    
+    # unlock keychain if run from jenkins
+    if is_ci?
+        unlock_keychain(
+                        path: "~/Library/Keychains/login.keychain",
+                        password: "aBG1jgsL"
+                        )
+    end
+    
+    # Codesign project
+    sigh
+    
+    # Build the Test scheme
+    gym(scheme: "Test", workspace: "UiTagenda.xcworkspace", output_name: "app.ipa")
+    
+    # Notifiy iOS Slack channel
+    slack(message: "New testbuild available for Mindshaker.")
+    
+end
+
+desc "Submit to App Store"
+lane :store do
+    
+    # unlock keychain if run from jenkins
+    if is_ci?
+        unlock_keychain(
+                        path: "~/Library/Keychains/login.keychain",
+                        password: "aBG1jgsL"
+                        )
+    end
+    
+    # Codesign project
+    sigh
+    
+    # Build the Test scheme
+    gym(scheme: "Store", workspace: "UiTagenda.xcworkspace", output_name: "app.ipa")
+    
+    # Submit to App Store
+    deliver(
+            force: true,
+            username: "appreciatehq+cultuurnet@gmail.com"
+            )
+            
+            # Notifiy iOS Slack channel
+            slack(message: "A new version of UiTagenda has been submitted to the App Store.")
+            
+end
+
+error do |lane, exception|
+    slack(message: exception.message, success: false)
+end
