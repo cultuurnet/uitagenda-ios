@@ -30,7 +30,7 @@ lane :test do
     gym(scheme: "Test", workspace: "UiTagenda.xcworkspace", output_name: "app.ipa")
     
     # Notifiy iOS Slack channel
-    slack(message: "New testbuild available for Mindshaker.")
+    slack(message: "New testbuild available for UiTagenda.")
     
 end
 
