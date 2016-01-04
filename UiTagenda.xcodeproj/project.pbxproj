@@ -11,6 +11,7 @@
 		140044E51BB5887100915FF5 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140044E41BB5887100915FF5 /* Search.storyboard */; };
 		140044E81BB9323300915FF5 /* UiTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140044E71BB9323300915FF5 /* UiTBaseTableViewController.m */; };
 		140044EB1BB9504E00915FF5 /* UIViewController+UIBarButtonItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 140044EA1BB9504E00915FF5 /* UIViewController+UIBarButtonItems.m */; };
+		1443613E1C3AAB6500F9F143 /* UiTDjubbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1443613D1C3AAB6500F9F143 /* UiTDjubbleViewController.m */; };
 		14695D851BBE963A00BFC3C4 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14695D841BBE963A00BFC3C4 /* Favorites.storyboard */; };
 		147E62BE1BBEA62C0052ABF2 /* UIViewController+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E62BD1BBEA62C0052ABF2 /* UIViewController+Actions.m */; };
 		14B06EAF1BA9A848008377BA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B06EAE1BA9A848008377BA /* Home.storyboard */; };
@@ -96,6 +97,8 @@
 		140044E71BB9323300915FF5 /* UiTBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiTBaseTableViewController.m; sourceTree = "<group>"; };
 		140044E91BB9504E00915FF5 /* UIViewController+UIBarButtonItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIBarButtonItems.h"; sourceTree = "<group>"; };
 		140044EA1BB9504E00915FF5 /* UIViewController+UIBarButtonItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIBarButtonItems.m"; sourceTree = "<group>"; };
+		1443613C1C3AAB6500F9F143 /* UiTDjubbleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiTDjubbleViewController.h; sourceTree = "<group>"; };
+		1443613D1C3AAB6500F9F143 /* UiTDjubbleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiTDjubbleViewController.m; sourceTree = "<group>"; };
 		14695D841BBE963A00BFC3C4 /* Favorites.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		147E62BC1BBEA62C0052ABF2 /* UIViewController+Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Actions.h"; sourceTree = "<group>"; };
 		147E62BD1BBEA62C0052ABF2 /* UIViewController+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Actions.m"; sourceTree = "<group>"; };
@@ -234,6 +237,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1443613B1C3AAB2000F9F143 /* Djubble */ = {
+			isa = PBXGroup;
+			children = (
+				1443613C1C3AAB6500F9F143 /* UiTDjubbleViewController.h */,
+				1443613D1C3AAB6500F9F143 /* UiTDjubbleViewController.m */,
+			);
+			path = Djubble;
+			sourceTree = "<group>";
+		};
 		14B06EAD1BA9A807008377BA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,12 +448,13 @@
 		2BEBC108184F7A5D000AFFFF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2BEBC117184F7B0B000AFFFF /* Menu */,
 				2BEBC116184F7AFB000AFFFF /* Home */,
 				2BEBC115184F7AEF000AFFFF /* Search */,
 				2BEBC114184F7AE4000AFFFF /* Favorites */,
 				2BEBC113184F7AD8000AFFFF /* About */,
 				2BEBC112184F7ACD000AFFFF /* General */,
+				1443613B1C3AAB2000F9F143 /* Djubble */,
+				2BEBC117184F7B0B000AFFFF /* Menu */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -548,6 +561,7 @@
 				2BEBC0D1184F7992000AFFFF /* Resources */,
 				F4179763E4244E1DA9832441 /* Copy Pods Resources */,
 				2B238E2E18571601008034F7 /* CopyFiles */,
+				50DB6724302B2A2823CE69CF /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -615,6 +629,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		50DB6724302B2A2823CE69CF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B0A8D2635D1B4CC6A23B09C4 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -654,6 +683,7 @@
 			files = (
 				2B15A9FB18994D4B00A79F04 /* UiTDetailCell+UiTFavorite.m in Sources */,
 				2B5648361852007500396168 /* UiTSearchQuery.m in Sources */,
+				1443613E1C3AAB6500F9F143 /* UiTDjubbleViewController.m in Sources */,
 				2BEBC122184F7B6B000AFFFF /* UiTSearchResultsViewController.m in Sources */,
 				2BEBC134184F7BFE000AFFFF /* UiTDetailViewController.m in Sources */,
 				2B79CDA21860569300ACD5C1 /* UiTCategoriesAPIClient.m in Sources */,

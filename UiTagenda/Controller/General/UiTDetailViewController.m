@@ -13,6 +13,7 @@
 #import "UiTFavoritesViewController.h"
 #import "UiTNavViewController.h"
 #import "UitagendaDataModel.h"
+#import "UiTDjubbleViewController.h"
 #import "UiTFavorite.h"
 #import "GoogleAnalyticsTracker.h"
 
@@ -37,6 +38,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
 @property (nonatomic) NSInteger eventIndex;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIButton *djubbleButton;
 
 @property (weak, nonatomic) IBOutlet UIImageView *eventImageView;
 @property (weak, nonatomic) IBOutlet UILabel *eventTitleLabel;
@@ -59,6 +61,7 @@
 @property (weak, nonatomic) IBOutlet UiTLinkLabel *linksLabel;
 @property (weak, nonatomic) IBOutlet UiTLinkLabel *contactLabel;
 @property (weak, nonatomic) IBOutlet UiTInfoLabel *performerLabel;
+@property (weak, nonatomic) IBOutlet UiTInfoLabel *djubbleInfoLabel;
 
 @property (weak, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet UIView *titleView;
@@ -70,6 +73,7 @@
 @property (weak, nonatomic) IBOutlet UIView *priceView;
 @property (weak, nonatomic) IBOutlet UIView *performersView;
 @property (weak, nonatomic) IBOutlet UIView *longDescriptionView;
+@property (weak, nonatomic) IBOutlet UIView *djubbleView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *webviewHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *addressHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *calendarHeightContraint;
@@ -290,6 +294,18 @@
     } else {
         self.longDescriptionView.hidden = YES;
     }
+    
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"djubble://"]]) {
+        //Device can open djubble urls, the Djubble app is most likely installed.
+        self.djubbleButton.hidden = NO;
+        self.djubbleInfoLabel.hidden = YES;
+    } else {
+        self.djubbleButton.hidden = YES;
+        self.djubbleInfoLabel.hidden = NO;
+        self.djubbleInfoLabel.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(djubbleAppstoreAction:)];
+        [self.djubbleInfoLabel addGestureRecognizer:tap];
+    }
 }
 
 - (NSString *)createPhoneNumber:(NSString *)contactItem {
@@ -447,6 +463,30 @@
      }];
     
     [self presentViewController:activityController animated:YES completion:nil];
+}
+
+- (IBAction)djubbleAction:(id)sender {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
+    UiTDjubbleViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"djubbleAppointmentVC"];
+    vc.selectedEvent = self.event;
+    UiTNavViewController *navc = [[UiTNavViewController alloc] initWithRootViewController:vc];
+    [self presentViewController:navc animated:YES completion:nil];
+
+    /*
+     djubble://add?lang=nlsubject=Natuurpark%20Overmeerslocation=Sint-Denijslaan,%20,900%20Gentlongitude=4.406621latitude=51.09533date=201510090000source=uitagenda
+     
+     lang = nl
+     subject= titel
+     location= omschrijving van de locatie en gemeente
+     date = datum van event yyyymmddhhmmss
+     source = uitagenda
+     */
+}
+
+- (IBAction)djubbleAppstoreAction:(id)sender {
+    //open djubble in appstore
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms://itunes.apple.com/be/app/djubble/id899650763?mt=8"]];
 }
 
 #pragma mark - UIWebViewDelegate
