@@ -38,7 +38,8 @@
 }
 
 - (IBAction)okAction:(id)sender {
-    NSString *djubbleUrlString = [NSString stringWithFormat:@"djubble://add?lang=nlsubject=%@location=%@longitude=%flatitude=%fdate=%@source=uitagenda", self.selectedEvent.title, self.selectedEvent.address, self.selectedEvent.lonCoordinate, self.selectedEvent.latCoordinate, self.selectedEvent.calendarSummary];
+    NSString *djubbleUrlString = [NSString stringWithFormat:@"djubble://add?lang=nlsubject=%@location=%@longitude=%flatitude=%fdate=%@source=uitagenda", self.selectedEvent.title, self.selectedEvent.address, self.selectedEvent.lonCoordinate, self.selectedEvent.latCoordinate, [self getStringFromDate:self.selectedDate withFormat:@"ddMMyyyyHHmmss"]];
+    
     NSString *encodedString = [djubbleUrlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:encodedString]];
 }
