@@ -40,7 +40,8 @@
 - (void)getAboutInfo {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    [manager GET:@"http://www.uitinvlaanderen.be/appinfo.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    [manager GET:@"https://www.uitinvlaanderen.be/appinfo.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
         self.appInfo = [jsonDict valueForKey:@"appinfo"];
         
@@ -52,22 +53,23 @@
         self.appInfoLabel.numberOfLines = 0;
         
         self.appInfoLabel.linkAttributes = @{(id)kCTForegroundColorAttributeName: REDCOLOR,
-                                          (id)kCTUnderlineStyleAttributeName : @(kCTUnderlineStyleNone)
-                                          };
+                                             (id)kCTUnderlineStyleAttributeName : @(kCTUnderlineStyleNone)
+                                             };
         
         self.appInfoLabel.activeLinkAttributes = @{(id)kCTForegroundColorAttributeName: SLIDEMENUCOLOR,
-                                                (id)kCTUnderlineStyleAttributeName: @(kCTUnderlineStyleNone)
-                                                };
+                                                   (id)kCTUnderlineStyleAttributeName: @(kCTUnderlineStyleNone)
+                                                   };
         
         self.appInfoLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:18];
         self.appInfoLabel.text = self.appInfo;
-
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ERROR", @"")
                                     message:NSLocalizedString(@"SOMETHING WENT WRONG, INTERNET CONNECTION", @"")
                                    delegate:self
                           cancelButtonTitle:NSLocalizedString(@"OKE", @"")
                           otherButtonTitles:nil, nil] show];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     }];
 }
 
