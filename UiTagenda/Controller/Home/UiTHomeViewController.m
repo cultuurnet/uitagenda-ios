@@ -18,17 +18,22 @@
 
 #import <SVPullToRefresh/SVPullToRefresh.h>
 #import <MBProgressHUD/MBProgressHUD.h>
+#import <TSMessages/TSMessage.h>
 
 @interface UiTHomeViewController () <UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, UIAlertViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UITableView *eventTableView;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *location;
 @property (strong, nonatomic) NSMutableArray *resultsArray;
-@property (nonatomic) NSInteger currentEvents, totalEvents;
+@property (nonatomic, assign) NSInteger currentEvents, totalEvents;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
 @property (strong, nonatomic) UIImageView *noDataImageView;
 @property (strong, nonatomic) UiTProblemView *problemView;
 @property (strong, nonatomic) MBProgressHUD *hud;
+
+@property (nonatomic, assign) BOOL locationUpdated;
+
 @end
 
 @implementation UiTHomeViewController
@@ -45,6 +50,7 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.eventTableView reloadData];
 }
 
@@ -88,7 +94,7 @@ static BOOL haveAlreadyReceivedCoordinates;
     }];
     
     [self.eventTableView addInfiniteScrollingWithActionHandler:^{
-        if (haveAlreadyReceivedCoordinates) {
+        if (haveAlreadyReceivedCoordinates || !_locationUpdated) {
             [weakSelf fetchEvents];
         }
     }];
@@ -135,17 +141,26 @@ static BOOL haveAlreadyReceivedCoordinates;
     [fqSet addObject:@"type:event"];
     [fqSet addObject:@"language:nl"];
     
+    NSMutableDictionary *parameters = [@{
+                                        @"q": @"*:*",
+                                        @"rows" : [NSString stringWithFormat:@"%i", amountOfRows],
+                                        @"group" : @"event",
+                                        @"fq": fqSet,
+                                        @"datetype": @"today",
+                                        @"start" : [NSString stringWithFormat:@"%li", (long)self.currentEvents]
+                                        } mutableCopy];
+
+    if (_locationUpdated) {
+        [parameters setObject:@"physical_gis" forKey:@"sfield"];
+        [parameters setObject:[NSString stringWithFormat:@"%i", (int)RADIUS] forKey:@"d"];
+        [parameters setObject:@"geodist() asc" forKey:@"sort"];
+        [parameters setObject:[NSString stringWithFormat:@"%f,%f",_location.coordinate.latitude, _location.coordinate.longitude] forKey:@"pt"];
+    } else {
+        [parameters setObject:@"startdate asc" forKey:@"sort"];
+    }
+    
     [[UiTAPIClient sharedClient] getPath:@"searchv2/search"
-                           getParameters:@{@"q": @"*:*",
-                                           @"group" : @"event",
-                                           @"fq": fqSet,
-                                           @"datetype": @"today",
-                                           @"sfield" : @"physical_gis",
-                                           @"d" : [NSString stringWithFormat:@"%i", (int)RADIUS],
-                                           @"pt" : [NSString stringWithFormat:@"%f,%f",_location.coordinate.latitude, _location.coordinate.longitude],
-                                           @"sort" : @"geodist() asc",
-                                           @"rows" : [NSString stringWithFormat:@"%i", amountOfRows],
-                                           @"start" : [NSString stringWithFormat:@"%li", (long)self.currentEvents]}
+                           getParameters:parameters
                               completion:^(NSArray *results, NSError *error) {
                                   if (results) {
                                       [self handleApiResults:results];
@@ -204,6 +219,7 @@ static BOOL haveAlreadyReceivedCoordinates;
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     if(!haveAlreadyReceivedCoordinates) {
         _location = [locations lastObject];
+        _locationUpdated = YES;
         [self fetchEvents];
     }
     [self.locationManager stopUpdatingLocation];
@@ -212,14 +228,13 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    [_resultsArray removeAllObjects];
-    [self.eventTableView reloadData];
-    self.hud.hidden = YES;
     
-    [self hideProblemView:NO withRemark:NSLocalizedString(@"NO LOCATION", @"")];
-    
-    self.eventTableView.showsInfiniteScrolling = NO;
-    [self.eventTableView.pullToRefreshView stopAnimating];
+    [TSMessage setDefaultViewController:self];
+    [TSMessage showNotificationWithTitle:@"Locatie bepalen mislukt."
+                                subtitle:@"Misschien zijn deze evenementen wel iets voor jou!"
+                                    type:TSMessageNotificationTypeWarning];
+    _locationUpdated = NO;
+    [self fetchEvents];
 }
 
 - (void)viewWillLayoutSubviews {
@@ -230,10 +245,7 @@ static BOOL haveAlreadyReceivedCoordinates;
 #pragma mark - TableView Delegate methods
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row < self.resultsArray.count) {
-        return 112;
-    }
-    return 40;
+    return indexPath.row < self.resultsArray.count ? 112 : 40;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -248,10 +260,6 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 #pragma mark - TableView DataSource methods
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.resultsArray count];
@@ -268,36 +276,24 @@ static BOOL haveAlreadyReceivedCoordinates;
     
     if ([_resultsArray count] > 0) {
         
-        UiTEvent *event = [self.resultsArray objectAtIndex:indexPath.row];
-        
+        UiTEvent *event = self.resultsArray[indexPath.row];
         cell.event = event;
         
-        CLLocation *restoLocation = [[CLLocation alloc] initWithLatitude:event.latCoordinate
-                                                               longitude:event.lonCoordinate];
+        if (_locationUpdated) {
+            cell.distanceLabel.text = [event getDistanceToEventFromLocation:_location];
+        } else {
+            cell.distanceLabel.text = @"";
+        }
         
-        CLLocationDistance meters = [restoLocation distanceFromLocation:_location];
+        [cell.distanceLabel sizeToFit];
         
         cell.cityLabel.text = [NSString stringWithFormat:@"%@", event.city];
-        cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
-        [cell.distanceLabel sizeToFit];
-        [cell.favoriteButton addTarget:self action:@selector(favoriteEventAction:) forControlEvents:UIControlEventTouchUpInside];
+        
         cell.favoriteButton.tag = indexPath.row;
+        [cell.favoriteButton addTarget:self action:@selector(favoriteEventAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return cell;
-}
-
-- (NSString *)getDistanceToResto:(NSNumber *)distanceInMeters {
-    NSString *distance;
-    
-    if (distanceInMeters && [distanceInMeters intValue] < 100000 && [distanceInMeters intValue] > 0) {
-        if ([distanceInMeters intValue] < 1000) {
-            distance = [NSString stringWithFormat:@"%dm", [distanceInMeters intValue]];
-        }  else {
-            distance = [NSString stringWithFormat:@"%.2fkm", floor(([distanceInMeters floatValue] / 1000) * 100)/100];
-        }
-    }
-    return distance;
 }
 
 - (IBAction)favoriteEventAction:(id)sender {

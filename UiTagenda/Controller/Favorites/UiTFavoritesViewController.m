@@ -40,6 +40,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.fetchedResultsController performFetch:nil];
     [self getAllFavoriteEventIds];
     [self.tableView reloadData];
@@ -191,7 +192,7 @@
     UIButton *button = (UIButton *)sender;
     NSManagedObjectContext *context = [[UitagendaDataModel sharedDataModel] mainContext];
     
-    NSString *cdbid = ((UiTEvent *)[self.resultsArray objectAtIndex:button.tag]).cdbid;
+    NSString *cdbid = ((UiTEvent *)self.resultsArray[button.tag]).cdbid;
     
     if (button.selected) {
         [button removeTarget:self action:@selector(favoriteThisEventAction:) forControlEvents:UIControlEventTouchUpInside];

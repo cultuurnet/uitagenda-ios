@@ -30,7 +30,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Locatie is nodig om evenementen in de buurt te laten zien.</string>
+	<string>Locatie is nodig om evenementen in de buurt te zien.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>PTN57F.ttf</string>

@@ -68,6 +68,7 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.tableView reloadData];
 }
 
@@ -269,7 +270,7 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 - (IBAction)saveSearchQueryAction {
-   [[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"SAVE SEARCHQUERY?", @"")
+   [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SAVE SEARCHQUERY?", @"")
                               message:nil
                              delegate:self
                     cancelButtonTitle:NSLocalizedString(@"CANCEL", @"")
@@ -374,10 +375,7 @@ static BOOL haveAlreadyReceivedCoordinates;
 #pragma mark - TableView Delegate methods
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row < self.resultsArray.count) {
-        return 112;
-    }
-    return 40;
+    return indexPath.row < self.resultsArray.count ? 112 : 40;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -390,10 +388,6 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 #pragma mark - TableView DataSource methods
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.resultsArray.count;
@@ -409,38 +403,19 @@ static BOOL haveAlreadyReceivedCoordinates;
     }
     
     if (self.resultsArray.count > 0) {
-        UiTEvent *event = [self.resultsArray objectAtIndex:indexPath.row];
-        
+        UiTEvent *event = self.resultsArray[indexPath.row];
         cell.event = event;
         
         if (_currentLocation) {
-            CLLocation *restoLocation = [[CLLocation alloc] initWithLatitude:event.latCoordinate
-                                                                   longitude:event.lonCoordinate];
-            
-            CLLocationDistance meters = [restoLocation distanceFromLocation:_location];
-            
-            cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToEvent:[NSNumber numberWithInt:(int) meters]]];
+            cell.distanceLabel.text = [event getDistanceToEventFromLocation:_location];
         } else {
             cell.distanceLabel.text = @"";
         }
+        [cell.distanceLabel sizeToFit];
         cell.favoriteButton.tag = indexPath.row;
     }
     
     return cell;
-}
-
-- (NSString *)getDistanceToEvent:(NSNumber *)distanceInMeters {
-    NSString *distance;
-    
-    if (distanceInMeters && [distanceInMeters intValue] < 100000 && [distanceInMeters intValue] > 0) {
-        if ([distanceInMeters intValue] < 1000) {
-            distance = [NSString stringWithFormat:@"%dm", [distanceInMeters intValue]];
-        }
-        else {
-            distance = [NSString stringWithFormat:@"%.2fkm", floor(([distanceInMeters floatValue] / 1000) * 100)/100];
-        }
-    }
-    return distance;
 }
 
 - (IBAction)favoriteEvent:(id)sender {

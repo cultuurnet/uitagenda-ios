@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface UiTEvent : NSObject
 
@@ -50,5 +51,7 @@
 
 @property (nonatomic) float latCoordinate;
 @property (nonatomic) float lonCoordinate;
+
+- (NSString *)getDistanceToEventFromLocation:(CLLocation *)location;
 
 @end

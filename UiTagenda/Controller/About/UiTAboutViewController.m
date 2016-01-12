@@ -10,9 +10,10 @@
 #import "AFNetworking/AFNetworking.h"
 
 @interface UiTAboutViewController () <TTTAttributedLabelDelegate>
-@property (strong, nonatomic) NSString *appInfo;
+
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet TTTAttributedLabel *appInfoLabel;
+
 @end
 
 @implementation UiTAboutViewController
@@ -43,7 +44,6 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [manager GET:@"https://www.uitinvlaanderen.be/appinfo.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
-        self.appInfo = [jsonDict valueForKey:@"appinfo"];
         
         self.appInfoLabel.delegate = self;
         self.appInfoLabel.backgroundColor = TABLEVIEWCOLOR;
@@ -61,7 +61,7 @@
                                                    };
         
         self.appInfoLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:18];
-        self.appInfoLabel.text = self.appInfo;
+        self.appInfoLabel.text = [jsonDict valueForKey:@"appinfo"];
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ERROR", @"")

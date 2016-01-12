@@ -236,4 +236,25 @@
     return nil;
 }
 
+- (NSString *)getDistanceToEventFromLocation:(CLLocation *)location {
+    if (location) {
+        NSString *distance = @"";
+        CLLocation *restoLocation = [[CLLocation alloc] initWithLatitude:self.latCoordinate
+                                                               longitude:self.lonCoordinate];
+        
+        int distanceInMeters = (int)[restoLocation distanceFromLocation:location];
+        
+        if (distanceInMeters < 100000 && distanceInMeters > 0) {
+            if (distanceInMeters < 1000) {
+                distance = [NSString stringWithFormat:@"%dm", distanceInMeters];
+            }  else {
+                distance = [NSString stringWithFormat:@"%.2fkm", floor(((float)distanceInMeters / 1000) * 100)/100];
+            }
+        }
+        
+        return [NSString stringWithFormat:@"(%@)", distance];
+    }
+    return @"";
+}
+
 @end
