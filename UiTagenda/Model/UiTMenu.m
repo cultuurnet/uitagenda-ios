@@ -20,32 +20,37 @@
                                  kMenuTitle: NSLocalizedString(@"HOME", ""),
                                  kMenuViewController: @"UiTHomeViewController",
                                  kStoryboardTitle: @"Home",
-                                 kMenuViewControllerIdentifier: @"homeVC"
+                                 kMenuViewControllerIdentifier: @"homeVC",
+                                 kMenuIcon: @"nav_marker"
                                  },
                              @{
                                  kMenuId: @"SEARCH",
                                  kMenuTitle: NSLocalizedString(@"SEARCH", ""),
                                  kMenuViewController: @"UiTSearchFilterViewController",
-                                 kStoryboardTitle: @"Search"
+                                 kStoryboardTitle: @"Search",
+                                 kMenuIcon: @"nav_search"
                                  },
                              @{
                                  kMenuId: @"FAVORITES",
                                  kMenuTitle: NSLocalizedString(@"FAVORITES", ""),
                                  kMenuViewController: @"UiTFavoritesViewController",
-                                 kStoryboardTitle: @"Favorites"
+                                 kStoryboardTitle: @"Favorites",
+                                 kMenuIcon: @"nav_favorite"
                                  },
                              @{
                                  kMenuId: @"SEARCHQUERIES",
                                  kMenuTitle: NSLocalizedString(@"SEARCHQUERIES", ""),
                                  kMenuViewController: @"UiTSearchQueriesViewController",
-                                 kStoryboardTitle: @"MySearch"
+                                 kStoryboardTitle: @"MySearch",
+                                 kMenuIcon: @"nav_folder"
                                  },
                              @{
                                  kMenuId: @"ABOUT",
                                  kMenuTitle: NSLocalizedString(@"ABOUT", ""),
                                  kMenuViewController: @"UiTAboutViewController",
                                  kStoryboardTitle: @"About",
-                                 kMenuViewControllerIdentifier: @"aboutVC"
+                                 kMenuViewControllerIdentifier: @"aboutVC",
+                                 kMenuIcon: @"nav_info"
                                  }
                              ];
     }

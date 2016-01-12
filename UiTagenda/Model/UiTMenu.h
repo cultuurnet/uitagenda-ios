@@ -13,6 +13,7 @@ static NSString *kMenuTitle = @"title";
 static NSString *kMenuViewController = @"viewController";
 static NSString *kStoryboardTitle = @"storyboardTitle";
 static NSString *kMenuViewControllerIdentifier = @"vcIdentifier";
+static NSString *kMenuIcon = @"menuIcon";
 
 @interface UiTMenu : NSObject
 

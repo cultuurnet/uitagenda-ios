@@ -97,6 +97,7 @@
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.textLabel.highlightedTextColor = SLIDEMENUCOLOR;
         cell.backgroundColor = SLIDEMENUCOLOR;
+        cell.imageView.transform = CGAffineTransformMakeScale(0.8, 0.8);
         
         if (indexPath.row < [self.menu count] - 1) {
             [cell.layer addSublayer:[[UiTGlobalFunctions sharedInstance] createBorderWithX:15
@@ -107,7 +108,8 @@
         }
     }
     
-    cell.textLabel.text = [[self.menu objectAtIndex:indexPath.row] objectForKey:@"title"];
+    cell.imageView.image = [UIImage imageNamed:self.menu[indexPath.row][kMenuIcon]];
+    cell.textLabel.text = self.menu[indexPath.row][kMenuTitle];
     return cell;
 }
 
