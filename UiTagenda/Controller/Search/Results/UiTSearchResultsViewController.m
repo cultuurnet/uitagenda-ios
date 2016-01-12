@@ -419,7 +419,9 @@ static BOOL haveAlreadyReceivedCoordinates;
             
             CLLocationDistance meters = [restoLocation distanceFromLocation:_location];
             
-            cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToResto:[NSNumber numberWithInt:(int) meters]]];
+            cell.distanceLabel.text = [NSString stringWithFormat:@"(%@)", [self getDistanceToEvent:[NSNumber numberWithInt:(int) meters]]];
+        } else {
+            cell.distanceLabel.text = @"";
         }
         cell.favoriteButton.tag = indexPath.row;
     }
@@ -427,7 +429,7 @@ static BOOL haveAlreadyReceivedCoordinates;
     return cell;
 }
 
-- (NSString *)getDistanceToResto:(NSNumber *)distanceInMeters {
+- (NSString *)getDistanceToEvent:(NSNumber *)distanceInMeters {
     NSString *distance;
     
     if (distanceInMeters && [distanceInMeters intValue] < 100000 && [distanceInMeters intValue] > 0) {

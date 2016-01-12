@@ -97,6 +97,9 @@ enum SearchCriteria {
 }
 
 - (void)searchAction {
+    
+    _whereDic = [NSMutableDictionary dictionary];
+    
     if (![_radius isEqualToString:@""] && [_where count] == 0) {
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ERROR", @"")
                                     message:NSLocalizedString(@"NO PLACE", @"")

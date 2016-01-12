@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0X3-LU-mEo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0X3-LU-mEo">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -40,7 +40,6 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="cyk-O0-761">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="hso-0u-QZe">
                             <rect key="frame" x="0.0" y="505" width="600" height="50"/>
@@ -48,14 +47,12 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzt-Pn-TTO">
                                     <rect key="frame" x="8" y="0.0" width="584" height="50"/>
-                                    <animations/>
                                     <color key="backgroundColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                     <state key="normal" title="Zoeken">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                 </button>
                             </subviews>
-                            <animations/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="yzt-Pn-TTO" firstAttribute="leading" secondItem="hso-0u-QZe" secondAttribute="leading" constant="8" id="8aE-l0-APU"/>
@@ -75,25 +72,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Waar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7He-V7-F07">
-                                                    <rect key="frame" x="15" y="12" width="41.5" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="31" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Huidige locatie" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HRG-56-BB5">
-                                                    <rect key="frame" x="445" y="12" width="120" height="21"/>
+                                                    <rect key="frame" x="471" y="11" width="94" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <connections>
                                             <segue destination="R4e-fn-fcP" kind="show" identifier="whereSegue" id="XNg-vP-kNc"/>
                                         </connections>
@@ -106,25 +99,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Straal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xdE-yM-PaT">
-                                                    <rect key="frame" x="15" y="12" width="47" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="36.5" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="10 km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iC3-91-gvC">
-                                                    <rect key="frame" x="515" y="12" width="50" height="21"/>
+                                                    <rect key="frame" x="526" y="11" width="39" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <connections>
                                             <segue destination="Xee-ze-oYw" kind="show" identifier="radiusSegue" id="fq1-bZ-nua"/>
                                         </connections>
@@ -137,25 +126,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Wanneer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ftq-79-6db">
-                                                    <rect key="frame" x="15" y="12" width="71.5" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="54.5" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Vandaag" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xHI-La-jou">
-                                                    <rect key="frame" x="494.5" y="12" width="70.5" height="21"/>
+                                                    <rect key="frame" x="512" y="11" width="53" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <connections>
                                             <segue destination="mgH-21-UTd" kind="show" identifier="whenSegue" id="zV0-UR-oV9"/>
                                         </connections>
@@ -168,25 +153,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Wat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EG8-1i-aTL">
-                                                    <rect key="frame" x="15" y="12" width="31.5" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="24" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Alles" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pz4-tv-5wo">
-                                                    <rect key="frame" x="526.5" y="12" width="38.5" height="21"/>
+                                                    <rect key="frame" x="534.5" y="11" width="30.5" height="21.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <connections>
                                             <segue destination="69X-7T-1Eg" kind="show" identifier="whatSegue" id="AOR-8H-wDo"/>
                                         </connections>
@@ -195,17 +176,15 @@
                                         <rect key="frame" x="0.0" y="275" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tUC-0Q-tVY" id="qB2-Cp-No8">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zoekterm" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRr-5c-Jza">
                                                     <rect key="frame" x="17" y="7" width="575" height="30"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
-                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="mRr-5c-Jza" secondAttribute="trailing" id="cOv-Hk-rpu"/>
                                                 <constraint firstItem="mRr-5c-Jza" firstAttribute="leading" secondItem="qB2-Cp-No8" secondAttribute="leadingMargin" constant="9" id="rSa-Un-Alv"/>
@@ -213,7 +192,6 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="mRr-5c-Jza" secondAttribute="bottom" constant="-2" id="ykh-Rl-Uj0"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -229,15 +207,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Enkel voor kinderen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TId-FW-wJy">
                                                     <rect key="frame" x="15" y="0.0" width="546" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="kRB-UI-Bcw" style="IBUITableViewCellStyleDefault" id="X8r-Fc-HsP">
                                         <rect key="frame" x="0.0" y="399" width="600" height="44"/>
@@ -249,15 +224,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Enkel gratis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kRB-UI-Bcw">
                                                     <rect key="frame" x="15" y="0.0" width="546" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="VdB-69-EUI" style="IBUITableViewCellStyleDefault" id="05F-EE-UXb">
                                         <rect key="frame" x="0.0" y="443" width="600" height="44"/>
@@ -269,15 +241,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Geen cursussen en workshops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VdB-69-EUI">
                                                     <rect key="frame" x="15" y="0.0" width="546" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -313,7 +282,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qso-4c-pqX">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIdentifier" textLabel="Rbl-Ye-Uk5" rowHeight="45" style="IBUITableViewCellStyleDefault" id="8eu-gY-jey">
@@ -326,15 +294,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rbl-Ye-Uk5">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="44.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -343,7 +308,6 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Qso-4c-pqX" secondAttribute="trailing" constant="-20" id="NBB-JZ-yYj"/>
@@ -374,7 +338,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iry-BF-PoV">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIdentifier" textLabel="P36-ke-BLs" rowHeight="45" style="IBUITableViewCellStyleDefault" id="BoE-jt-cvG">
@@ -387,15 +350,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="When" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P36-ke-BLs">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="44.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -404,7 +364,6 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="no2-ej-TrA" firstAttribute="top" secondItem="Iry-BF-PoV" secondAttribute="bottom" id="Nga-hx-Fth"/>
@@ -435,7 +394,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7gc-IJ-Oz7">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIdentifier" textLabel="VaV-Z8-kEC" rowHeight="45" style="IBUITableViewCellStyleDefault" id="J11-yc-xM4">
@@ -448,15 +406,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Where" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VaV-Z8-kEC">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="44.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -465,7 +420,6 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7gc-IJ-Oz7" firstAttribute="top" secondItem="Zsq-UQ-uYE" secondAttribute="bottom" id="7nv-Xy-9IT"/>
@@ -496,12 +450,10 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cqi-Ud-ZDy">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="8zf-go-ugs">
                                     <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <animations/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
@@ -515,15 +467,12 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="What" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X8p-Kr-9Sj">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="44.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -532,7 +481,6 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cqi-Ud-ZDy" firstAttribute="leading" secondItem="JQk-3f-4EY" secondAttribute="leadingMargin" constant="-20" id="XwX-cT-rGV"/>
@@ -557,7 +505,6 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="112" sectionHeaderHeight="28" sectionFooterHeight="28" id="QbE-l8-YBE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="s8W-Rq-mDh">
                             <rect key="frame" x="0.0" y="64" width="600" height="50"/>
@@ -565,7 +512,6 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpy-BT-a0F">
                                     <rect key="frame" x="552" y="5" width="40" height="40"/>
-                                    <animations/>
                                     <color key="backgroundColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="40" id="iMs-5e-sFX"/>
@@ -580,7 +526,6 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68Z-PC-eIQ">
                                     <rect key="frame" x="8" y="5" width="542" height="40"/>
-                                    <animations/>
                                     <color key="backgroundColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="TDo-KU-3Cy"/>
@@ -594,7 +539,6 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <animations/>
                             <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="fpy-BT-a0F" firstAttribute="top" secondItem="s8W-Rq-mDh" secondAttribute="top" constant="5" id="3Q1-Mr-I4h"/>
@@ -617,44 +561,37 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kunstenaar van de maand: Sam Ballet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBr-na-76o">
                                                     <rect key="frame" x="88" y="8" width="488" height="18"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="15"/>
                                                     <color key="textColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="1qa-lC-xqd">
                                                     <rect key="frame" x="1" y="1" width="80" height="95"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="16r-Aw-bbY"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tentoonstelling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UN-XD-bzB">
                                                     <rect key="frame" x="88" y="30" width="488" height="18"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Zebrastraat Kunstenplatform" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GO-8v-VNi">
                                                     <rect key="frame" x="88" y="52" width="448" height="18"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVL-Yd-Ihn">
                                                     <rect key="frame" x="88" y="74" width="26" height="18"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-NarrowBold" family="PT Sans Narrow" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kids_cell" translatesAutoresizingMaskIntoConstraints="NO" id="nmC-K8-IFQ">
                                                     <rect key="frame" x="1" y="1" width="80" height="95"/>
-                                                    <animations/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKy-xp-jVs">
                                                     <rect key="frame" x="549" y="57" width="35" height="35"/>
-                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="0sr-Xx-L44"/>
                                                         <constraint firstAttribute="width" constant="35" id="SeV-G6-YB6"/>
@@ -667,13 +604,11 @@
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(375m)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhg-wR-T46">
                                                     <rect key="frame" x="117" y="74" width="37" height="18"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="4GO-8v-VNi" firstAttribute="leading" secondItem="jBr-na-76o" secondAttribute="leading" id="1Nk-Va-GPw"/>
@@ -700,7 +635,6 @@
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstItem="IjZ-Ut-Yi3" firstAttribute="top" secondItem="4n9-qJ-pcg" secondAttribute="topMargin" id="9CB-3i-qus"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="iKy-xp-jVs" secondAttribute="bottom" constant="5" id="9yr-x7-NSQ"/>
@@ -709,10 +643,10 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="IjZ-Ut-Yi3" secondAttribute="trailing" id="mlM-6s-z0X"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <animations/>
                                 <connections>
                                     <outlet property="cityLabel" destination="xVL-Yd-Ihn" id="b6E-FL-vPg"/>
                                     <outlet property="containerView" destination="IjZ-Ut-Yi3" id="hxk-Oz-pBy"/>
+                                    <outlet property="distanceLabel" destination="fhg-wR-T46" id="FEt-6u-bXd"/>
                                     <outlet property="eventTypeLabel" destination="4UN-XD-bzB" id="Ww9-ol-h6k"/>
                                     <outlet property="favoriteButton" destination="iKy-xp-jVs" id="5nV-My-jSh"/>
                                     <outlet property="imageViewEvent" destination="1qa-lC-xqd" id="puO-7n-ui1"/>
@@ -752,7 +686,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EJm-4H-b1k">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="0X3-LU-mEo" kind="relationship" relationship="rootViewController" id="eNn-Od-w0S"/>
