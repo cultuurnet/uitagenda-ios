@@ -213,11 +213,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1540"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pmi-cC-O9W">
-                                <rect key="frame" x="0.0" y="64" width="768" height="1476"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmi-cC-O9W">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1480"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9VU-TL-KU9" customClass="OAStackView">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1476"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VU-TL-KU9" customClass="OAStackView">
+                                        <rect key="frame" x="10" y="10" width="748" height="1430"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVV-pN-MX2" userLabel="header container">
                                                 <rect key="frame" x="8" y="8" width="732" height="588"/>
@@ -280,8 +280,8 @@
                                                     <constraint firstItem="4od-JL-eBf" firstAttribute="top" secondItem="Nnp-cE-4Dw" secondAttribute="bottom" constant="9" id="xAm-9a-EdX"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U5h-QH-GLw" userLabel="date container">
-                                                <rect key="frame" x="8" y="666" width="732" height="67"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5h-QH-GLw" userLabel="date container">
+                                                <rect key="frame" x="8" y="666" width="732" height="72"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendaricon" translatesAutoresizingMaskIntoConstraints="NO" id="QPQ-P1-hwp">
                                                         <rect key="frame" x="8" y="8" width="20" height="20"/>
@@ -290,8 +290,8 @@
                                                             <constraint firstAttribute="width" constant="20" id="Hom-Lu-JaB"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="locationicon" translatesAutoresizingMaskIntoConstraints="NO" id="irY-JR-Lmu">
-                                                        <rect key="frame" x="8" y="37" width="20" height="20"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationicon" translatesAutoresizingMaskIntoConstraints="NO" id="irY-JR-Lmu">
+                                                        <rect key="frame" x="8" y="41" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="sqx-Eh-rD2"/>
                                                             <constraint firstAttribute="height" constant="20" id="uvS-4W-Yqd"/>
@@ -332,8 +332,8 @@
                                                     <constraint firstItem="irY-JR-Lmu" firstAttribute="top" secondItem="iVE-hL-X9f" secondAttribute="top" id="yIS-RG-z1X"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-Rs-cdM" userLabel="short description Container">
-                                                <rect key="frame" x="8" y="733" width="732" height="81"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-Rs-cdM" userLabel="short description Container">
+                                                <rect key="frame" x="8" y="738" width="732" height="81"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byd-hM-VzG">
                                                         <rect key="frame" x="8" y="35" width="716" height="38"/>
@@ -360,8 +360,8 @@
                                                     <constraint firstItem="Byd-hM-VzG" firstAttribute="top" secondItem="hhK-VA-oYN" secondAttribute="bottom" constant="8" id="viW-Il-7rM"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D79-HO-vSB" userLabel="organiser Container">
-                                                <rect key="frame" x="8" y="813" width="732" height="59"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D79-HO-vSB" userLabel="organiser Container">
+                                                <rect key="frame" x="8" y="819" width="732" height="63"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organisator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssx-Ow-rpq" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="8" width="716" height="20"/>
@@ -397,8 +397,8 @@
                                                     <constraint firstItem="OEG-Dm-dJb" firstAttribute="leading" secondItem="D79-HO-vSB" secondAttribute="leading" id="vB1-X9-hpb"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBg-ts-pEH" userLabel="contact Container">
-                                                <rect key="frame" x="8" y="872" width="732" height="59"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBg-ts-pEH" userLabel="contact Container">
+                                                <rect key="frame" x="8" y="882" width="732" height="63"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRa-La-CHi" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="8" width="716" height="20"/>
@@ -434,8 +434,8 @@
                                                     <constraint firstAttribute="trailing" secondItem="0nP-R7-kZV" secondAttribute="trailing" constant="8" id="yAk-S1-bL4"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aP6-eu-NrA" userLabel="reservatie Container">
-                                                <rect key="frame" x="8" y="931" width="732" height="59"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aP6-eu-NrA" userLabel="reservatie Container">
+                                                <rect key="frame" x="8" y="945" width="732" height="63"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reservatie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYR-aD-8X2" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="8" width="716" height="20"/>
@@ -471,8 +471,8 @@
                                                     <constraint firstAttribute="trailing" secondItem="Ma6-I1-V5c" secondAttribute="trailing" id="yVU-wU-kXH"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wVO-7X-ZAQ" userLabel="links Container">
-                                                <rect key="frame" x="8" y="990" width="732" height="59"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVO-7X-ZAQ" userLabel="links Container">
+                                                <rect key="frame" x="8" y="1008" width="732" height="63"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Links" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cql-2a-9ON" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="8" width="716" height="20"/>
@@ -508,8 +508,8 @@
                                                     <constraint firstItem="Cql-2a-9ON" firstAttribute="leading" secondItem="wVO-7X-ZAQ" secondAttribute="leading" constant="8" id="nhS-BU-CYo"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyQ-2t-C3u" userLabel="prijs Container">
-                                                <rect key="frame" x="8" y="1049" width="732" height="113"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyQ-2t-C3u" userLabel="prijs Container">
+                                                <rect key="frame" x="8" y="1071" width="732" height="117"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prijs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y68-GR-jGQ" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="8" width="716" height="20"/>
@@ -570,8 +570,8 @@
                                                     <constraint firstAttribute="trailing" secondItem="Y68-GR-jGQ" secondAttribute="trailing" constant="8" id="tnY-co-WkI"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bha-s8-pEO" userLabel="performers Container">
-                                                <rect key="frame" x="8" y="1162" width="732" height="59"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bha-s8-pEO" userLabel="performers Container">
+                                                <rect key="frame" x="8" y="1188" width="732" height="63"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Performers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3L-I9-FqV" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="8" width="716" height="20"/>
@@ -607,8 +607,8 @@
                                                     <constraint firstAttribute="bottom" secondItem="D6l-0y-WER" secondAttribute="bottom" constant="8" id="X0C-E8-P7t"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QlO-ay-r7l" userLabel="long description Container">
-                                                <rect key="frame" x="8" y="1221" width="732" height="124"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QlO-ay-r7l" userLabel="long description Container">
+                                                <rect key="frame" x="8" y="1251" width="732" height="128"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uitgebreide omschrijving" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-hZ-yJF" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="8" width="716" height="20"/>
@@ -648,8 +648,8 @@
                                                     <constraint firstItem="Fh3-hZ-yJF" firstAttribute="top" secondItem="QlO-ay-r7l" secondAttribute="top" constant="8" id="w9H-g1-5ig"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="018-h2-m43" userLabel="djubble Container">
-                                                <rect key="frame" x="8" y="1345" width="732" height="80"/>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="018-h2-m43" userLabel="djubble Container">
+                                                <rect key="frame" x="8" y="1379" width="732" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afspreken met vrienden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDk-N0-h3N" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="8" width="716" height="20"/>
@@ -657,8 +657,8 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Met Djubble nodig je vrienden uit om hier samen met jou naartoe te gaan. Download de gratis app!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2j-pG-zRE" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="36" width="716" height="27"/>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Met Djubble nodig je vrienden uit om hier samen met jou naartoe te gaan. Download de gratis app!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2j-pG-zRE" customClass="UiTInfoLabel">
+                                                        <rect key="frame" x="8" y="36" width="716" height="36"/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -711,6 +711,7 @@
                                             <constraint firstAttribute="trailing" secondItem="018-h2-m43" secondAttribute="trailing" constant="8" id="85C-Zt-YnG"/>
                                             <constraint firstItem="KBg-ts-pEH" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="ASq-jj-MYu"/>
                                             <constraint firstItem="KBg-ts-pEH" firstAttribute="top" secondItem="D79-HO-vSB" secondAttribute="bottom" id="AU6-iD-3Qv"/>
+                                            <constraint firstAttribute="bottom" secondItem="QlO-ay-r7l" secondAttribute="bottom" constant="51" id="BBW-ki-aC2"/>
                                             <constraint firstItem="wVO-7X-ZAQ" firstAttribute="top" secondItem="aP6-eu-NrA" secondAttribute="bottom" id="DBu-yS-oQX"/>
                                             <constraint firstItem="wVO-7X-ZAQ" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="Frk-KW-SFx"/>
                                             <constraint firstAttribute="trailing" secondItem="aP6-eu-NrA" secondAttribute="trailing" constant="8" id="GWV-If-TF4"/>
