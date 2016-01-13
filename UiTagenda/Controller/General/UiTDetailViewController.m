@@ -423,9 +423,9 @@
     
     if (_event.imageURL) {
         UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:_event.imageURL]];
-        activityItems = [NSArray arrayWithObjects:_event.title, [NSString stringWithFormat:@"http://www.uitinvlaanderen.be/agenda/e/app_redirect/%@?utm_campaign=UiTagenda&utm_medium=ios&utm_source=app&utm_content=share", _event.cdbid], @"(Via #UiTagenda)", image, nil];
+        activityItems = [NSArray arrayWithObjects:_event.title, [NSString stringWithFormat:@"https://www.uitinvlaanderen.be/agenda/e/app_redirect/%@?utm_campaign=UiTagenda&utm_medium=ios&utm_source=app&utm_content=share", _event.cdbid], @"(Via #UiTagenda)", image, nil];
     } else {
-        activityItems = [NSArray arrayWithObjects:_event.title, [NSString stringWithFormat:@"http://www.uitinvlaanderen.be/agenda/e/app_redirect/%@?utm_campaign=UiTagenda&utm_medium=ios&utm_source=app&utm_content=share", _event.cdbid], @"(Via #UiTagenda)", nil];
+        activityItems = [NSArray arrayWithObjects:_event.title, [NSString stringWithFormat:@"https://www.uitinvlaanderen.be/agenda/e/app_redirect/%@?utm_campaign=UiTagenda&utm_medium=ios&utm_source=app&utm_content=share", _event.cdbid], @"(Via #UiTagenda)", nil];
     }
     
     UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems
