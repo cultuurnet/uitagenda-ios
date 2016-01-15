@@ -18,7 +18,7 @@
 #import <NVSlideMenuController/NVSlideMenuController.h>
 
 @implementation UiTAppDelegate
-
+ 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
