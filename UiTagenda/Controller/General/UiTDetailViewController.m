@@ -283,6 +283,8 @@
                 performersString = [performersString stringByAppendingString:[NSString stringWithFormat:@"%@\n", [performer valueForKeyPath:@"label.value"]]];
             }
         }
+        
+        performersString = [performersString substringToIndex:[performersString length] - 2]; // remove last \n
         self.performerLabel.text = performersString;
     } else {
         self.performersView.hidden = YES;
