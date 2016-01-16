@@ -32,6 +32,8 @@
 @property (strong, nonatomic) UiTProblemView *problemView;
 @property (strong, nonatomic) MBProgressHUD *hud;
 
+@property (nonatomic) BOOL noLocationMessageShowed;
+
 @property (nonatomic, assign) BOOL locationUpdated;
 
 @end
@@ -76,7 +78,6 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 - (void)resetView {
-    [self.resultsArray removeAllObjects];
     self.currentEvents = 0;
     self.totalEvents = 0;
     self.eventTableView.tableFooterView = nil;
@@ -162,6 +163,15 @@ static BOOL haveAlreadyReceivedCoordinates;
     [[UiTAPIClient sharedClient] getPath:@"searchv2/search"
                            getParameters:parameters
                               completion:^(NSArray *results, NSError *error) {
+                                  
+                                  if (_currentEvents == 0) {
+                                      _resultsArray = [NSMutableArray array];
+                                  }
+                                  
+                                  if (!_locationUpdated && !_noLocationMessageShowed) {
+                                      [self showNoLocationMessage];
+                                  }
+                                  
                                   if (results) {
                                       [self handleApiResults:results];
                                   } else {
@@ -177,6 +187,25 @@ static BOOL haveAlreadyReceivedCoordinates;
                                   [self.eventTableView reloadData];
                                   self.hud.hidden = YES;
                               }];
+}
+
+- (void)showNoLocationMessage {
+    [TSMessage showNotificationInViewController:self
+                                          title:@"Locatie bepalen mislukt."
+                                       subtitle:@"Staan de locatievoorzieningen aan? Schakel deze in om locatie-gebaseerde events te bekijken."
+                                          image:nil
+                                           type:TSMessageNotificationTypeMessage
+                                       duration:TSMessageNotificationDurationAutomatic
+                                       callback:^{
+                                           if (IOS_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
+                                               [self openSettings];
+                                           }
+                                       }
+                                    buttonTitle:nil
+                                 buttonCallback:nil
+                                     atPosition:TSMessageNotificationPositionTop
+                           canBeDismissedByUser:YES];
+    _noLocationMessageShowed = YES;
 }
 
 - (void)handleApiResults:(NSArray *)results {
@@ -218,6 +247,7 @@ static BOOL haveAlreadyReceivedCoordinates;
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     if(!haveAlreadyReceivedCoordinates) {
+        self.title = NSLocalizedString(@"HOME", @"");
         _location = [locations lastObject];
         _locationUpdated = YES;
         [self fetchEvents];
@@ -229,22 +259,7 @@ static BOOL haveAlreadyReceivedCoordinates;
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     
-    [TSMessage showNotificationInViewController:self
-                                          title:@"Locatie bepalen mislukt."
-                                       subtitle:@"Staan de locatievoorzieningen aan? Schakel deze in om locatie-gebaseerde events te bekijken."
-                                          image:nil
-                                           type:TSMessageNotificationTypeMessage
-                                       duration:TSMessageNotificationDurationAutomatic
-                                       callback:^{
-                                           if (IOS_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
-                                               [self openSettings];
-                                           }
-                                       }
-                                    buttonTitle:nil
-                                 buttonCallback:nil
-                                     atPosition:TSMessageNotificationPositionTop
-                           canBeDismissedByUser:YES];
-    
+    self.title = NSLocalizedString(@"HOME_WITHOUT_LOCATION", @"");
     _locationUpdated = NO;
     [self fetchEvents];
 }

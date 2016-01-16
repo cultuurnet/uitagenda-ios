@@ -214,6 +214,11 @@ static BOOL haveAlreadyReceivedCoordinates;
     [[UiTAPIClient sharedClient] getPath:@"searchv2/search"
                            getParameters:finalParameters
                               completion:^(NSArray *results, NSError *error) {
+                                  
+                                  if (_currentEvents == 0) {
+                                      _resultsArray = [NSMutableArray array];
+                                  }
+                                  
                                   if (results) {
                                       NSMutableArray *resultsArray = [[results valueForKey:@"rootObject"] mutableCopy];
                                       
@@ -290,7 +295,6 @@ static BOOL haveAlreadyReceivedCoordinates;
 }
 
 - (void)resetView {
-    [self.resultsArray removeAllObjects];
     self.currentEvents = 0;
     self.totalEvents = 0;
     self.tableView.tableFooterView = nil;

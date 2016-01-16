@@ -42,6 +42,7 @@
 
 // MENU
 
+"HOME_WITHOUT_LOCATION" = "Hier";
 "HOME" = "Hier en nu";
 "SEARCH" = "Zoeken";
 "FAVORITES" = "Favorieten";
