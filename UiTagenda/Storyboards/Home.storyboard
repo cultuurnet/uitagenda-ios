@@ -217,7 +217,7 @@
                                 <rect key="frame" x="0.0" y="20" width="768" height="1480"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VU-TL-KU9" customClass="OAStackView">
-                                        <rect key="frame" x="10" y="10" width="748" height="1430"/>
+                                        <rect key="frame" x="10" y="10" width="748" height="1477"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVV-pN-MX2" userLabel="header container">
                                                 <rect key="frame" x="8" y="8" width="732" height="588"/>
@@ -648,8 +648,8 @@
                                                     <constraint firstItem="Fh3-hZ-yJF" firstAttribute="top" secondItem="QlO-ay-r7l" secondAttribute="top" constant="8" id="w9H-g1-5ig"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="018-h2-m43" userLabel="djubble Container">
-                                                <rect key="frame" x="8" y="1379" width="732" height="80"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="018-h2-m43" userLabel="djubble Container">
+                                                <rect key="frame" x="8" y="1379" width="732" height="88"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afspreken met vrienden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDk-N0-h3N" customClass="UiTTitleLabel">
                                                         <rect key="frame" x="8" y="8" width="716" height="20"/>
@@ -657,22 +657,29 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Met Djubble nodig je vrienden uit om hier samen met jou naartoe te gaan. Download de gratis app!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2j-pG-zRE" customClass="UiTInfoLabel">
-                                                        <rect key="frame" x="8" y="36" width="716" height="36"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Met Djubble nodig je vrienden uit om hier samen met jou naartoe te gaan. Download de gratis app!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2j-pG-zRE" customClass="UiTInfoLabel">
+                                                        <rect key="frame" x="8" y="38" width="716" height="42"/>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8N-KQ-OYW">
-                                                        <rect key="frame" x="8" y="30" width="716" height="40"/>
+                                                        <rect key="frame" x="8" y="38" width="350" height="40"/>
                                                         <color key="backgroundColor" red="0.7843137255" green="0.035294117649999998" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="width" constant="350" id="0fL-AX-8aq"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="AfL-yW-m8a"/>
                                                             <constraint firstAttribute="height" constant="40" id="v8X-EB-zuA"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="PTSans-Narrow" family="PT Sans Narrow" pointSize="16"/>
                                                         <state key="normal" title="Openen in Djubble">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <mask key="constraints">
+                                                                <exclude reference="0fL-AX-8aq"/>
+                                                            </mask>
+                                                        </variation>
                                                         <connections>
                                                             <action selector="djubbleAction:" destination="EGO-zA-nNx" eventType="touchUpInside" id="pez-ef-NoR"/>
                                                         </connections>
@@ -688,20 +695,32 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="dDk-N0-h3N" firstAttribute="leading" secondItem="018-h2-m43" secondAttribute="leading" constant="8" id="19M-vy-CKE"/>
-                                                    <constraint firstItem="F8N-KQ-OYW" firstAttribute="top" secondItem="dDk-N0-h3N" secondAttribute="bottom" constant="2" id="2oR-sk-HN2"/>
+                                                    <constraint firstItem="F8N-KQ-OYW" firstAttribute="top" secondItem="dDk-N0-h3N" secondAttribute="bottom" constant="10" id="2oR-sk-HN2"/>
                                                     <constraint firstAttribute="bottom" secondItem="k2j-pG-zRE" secondAttribute="bottom" constant="8" id="5gW-jp-edY"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="F8N-KQ-OYW" secondAttribute="bottom" constant="10" id="7BC-Oc-cKq"/>
                                                     <constraint firstItem="F8N-KQ-OYW" firstAttribute="leading" secondItem="018-h2-m43" secondAttribute="leading" constant="8" id="CJ8-Ff-eFO"/>
-                                                    <constraint firstAttribute="bottom" secondItem="F8N-KQ-OYW" secondAttribute="bottom" constant="10" id="KMh-6n-xow"/>
                                                     <constraint firstItem="eWj-93-Cne" firstAttribute="top" secondItem="018-h2-m43" secondAttribute="top" id="NR8-kW-5Ir"/>
                                                     <constraint firstItem="k2j-pG-zRE" firstAttribute="leading" secondItem="018-h2-m43" secondAttribute="leading" constant="8" id="TVR-hA-s5q"/>
                                                     <constraint firstItem="dDk-N0-h3N" firstAttribute="top" secondItem="018-h2-m43" secondAttribute="top" constant="8" id="WLe-cG-1Ld"/>
-                                                    <constraint firstAttribute="trailing" secondItem="F8N-KQ-OYW" secondAttribute="trailing" constant="8" id="edT-Fj-1af"/>
+                                                    <constraint firstAttribute="trailing" secondItem="F8N-KQ-OYW" secondAttribute="trailing" constant="8" id="edT-Fj-1af">
+                                                        <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                                                    </constraint>
                                                     <constraint firstAttribute="trailing" secondItem="dDk-N0-h3N" secondAttribute="trailing" constant="8" id="gxC-1E-Y7J"/>
                                                     <constraint firstAttribute="trailing" secondItem="eWj-93-Cne" secondAttribute="trailing" id="jOs-3c-OAG"/>
                                                     <constraint firstAttribute="trailing" secondItem="k2j-pG-zRE" secondAttribute="trailing" constant="8" id="r3J-Ib-bTr"/>
-                                                    <constraint firstItem="k2j-pG-zRE" firstAttribute="top" secondItem="dDk-N0-h3N" secondAttribute="bottom" constant="8" id="uVK-Bx-w0e"/>
+                                                    <constraint firstItem="k2j-pG-zRE" firstAttribute="top" secondItem="dDk-N0-h3N" secondAttribute="bottom" constant="10" id="uVK-Bx-w0e"/>
                                                     <constraint firstItem="eWj-93-Cne" firstAttribute="leading" secondItem="018-h2-m43" secondAttribute="leading" id="yjY-xg-OVZ"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="edT-Fj-1af"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="edT-Fj-1af"/>
+                                                    </mask>
+                                                </variation>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -711,7 +730,6 @@
                                             <constraint firstAttribute="trailing" secondItem="018-h2-m43" secondAttribute="trailing" constant="8" id="85C-Zt-YnG"/>
                                             <constraint firstItem="KBg-ts-pEH" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="ASq-jj-MYu"/>
                                             <constraint firstItem="KBg-ts-pEH" firstAttribute="top" secondItem="D79-HO-vSB" secondAttribute="bottom" id="AU6-iD-3Qv"/>
-                                            <constraint firstAttribute="bottom" secondItem="QlO-ay-r7l" secondAttribute="bottom" constant="51" id="BBW-ki-aC2"/>
                                             <constraint firstItem="wVO-7X-ZAQ" firstAttribute="top" secondItem="aP6-eu-NrA" secondAttribute="bottom" id="DBu-yS-oQX"/>
                                             <constraint firstItem="wVO-7X-ZAQ" firstAttribute="leading" secondItem="9VU-TL-KU9" secondAttribute="leading" constant="8" id="Frk-KW-SFx"/>
                                             <constraint firstAttribute="trailing" secondItem="aP6-eu-NrA" secondAttribute="trailing" constant="8" id="GWV-If-TF4"/>
@@ -722,6 +740,8 @@
                                             <constraint firstItem="aP6-eu-NrA" firstAttribute="top" secondItem="KBg-ts-pEH" secondAttribute="bottom" id="NrV-mi-vbL"/>
                                             <constraint firstItem="YVV-pN-MX2" firstAttribute="top" secondItem="9VU-TL-KU9" secondAttribute="top" constant="8" id="PVy-sW-vXQ"/>
                                             <constraint firstAttribute="trailing" secondItem="YVV-pN-MX2" secondAttribute="trailing" constant="8" id="Pdt-Ma-gXo"/>
+                                            <constraint firstItem="018-h2-m43" firstAttribute="top" secondItem="QlO-ay-r7l" secondAttribute="bottom" id="RMx-xy-kMs"/>
+                                            <constraint firstAttribute="bottom" secondItem="018-h2-m43" secondAttribute="bottom" constant="10" id="Rrt-uh-3yN"/>
                                             <constraint firstAttribute="trailing" secondItem="wVO-7X-ZAQ" secondAttribute="trailing" constant="8" id="V1L-Pb-IWi"/>
                                             <constraint firstItem="xyQ-2t-C3u" firstAttribute="top" secondItem="wVO-7X-ZAQ" secondAttribute="bottom" id="VPh-pC-Y7i"/>
                                             <constraint firstAttribute="trailing" secondItem="QlO-ay-r7l" secondAttribute="trailing" constant="8" id="VrU-gV-mMa"/>
@@ -943,7 +963,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Afspreken via Djubble" id="i78-db-5it">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="GbW-gd-dqF">
+                        <barButtonItem key="rightBarButtonItem" image="close" id="GbW-gd-dqF">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancelAction:" destination="8iE-8z-BgK" id="cgw-ON-5ZF"/>
                             </connections>
@@ -997,6 +1018,7 @@
     <resources>
         <image name="backicon" width="40" height="40"/>
         <image name="calendaricon" width="35" height="35"/>
+        <image name="close" width="35" height="35"/>
         <image name="favoriteNormal" width="35" height="35"/>
         <image name="favoriteSelected" width="35" height="35"/>
         <image name="forwardicon" width="40" height="40"/>

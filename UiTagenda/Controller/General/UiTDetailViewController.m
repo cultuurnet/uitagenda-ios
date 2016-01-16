@@ -97,6 +97,9 @@
     self.view.backgroundColor = BACKGROUNDCOLOR;
     
     [[GoogleAnalyticsTracker sharedInstance] trackGoogleAnalyticsWithValue:NSLocalizedString(@"DETAIL", @"")];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupDjubble) name:UIApplicationWillEnterForegroundNotification object:nil];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -109,6 +112,13 @@
             [self.favoriteButton setSelected:(fav == nil ? NO : YES)];
         }
     }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIApplicationWillEnterForegroundNotification
+                                                  object:nil];
 }
 
 - (void)setupScrollView {
@@ -283,6 +293,8 @@
                 performersString = [performersString stringByAppendingString:[NSString stringWithFormat:@"%@\n", [performer valueForKeyPath:@"label.value"]]];
             }
         }
+        
+        performersString = [performersString substringToIndex:[performersString length] - 2]; // remove last \n
         self.performerLabel.text = performersString;
     } else {
         self.performersView.hidden = YES;
@@ -295,15 +307,31 @@
         self.longDescriptionView.hidden = YES;
     }
     
-    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"djubble://"]]) {
-        //Device can open djubble urls, the Djubble app is most likely installed.
+    [self setupDjubble];
+}
+
+- (void)setupDjubble {
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"djubble://"]]) { // Djubble installed
+        [self.djubbleInfoLabel removeFromSuperview];
         self.djubbleButton.hidden = NO;
-        self.djubbleInfoLabel.hidden = YES;
     } else {
-        self.djubbleButton.hidden = YES;
+//        [self.djubbleButton removeFromSuperview];
+        NSString *messageDownloadDjubble = @"Met Djubble nodig je vrienden uit om hier samen met jou naartoe te gaan.\n\nDownload de gratis app.";
+        
+        NSMutableAttributedString *attributedDownloadDjubbleMessage = [[NSMutableAttributedString alloc] initWithString:messageDownloadDjubble];
+        
+        NSRange foundRange = [messageDownloadDjubble rangeOfString:@"Download de gratis app."];
+        if (foundRange.location != NSNotFound) {
+            [attributedDownloadDjubbleMessage addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInt:1] range:foundRange];
+            [attributedDownloadDjubbleMessage addAttribute:NSUnderlineColorAttributeName value:[UIColor blackColor] range:foundRange];
+        }
+        
+        self.djubbleInfoLabel.attributedText = attributedDownloadDjubbleMessage;
+        
         self.djubbleInfoLabel.hidden = NO;
+        self.djubbleButton.hidden = YES;
         self.djubbleInfoLabel.userInteractionEnabled = YES;
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(djubbleAppstoreAction:)];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(djubbleAppstoreAction)];
         [self.djubbleInfoLabel addGestureRecognizer:tap];
     }
 }
@@ -471,6 +499,11 @@
     UiTDjubbleViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"djubbleAppointmentVC"];
     vc.selectedEvent = self.event;
     UiTNavViewController *navc = [[UiTNavViewController alloc] initWithRootViewController:vc];
+    
+    if (TARGETED_DEVICE_IS_IPAD) {
+        navc.modalPresentationStyle = UIModalPresentationFormSheet;
+    }
+    
     [self presentViewController:navc animated:YES completion:nil];
 
     /*
@@ -484,9 +517,12 @@
      */
 }
 
-- (IBAction)djubbleAppstoreAction:(id)sender {
-    //open djubble in appstore
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms://itunes.apple.com/be/app/djubble/id899650763?mt=8"]];
+- (void)djubbleAppstoreAction {
+    NSURL *djubbleAppStoreURL = [NSURL URLWithString:@"itms://itunes.apple.com/be/app/djubble/id899650763?mt=8"];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:djubbleAppStoreURL]) {
+        [[UIApplication sharedApplication] openURL:djubbleAppStoreURL];
+    }
 }
 
 #pragma mark - UIWebViewDelegate
