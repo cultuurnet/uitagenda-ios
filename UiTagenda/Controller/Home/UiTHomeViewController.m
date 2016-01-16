@@ -20,7 +20,7 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <TSMessages/TSMessage.h>
 
-@interface UiTHomeViewController () <UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, UIAlertViewDelegate>
+@interface UiTHomeViewController () <UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, UIAlertViewDelegate, TSMessageViewProtocol>
 
 @property (weak, nonatomic) IBOutlet UITableView *eventTableView;
 @property (strong, nonatomic) CLLocationManager *locationManager;
@@ -229,12 +229,30 @@ static BOOL haveAlreadyReceivedCoordinates;
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     
-    [TSMessage setDefaultViewController:self];
-    [TSMessage showNotificationWithTitle:@"Locatie bepalen mislukt."
-                                subtitle:@"Misschien zijn deze evenementen wel iets voor jou!"
-                                    type:TSMessageNotificationTypeWarning];
+    [TSMessage showNotificationInViewController:self
+                                          title:@"Locatie bepalen mislukt."
+                                       subtitle:@"Staan de locatievoorzieningen aan? Schakel deze in om locatie-gebaseerde events te bekijken."
+                                          image:nil
+                                           type:TSMessageNotificationTypeMessage
+                                       duration:TSMessageNotificationDurationAutomatic
+                                       callback:^{
+                                           if (IOS_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
+                                               [self openSettings];
+                                           }
+                                       }
+                                    buttonTitle:nil
+                                 buttonCallback:nil
+                                     atPosition:TSMessageNotificationPositionTop
+                           canBeDismissedByUser:YES];
+    
     _locationUpdated = NO;
     [self fetchEvents];
+}
+
+- (void)openSettings {
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+    }
 }
 
 - (void)viewWillLayoutSubviews {
