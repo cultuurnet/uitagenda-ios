@@ -84,7 +84,7 @@
     }
     
     cell.textLabel.text = NSLocalizedString([self.searchCriteria objectAtIndex:indexPath.row], @"");
-    cell.textLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:18];
+    cell.textLabel.font = [UIFont customRegularFontWithSize:18];
     
     if ([[self.searchCriteria objectAtIndex:indexPath.row] isEqualToString:_value]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;

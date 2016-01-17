@@ -102,8 +102,8 @@
     self.hud.dimBackground = YES;
     self.hud.labelText = NSLocalizedString(@"LOADING FAVORITES", @"");
     self.hud.detailsLabelText = NSLocalizedString(@"LOADING MESSAGE", @"");
-    self.hud.labelFont = [[UiTGlobalFunctions sharedInstance] customBoldFontWithSize:18];
-    self.hud.detailsLabelFont = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:16];
+    self.hud.labelFont = [UIFont customBoldFontWithSize:18];
+    self.hud.detailsLabelFont = [UIFont customRegularFontWithSize:16];
     [self.hud show:YES];
     [self.navigationController.view addSubview:self.hud];
 }

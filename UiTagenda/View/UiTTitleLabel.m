@@ -14,7 +14,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.numberOfLines = 0;
-        self.font = [[UiTGlobalFunctions sharedInstance] customBoldFontWithSize:16];
+        self.font = [UIFont customBoldFontWithSize:16];
         self.textColor = [UIColor blackColor];
         self.text = title;
         [self sizeToFit];

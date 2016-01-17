@@ -93,7 +93,7 @@
     
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.textLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:17];
+        cell.textLabel.font = [UIFont customRegularFontWithSize:17];
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.textLabel.highlightedTextColor = SLIDEMENUCOLOR;
         cell.backgroundColor = SLIDEMENUCOLOR;

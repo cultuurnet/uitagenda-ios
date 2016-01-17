@@ -63,6 +63,7 @@ enum SearchCriteria {
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.tableView reloadData];
 }
 
@@ -82,7 +83,7 @@ enum SearchCriteria {
     [self.searchButton setTitle:NSLocalizedString(@"SEARCH", @"") forState:UIControlStateNormal];
     [self.searchButton setBackgroundColor:REDCOLOR];
     [self.searchButton setTintColor:[UIColor whiteColor]];
-    self.searchButton.titleLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:20];
+    self.searchButton.titleLabel.font = [UIFont customRegularFontWithSize:20];
     self.tableView.tableFooterView = self.footerView;
 }
 

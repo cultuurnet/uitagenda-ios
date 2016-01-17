@@ -9,6 +9,15 @@
 #import "UiTBaseViewController.h"
 #import "UiTEvent.h"
 
+typedef NS_ENUM(NSUInteger, UiTTypeEvent) {
+    UiTTypeEventOngoing = 0,
+    UiTTypeEventTimeSpan,
+    UiTTypeEventFixed
+};
+
 @interface UiTDjubbleViewController : UIViewController
+
 @property (nonatomic, strong) UiTEvent *selectedEvent;
+@property (nonatomic) UiTTypeEvent typeEvent;
+
 @end

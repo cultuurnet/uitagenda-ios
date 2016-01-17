@@ -315,7 +315,6 @@
         [self.djubbleInfoLabel removeFromSuperview];
         self.djubbleButton.hidden = NO;
     } else {
-//        [self.djubbleButton removeFromSuperview];
         NSString *messageDownloadDjubble = @"Met Djubble nodig je vrienden uit om hier samen met jou naartoe te gaan.\n\nDownload de gratis app.";
         
         NSMutableAttributedString *attributedDownloadDjubbleMessage = [[NSMutableAttributedString alloc] initWithString:messageDownloadDjubble];
@@ -495,26 +494,30 @@
 
 - (IBAction)djubbleAction:(id)sender {
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
-    UiTDjubbleViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"djubbleAppointmentVC"];
-    vc.selectedEvent = self.event;
-    UiTNavViewController *navc = [[UiTNavViewController alloc] initWithRootViewController:vc];
-    
-    if (TARGETED_DEVICE_IS_IPAD) {
-        navc.modalPresentationStyle = UIModalPresentationFormSheet;
-    }
-    
-    [self presentViewController:navc animated:YES completion:nil];
+    if (self.event.noPossibleDate) {
+        [[[UIAlertView alloc] initWithTitle:@"Fout" message:@"Er zijn geen concrete data beschikbaar om een afspraak te plannen!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    } else {
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
+        UiTDjubbleViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"djubbleAppointmentVC"];
+        vc.selectedEvent = self.event;
+        
+        if (self.event.dateFrom && self.event.dateTo) {
+            vc.typeEvent = UiTTypeEventTimeSpan;
+        } else if ([self.event.possibleDates count] > 0) {
+            vc.typeEvent = UiTTypeEventFixed;
+        } else {
+            vc.typeEvent = UiTTypeEventOngoing;
+        }
 
-    /*
-     djubble://add?lang=nlsubject=Natuurpark%20Overmeerslocation=Sint-Denijslaan,%20,900%20Gentlongitude=4.406621latitude=51.09533date=201510090000source=uitagenda
-     
-     lang = nl
-     subject= titel
-     location= omschrijving van de locatie en gemeente
-     date = datum van event yyyymmddhhmmss
-     source = uitagenda
-     */
+        UiTNavViewController *navc = [[UiTNavViewController alloc] initWithRootViewController:vc];
+        
+        if (TARGETED_DEVICE_IS_IPAD) {
+            navc.modalPresentationStyle = UIModalPresentationFormSheet;
+        }
+        
+        [self presentViewController:navc animated:YES completion:nil];
+    }
 }
 
 - (void)djubbleAppstoreAction {

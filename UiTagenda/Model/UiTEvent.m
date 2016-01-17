@@ -7,9 +7,14 @@
 //
 
 #import "UiTEvent.h"
+#import "NSDictionary+ObjectForKeyOrNil.h"
+#import "NSDate+UiTDate.h"
 
 #define IMAGEWIDTH 165
 #define IMAGEHEIGHT 190
+
+NSString *const kEventTimeStampFullDate = @"kEventTimeStampFullDate";
+NSString *const kEventTimeStampFullDateString = @"kEventTimeStampFullDateString";
 
 @implementation UiTEvent
 
@@ -32,10 +37,60 @@
         NSMutableArray *contactInfoReservationPhone = [[NSMutableArray alloc ] init];
         NSMutableArray *contactInfoReservationMail = [[NSMutableArray alloc] init];
         
+        NSMutableDictionary *calendar = [[event objectForKeyOrNil:@"event"] objectForKeyOrNil:@"calendar"];
+        
+        if (calendar) {
+            NSDictionary *periods = [calendar objectForKeyOrNil:@"periods"];
+            NSDictionary *timestamps = [calendar objectForKeyOrNil:@"timestamps"];
+            
+            if (periods) {
+                _dateFrom = [NSDate dateWithTimeIntervalSince1970:([[[periods objectForKeyOrNil:@"period"] objectForKeyOrNil:@"datefrom"] doubleValue] / 1000)];
+                _dateTo = [NSDate dateWithTimeIntervalSince1970:([[[periods objectForKeyOrNil:@"period"] objectForKeyOrNil:@"dateto"] doubleValue] / 1000)];
+                
+                if (!_dateFrom || !_dateTo) {
+                    self.noPossibleDate = YES;
+                }
+            } else if ([calendar objectForKeyOrNil:@"permanentopeningtimes"]) {
+                self.isPermanent = YES;
+            } else if (timestamps) {
+                _possibleDates = [NSMutableArray array];
+                for (NSDictionary *timeStamp in [timestamps objectForKeyOrNil:@"timestamp"]) {
+                    NSDate *timestampDay = [NSDate dateWithTimeIntervalSince1970:([[timeStamp objectForKeyOrNil:@"date"] doubleValue] / 1000)];
+                    NSDate *timeStampHour = [NSDate dateWithTimeIntervalSince1970:([[timeStamp objectForKeyOrNil:@"timestart"] doubleValue] / 1000)];
+                    
+                    NSString *day = [timestampDay getStringFromDateWithFormat:@"dd MMM yyyy"];
+                    NSString *hour = [timeStampHour getStringFromDateWithFormat:@"HH:mm"];
+                    
+                    NSString *fullDate = [NSString stringWithFormat:@"%@ %@", day, hour];
+                    
+                    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+                    [dateFormat setTimeZone:[NSTimeZone systemTimeZone]];
+                    [dateFormat setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"nl_BE"]];
+                    [dateFormat setDateFormat:@"dd/MM/yyyy HH:mm"];
+                    
+                    [_possibleDates addObject:@{
+                                                kEventTimeStampFullDate : [dateFormat dateFromString:fullDate],
+                                                kEventTimeStampFullDateString : [NSString stringWithFormat:@"%@ om %@", [timestampDay getStringFromDateWithFormat:@"EEEE dd MMM yyyy"], hour]
+                                                }];
+                }
+                
+                if ([_possibleDates count] <= 0) {
+                    self.noPossibleDate = YES;
+                }
+                
+            } else {
+                self.noPossibleDate = YES;
+            }
+        } else {
+            self.noPossibleDate = YES;
+        }
+        
         self.bookingPeriod = (NSDictionary *)[event valueForKeyPath:@"event.bookingperiod"];
         if ([event valueForKeyPath:@"event.agefrom"] != [NSNull null]) {
             self.ageFrom = [event valueForKeyPath:@"event.agefrom"];
         }
+        
+        
         
         NSArray *arrayWithContactInfo = (NSArray *)[event valueForKeyPath:@"event.contactinfo.addressAndMailAndPhone"];
         
@@ -64,8 +119,8 @@
                     _lonCoordinate = 0;
                 }
                 
-//                _latCoordinate = [[contactInfo valueForKeyPath:@"address.physical.gis.ycoordinate"] floatValue];
-//                _lonCoordinate = [[contactInfo valueForKeyPath:@"address.physical.gis.xcoordinate"] floatValue];
+                //                _latCoordinate = [[contactInfo valueForKeyPath:@"address.physical.gis.ycoordinate"] floatValue];
+                //                _lonCoordinate = [[contactInfo valueForKeyPath:@"address.physical.gis.xcoordinate"] floatValue];
             } else {
                 if ([contactInfo valueForKey:@"phone"]) {
                     if ([contactInfo valueForKeyPath:@"phone.reservation"] != [NSNull null]) {

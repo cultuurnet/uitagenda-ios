@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9IZ-N5-XDt" customClass="UiTTimeSpanEventView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kies een datum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKj-aG-18b">
+                    <rect key="frame" x="16" y="16" width="568" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpD-7a-rOY">
+                    <rect key="frame" x="16" y="60" width="400" height="40"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="7wC-5x-urZ"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="E4i-LQ-qGa"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="dag">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dayButtonTapped:" destination="9IZ-N5-XDt" eventType="touchUpInside" id="TSF-am-zmn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUw-nk-eXB">
+                    <rect key="frame" x="432" y="60" width="158" height="40"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="4Nq-yz-HCf"/>
+                        <constraint firstAttribute="height" constant="40" id="d4U-tc-SfU"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="uur">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="hourButtonTapped:" destination="9IZ-N5-XDt" eventType="touchUpInside" id="Gen-yX-auN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDC-qo-wPK">
+                    <rect key="frame" x="16" y="116" width="574" height="40"/>
+                    <color key="backgroundColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1Cm-RG-5J2"/>
+                    </constraints>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="planEventButtonTapped:" destination="9IZ-N5-XDt" eventType="touchUpInside" id="Mbm-Xu-dmV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zke-Rd-1qm">
+                    <rect key="frame" x="16" y="50" width="568" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AKj-aG-18b" firstAttribute="top" secondItem="9IZ-N5-XDt" secondAttribute="top" constant="16" id="AV1-Ib-V2t"/>
+                <constraint firstItem="OUw-nk-eXB" firstAttribute="centerY" secondItem="ZpD-7a-rOY" secondAttribute="centerY" id="Btc-OP-mmT"/>
+                <constraint firstItem="Zke-Rd-1qm" firstAttribute="top" secondItem="AKj-aG-18b" secondAttribute="bottom" constant="10" id="Jvc-J8-1fq"/>
+                <constraint firstItem="Zke-Rd-1qm" firstAttribute="trailing" secondItem="AKj-aG-18b" secondAttribute="trailing" id="N6p-QX-jdK"/>
+                <constraint firstItem="ZpD-7a-rOY" firstAttribute="top" secondItem="Zke-Rd-1qm" secondAttribute="bottom" constant="10" id="Tyr-Ss-STC"/>
+                <constraint firstAttribute="trailing" secondItem="zDC-qo-wPK" secondAttribute="trailing" constant="10" id="YAn-DP-WhQ"/>
+                <constraint firstItem="OUw-nk-eXB" firstAttribute="leading" secondItem="ZpD-7a-rOY" secondAttribute="trailing" constant="16" id="dTh-Oh-Vcl"/>
+                <constraint firstItem="AKj-aG-18b" firstAttribute="leading" secondItem="9IZ-N5-XDt" secondAttribute="leading" constant="16" id="joq-dq-Jd1"/>
+                <constraint firstItem="Zke-Rd-1qm" firstAttribute="leading" secondItem="AKj-aG-18b" secondAttribute="leading" id="mcK-ba-4dK"/>
+                <constraint firstItem="ZpD-7a-rOY" firstAttribute="leading" secondItem="9IZ-N5-XDt" secondAttribute="leading" constant="16" id="nNQ-SB-1tV"/>
+                <constraint firstAttribute="trailing" secondItem="AKj-aG-18b" secondAttribute="trailing" constant="16" id="rG9-Di-bTr"/>
+                <constraint firstItem="zDC-qo-wPK" firstAttribute="top" secondItem="ZpD-7a-rOY" secondAttribute="bottom" constant="16" id="sr0-qy-Wa2"/>
+                <constraint firstAttribute="trailing" secondItem="OUw-nk-eXB" secondAttribute="trailing" constant="10" id="sra-TG-ned"/>
+                <constraint firstItem="zDC-qo-wPK" firstAttribute="leading" secondItem="9IZ-N5-XDt" secondAttribute="leading" constant="16" id="v1K-DL-0FW"/>
+            </constraints>
+            <connections>
+                <outlet property="chooseADateTitleLabel" destination="AKj-aG-18b" id="BdG-hv-Xhv"/>
+                <outlet property="dateBetweenLabel" destination="Zke-Rd-1qm" id="SiS-88-FQj"/>
+                <outlet property="pickDayButton" destination="ZpD-7a-rOY" id="nu7-07-KXe"/>
+                <outlet property="pickHourButton" destination="OUw-nk-eXB" id="i5G-jh-jWc"/>
+                <outlet property="planEventButton" destination="zDC-qo-wPK" id="tsa-yI-w2Z"/>
+            </connections>
+            <point key="canvasLocation" x="484" y="354"/>
+        </view>
+    </objects>
+</document>

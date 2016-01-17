@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="B1a-OF-9Vf" customClass="UiTOnGoingEventView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kies een datum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rb-vf-ufV">
+                    <rect key="frame" x="16" y="16" width="568" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjq-dd-yii">
+                    <rect key="frame" x="16" y="56" width="400" height="40"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="iWZ-kr-dqj"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="zIu-Vm-9yn"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="dag">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="16" y="56" width="266.5" height="40"/>
+                    </variation>
+                    <connections>
+                        <action selector="dayButtonTapped:" destination="B1a-OF-9Vf" eventType="touchUpInside" id="Jax-MP-qah"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6f-iB-ti6">
+                    <rect key="frame" x="432" y="56" width="158" height="40"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.92549019610000005" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="S50-Ur-P5x"/>
+                        <constraint firstAttribute="width" constant="100" id="dB8-Aj-LUB"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="uur">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="298.5" y="56" width="100" height="40"/>
+                    </variation>
+                    <connections>
+                        <action selector="hourButtonTapped:" destination="B1a-OF-9Vf" eventType="touchUpInside" id="m6e-Rr-3GC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mns-Lr-dT1">
+                    <rect key="frame" x="16" y="112" width="574" height="40"/>
+                    <color key="backgroundColor" red="0.83137254900000002" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6JO-mS-CPB"/>
+                    </constraints>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="planEventButtonTapped:" destination="B1a-OF-9Vf" eventType="touchUpInside" id="wNT-Dp-bdf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mns-Lr-dT1" secondAttribute="trailing" constant="10" id="9ZF-8a-60O"/>
+                <constraint firstItem="Mns-Lr-dT1" firstAttribute="leading" secondItem="B1a-OF-9Vf" secondAttribute="leading" constant="16" id="9vc-t5-W6L"/>
+                <constraint firstItem="v6f-iB-ti6" firstAttribute="leading" secondItem="Qjq-dd-yii" secondAttribute="trailing" constant="16" id="Ahj-CM-pn7"/>
+                <constraint firstAttribute="trailing" secondItem="v6f-iB-ti6" secondAttribute="trailing" constant="10" id="C5q-Rm-Viv"/>
+                <constraint firstItem="5Rb-vf-ufV" firstAttribute="leading" secondItem="B1a-OF-9Vf" secondAttribute="leading" constant="16" id="Hcx-oY-2Cc"/>
+                <constraint firstItem="5Rb-vf-ufV" firstAttribute="top" secondItem="B1a-OF-9Vf" secondAttribute="top" constant="16" id="JGQ-3p-fBp"/>
+                <constraint firstAttribute="trailing" secondItem="5Rb-vf-ufV" secondAttribute="trailing" constant="16" id="ZIu-zJ-ywN"/>
+                <constraint firstItem="Qjq-dd-yii" firstAttribute="top" secondItem="5Rb-vf-ufV" secondAttribute="bottom" constant="16" id="sbo-cH-e4G"/>
+                <constraint firstItem="Qjq-dd-yii" firstAttribute="leading" secondItem="5Rb-vf-ufV" secondAttribute="leading" id="wyv-z1-mQL"/>
+                <constraint firstItem="Mns-Lr-dT1" firstAttribute="top" secondItem="Qjq-dd-yii" secondAttribute="bottom" constant="16" id="yjJ-4h-wTq"/>
+                <constraint firstItem="v6f-iB-ti6" firstAttribute="centerY" secondItem="Qjq-dd-yii" secondAttribute="centerY" id="z5M-vs-LOS"/>
+            </constraints>
+            <connections>
+                <outlet property="chooseADateTitleLabel" destination="5Rb-vf-ufV" id="QX3-ft-QHZ"/>
+                <outlet property="pickDayButton" destination="Qjq-dd-yii" id="R2L-aw-oPj"/>
+                <outlet property="pickHourButton" destination="v6f-iB-ti6" id="pzV-8q-edY"/>
+                <outlet property="planEventButton" destination="Mns-Lr-dT1" id="qdF-SQ-vU9"/>
+            </connections>
+            <point key="canvasLocation" x="484" y="354"/>
+        </view>
+    </objects>
+</document>

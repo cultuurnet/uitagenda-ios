@@ -60,7 +60,7 @@
                                                    (id)kCTUnderlineStyleAttributeName: @(kCTUnderlineStyleNone)
                                                    };
         
-        self.appInfoLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:18];
+        self.appInfoLabel.font = [UIFont customRegularFontWithSize:18];
         self.appInfoLabel.text = [jsonDict valueForKey:@"appinfo"];
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

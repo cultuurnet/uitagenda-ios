@@ -33,21 +33,13 @@
     [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@Normal", [title lowercaseString]]] forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@Selected", [title lowercaseString]]] forState:UIControlStateSelected];
     [button setTitle:NSLocalizedString(title, @"") forState:UIControlStateNormal];
-    [button.titleLabel setFont: [[UiTGlobalFunctions sharedInstance] customBoldFontWithSize:17]];
+    [button.titleLabel setFont: [UIFont customBoldFontWithSize:17]];
     [button setImageEdgeInsets:UIEdgeInsetsMake(0.0f, 8.0f, 0.0f, 0.0f)];
     [button setTitleEdgeInsets:UIEdgeInsetsMake(2.0f, 8.0f, 0.0f, 0.0f)];
     [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     [button setBackgroundColor:[UIColor clearColor]];
 
     return button;
-}
-
-- (UIFont *)customRegularFontWithSize:(CGFloat)fontSize {
-    return [UIFont fontWithName:@"PTSans-Narrow" size:fontSize];
-}
-
-- (UIFont *)customBoldFontWithSize:(CGFloat)fontSize {
-    return [UIFont fontWithName:@"PTSans-NarrowBold" size:fontSize];
 }
 
 @end

@@ -15,7 +15,7 @@
     if (self) {
         self.numberOfLines = 0;
         self.textColor = [UIColor blackColor];
-        self.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:14];
+        self.font = [UIFont customRegularFontWithSize:14];
         self.text = text;
         [self sizeToFit];
     }

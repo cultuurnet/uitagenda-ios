@@ -16,7 +16,4 @@
 
 -(UIButton *)createFavoriteOrShareButton:(NSString *)title;
 
--(UIFont *)customRegularFontWithSize:(CGFloat)fontSize;
--(UIFont *)customBoldFontWithSize:(CGFloat)fontSize;
-
 @end
