@@ -73,7 +73,7 @@
     
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setTimeZone:[NSTimeZone systemTimeZone]];
-    [dateFormat setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"nl_BE"]];
+    [dateFormat setLocale:[NSLocale currentLocale]];
     [dateFormat setDateFormat:@"dd/MM/yyyy HH:mm"];
     
     if ([_planAnEventDelegate respondsToSelector:@selector(dateSelected:)]){

@@ -84,7 +84,7 @@
 - (NSString *)getStringFromDate:(NSDate *)date withFormat:(NSString *)format {
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setTimeZone:[NSTimeZone systemTimeZone]];
-    [dateFormat setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"nl_BE"]];
+    [dateFormat setLocale:[NSLocale currentLocale]];
     if (format.length <= 0) {
         [dateFormat setDateFormat:@"dd/MM/yyyy"];
     } else {
