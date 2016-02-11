@@ -17,6 +17,9 @@
 
 #import <NVSlideMenuController/NVSlideMenuController.h>
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 @implementation UiTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -27,6 +30,8 @@
     [NRLogger setLogLevels:NRLogLevelNone];
     [NewRelicAgent startWithApplicationToken:NEWRELICTOKEN];
 #endif
+    
+    [Fabric with:@[CrashlyticsKit]];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = BACKGROUNDCOLOR;

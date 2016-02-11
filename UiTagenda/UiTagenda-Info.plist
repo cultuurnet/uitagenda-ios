@@ -22,6 +22,24 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>50</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>5adaa80d39fdcef4a864ee5676fa05ece8bb4e1f</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>djubble</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -57,9 +75,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>djubble</string>
-	</array>
 </dict>
 </plist>
