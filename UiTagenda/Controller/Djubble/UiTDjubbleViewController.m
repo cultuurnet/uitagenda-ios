@@ -57,7 +57,14 @@
 #pragma mark - UiTPlanAnEvent Delegate Methods
 
 - (void)dateSelected:(NSDate *)date {
-    NSString *djubbleUrlString = [NSString stringWithFormat:@"djubble://add?lang=nl&subject=%@&location=%@&longitude=%f&latitude=%f&date=%@&source=uitagenda", [NSString stringWithFormat:@"%@ via UiTinVlaanderen.be", self.selectedEvent.title], self.selectedEvent.address, self.selectedEvent.lonCoordinate, self.selectedEvent.latCoordinate, [self getStringFromDate:date withFormat:@"yyyyMMddHHmm"]];
+    
+    NSString *url = @"";
+    
+    if (self.selectedEvent.cdbid) {
+        url = [[NSString stringWithFormat:@"https://www.uitinvlaanderen.be/agenda/e//%@", self.selectedEvent.cdbid]  stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    }
+    
+    NSString *djubbleUrlString = [NSString stringWithFormat:@"djubble://add?lang=nl&subject=%@&location=%@&url=%@&longitude=%f&latitude=%f&date=%@&source=uitagenda", [NSString stringWithFormat:@"%@ via UiTinVlaanderen.be", self.selectedEvent.title], self.selectedEvent.address, url, self.selectedEvent.lonCoordinate, self.selectedEvent.latCoordinate, [self getStringFromDate:date withFormat:@"yyyyMMddHHmm"]];
     
     NSString *encodedString = [djubbleUrlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
