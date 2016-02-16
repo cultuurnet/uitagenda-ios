@@ -25,7 +25,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    
+     
 #ifdef NEWRELICTOKEN
     [NRLogger setLogLevels:NRLogLevelNone];
     [NewRelicAgent startWithApplicationToken:NEWRELICTOKEN];
