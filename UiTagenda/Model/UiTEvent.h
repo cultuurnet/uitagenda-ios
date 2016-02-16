@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+extern NSString * const kEventTimeStampFullDate;
+extern NSString * const kEventTimeStampFullDateString;
+
 @interface UiTEvent : NSObject
 
 @property (strong, nonatomic) NSDictionary *bookingPeriod;
@@ -46,6 +49,14 @@
 @property (strong, nonatomic) NSArray *performers;
 @property (strong, nonatomic) NSURL *imageURL;
 @property (strong, nonatomic) NSString *cdbid;
+
+@property (nonatomic, assign) BOOL isPermanent;
+@property (nonatomic, strong) NSDate *dateFrom;
+@property (nonatomic, strong) NSDate *dateTo;
+
+@property (nonatomic, strong) NSMutableArray *possibleDates;
+
+@property (nonatomic, assign) BOOL noPossibleDate;
 
 -(id)initWithDictionary:(NSDictionary *)event;
 

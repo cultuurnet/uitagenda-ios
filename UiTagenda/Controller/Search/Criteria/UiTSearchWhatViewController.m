@@ -166,7 +166,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    cell.textLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:18];
+    cell.textLabel.font = [UIFont customRegularFontWithSize:18];
     
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         if ([[self.searchSelectedCriteria allValues] containsObject:[self.searchResults objectAtIndex:indexPath.row]]) {

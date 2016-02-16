@@ -19,15 +19,14 @@
 @implementation UiTProblemView
 
 - (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
+    if (self = [super initWithFrame:frame]) {
         [self setupImage];
         [self setupLabel];
     }
     return self;
 }
 
-- (void) setupImage {
+- (void)setupImage {
     _problemImageView = [[UIImageView alloc] initWithFrame:CGRectMake(CENTER_IN_PARENT_X(self, sizeProblemImageView), 0, sizeProblemImageView, sizeProblemImageView)];
     _problemImageView.image = [UIImage imageNamed:@"problemsmiley"];
     _problemImageView.backgroundColor = TABLEVIEWCOLOR;
@@ -37,7 +36,7 @@
 - (void)setupLabel {
     _problemLabel = [[UILabel alloc] initWithFrame:CGRectMake(CENTER_IN_PARENT_X(self, 250), BOTTOM(_problemImageView), 250, 100)];
     _problemLabel.numberOfLines = 3;
-    _problemLabel.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:16];
+    _problemLabel.font = [UIFont customRegularFontWithSize:16];
     _problemLabel.textAlignment = NSTextAlignmentCenter;
     _problemLabel.textColor = [UIColor lightGrayColor];
     _problemLabel.backgroundColor = TABLEVIEWCOLOR;

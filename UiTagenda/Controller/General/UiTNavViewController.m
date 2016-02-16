@@ -32,7 +32,7 @@
     [self.navigationBar setTranslucent:NO];
     [self.navigationBar setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                                                            [UIColor whiteColor], NSForegroundColorAttributeName,
-                                                           [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:21], NSFontAttributeName, nil]];
+                                                           [UIFont customRegularFontWithSize:21], NSFontAttributeName, nil]];
 }
 
 - (void)didReceiveMemoryWarning {

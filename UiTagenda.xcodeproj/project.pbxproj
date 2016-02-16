@@ -22,6 +22,15 @@
 		2B053BCE1883E50100930B1A /* PTN77F.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B053BCC1883E50100930B1A /* PTN77F.ttf */; };
 		2B148210185677CD00E95440 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B14820F185677CD00E95440 /* Security.framework */; };
 		2B15A9FB18994D4B00A79F04 /* UiTDetailCell+UiTFavorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B15A9FA18994D4B00A79F04 /* UiTDetailCell+UiTFavorite.m */; };
+		2B40A9F31C4AB38C00AA56BB /* OngoingEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B40A9F21C4AB38C00AA56BB /* OngoingEventView.xib */; };
+		2B40A9F51C4AB3B200AA56BB /* TimeSpanEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B40A9F41C4AB3B200AA56BB /* TimeSpanEventView.xib */; };
+		2B40A9F71C4AB3DA00AA56BB /* FixedEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B40A9F61C4AB3DA00AA56BB /* FixedEventView.xib */; };
+		2B40A9FB1C4AB42700AA56BB /* UiTOnGoingEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B40A9FA1C4AB42700AA56BB /* UiTOnGoingEventView.m */; };
+		2B40A9FE1C4AB43800AA56BB /* UiTTimeSpanEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B40A9FD1C4AB43800AA56BB /* UiTTimeSpanEventView.m */; };
+		2B40AA011C4AB44700AA56BB /* UiTFixedEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B40AA001C4AB44700AA56BB /* UiTFixedEventView.m */; };
+		2B40AA091C4AEBBB00AA56BB /* NSDictionary+ObjectForKeyOrNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B40AA081C4AEBBB00AA56BB /* NSDictionary+ObjectForKeyOrNil.m */; };
+		2B40AA0C1C4B0B9000AA56BB /* NSDate+UiTDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B40AA0B1C4B0B9000AA56BB /* NSDate+UiTDate.m */; };
+		2B40AA0F1C4B27B300AA56BB /* UIFont+UiTFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B40AA0E1C4B27B300AA56BB /* UIFont+UiTFont.m */; };
 		2B4729C11888309800DD2B6D /* categoriesRegions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B4729C01888309800DD2B6D /* categoriesRegions.plist */; };
 		2B56480A1850B9F200396168 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5648091850B9F200396168 /* CoreData.framework */; };
 		2B56480C1850B9F900396168 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B56480B1850B9F900396168 /* QuartzCore.framework */; };
@@ -116,6 +125,22 @@
 		2B14820F185677CD00E95440 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2B15A9F918994D4B00A79F04 /* UiTDetailCell+UiTFavorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UiTDetailCell+UiTFavorite.h"; sourceTree = "<group>"; };
 		2B15A9FA18994D4B00A79F04 /* UiTDetailCell+UiTFavorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UiTDetailCell+UiTFavorite.m"; sourceTree = "<group>"; };
+		2B40A9F21C4AB38C00AA56BB /* OngoingEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OngoingEventView.xib; sourceTree = "<group>"; };
+		2B40A9F41C4AB3B200AA56BB /* TimeSpanEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeSpanEventView.xib; sourceTree = "<group>"; };
+		2B40A9F61C4AB3DA00AA56BB /* FixedEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixedEventView.xib; sourceTree = "<group>"; };
+		2B40A9F91C4AB42700AA56BB /* UiTOnGoingEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiTOnGoingEventView.h; sourceTree = "<group>"; };
+		2B40A9FA1C4AB42700AA56BB /* UiTOnGoingEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiTOnGoingEventView.m; sourceTree = "<group>"; };
+		2B40A9FC1C4AB43800AA56BB /* UiTTimeSpanEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiTTimeSpanEventView.h; sourceTree = "<group>"; };
+		2B40A9FD1C4AB43800AA56BB /* UiTTimeSpanEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiTTimeSpanEventView.m; sourceTree = "<group>"; };
+		2B40A9FF1C4AB44700AA56BB /* UiTFixedEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiTFixedEventView.h; sourceTree = "<group>"; };
+		2B40AA001C4AB44700AA56BB /* UiTFixedEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiTFixedEventView.m; sourceTree = "<group>"; };
+		2B40AA021C4ACA5800AA56BB /* UiTPlanAnEventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiTPlanAnEventDelegate.h; sourceTree = "<group>"; };
+		2B40AA071C4AEBBB00AA56BB /* NSDictionary+ObjectForKeyOrNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ObjectForKeyOrNil.h"; sourceTree = "<group>"; };
+		2B40AA081C4AEBBB00AA56BB /* NSDictionary+ObjectForKeyOrNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ObjectForKeyOrNil.m"; sourceTree = "<group>"; };
+		2B40AA0A1C4B0B9000AA56BB /* NSDate+UiTDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+UiTDate.h"; sourceTree = "<group>"; };
+		2B40AA0B1C4B0B9000AA56BB /* NSDate+UiTDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+UiTDate.m"; sourceTree = "<group>"; };
+		2B40AA0D1C4B27B300AA56BB /* UIFont+UiTFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+UiTFont.h"; sourceTree = "<group>"; };
+		2B40AA0E1C4B27B300AA56BB /* UIFont+UiTFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+UiTFont.m"; sourceTree = "<group>"; };
 		2B4729C01888309800DD2B6D /* categoriesRegions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categoriesRegions.plist; sourceTree = "<group>"; };
 		2B5648091850B9F200396168 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2B56480B1850B9F900396168 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -250,6 +275,7 @@
 		14B06EAD1BA9A807008377BA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				2B40A9F11C4AB34E00AA56BB /* Views */,
 				14B06EAE1BA9A848008377BA /* Home.storyboard */,
 				140044BA1BB3FBDD00915FF5 /* About.storyboard */,
 				140044E41BB5887100915FF5 /* Search.storyboard */,
@@ -268,6 +294,43 @@
 				EAE697BC7F2847FE720C3006 /* Pods.test.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		2B40A9F11C4AB34E00AA56BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B40A9F21C4AB38C00AA56BB /* OngoingEventView.xib */,
+				2B40A9F41C4AB3B200AA56BB /* TimeSpanEventView.xib */,
+				2B40A9F61C4AB3DA00AA56BB /* FixedEventView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B40A9F81C4AB3E200AA56BB /* PlanEvent */ = {
+			isa = PBXGroup;
+			children = (
+				2B40A9F91C4AB42700AA56BB /* UiTOnGoingEventView.h */,
+				2B40A9FA1C4AB42700AA56BB /* UiTOnGoingEventView.m */,
+				2B40A9FC1C4AB43800AA56BB /* UiTTimeSpanEventView.h */,
+				2B40A9FD1C4AB43800AA56BB /* UiTTimeSpanEventView.m */,
+				2B40A9FF1C4AB44700AA56BB /* UiTFixedEventView.h */,
+				2B40AA001C4AB44700AA56BB /* UiTFixedEventView.m */,
+				2B40AA021C4ACA5800AA56BB /* UiTPlanAnEventDelegate.h */,
+			);
+			path = PlanEvent;
+			sourceTree = "<group>";
+		};
+		2B40AA061C4AEB8700AA56BB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2B40AA071C4AEBBB00AA56BB /* NSDictionary+ObjectForKeyOrNil.h */,
+				2B40AA081C4AEBBB00AA56BB /* NSDictionary+ObjectForKeyOrNil.m */,
+				2B40AA0A1C4B0B9000AA56BB /* NSDate+UiTDate.h */,
+				2B40AA0B1C4B0B9000AA56BB /* NSDate+UiTDate.m */,
+				2B40AA0D1C4B27B300AA56BB /* UIFont+UiTFont.h */,
+				2B40AA0E1C4B27B300AA56BB /* UIFont+UiTFont.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		2B56480D1850BA7500396168 /* DataModel */ = {
@@ -321,6 +384,7 @@
 		2BC0E03F1BC64701002FB555 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2B40AA061C4AEB8700AA56BB /* Categories */,
 				2BC0E0401BC64739002FB555 /* GoogleAnalyticsTracker.h */,
 				2BC0E0411BC64739002FB555 /* GoogleAnalyticsTracker.m */,
 			);
@@ -431,6 +495,7 @@
 		2BEBC107184F7A52000AFFFF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2B40A9F81C4AB3E200AA56BB /* PlanEvent */,
 				2BEBC10F184F7ABC000AFFFF /* UiTDetailCell.h */,
 				2BEBC110184F7ABC000AFFFF /* UiTDetailCell.m */,
 				2BCE5EEB187EF8B900B28753 /* UiTProblemView.h */,
@@ -564,6 +629,7 @@
 				F4179763E4244E1DA9832441 /* Copy Pods Resources */,
 				2B238E2E18571601008034F7 /* CopyFiles */,
 				50DB6724302B2A2823CE69CF /* Embed Pods Frameworks */,
+				2BB92EFB1C6C9B3300CFC208 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -612,6 +678,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B40A9F71C4AB3DA00AA56BB /* FixedEventView.xib in Resources */,
 				2BEBC0E1184F7992000AFFFF /* InfoPlist.strings in Resources */,
 				2BE59C2318716DA0007D9654 /* categoriesEventTypes.plist in Resources */,
 				14695D851BBE963A00BFC3C4 /* Favorites.storyboard in Resources */,
@@ -620,17 +687,32 @@
 				2BEBC13F184F7C31000AFFFF /* Localizable.strings in Resources */,
 				140044E51BB5887100915FF5 /* Search.storyboard in Resources */,
 				2B053BCE1883E50100930B1A /* PTN77F.ttf in Resources */,
+				2B40A9F51C4AB3B200AA56BB /* TimeSpanEventView.xib in Resources */,
 				140044BB1BB3FBDD00915FF5 /* About.storyboard in Resources */,
 				14F60D011BBE60E1005436F3 /* MySearch.storyboard in Resources */,
 				2BEBC0E9184F7992000AFFFF /* Images.xcassets in Resources */,
 				2B053BCD1883E50100930B1A /* PTN57F.ttf in Resources */,
 				14B06EAF1BA9A848008377BA /* Home.storyboard in Resources */,
+				2B40A9F31C4AB38C00AA56BB /* OngoingEventView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2BB92EFB1C6C9B3300CFC208 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 5adaa80d39fdcef4a864ee5676fa05ece8bb4e1f e19938a4f50e234fbc645aa3ca4cd6435e867687bbaa6119ef9758433119aafc";
+		};
 		50DB6724302B2A2823CE69CF /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -691,6 +773,7 @@
 				2B79CDA21860569300ACD5C1 /* UiTCategoriesAPIClient.m in Sources */,
 				2B56482D1851D6C800396168 /* UiTSearchWhereViewController.m in Sources */,
 				2B5648331851D6EE00396168 /* UiTSearchWhenViewController.m in Sources */,
+				2B40AA0C1C4B0B9000AA56BB /* NSDate+UiTDate.m in Sources */,
 				2B56482A1851D6B100396168 /* UiTSearchWhatViewController.m in Sources */,
 				2B5648191850BF9200396168 /* UitagendaDataModel.m in Sources */,
 				2BEBC11A184F7B2B000AFFFF /* UiTMenuViewController.m in Sources */,
@@ -700,9 +783,11 @@
 				2BEBC12B184F7B9E000AFFFF /* UiTSearchFilterViewController.m in Sources */,
 				2B9E194118993A60009209BB /* NSMutableArray+UiTMap.m in Sources */,
 				2B9E193A18990891009209BB /* UiTInfoLabel.m in Sources */,
+				2B40A9FE1C4AB43800AA56BB /* UiTTimeSpanEventView.m in Sources */,
 				2B5648391852008100396168 /* _UiTSearchQuery.m in Sources */,
 				2BEBC10B184F7A97000AFFFF /* UiTAPIClient.m in Sources */,
 				2BEBC125184F7B7F000AFFFF /* UiTSearchQueriesViewController.m in Sources */,
+				2B40A9FB1C4AB42700AA56BB /* UiTOnGoingEventView.m in Sources */,
 				2BEBC131184F7BE9000AFFFF /* UiTAboutViewController.m in Sources */,
 				2BEBC12E184F7BB1000AFFFF /* UiTFavoritesViewController.m in Sources */,
 				14B06EB21BA9AA57008377BA /* CustomSplitViewController.m in Sources */,
@@ -711,11 +796,14 @@
 				2BEBC111184F7ABC000AFFFF /* UiTDetailCell.m in Sources */,
 				2BEBC0E7184F7992000AFFFF /* UiTAppDelegate.m in Sources */,
 				2B9E193D18990EA4009209BB /* UiTLinkLabel.m in Sources */,
+				2B40AA011C4AB44700AA56BB /* UiTFixedEventView.m in Sources */,
 				2BD33FBF188EB223001F5667 /* UiTDetailContainerViewController.m in Sources */,
+				2B40AA091C4AEBBB00AA56BB /* NSDictionary+ObjectForKeyOrNil.m in Sources */,
 				140044EB1BB9504E00915FF5 /* UIViewController+UIBarButtonItems.m in Sources */,
 				140044E81BB9323300915FF5 /* UiTBaseTableViewController.m in Sources */,
 				2BC0E0421BC64739002FB555 /* GoogleAnalyticsTracker.m in Sources */,
 				2BEBC10E184F7AAB000AFFFF /* UiTMenu.m in Sources */,
+				2B40AA0F1C4B27B300AA56BB /* UIFont+UiTFont.m in Sources */,
 				2BEBC13A184F7C0A000AFFFF /* UiTBaseViewController.m in Sources */,
 				2BCE5EED187EF8B900B28753 /* UiTProblemView.m in Sources */,
 				2B5648101850BAE700396168 /* UiTagenda.xcdatamodeld in Sources */,

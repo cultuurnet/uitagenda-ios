@@ -138,7 +138,7 @@
     UiTSearchQuery *searchQuery = ((UiTSearchQuery *)[[self.fetchedResultsController fetchedObjects] objectAtIndex:indexPath.row]);
     
     UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, WIDTH(self.tableView), CGFLOAT_MAX)];
-    lbl.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:18];
+    lbl.font = [UIFont customRegularFontWithSize:18];
     lbl.numberOfLines = 0;
     lbl.text = [NSString stringWithFormat:@"%@", searchQuery.title];
     [lbl sizeToFit];

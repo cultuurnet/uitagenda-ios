@@ -23,7 +23,7 @@
         self.numberOfLines = 0;
         self.lineBreakMode = NSLineBreakByWordWrapping;
         self.delegate = self;
-        self.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:14];
+        self.font = [UIFont customRegularFontWithSize:14];
         self.textColor = TITLECOLOR;
         self.text = text;
         [self sizeToFit];
@@ -44,7 +44,7 @@
         self.numberOfLines = 0;
         self.lineBreakMode = NSLineBreakByWordWrapping;
         self.delegate = self;
-        self.font = [[UiTGlobalFunctions sharedInstance] customRegularFontWithSize:14];
+        self.font = [UIFont customRegularFontWithSize:14];
         self.textColor = TITLECOLOR;
         [self sizeToFit];
     }
