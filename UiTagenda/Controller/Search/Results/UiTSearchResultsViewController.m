@@ -20,6 +20,7 @@
 #import "UiTFavoritesViewController.h"
 #import "UiTProblemView.h"
 #import "NSMutableArray+UiTMap.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface UiTSearchResultsViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UIButton *saveButton;

@@ -19,6 +19,7 @@
 #import <SVPullToRefresh/SVPullToRefresh.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <TSMessages/TSMessage.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface UiTHomeViewController () <UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, UIAlertViewDelegate, TSMessageViewProtocol>
 
