@@ -14,7 +14,6 @@ Hoe werkende krijgen?
 - Verander CONSUMERKEY
 - Verander CONSUMERSECRET
 - Verander GOOGLEANALYTICS
-- Verander NEWRELICTOKEN
 7. Klaar om te runnen!
 
 
