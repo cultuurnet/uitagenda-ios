@@ -18,7 +18,7 @@
 #import "GAITrackedViewController.h"
 #import "GAITracker.h"
 
-static NSString *googleTrackerID = @"UA-7706489-13";
+static NSString *googleTrackerID = @"";
 
 @interface GoogleAnalyticsTracker : NSObject
 

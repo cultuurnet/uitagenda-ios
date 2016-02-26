@@ -11,8 +11,8 @@
 #define BASE_URL @"http://www.uitid.be/uitid/rest/"
 #define CATEGORIES_URL @"http://test.taxonomy.uitdatabank.be/api/domain/"
 
-#define CONSUMERKEY @"0f48f75c9b34e97bb523bc8bc93cfc8b"
-#define CONSUMERSECRET @"472bb9cb3463044542bd445b26f3abf3"
+#define CONSUMERKEY @""
+#define CONSUMERSECRET @""
 
 #define NEWRELICTOKEN @""
 
